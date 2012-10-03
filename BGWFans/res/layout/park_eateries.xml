@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    
+    <Button
+        android:id="@+id/pretzel"
+        android:background="@drawable/verbolten" 
+        android:layout_width="295dp"
+        android:layout_height="95dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"/>
+    
+
+    <Button
+        android:id="@+id/grogangrill"
+        android:layout_width="295dp"
+        android:layout_height="95dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/verbolten" 
+        android:layout_gravity="center"/>
+    
+    <Button
+        android:id="@+id/groganpub"
+        android:background="@drawable/verbolten" 
+        android:layout_width="295dp"
+        android:layout_height="95dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"/>
+    
+    <Button
+        android:id="@+id/festhaus"
+        android:background="@drawable/verbolten" 
+        android:layout_width="295dp"
+        android:layout_height="95dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"/>
+    
+    <Button
+        android:id="@+id/trappers"
+        android:background="@drawable/verbolten" 
+        android:layout_width="295dp"
+        android:layout_height="95dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"/>
+    
+    <Button
+        android:id="@+id/piazza"
+        android:background="@drawable/verbolten" 
+        android:layout_width="295dp"
+        android:layout_height="95dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"/>
+    
+    <Button
+        android:id="@+id/squires"
+        android:background="@drawable/verbolten" 
+        android:layout_width="295dp"
+        android:layout_height="95dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"/>
+    </LinearLayout>

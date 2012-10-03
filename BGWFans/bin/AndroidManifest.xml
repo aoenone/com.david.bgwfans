@@ -1,0 +1,48 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.david.bgwfans"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+   <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="16" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_CORSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:label="BGWFans"
+        android:icon="@drawable/icon"
+        android:logo="@drawable/bgwhite"
+        android:theme="@style/Theme.Sherlock"
+        android:hardwareAccelerated="true">
+         <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".InfoScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.david.bgwfans.WindowSample" />
+        <activity android:name="com.david.bgwfans.ContentSample" />
+        <activity android:name="com.david.bgwfans.ListActivitySample" />
+        <activity android:name="com.david.bgwfans.Attractions"/>
+        <activity android:name="com.david.bgwfans.Shows"/>
+        <activity android:name="com.david.bgwfans.Coasters"/>
+        <activity android:name="com.david.bgwfans.MapScreen"
+            		android:uiOptions="splitActionBarWhenNarrow"/>
+        <activity android:name="com.david.bgwfans.HOS_Houses"/>
+        <activity android:name="com.david.bgwfans.HOS_Deadline"/>
+        <activity android:name="com.david.bgwfans.HOS_Shows"/>
+        <activity android:name="com.david.bgwfans.HOS_Features"/>
+        <activity android:name="com.david.bgwfans.HOS_Map"
+            		android:uiOptions="splitActionBarWhenNarrow"/>
+        <activity android:name="com.david.bgwfans.BGWFans"/>
+        <activity android:name="com.david.bgwfans.Forums"/>
+        <activity android:name="com.david.bgwfans.Wiki"/>
+        <activity android:name="com.david.bgwfans.Settings"/>
+        <activity android:name="com.david.bgwfans.About"/>
+    </application>
+</manifest>

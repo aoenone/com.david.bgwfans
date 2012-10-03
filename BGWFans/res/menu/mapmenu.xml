@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+  <item android:id="@+id/info"
+    android:icon="@drawable/ic_action_about"
+    android:showAsAction="always"/>
+  
+  <item android:id="@+id/rideoption"
+    android:title="Rides"
+    android:showAsAction="always">
+  		<menu>
+  		    <item android:id="@+id/coastersoption"
+  		        android:title="Coasters"
+  		        android:showAsAction="always"/>
+  		    <item android:id="@+id/flatsoption"
+  		        android:title="Flats"
+  		        android:showAsAction="always"/>
+  		    <item android:id="@+id/wateroption"
+  		        android:title="Water"
+  		        android:showAsAction="always"/>
+  		    <item android:id="@+id/addoption"
+  		        android:title="Additional"
+  		        android:showAsAction="always"/>
+  		    <item android:id="@+id/kidoption"
+  		        android:title="Kidsiderate"
+  		        android:showAsAction="always"/>
+  	</menu>
+  </item>
+  
+  <item android:id="@+id/eatoption"
+    android:title="Eateries"
+    android:showAsAction="always" />
+  
+  <item android:id="@+id/user_location"
+    android:icon="@drawable/ic_action_location_2"
+    android:showAsAction="always"/>
+    
+</menu>

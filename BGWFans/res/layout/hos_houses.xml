@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    
+    <Button
+        android:id="@+id/deadline"
+        android:background="@drawable/verbolten" 
+        android:layout_width="295dp"
+        android:layout_height="95dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"/>
+    
+
+    <Button
+        android:id="@+id/fearfair"
+        android:layout_width="295dp"
+        android:layout_height="95dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/verbolten" 
+        android:layout_gravity="center"/>
+    
+    <Button
+        android:id="@+id/your"
+        android:background="@drawable/verbolten" 
+        android:layout_width="295dp"
+        android:layout_height="95dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"/>
+    
+     <Button
+        android:id="@+id/catacombs"
+        android:background="@drawable/verbolten" 
+        android:layout_width="295dp"
+        android:layout_height="95dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"/>
+     
+      <Button
+        android:id="@+id/bitten"
+        android:background="@drawable/verbolten" 
+        android:layout_width="295dp"
+        android:layout_height="95dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"/>
+      
+       <Button
+        android:id="@+id/rootof"
+        android:background="@drawable/verbolten" 
+        android:layout_width="295dp"
+        android:layout_height="95dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"/>
+    </LinearLayout>

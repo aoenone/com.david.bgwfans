@@ -1,0 +1,16 @@
+<resources>
+
+    <color name="md__transparent">#00000000</color>
+
+    <color name="md__defaultBackground">#FF555555</color>
+    
+    <color name="text_color">#d3d3d3</color>
+    
+    <color name="header_color">#bebebe</color>
+    
+    <color name="holo_dark">#ff707070</color>
+    
+    <color name="card_text">#ff8d8d8d</color>
+    
+    <color name="google_now_dark">#6633b5e5</color>
+</resources>
