@@ -18,7 +18,7 @@
          <uses-library android:name="com.google.android.maps" />
 
         <activity
-            android:name=".InfoScreen">
+            android:name="com.david.bgwfans.InfoScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,6 +29,7 @@
         <activity android:name="com.david.bgwfans.ContentSample" />
         <activity android:name="com.david.bgwfans.ListActivitySample" />
         <activity android:name="com.david.bgwfans.Attractions"/>
+        <activity android:name="com.david.bgwfans.Verbolten"/>
         <activity android:name="com.david.bgwfans.Shows"/>
         <activity android:name="com.david.bgwfans.Coasters"/>
         <activity android:name="com.david.bgwfans.MapScreen"

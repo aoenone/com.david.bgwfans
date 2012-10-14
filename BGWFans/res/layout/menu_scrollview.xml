@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<net.simonvt.menudrawer.samples.MenuScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.david.bgwfans.MenuScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -65,7 +65,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Howl-O-Scream"
+            android:text="Christmastown"
             android:textColor="@color/header_color"
             style="@style/MenuDrawer.Widget.Category" />
         
@@ -74,7 +74,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/skull"
-            android:text="Haunted Houses"
+            android:text="Experiences"
             android:textColor="@color/text_color"
             style="@style/MenuDrawer.Widget.Title" />
         
@@ -92,7 +92,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/skull"
-            android:text="Frightening Features"
+            android:text="Features"
             android:textColor="@color/text_color"
             style="@style/MenuDrawer.Widget.Title" />
         
@@ -101,7 +101,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/ic_location_map"
-            android:text="HOS Map"
+            android:text="Map"
             android:textColor="@color/text_color"
             style="@style/MenuDrawer.Widget.Title" />
         
@@ -165,4 +165,4 @@
             style="@style/MenuDrawer.Widget.Title" />
 
     </LinearLayout>
-</net.simonvt.menudrawer.samples.MenuScrollView>
+</com.david.bgwfans.MenuScrollView>

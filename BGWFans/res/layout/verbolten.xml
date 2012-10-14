@@ -1,27 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:padding="20dp">
-        
-    <Button
-        android:id="@+id/vbolt"
-        android:background="@drawable/verbolten" 
+  <LinearLayout
+      android:orientation="vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent" >      
+       
+   <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="95dp"
-        android:padding="15dp"/>
-    
+    	android:layout_height="95dp">
+    	
+     <ImageView
+        android:id="@+id/vbolt"
+        android:src="@drawable/vbolt2"
+        android:scaleType="center"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"/>
+    	<TextView
+    	  	android:id="@+id/attr"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentBottom="true"
+        	android:background="#8000"
+        	android:textColor="#fff"
+        	android:gravity="center|left"
+        	android:paddingTop="2dp"
+        	android:paddingLeft="5dp"
+        	android:paddingBottom="2dp"
+        	android:textSize="22sp"
+        	android:text="Verbolten" />
+    		</RelativeLayout>
+    		
+   
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent" >
     <ScrollView
     		android:layout_width="fill_parent"
-    		android:layout_height="290dp"
-    		android:padding="10dp">
+    		android:layout_height="175dp"
+    		android:paddingTop="10dp"
+    		android:paddingBottom="10dp">
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         		android:orientation="vertical"
         		android:layout_width="fill_parent"
         		android:layout_height="fill_parent"
-        		android:background="@color/md__defaultBackground"
-        		android:padding="5dp">
+        		android:padding="5dp"
+        		android:background="@color/md__defaultBackground">
             <TextView android:text="LOCATION" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="20sp"></TextView>
             <TextView android:text="oktoberfest" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="15sp" ></TextView>
             <TextView android:text="TYPE" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="20sp"></TextView>
@@ -39,13 +66,33 @@
             <TextView android:text="on-board video recording" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="15sp"></TextView>
     </LinearLayout>
     </ScrollView>
+   </LinearLayout>
+    
+    
 	
-	<Button 
-	    android:id="@+id/login_button"
-        android:background="@drawable/showonmap"
+	<RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="95dp"
-        android:layout_gravity="bottom"
-        android:padding="15dp"/>
-	
-     </LinearLayout>
+    	android:layout_height="95dp"
+    	android:paddingTop="10dp" >       
+     <ImageView
+        android:id="@+id/vbolt"
+        android:src="@drawable/bbw"
+        android:scaleType="center"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"/>   
+    	<TextView
+    	    android:id="@+id/wiki"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentBottom="true"
+        	android:background="#8000"
+        	android:textColor="#fff"
+        	android:gravity="center|left"
+        	android:paddingTop="2dp"
+        	android:paddingLeft="5dp"
+        	android:paddingBottom="2dp"
+        	android:textSize="22sp"
+        	android:text="Wiki" />  
+    		</RelativeLayout>
+  		</LinearLayout>
+     </ScrollView>

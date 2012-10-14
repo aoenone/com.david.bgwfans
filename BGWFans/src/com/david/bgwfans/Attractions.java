@@ -21,6 +21,7 @@ public class Attractions extends WindowSample implements View.OnClickListener{
 		ActionBar actionbar = getActionBar();
         actionbar.setDisplayShowTitleEnabled(false);
 		actionbar.setListNavigationCallbacks(null, null);
+		actionbar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         actionbar.setDisplayHomeAsUpEnabled(true);
         createNavigation();
         

@@ -43,8 +43,8 @@ public class Coasters extends SherlockActivity implements OnClickListener{
 	
 	public void onClick(View v) {
     	switch(v.getId()){
-    	case R.id.vbolt: Intent coastersActivity = new Intent(this, InfoScreen.class);
-    		startActivity(coastersActivity);
+    	case R.id.vbolt: Intent vboltActivity = new Intent(this, Verbolten.class);
+    		startActivity(vboltActivity);
     		break;
     	//case R.id.flats: Intent flatsActivity = new Intent(this, Flats.class);
 		//	startActivity(flatsActivity);
