@@ -1,6 +1,7 @@
 package com.david.bgwfans;
 
 import java.util.List;
+
 import net.simonvt.widget.MenuDrawer;
 import net.simonvt.widget.MenuDrawerManager;
 import android.app.ActionBar;
@@ -16,13 +17,13 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.cyrilmottier.polaris.Annotation;
+import com.cyrilmottier.polaris.PolarisMapView;
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapController;
 import com.google.android.maps.MyLocationOverlay;
 import com.google.android.maps.Overlay;
-import com.readystatesoftware.maps.OnSingleTapListener;
-import com.readystatesoftware.maps.TapControlledMapView;
 
 public class HOS_Map<MapListener> extends MapActivity implements View.OnClickListener, LocationListener {
 
@@ -43,7 +44,7 @@ public class HOS_Map<MapListener> extends MapActivity implements View.OnClickLis
 		CustomItemizedOverlay<CustomOverlayItem> itemizedOverlay6;
 		CustomItemizedOverlay<CustomOverlayItem> itemizedOverlay7;
 		CustomItemizedOverlay<CustomOverlayItem> itemizedOverlay8;
-		TapControlledMapView mapView; // use the custom TapControlledMapView
+		private PolarisMapView mapView; // use the custom TapControlledMapView
 		private MenuDrawerManager mMenuDrawer;
 		private Context c;
 		private LocationListener locationListener;
@@ -54,6 +55,17 @@ public class HOS_Map<MapListener> extends MapActivity implements View.OnClickLis
 		GeoPoint pointLoc;
 		GeoPoint point15;
 		
+		
+		private static final Annotation[] rides = {
+			 new Annotation(new GeoPoint(37232807, -76646577), "Verbolten", "Beware of the Back Forest"),
+		};
+		
+		private static final Annotation[] stores = {
+			new Annotation(new GeoPoint(37235612, -76644788), "DeadLine", "Gas Leak"),
+			
+		};
+		
+		private static final Annotation[][] points = {rides, stores};
 		
 		@Override
 	    public void onCreate(Bundle savedInstanceState) {
@@ -98,17 +110,21 @@ public class HOS_Map<MapListener> extends MapActivity implements View.OnClickLis
 	      // ((MapView) mapOverlays).getOverlays().add(myLocation);
 	      // mapView.postInvalidate();
 	        
-	        mapView = (TapControlledMapView) findViewById(R.id.mapview);
+	        mapView = (PolarisMapView) findViewById(R.id.mapview);
+	        //mapView = new PolarisMapView (this, "0iid2UPftb5UexYL6q7gKspJX58N-ixrigb0T7g" );
 			mapView.setSatellite(true);
 			
-			mapView.setOnSingleTapListener(new OnSingleTapListener() {		
-				public boolean onSingleTap(MotionEvent e) {
-					itemizedOverlay5.hideAllBalloons();
-					itemizedOverlay6.hideAllBalloons();
-					itemizedOverlay7.hideAllBalloons();
-					return true;
-				}
-			});
+			//final ArrayList<Annotation> annotations = new ArrayList<Annotation>();
+			 //mapView.setAnnotations(annotations, R.drawable.maps_icon2);
+			
+			//mapView.setOnSingleTapListener(new OnSingleTapListener() {		
+			//	public boolean onSingleTap(MotionEvent e) {
+			//		itemizedOverlay5.hideAllBalloons();
+			//		itemizedOverlay6.hideAllBalloons();
+			//		itemizedOverlay7.hideAllBalloons();
+			//		return true;
+			//	}
+			//});
 			
 			mapOverlays = mapView.getOverlays();
 			
@@ -203,14 +219,14 @@ public class HOS_Map<MapListener> extends MapActivity implements View.OnClickLis
 			locManager.removeUpdates(this);
 			MyLocationOverlay mylocationOverlay = new MyLocationOverlay(this, mapView);
 			mylocationOverlay.enableMyLocation();
-			//mylocationOverlay.enableCompass();
+			mylocationOverlay.enableCompass();
 			mapView.getOverlays().add(mylocationOverlay);
 			
 			//locationManager2.removeUpdates(locationListener);
 			
 			MapController mapController = mapView.getController();
 			mapController.animateTo(point25);
-			//mapView.invalidate();
+			mapView.invalidate();
 			mapController.setZoom(19);
 			
 	    }
@@ -373,6 +389,18 @@ public class HOS_Map<MapListener> extends MapActivity implements View.OnClickLis
 			 //locationManager2.removeUpdates(locationManager);
 		 //}
 		// 
+		 
+		 @Override
+		 protected void onStart() {
+		     super.onStart();
+		    mapView.onStart();
+		 }
+
+		 @Override
+		 protected void onStop() {
+		     super.onStop();
+		     mapView.onStop();
+		 } 
 		 
 		 @Override
 		    protected void onResume() {
