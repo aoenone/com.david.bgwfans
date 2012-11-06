@@ -2,11 +2,13 @@ package com.david.bgwfans;
 
 import com.actionbarsherlock.app.SherlockActivity;
 import android.app.ActionBar;
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 public class Coasters extends SherlockActivity implements OnClickListener{
 	
@@ -21,31 +23,31 @@ public class Coasters extends SherlockActivity implements OnClickListener{
 		actionbar.setListNavigationCallbacks(null, null);
         actionbar.setDisplayHomeAsUpEnabled(true);
         
-        Button b1 = (Button) findViewById(R.id.vbolt);
+        RelativeLayout b1 = (RelativeLayout) findViewById(R.id.vbolt);
         b1.setOnClickListener(this);
         
-        Button b2 = (Button) findViewById(R.id.griffon);
+        RelativeLayout b2 = (RelativeLayout) findViewById(R.id.griffon);
         b2.setOnClickListener(this);
         
-        Button b3 = (Button) findViewById(R.id.apollo);
+        RelativeLayout b3 = (RelativeLayout) findViewById(R.id.apollo);
         b3.setOnClickListener(this);
         
-        Button b4 = (Button) findViewById(R.id.alpen);
+        RelativeLayout b4 = (RelativeLayout) findViewById(R.id.alpen);
         b4.setOnClickListener(this);
         
-        Button b5 = (Button) findViewById(R.id.lochness);
+        RelativeLayout b5 = (RelativeLayout) findViewById(R.id.lochness);
         b5.setOnClickListener(this);
         
-        Button b6 = (Button) findViewById(R.id.grover);
+        RelativeLayout b6 = (RelativeLayout) findViewById(R.id.grover);
         b6.setOnClickListener(this);
 }
 	
 	
 	public void onClick(View v) {
     	switch(v.getId()){
-    	case R.id.vbolt: Intent vboltActivity = new Intent(this, Verbolten.class);
-    		startActivity(vboltActivity);
-    		break;
+    	//case R.id.vbolt: Intent vboltActivity = new Intent(this, Verbolten.class);
+    	//	startActivity(vboltActivity);
+    	//	break;
     	//case R.id.flats: Intent flatsActivity = new Intent(this, Flats.class);
 		//	startActivity(flatsActivity);
 		//	break;

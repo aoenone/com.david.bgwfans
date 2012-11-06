@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:padding="20dp">
@@ -67,15 +68,25 @@
     </LinearLayout>
     </ScrollView>
    </LinearLayout>
-    
-    
+   
+   <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="95dp"
+    	android:paddingTop="10dp" >       
+   	<com.cyrilmottier.polaris.PolarisMapView
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:id="@+id/vmapview"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:clickable="true"
+    	android:apiKey="0iid2UPftb5W-lQslChgHYBKBg1Mhi6VoRzeRqA" />
+   	</RelativeLayout>
 	
 	<RelativeLayout
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:paddingTop="10dp" >       
      <ImageView
-        android:id="@+id/vbolt"
         android:src="@drawable/bbw"
         android:scaleType="center"
         android:layout_width="fill_parent"
@@ -94,5 +105,8 @@
         	android:textSize="22sp"
         	android:text="Wiki" />  
     		</RelativeLayout>
+
+
   		</LinearLayout>
-     </ScrollView>
+
+   </ScrollView>

@@ -80,12 +80,15 @@ public class HOS_Map<MapListener> extends MapActivity implements View.OnClickLis
 	        actionbar.setDisplayHomeAsUpEnabled(true);
 	        createNavigation();
 	        
+	        //String mapApiKey = "0iid2UPftb5UexYL6q7gKspJX58N-ixrigb0T7g";
+	        
+	        
 	        mMenuDrawer = new MenuDrawerManager(this, MenuDrawer.MENU_DRAG_WINDOW);
 	        //mMenuDrawer.setContentView(R.layout.activity_windowsample);
 	        mMenuDrawer.setMenuView(R.layout.menu_scrollview);
 
 	        MenuScrollView msv = (MenuScrollView) mMenuDrawer.getMenuView();
-	        msv.setOnScrollChangedListener(new MenuScrollView.OnScrollChangedListener() {
+	        msv.setOnScrollChangedListener(new MenuScrollView.OnScrollChangedListener(){
 	            public void onScrollChanged() {
 	                mMenuDrawer.getMenuDrawer().invalidate();
 	            }
@@ -111,7 +114,8 @@ public class HOS_Map<MapListener> extends MapActivity implements View.OnClickLis
 	      // mapView.postInvalidate();
 	        
 	        mapView = (PolarisMapView) findViewById(R.id.mapview);
-	        //mapView = new PolarisMapView (this, "0iid2UPftb5UexYL6q7gKspJX58N-ixrigb0T7g" );
+	        //mapView = new PolarisMapView (this, mapApiKey);
+	        setContentView(mapView);
 			mapView.setSatellite(true);
 			
 			//final ArrayList<Annotation> annotations = new ArrayList<Annotation>();
