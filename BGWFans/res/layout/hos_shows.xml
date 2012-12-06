@@ -1,31 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+    <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
     
-    <Button
-        android:id="@+id/fiends"
-        android:background="@drawable/verbolten" 
-        android:layout_width="295dp"
-        android:layout_height="95dp"
-        android:layout_margin="5dp"
-        android:layout_gravity="center"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="95dp"
+    	android:id="@+id/vbolt"
+    	android:layout_margin="5dp"
+    	android:onClick="Verbolten">
+    	
+     <ImageView
+        android:id="@+id/vboltimg"
+        android:src="@drawable/vbolt4"
+        android:scaleType="center"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"/>
+    	<TextView
+    	  	android:id="@+id/vboltt"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentBottom="true"
+        	android:background="#8000"
+        	android:textColor="#fff"
+        	android:gravity="center|left"
+        	android:paddingTop="2dp"
+        	android:paddingLeft="5dp"
+        	android:paddingBottom="2dp"
+        	android:textSize="22sp"
+        	android:text="Deck the Halls"
+        	android:fontFamily="sans-serif-light" />
+    		</RelativeLayout>
     
 
-    <Button
-        android:id="@+id/nightbeats"
-        android:layout_width="295dp"
-        android:layout_height="95dp"
-        android:layout_margin="5dp"
-        android:background="@drawable/verbolten" 
-        android:layout_gravity="center"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="95dp"
+    	android:id="@+id/griffon"
+    	android:layout_margin="5dp"
+    	android:onClick="Griffon">
+    	
+     <ImageView
+        android:id="@+id/griffonimg"
+        android:src="@drawable/griffon3"
+        android:scaleType="center"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"/>
+    	<TextView
+    	  	android:id="@+id/griffont"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentBottom="true"
+        	android:background="#8000"
+        	android:textColor="#fff"
+        	android:gravity="center|left"
+        	android:paddingTop="2dp"
+        	android:paddingLeft="5dp"
+        	android:paddingBottom="2dp"
+        	android:textSize="22sp"
+        	android:text="Gloria!" 
+        	android:fontFamily="sans-serif-light"/>
+    		</RelativeLayout>
     
-    <Button
-        android:id="@+id/digitup"
-        android:background="@drawable/verbolten" 
-        android:layout_width="295dp"
-        android:layout_height="95dp"
-        android:layout_margin="5dp"
-        android:layout_gravity="center"/>
-    </LinearLayout>
+     <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="95dp"
+    	android:id="@+id/apollo"
+    	android:layout_margin="5dp"
+    	android:onClick="Apollo">
+    	
+     <ImageView
+        android:id="@+id/apolloimg"
+        android:src="@drawable/apollo2"
+        android:scaleType="center"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"/>
+    	<TextView
+    	  	android:id="@+id/apollot"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentBottom="true"
+        	android:background="#8000"
+        	android:textColor="#fff"
+        	android:gravity="center|left"
+        	android:paddingTop="2dp"
+        	android:paddingLeft="5dp"
+        	android:paddingBottom="2dp"
+        	android:textSize="22sp"
+        	android:text="Miracles"
+        	android:fontFamily="sans-serif-light" />
+    		</RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="95dp"
+    	android:id="@+id/alpen"
+    	android:layout_margin="5dp"
+    	android:onClick="Alpen">
+    	
+     <ImageView
+        android:id="@+id/alpenimg"
+        android:src="@drawable/alpen3"
+        android:scaleType="center"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"/>
+    	<TextView
+    	  	android:id="@+id/alpent"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentBottom="true"
+        	android:background="#8000"
+        	android:textColor="#fff"
+        	android:gravity="center|left"
+        	android:paddingTop="2dp"
+        	android:paddingLeft="5dp"
+        	android:paddingBottom="2dp"
+        	android:textSize="22sp"
+        	android:text="O Tannenbaum"
+        	android:fontFamily="sans-serif-light" />
+    		</RelativeLayout>
+    
+     <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="95dp"
+    	android:id="@+id/lochness"
+    	android:layout_margin="5dp"
+    	android:onClick="Lochness">
+    	
+     <ImageView
+        android:id="@+id/lochimg"
+        android:src="@drawable/lochness2"
+        android:scaleType="center"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"/>
+    	<TextView
+    	  	android:id="@+id/locht"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentBottom="true"
+        	android:background="#8000"
+        	android:textColor="#fff"
+        	android:gravity="center|left"
+        	android:paddingTop="2dp"
+        	android:paddingLeft="5dp"
+        	android:paddingBottom="2dp"
+        	android:textSize="22sp"
+        	android:text="a Seasame Street Christmas"
+        	android:fontFamily="sans-serif-light" />
+    		</RelativeLayout>
+    	</LinearLayout>
+    </ScrollView>

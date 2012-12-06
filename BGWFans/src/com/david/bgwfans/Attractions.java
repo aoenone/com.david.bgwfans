@@ -9,6 +9,7 @@ import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -19,6 +20,7 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 public class Attractions extends FragmentActivity implements OnClickListener{
         
@@ -33,6 +35,7 @@ public class Attractions extends FragmentActivity implements OnClickListener{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        
         
         mMenuDrawer = new MenuDrawerManager(this, MenuDrawer.MENU_DRAG_WINDOW);
         //mMenuDrawer.setContentView(R.layout.activity_windowsample);
@@ -114,6 +117,15 @@ public class Attractions extends FragmentActivity implements OnClickListener{
                 ab.addTab(tab2);
                 ab.addTab(tab3);
                 ab.addTab(tab4);
+                
+                
+                
+                //Typeface rt = Typeface.createFromAsset(getAssets(),
+                //        "fonts/Roboto-Thin.ttf");
+                //TextView vboltt = (TextView) findViewById(R.id.vboltt);
+                //TextView wiki = (TextView) findViewById(R.id.wiki);
+                //vboltt.setTypeface(rt);
+                //wiki.setTypeface(rt);
                 
                 
     }
@@ -257,9 +269,9 @@ public class Attractions extends FragmentActivity implements OnClickListener{
 			startActivity(aboutActivity);
 			break;
     	}
-        mMenuDrawer.setActiveView(v);
+       mMenuDrawer.setActiveView(v);
         //mContentTextView.setText("Active item: " + ((TextView) v).getText());
-        mMenuDrawer.closeMenu();
+       mMenuDrawer.closeMenu();
         //mActiveViewId = v.getId();
 		
 	}

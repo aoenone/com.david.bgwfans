@@ -7,11 +7,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
 
 public class HOS_Houses extends WindowSample implements View.OnClickListener{
 	
 	private MenuDrawerManager mMenuDrawer;
 	private static final String STATE_MENUDRAWER = "net.simonvt.menudrawer.samples.WindowSample.menuDrawer";
+	RelativeLayout b1;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -25,23 +27,8 @@ public class HOS_Houses extends WindowSample implements View.OnClickListener{
         actionbar.setDisplayHomeAsUpEnabled(true);
         createNavigation();
         
-        Button b1 = (Button) findViewById(R.id.deadline);
-        b1.setOnClickListener(this);
-        
-        Button b2 = (Button) findViewById(R.id.fearfair);
-        b2.setOnClickListener(this);
-        
-        Button b3 = (Button) findViewById(R.id.your);
-        b3.setOnClickListener(this);
-        
-        Button b4 = (Button) findViewById(R.id.catacombs);
-        b4.setOnClickListener(this);
-        
-        Button b5 = (Button) findViewById(R.id.bitten);
-        b4.setOnClickListener(this);
-        
-        Button b6 = (Button) findViewById(R.id.rootof);
-        b4.setOnClickListener(this);
+        //RelativeLayout b1 = (RelativeLayout) findViewById(R.id.mistletoeMarket);
+        //b1.setOnClickListener(this);
         
         findViewById(R.id.item1).setOnClickListener(this);
         findViewById(R.id.item2).setOnClickListener(this);
@@ -63,9 +50,6 @@ public class HOS_Houses extends WindowSample implements View.OnClickListener{
 	@Override
 	public void onClick(View v) {
     	switch(v.getId()){
-    	case R.id.deadline: Intent deadlineActivity = new Intent(this, HOS_Deadline.class);
-    		startActivity(deadlineActivity);
-    		break;
     	//case R.id.flats: Intent flatsActivity = new Intent(this, Flats.class);
 		//	startActivity(flatsActivity);
 		//	break;
@@ -81,7 +65,7 @@ public class HOS_Houses extends WindowSample implements View.OnClickListener{
     	case R.id.item2: Intent attrActivity = new Intent(this, Attractions.class);
 		startActivity(attrActivity);
 		break;
-		case R.id.item3: Intent showsActivity = new Intent(this, HOS_Shows.class);
+		case R.id.item3: Intent showsActivity = new Intent(this, Shows.class);
 		startActivity(showsActivity);
 		break;
     	case R.id.item4: Intent eatActivity = new Intent(this, Eateries.class);
@@ -117,6 +101,20 @@ public class HOS_Houses extends WindowSample implements View.OnClickListener{
     		
     	}
     }
+	
+	public void Mistletoe(View view){
+		Intent mistletoeActivity = new Intent(this, Mistletoe.class);
+		startActivity(mistletoeActivity);
+	}
+	
+	public void Polar(View view){
+		Intent polarActivity = new Intent(this, Polar.class);
+		startActivity(polarActivity);
+	}
+	public void Palace(View view){
+		Intent palaceActivity = new Intent(this, Palace.class);
+		startActivity(palaceActivity);
+	}
 	
 	private void createNavigation() {
 		// TODO Auto-generated method stub

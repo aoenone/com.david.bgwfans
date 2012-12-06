@@ -2,12 +2,15 @@
 <com.david.bgwfans.MenuScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:overScrollHeader="@drawable/pressed_background_bgwfans"
+   	 	android:overScrollFooter="@drawable/pressed_background_bgwfans">
         
         <TextView
             android:layout_width="match_parent"
@@ -92,7 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/skull"
-            android:text="Features"
+            android:text="Shopping"
             android:textColor="@color/text_color"
             style="@style/MenuDrawer.Widget.Title" />
         

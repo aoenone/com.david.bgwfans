@@ -2,7 +2,7 @@
 
     <color name="md__transparent">#00000000</color>
 
-    <color name="md__defaultBackground">#FF555555</color>
+    <color name="md__defaultBackground">#212224</color>
     
     <color name="text_color">#d3d3d3</color>
     
@@ -13,4 +13,10 @@
     <color name="card_text">#ff8d8d8d</color>
     
     <color name="google_now_dark">#6633b5e5</color>
+    
+    <color name="bgwfans_red">#B8041C</color>
+    
+    <color name="stacked">#000000</color>
+    
+    <color name="pressed_bgwfans">#CCb8041c</color>
 </resources>

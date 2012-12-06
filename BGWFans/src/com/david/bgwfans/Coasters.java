@@ -9,9 +9,11 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 
 public class Coasters extends SherlockActivity implements OnClickListener{
 	
+	private ScrollView scrollview;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -22,6 +24,10 @@ public class Coasters extends SherlockActivity implements OnClickListener{
         actionbar.setDisplayShowTitleEnabled(false);
 		actionbar.setListNavigationCallbacks(null, null);
         actionbar.setDisplayHomeAsUpEnabled(true);
+        
+        ScrollView scrollview = (ScrollView) findViewById(R.id.scroll);
+        
+        scrollview.setDrawingCacheEnabled(false);
         
         RelativeLayout b1 = (RelativeLayout) findViewById(R.id.vbolt);
         b1.setOnClickListener(this);

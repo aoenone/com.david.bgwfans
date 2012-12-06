@@ -25,27 +25,6 @@ public class Eateries extends WindowSample implements View.OnClickListener{
         actionbar.setDisplayHomeAsUpEnabled(true);
         createNavigation();
         
-        Button b1 = (Button) findViewById(R.id.pretzel);
-        b1.setOnClickListener(this);
-        
-        Button b2 = (Button) findViewById(R.id.grogangrill);
-        b2.setOnClickListener(this);
-        
-        Button b3 = (Button) findViewById(R.id.groganpub);
-        b3.setOnClickListener(this);
-        
-        Button b4 = (Button) findViewById(R.id.festhaus);
-        b4.setOnClickListener(this);
-        
-        Button b5 = (Button) findViewById(R.id.trappers);
-        b4.setOnClickListener(this);
-        
-        Button b6 = (Button) findViewById(R.id.piazza);
-        b4.setOnClickListener(this);
-        
-        Button b7 = (Button) findViewById(R.id.squires);
-        b4.setOnClickListener(this);
-        
         findViewById(R.id.item1).setOnClickListener(this);
         findViewById(R.id.item2).setOnClickListener(this);
         findViewById(R.id.item3).setOnClickListener(this);
@@ -66,9 +45,6 @@ public class Eateries extends WindowSample implements View.OnClickListener{
 	@Override
 	public void onClick(View v) {
     	switch(v.getId()){
-    	case R.id.pretzel: Intent pretzelActivity = new Intent(this, Pretzel.class);
-    		startActivity(pretzelActivity);
-    		break;
     	//case R.id.flats: Intent flatsActivity = new Intent(this, Flats.class);
 		//	startActivity(flatsActivity);
 		//	break;
