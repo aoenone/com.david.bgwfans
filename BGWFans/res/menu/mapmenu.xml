@@ -37,5 +37,9 @@
   <item android:id="@+id/seekbar"
     android:title="TEST"
     android:showAsAction="always" />
+  
+  <item android:id="@+id/hamlets"
+    android:title="Hamlets"
+    android:showAsAction="always" />
     
 </menu>

@@ -677,6 +677,7 @@ containing a value of this type.
         public static final int grover=0x7f0a0028;
         public static final int grovimg=0x7f0a0029;
         public static final int grovt=0x7f0a0049;
+        public static final int hamlets=0x7f0a00a4;
         public static final int header=0x7f0a0050;
         public static final int header2=0x7f0a004d;
         public static final int header3=0x7f0a0054;
@@ -726,7 +727,7 @@ containing a value of this type.
         public static final int morepets=0x7f0a0087;
         public static final int none=0x7f0a0004;
         public static final int normal=0x7f0a0005;
-        public static final int open_sidemap=0x7f0a00a4;
+        public static final int open_sidemap=0x7f0a00a5;
         public static final int pager=0x7f0a0069;
         public static final int parkHours=0x7f0a005f;
         public static final int parkHours2=0x7f0a0058;

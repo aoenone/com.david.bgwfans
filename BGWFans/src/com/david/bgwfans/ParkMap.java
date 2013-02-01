@@ -198,6 +198,10 @@ public class ParkMap extends android.support.v4.app.FragmentActivity{
 			break;
 		case R.id.seekbar:
 			displaySeekBar();
+		case R.id.hamlets:
+			mMap.clear();
+			addHamletsToMap();
+			
 		}
 		return super.onOptionsItemSelected(item);
 		}
