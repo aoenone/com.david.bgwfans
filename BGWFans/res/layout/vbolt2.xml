@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">  
+       
+   <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="95dp">  	
+     <ImageView
+        android:id="@+id/vbolt"
+        android:src="@drawable/vbolt2"
+        android:scaleType="center"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"/>
+    	<TextView
+    	  	android:id="@+id/attr"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentBottom="true"
+        	android:background="#8000"
+        	android:textColor="#fff"
+        	android:gravity="center|left"
+        	android:paddingTop="2dp"
+        	android:paddingLeft="5dp"
+        	android:paddingBottom="2dp"
+        	android:textSize="22sp"
+        	android:text="Verbolten"
+        	android:fontFamily="sans-serif-light" />
+    		</RelativeLayout>
+
+    <ScrollView
+    		android:layout_width="fill_parent"
+    		android:layout_height="160dp"
+    		android:paddingTop="10dp"
+    		android:paddingBottom="10dp"
+    		android:id="@+id/info">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        		android:orientation="vertical"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:padding="5dp"
+        		android:background="@color/md__defaultBackground">
+            <TextView android:text="LOCATION" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="20sp"></TextView>
+            <TextView android:text="oktoberfest" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="15sp" ></TextView>
+            <TextView android:text="TYPE" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="20sp"></TextView>
+            <TextView android:text="roller coaster" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="15sp"></TextView>
+            <TextView android:text="HEIGHT RESTRICTION" android:layout_width="wrap_content" android:layout_height="fill_parent"  android:textSize="20sp"></TextView>
+            <TextView android:text="48 in." android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="15sp"></TextView>
+            <TextView android:text="DROP" android:layout_width="wrap_content" android:layout_height="fill_parent"  android:textSize="20sp"></TextView>
+            <TextView android:text="88 ft." android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="15sp"></TextView>
+            <TextView android:text="INVERSIONS" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="20sp"></TextView>
+            <TextView android:text="0" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="15sp"></TextView>
+            <TextView android:text="SPECIAL FEATURES" android:layout_width="wrap_content" android:layout_height="fill_parent"  android:textSize="20sp"></TextView>
+            <TextView android:text="multi-launching" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="15sp"></TextView>
+            <TextView android:text="special effects" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="15sp"></TextView>
+            <TextView android:text="free-fall drop section" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="15sp"></TextView>
+            <TextView android:text="on-board video recording" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="15sp"></TextView>
+    </LinearLayout>
+    </ScrollView>
+   
+   <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="160dp">       
+   	<fragment
+  		android:id="@+id/map"
+  		android:layout_width="match_parent"
+  		android:layout_height="match_parent"
+  		class="com.google.android.gms.maps.SupportMapFragment"/>
+   	</RelativeLayout>
+   	
+   <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="95dp"
+    	android:paddingTop="10dp" >       
+     <ImageView
+        android:src="@drawable/bbw"
+        android:scaleType="center"
+        android:layout_width="fill_parent"
+        android:layout_height="95dp" /> 
+    	<TextView
+    	    android:id="@+id/wiki"
+    	    android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentBottom="true"
+        	android:background="#8000"
+        	android:textColor="#fff"
+        	android:gravity="center|left"
+        	android:paddingTop="2dp"
+        	android:paddingLeft="5dp"
+        	android:paddingBottom="2dp"
+        	android:textSize="22sp"
+        	android:text="Wiki"
+        	android:fontFamily="sans-serif-light"></TextView> 
+    		</RelativeLayout>
+
+
+   </LinearLayout>
