@@ -1,9 +1,5 @@
 package com.david.bgwfans;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -15,6 +11,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.google.android.maps.OverlayItem;
 import com.readystatesoftware.mapviewballoons.BalloonOverlayView;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class CustomBalloonOverlayView<Item extends OverlayItem> extends BalloonOverlayView<CustomOverlayItem> {
 

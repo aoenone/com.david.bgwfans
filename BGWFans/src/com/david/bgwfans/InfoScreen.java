@@ -1,74 +1,76 @@
 package com.david.bgwfans;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Calendar;
-
-import com.cyrilmottier.polaris.PolarisMapView;
-import com.google.android.maps.GeoPoint;
-import com.google.android.maps.MapController;
-
-import net.simonvt.widget.MenuDrawerManager;
-import android.app.ActionBar;
-import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
-import android.text.format.DateFormat;
-import android.text.format.Time;
-import android.view.View;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-import android.widget.TextView;
+
+import com.fima.cardsui.objects.CardStack;
+import com.fima.cardsui.views.CardUI;
+import com.slidingmenu.lib.SlidingMenu;
 
 public class InfoScreen extends BaseActivity{
 
+	private CardUI mCardView;
 
-	private WebView webview;
-	private MenuDrawerManager mMenuDrawer;
-		@Override
-		public void onCreate(Bundle savedInstanceState) {
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.info);
+		setContentView(R.layout.activity_main);
+		//View myFragmentView = inflater.inflate(R.layout.wccard, container, false);
 		
-		ActionBar actionbar = getActionBar();
+		android.app.ActionBar actionbar = getActionBar();
         actionbar.setDisplayShowTitleEnabled(false);
 		actionbar.setListNavigationCallbacks(null, null);
         actionbar.setDisplayHomeAsUpEnabled(true);
-        createNavigation();
-		
-		
-        //String mydate = java.text.DateFormat.getDateTimeInstance().format(Calendar.getInstance().getTime());
-        //
-       // Calendar c = Calendar.getInstance();
-       // SimpleDateFormat df = new SimpleDateFormat("MMM dd yyyy");
-       // String curDate = df.format(c.getTime());
-       // 
-       // Time today = new Time(Time.getCurrentTimezone());
-       // today.setToNow();
         
-       // TextView textTime = (TextView) findViewById(R.id.curTime);
-       // textTime.setText(curDate);
-        
-        //Typeface rt = Typeface.createFromAsset(getAssets(),
-       //         "fonts/Roboto-Thin.ttf");
-       // TextView loc = (TextView) findViewById(R.id.location);
-       // TextView park = (TextView) findViewById(R.id.parkhours);
-       // TextView xmas = (TextView) findViewById(R.id.xmas);
-       // loc.setTypeface(rt);
-       // park.setTypeface(rt);
-       // xmas.setTypeface(rt);
+        //sm.attachToActivity(this,  SlidingMenu.SLIDING_CONTENT);
 
-}
+		// init CardView
+		mCardView = (CardUI) findViewById(R.id.cardsview);
+		mCardView.setSwipeable(false);
 		
-		public void XmasInfo(View view){
-			Intent xmasActivity = new Intent(this, XmasInfo.class);
-			startActivity(xmasActivity);
-		}
+		// add one card, and then add another one to the last stack.
+		mCardView.addCard(new TomCard("Tomorrow"));
+		mCardView.addCardToLastStack(new TodayCard("Today"));
 		
+		//current event card
+		//CardStack Ceventstack = new CardStack();
+		//Ceventstack.add(new XmasCard("Christmas Town"));
+		//mCardView.addStack(Ceventstack);
+		
+		//event card stack
+		CardStack eventstack = new CardStack();
+		eventstack.add(new XmasCard("Christmas Town"));
+		eventstack.add(new HosCard("Howl-O-Scream"));
+		eventstack.add(new IllCard("Illuminights"));
+		eventstack.add(new WineCard("Food and Wine Festival"));
+		eventstack.add(new PmCard("Passmember Preview Weekend"));
+		mCardView.addStack(eventstack);
+		
+		CardStack wcstack = new CardStack();
+		wcstack.add(new WcCard("Water Country USA"));
+		mCardView.addStack(wcstack);
+		
+		CardStack paidstack = new CardStack();
+		paidstack.add(new PaidCard("Go Platinum!"));
+		mCardView.addStack(paidstack);
+		//WineCard androidViewsCard = new WineCard("Food and Wine Festival");
+		//androidViewsCard.setOnClickListener(new OnClickListener() {
+		/**
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(Intent.ACTION_VIEW);
+				intent.setData(Uri.parse("http://www.androidviews.net/"));
+				startActivity(intent);
 
-		private void createNavigation() {
-			// TODO Auto-generated method stub
-			
-		}
+			}
+		});**/
+		//mCardView.addCardToLastStack(androidViewsCard);
+
+		// draw cards
+		mCardView.refresh();
 		
+		//android.app.FragmentManager fragmentManager = getFragmentManager();
+		//android.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+		//mMap = ((SupportMapFragment) getFragmentManager().findFragmentById(R.id.map))
+        //        .getMap();
+	}
+	
 }

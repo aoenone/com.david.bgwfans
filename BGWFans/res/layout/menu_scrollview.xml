@@ -65,10 +65,10 @@
             android:textColor="@color/text_color"
             style="@style/MenuDrawer.Widget.Title" />
         
-        <TextView
+        <!-- Removed during normal season<TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Christmastown"
+            android:text="Christmas Town"
             android:textColor="@color/header_color"
             style="@style/MenuDrawer.Widget.Category" />
         
@@ -76,7 +76,7 @@
             android:id="@+id/item6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/skull"
+            android:drawableLeft="@drawable/ic_action_star"
             android:text="Experiences"
             android:textColor="@color/text_color"
             style="@style/MenuDrawer.Widget.Title" />
@@ -85,7 +85,7 @@
             android:id="@+id/item7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/skull"
+            android:drawableLeft="@drawable/ic_menu_show"
             android:text="Shows"
             android:textColor="@color/text_color"
             style="@style/MenuDrawer.Widget.Title" />
@@ -94,7 +94,7 @@
             android:id="@+id/item8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/skull"
+            android:drawableLeft="@drawable/ic_menu_food"
             android:text="Shopping"
             android:textColor="@color/text_color"
             style="@style/MenuDrawer.Widget.Title" />
@@ -106,7 +106,7 @@
             android:drawableLeft="@drawable/ic_location_map"
             android:text="Map"
             android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" />
+            style="@style/MenuDrawer.Widget.Title" /> -->
         
         <TextView
             android:layout_width="match_parent"

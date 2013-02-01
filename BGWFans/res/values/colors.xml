@@ -19,4 +19,7 @@
     <color name="stacked">#000000</color>
     
     <color name="pressed_bgwfans">#CCb8041c</color>
+    
+    <color name="holo_blue">#33B5E5</color>
+    
 </resources>

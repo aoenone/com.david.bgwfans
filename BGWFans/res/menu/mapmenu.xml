@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
  
-  <item android:id="@+id/info"
+  <!--  <item android:id="@+id/info"
     android:icon="@drawable/ic_action_about"
-    android:showAsAction="always"/>
+    android:showAsAction="always"/> -->
   
   <item android:id="@+id/rideoption"
     android:title="Rides"
     android:showAsAction="always">
   		<menu>
+  		    <item android:id="@+id/alloption"
+  		        android:title="Display All"
+  		        android:showAsAction="always"/>
   		    <item android:id="@+id/coastersoption"
   		        android:title="Coasters"
   		        android:showAsAction="always"/>
@@ -18,11 +21,11 @@
   		    <item android:id="@+id/wateroption"
   		        android:title="Water"
   		        android:showAsAction="always"/>
-  		    <item android:id="@+id/addoption"
-  		        android:title="Additional"
+  		    <item android:id="@+id/transportation"
+  		        android:title="Transportation"
   		        android:showAsAction="always"/>
-  		    <item android:id="@+id/kidoption"
-  		        android:title="Kidsiderate"
+  		    <item android:id="@+id/animal"
+  		        android:title="Animal Exhibits"
   		        android:showAsAction="always"/>
   	</menu>
   </item>
@@ -31,8 +34,8 @@
     android:title="Eateries"
     android:showAsAction="always" />
   
-  <item android:id="@+id/user_location"
-    android:icon="@drawable/ic_action_location_2"
-    android:showAsAction="always"/>
+  <item android:id="@+id/seekbar"
+    android:title="TEST"
+    android:showAsAction="always" />
     
 </menu>

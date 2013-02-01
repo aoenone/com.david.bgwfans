@@ -3,7 +3,7 @@ package com.david.bgwfans;
 import android.app.ActionBar;
 import android.os.Bundle;
 
-public class About extends WindowSample{
+public class About extends BaseActivity{
 		
 	
 	public void onCreate(Bundle savedInstanceState) {

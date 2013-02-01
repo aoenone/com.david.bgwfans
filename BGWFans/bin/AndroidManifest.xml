@@ -5,16 +5,31 @@
 
    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 	<uses-permission android:name="android.permission.ACCESS_CORSE_LOCATION"/>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<permission
+          android:name="com.david.bgwfans.MAPS_RECEIVE"
+          android:protectionLevel="signature"/>
+        <uses-permission android:name="com.david.bgwfans.permission.MAPS_RECEIVE"/>
+        
+        <uses-feature
+  			android:glEsVersion="0x00020000"
+  			android:required="true"/>
 
     <application
         android:label="BGWFans"
         android:icon="@drawable/icon"
         android:logo="@drawable/bgwhite"
-        android:theme="@style/Theme.bgwfans">
-         <uses-library android:name="com.google.android.maps" />
+        android:theme="@style/Theme.bgwfans"
+        android:hardwareAccelerated="true"
+        android:allowBackup="true">
+        <meta-data
+    	android:name="com.google.android.maps.v2.API_KEY"
+    	android:value="AIzaSyAz1TiujG7GbWK9TCcApqdhK-eTaa3g-Z4"/>
+        <uses-library android:name="com.google.android.maps" />
 
         <activity
             android:name="com.david.bgwfans.InfoScreen">
@@ -32,6 +47,8 @@
         <activity android:name="com.david.bgwfans.Shows"/>
         <activity android:name="com.david.bgwfans.Coasters"/>
         <activity android:name="com.david.bgwfans.MapScreen"
+            		android:uiOptions="splitActionBarWhenNarrow"/>
+        <activity android:name="com.david.bgwfans.ParkMap"
             		android:uiOptions="splitActionBarWhenNarrow"/>
         <activity android:name="com.david.bgwfans.HOS_Houses"/>
         <activity android:name="com.david.bgwfans.HOS_Deadline"/>

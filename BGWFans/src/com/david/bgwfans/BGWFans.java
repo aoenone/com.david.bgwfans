@@ -6,7 +6,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class BGWFans extends WindowSample implements View.OnClickListener{
+public class BGWFans extends SideMenuActivity implements View.OnClickListener{
 
 	private WebView webview;
 	

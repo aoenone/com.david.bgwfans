@@ -8,30 +8,30 @@ package net.simonvt.menudrawer;
 
 public final class R {
 	public static final class id {
-		public static final int md__menu = 0x7f060007;
-		public static final int mdActiveViewPosition = 0x7f060008;
-		public static final int md__layout = 0x7f060005;
-		public static final int md__content = 0x7f060006;
+		public static final int md__menu = 0x7f0a0002;
+		public static final int mdActiveViewPosition = 0x7f0a0003;
+		public static final int md__layout = 0x7f0a0000;
+		public static final int md__content = 0x7f0a0001;
 	}
 	public static final class style {
-		public static final int Widget = 0x7f0a0004;
-		public static final int Widget_MenuDrawer = 0x7f0a0005;
+		public static final int Widget = 0x7f090004;
+		public static final int Widget_MenuDrawer = 0x7f090005;
 	}
 	public static final class color {
-		public static final int md__defaultBackground = 0x7f070003;
+		public static final int md__defaultBackground = 0x7f060002;
 	}
 	public static final class styleable {
 		public static final int MenuDrawer_mdMenuBackground = 1;
 		public static final int MenuDrawer_mdArrowDrawable = 3;
 		public static final int MenuDrawer_mdMenuWidth = 2;
-		public static final int[] MenuDrawer = { 0x7f01000e, 0x7f01000f, 0x7f010010, 0x7f010011 };
+		public static final int[] MenuDrawer = { 0x7f010001, 0x7f010002, 0x7f010003, 0x7f010004 };
 		public static final int MenuDrawer_mdContentBackground = 0;
 	}
 	public static final class attr {
-		public static final int mdMenuBackground = 0x7f01000f;
-		public static final int mdArrowDrawable = 0x7f010011;
-		public static final int mdMenuWidth = 0x7f010010;
-		public static final int mdContentBackground = 0x7f01000e;
-		public static final int menuDrawerStyle = 0x7f01000d;
+		public static final int mdMenuBackground = 0x7f010002;
+		public static final int mdArrowDrawable = 0x7f010004;
+		public static final int mdMenuWidth = 0x7f010003;
+		public static final int mdContentBackground = 0x7f010001;
+		public static final int menuDrawerStyle = 0x7f010000;
 	}
 }

@@ -1,7 +1,5 @@
 package com.david.bgwfans;
 
-import net.simonvt.widget.MenuDrawer;
-import net.simonvt.widget.MenuDrawerManager;
 import android.app.ListActivity;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,6 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import net.simonvt.widget.MenuDrawer;
+import net.simonvt.widget.MenuDrawerManager;
 
 import java.util.ArrayList;
 import java.util.List;

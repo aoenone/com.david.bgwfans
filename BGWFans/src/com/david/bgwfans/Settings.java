@@ -4,7 +4,7 @@ import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 
-public class Settings extends WindowSample{
+public class Settings extends SideMenuActivity{
 
 	public static final Intent ACTION_LOCATION_SOURCE_SETTINGS = null;
 

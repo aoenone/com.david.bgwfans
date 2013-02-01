@@ -1,28 +1,24 @@
 package com.david.bgwfans;
 
-import java.util.ArrayList;
-
-import net.simonvt.widget.MenuDrawer;
-import net.simonvt.widget.MenuDrawerManager;
-
 import android.app.ActionBar;
+
 import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.*;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
+import net.simonvt.widget.MenuDrawer;
+import net.simonvt.widget.MenuDrawerManager;
 
-public class Attractions extends FragmentActivity implements OnClickListener{
+import java.util.ArrayList;
+
+import com.slidingmenu.lib.app.SlidingFragmentActivity;
+
+public class Attractions extends SideMenuActivity implements OnClickListener{
         
         FragmentTransaction transaction;
         static ViewPager mViewPager;
@@ -36,8 +32,7 @@ public class Attractions extends FragmentActivity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
-        
-        mMenuDrawer = new MenuDrawerManager(this, MenuDrawer.MENU_DRAG_WINDOW);
+       /** mMenuDrawer = new MenuDrawerManager(this, MenuDrawer.MENU_DRAG_WINDOW);
         //mMenuDrawer.setContentView(R.layout.activity_windowsample);
         mMenuDrawer.setMenuView(R.layout.menu_scrollview);
 
@@ -46,7 +41,7 @@ public class Attractions extends FragmentActivity implements OnClickListener{
             public void onScrollChanged() {
                 mMenuDrawer.getMenuDrawer().invalidate();
             }
-        });
+        });**/
         
         Fragment tabOneFragment = new TabOne();
         Fragment tabTwoFragment = new TabTwo();
@@ -76,20 +71,20 @@ public class Attractions extends FragmentActivity implements OnClickListener{
                         }
                     });
                 
-                findViewById(R.id.item1).setOnClickListener(this);
+               /** findViewById(R.id.item1).setOnClickListener(this);
                 findViewById(R.id.item2).setOnClickListener(this);
                 findViewById(R.id.item3).setOnClickListener(this);
                 findViewById(R.id.item4).setOnClickListener(this);
                 findViewById(R.id.item5).setOnClickListener(this);
-                findViewById(R.id.item6).setOnClickListener(this);
-                findViewById(R.id.item7).setOnClickListener(this);
-                findViewById(R.id.item8).setOnClickListener(this);
+                //findViewById(R.id.item6).setOnClickListener(this);
+                //findViewById(R.id.item7).setOnClickListener(this);
+                //findViewById(R.id.item8).setOnClickListener(this);
                 findViewById(R.id.item9).setOnClickListener(this);
                 findViewById(R.id.item10).setOnClickListener(this);
                 findViewById(R.id.item11).setOnClickListener(this);
                 findViewById(R.id.item12).setOnClickListener(this);
                 findViewById(R.id.item13).setOnClickListener(this);
-                findViewById(R.id.item14).setOnClickListener(this);
+                //findViewById(R.id.item14).setOnClickListener(this); **/
              
         
         ActionBar ab = getActionBar();
@@ -223,7 +218,7 @@ public class Attractions extends FragmentActivity implements OnClickListener{
     
 
 
-	public void onClick(View v) {
+	/** public void onClick(View v) {
 		switch(v.getId())
     	{
 		case R.id.item1: Intent infoActivity = new Intent(this, InfoScreen.class);
@@ -241,7 +236,7 @@ public class Attractions extends FragmentActivity implements OnClickListener{
 		case R.id.item5: Intent mapActivity = new Intent(this, MapScreen.class);
 			startActivity(mapActivity);
 			break;
-		case R.id.item6: Intent hhActivity = new Intent(this, HOS_Houses.class);
+		/**case R.id.item6: Intent hhActivity = new Intent(this, HOS_Houses.class);
 			startActivity(hhActivity);
 			break;
 		case R.id.item7: Intent hshowActivity = new Intent(this, HOS_Shows.class);
@@ -251,8 +246,8 @@ public class Attractions extends FragmentActivity implements OnClickListener{
 			startActivity(featuresActivity);
 			break;
 		case R.id.item14: Intent hosMapActivity = new Intent(this, HOS_Map.class);
-			startActivity(hosMapActivity);
-			break;
+			startActivity(hosMapActivity); 
+			break; //
     	case R.id.item9: Intent blogActivity = new Intent(this, BGWFans.class);
     		startActivity(blogActivity);
     		break;
@@ -274,7 +269,7 @@ public class Attractions extends FragmentActivity implements OnClickListener{
        mMenuDrawer.closeMenu();
         //mActiveViewId = v.getId();
 		
-	}
+	} **/
 	
 	public void Verbolten(View view){
 		Intent vboltActivity = new Intent(this, Verbolten.class);

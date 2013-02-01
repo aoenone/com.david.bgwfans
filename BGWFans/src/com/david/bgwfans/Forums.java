@@ -6,7 +6,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class Forums extends WindowSample implements View.OnClickListener{
+public class Forums extends BaseActivity implements View.OnClickListener{
 	
 	private WebView webview2;
 	@Override

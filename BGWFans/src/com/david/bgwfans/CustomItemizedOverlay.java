@@ -1,7 +1,5 @@
 package com.david.bgwfans;
 
-import java.util.ArrayList;
-
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.widget.Toast;
@@ -9,6 +7,8 @@ import com.google.android.maps.MapView;
 import com.google.android.maps.OverlayItem;
 import com.readystatesoftware.mapviewballoons.BalloonItemizedOverlay;
 import com.readystatesoftware.mapviewballoons.BalloonOverlayView;
+
+import java.util.ArrayList;
 
 public class CustomItemizedOverlay<Item extends OverlayItem> extends BalloonItemizedOverlay<CustomOverlayItem> {
 

@@ -6,7 +6,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class Wiki extends WindowSample implements View.OnClickListener{
+public class Wiki extends SideMenuActivity implements View.OnClickListener{
 	
 	private WebView webview3;
 	@Override
