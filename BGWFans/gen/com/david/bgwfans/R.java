@@ -631,6 +631,7 @@ containing a value of this type.
         public static final int add_option=0x7f0a0094;
         public static final int addimg=0x7f0a0036;
         public static final int additional=0x7f0a002e;
+        public static final int allhamlets=0x7f0a00ae;
         public static final int alloption=0x7f0a009c;
         public static final int alp=0x7f0a0024;
         public static final int alpen=0x7f0a0022;
@@ -641,6 +642,7 @@ containing a value of this type.
         public static final int apollo=0x7f0a001f;
         public static final int apolloimg=0x7f0a0020;
         public static final int apollot=0x7f0a0046;
+        public static final int aquitaine=0x7f0a00a8;
         public static final int attr=0x7f0a0079;
         public static final int attrWeb=0x7f0a0030;
         public static final int balloon_inner_layout=0x7f0a0039;
@@ -648,6 +650,7 @@ containing a value of this type.
         public static final int balloon_item_snippet=0x7f0a003c;
         public static final int balloon_item_title=0x7f0a003b;
         public static final int balloon_main_layout=0x7f0a0038;
+        public static final int banbury=0x7f0a00a4;
         public static final int calendarView1=0x7f0a003e;
         public static final int cardContent=0x7f0a0066;
         public static final int cardsview=0x7f0a0018;
@@ -664,6 +667,7 @@ containing a value of this type.
         public static final int eatoption=0x7f0a00a2;
         public static final int entwined=0x7f0a0084;
         public static final int experiences=0x7f0a0098;
+        public static final int festa=0x7f0a00ad;
         public static final int flat=0x7f0a0033;
         public static final int flats=0x7f0a002c;
         public static final int flatsimg=0x7f0a0032;
@@ -677,7 +681,7 @@ containing a value of this type.
         public static final int grover=0x7f0a0028;
         public static final int grovimg=0x7f0a0029;
         public static final int grovt=0x7f0a0049;
-        public static final int hamlets=0x7f0a00a4;
+        public static final int hamlets=0x7f0a00a3;
         public static final int header=0x7f0a0050;
         public static final int header2=0x7f0a004d;
         public static final int header3=0x7f0a0054;
@@ -686,6 +690,8 @@ containing a value of this type.
         public static final int imageView1=0x7f0a004e;
         public static final int imageView2=0x7f0a004f;
         public static final int info=0x7f0a007a;
+        public static final int ireland=0x7f0a00a6;
+        public static final int italy=0x7f0a00ac;
         public static final int item1=0x7f0a006e;
         public static final int item10=0x7f0a0074;
         public static final int item11=0x7f0a0075;
@@ -725,9 +731,11 @@ containing a value of this type.
         public static final int menu_frame=0x7f0a006c;
         public static final int mixitup=0x7f0a0085;
         public static final int morepets=0x7f0a0087;
+        public static final int newfrance=0x7f0a00a9;
         public static final int none=0x7f0a0004;
         public static final int normal=0x7f0a0005;
-        public static final int open_sidemap=0x7f0a00a5;
+        public static final int oktoberfest=0x7f0a00ab;
+        public static final int open_sidemap=0x7f0a00af;
         public static final int pager=0x7f0a0069;
         public static final int parkHours=0x7f0a005f;
         public static final int parkHours2=0x7f0a0058;
@@ -741,12 +749,13 @@ containing a value of this type.
         public static final int polaris__title=0x7f0a007f;
         public static final int prkhrs=0x7f0a0059;
         public static final int reset_option=0x7f0a0095;
+        public static final int rhinefeld=0x7f0a00aa;
         public static final int rideoption=0x7f0a009b;
         public static final int right=0x7f0a0009;
         public static final int satellite=0x7f0a0006;
+        public static final int scotland=0x7f0a00a5;
         public static final int scroll=0x7f0a0043;
         public static final int scrollView=0x7f0a006d;
-        public static final int seekbar=0x7f0a00a3;
         public static final int selected_view=0x7f0a000c;
         public static final int shopping=0x7f0a009a;
         public static final int shows2=0x7f0a0099;
@@ -797,6 +806,7 @@ containing a value of this type.
         public static final int webView4=0x7f0a0093;
         public static final int webViewWeather=0x7f0a005a;
         public static final int wiki=0x7f0a0091;
+        public static final int wildlife=0x7f0a00a7;
         public static final int xmas=0x7f0a005d;
         public static final int xmasImage=0x7f0a0078;
         public static final int xmastown=0x7f0a005c;

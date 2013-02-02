@@ -382,6 +382,7 @@ int id add 0x7f0a0037
 int id add_option 0x7f0a0094
 int id addimg 0x7f0a0036
 int id additional 0x7f0a002e
+int id allhamlets 0x7f0a00ae
 int id alloption 0x7f0a009c
 int id alp 0x7f0a0024
 int id alpen 0x7f0a0022
@@ -392,6 +393,7 @@ int id apol 0x7f0a0021
 int id apollo 0x7f0a001f
 int id apolloimg 0x7f0a0020
 int id apollot 0x7f0a0046
+int id aquitaine 0x7f0a00a8
 int id attr 0x7f0a0079
 int id attrWeb 0x7f0a0030
 int id balloon_inner_layout 0x7f0a0039
@@ -399,6 +401,7 @@ int id balloon_item_image 0x7f0a003a
 int id balloon_item_snippet 0x7f0a003c
 int id balloon_item_title 0x7f0a003b
 int id balloon_main_layout 0x7f0a0038
+int id banbury 0x7f0a00a4
 int id calendarView1 0x7f0a003e
 int id cardContent 0x7f0a0066
 int id cardsview 0x7f0a0018
@@ -415,6 +418,7 @@ int id description 0x7f0a0040
 int id eatoption 0x7f0a00a2
 int id entwined 0x7f0a0084
 int id experiences 0x7f0a0098
+int id festa 0x7f0a00ad
 int id flat 0x7f0a0033
 int id flats 0x7f0a002c
 int id flatsimg 0x7f0a0032
@@ -428,7 +432,7 @@ int id grov 0x7f0a002a
 int id grover 0x7f0a0028
 int id grovimg 0x7f0a0029
 int id grovt 0x7f0a0049
-int id hamlets 0x7f0a00a4
+int id hamlets 0x7f0a00a3
 int id header 0x7f0a0050
 int id header2 0x7f0a004d
 int id header3 0x7f0a0054
@@ -437,6 +441,8 @@ int id hours 0x7f0a008c
 int id imageView1 0x7f0a004e
 int id imageView2 0x7f0a004f
 int id info 0x7f0a007a
+int id ireland 0x7f0a00a6
+int id italy 0x7f0a00ac
 int id item1 0x7f0a006e
 int id item10 0x7f0a0074
 int id item11 0x7f0a0075
@@ -468,9 +474,11 @@ int id md__menu 0x7f0a0002
 int id menu_frame 0x7f0a006c
 int id mixitup 0x7f0a0085
 int id morepets 0x7f0a0087
+int id newfrance 0x7f0a00a9
 int id none 0x7f0a0004
 int id normal 0x7f0a0005
-int id open_sidemap 0x7f0a00a5
+int id oktoberfest 0x7f0a00ab
+int id open_sidemap 0x7f0a00af
 int id pager 0x7f0a0069
 int id parkHours 0x7f0a005f
 int id parkHours2 0x7f0a0058
@@ -484,12 +492,13 @@ int id polaris__subtitle 0x7f0a0080
 int id polaris__title 0x7f0a007f
 int id prkhrs 0x7f0a0059
 int id reset_option 0x7f0a0095
+int id rhinefeld 0x7f0a00aa
 int id rideoption 0x7f0a009b
 int id right 0x7f0a0009
 int id satellite 0x7f0a0006
+int id scotland 0x7f0a00a5
 int id scroll 0x7f0a0043
 int id scrollView 0x7f0a006d
-int id seekbar 0x7f0a00a3
 int id selected_view 0x7f0a000c
 int id shopping 0x7f0a009a
 int id shows2 0x7f0a0099
@@ -540,6 +549,7 @@ int id webView3 0x7f0a0092
 int id webView4 0x7f0a0093
 int id webViewWeather 0x7f0a005a
 int id wiki 0x7f0a0091
+int id wildlife 0x7f0a00a7
 int id xmas 0x7f0a005d
 int id xmasImage 0x7f0a0078
 int id xmastown 0x7f0a005c

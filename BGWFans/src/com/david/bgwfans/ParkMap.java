@@ -196,8 +196,8 @@ public class ParkMap extends android.support.v4.app.FragmentActivity{
 			mMap.clear();
 			addEatToMap();
 			break;
-		case R.id.seekbar:
-			displaySeekBar();
+		//case R.id.seekbar:
+		//	displaySeekBar();
 		case R.id.hamlets:
 			mMap.clear();
 			addHamletsToMap();

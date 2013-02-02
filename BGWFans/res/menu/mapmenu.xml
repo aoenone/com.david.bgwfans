@@ -34,12 +34,45 @@
     android:title="Eateries"
     android:showAsAction="always" />
   
-  <item android:id="@+id/seekbar"
-    android:title="TEST"
-    android:showAsAction="always" />
-  
   <item android:id="@+id/hamlets"
     android:title="Hamlets"
-    android:showAsAction="always" />
+    android:showAsAction="always" >
+     	<menu>
+     	    <item android:id="@+id/banbury"
+  		        android:title="Banbury Cross"
+  		        android:showAsAction="always"/>
+     	    <item android:id="@+id/scotland"
+  		        android:title="Scotland"
+  		        android:showAsAction="always"/>
+     	    <item android:id="@+id/ireland"
+  		        android:title="Ireland"
+  		        android:showAsAction="always"/>
+     	    <item android:id="@+id/wildlife"
+  		        android:title="Wild Life Reserve"
+  		        android:showAsAction="always"/>
+     	    <item android:id="@+id/aquitaine"
+  		        android:title="Aquitaine"
+  		        android:showAsAction="always"/>
+     	    <item android:id="@+id/newfrance"
+  		        android:title="New France"
+  		        android:showAsAction="always"/>
+     	    <item android:id="@+id/rhinefeld"
+  		        android:title="Rhinefeld"
+  		        android:showAsAction="always"/>
+     	    <item android:id="@+id/oktoberfest"
+  		        android:title="Oktoberfest"
+  		        android:showAsAction="always"/>
+     	    <item android:id="@+id/italy"
+  		        android:title="italy"
+  		        android:showAsAction="always"/>
+     	    <item android:id="@+id/festa"
+  		        android:title="Festa Italia"
+  		        android:showAsAction="always"/>
+     	    <item android:id="@+id/allhamlets"
+  		        android:title="Display All"
+  		        android:showAsAction="always"/>
+     	</menu> 
+     
+  </item>
     
 </menu>
