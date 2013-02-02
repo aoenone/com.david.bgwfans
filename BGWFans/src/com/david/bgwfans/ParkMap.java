@@ -467,6 +467,7 @@ public class ParkMap extends android.support.v4.app.FragmentActivity{
 	
 	public void addHamletsToMap()
 	{
+		
 		PolygonOptions rectOptions = new PolygonOptions()
 			.add(new LatLng(37.236758,-76.646559),
 				 new LatLng(37.236632,-76.646091),
