@@ -8,12 +8,12 @@ package com.cyrilmottier.polaris;
 
 public final class R {
 	public static final class id {
-		public static final int polaris__subtitle = 0x7f0a0080;
-		public static final int polaris__title = 0x7f0a007f;
-		public static final int polaris__content = 0x7f0a007e;
-		public static final int polaris__disclosure = 0x7f0a0081;
-		public static final int polaris__callout = 0x7f0a007c;
-		public static final int polaris__content_container = 0x7f0a007d;
+		public static final int polaris__subtitle = 0x7f0a008d;
+		public static final int polaris__title = 0x7f0a008c;
+		public static final int polaris__content = 0x7f0a008b;
+		public static final int polaris__disclosure = 0x7f0a008e;
+		public static final int polaris__callout = 0x7f0a0089;
+		public static final int polaris__content_container = 0x7f0a008a;
 	}
 	public static final class anim {
 		public static final int polaris__shrink_fade_out_to_bottom = 0x7f040001;
@@ -34,8 +34,8 @@ public final class R {
 		public static final int polaris__unable_to_locate_you = 0x7f080001;
 	}
 	public static final class layout {
-		public static final int polaris__user_tracking_button = 0x7f030048;
-		public static final int polaris__map_callout_view_merge = 0x7f030047;
+		public static final int polaris__user_tracking_button = 0x7f030049;
+		public static final int polaris__map_callout_view_merge = 0x7f030048;
 	}
 	public static final class drawable {
 		public static final int polaris__map_callout_bottom_anchor_pressed = 0x7f02005d;

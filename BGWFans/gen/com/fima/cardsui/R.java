@@ -8,14 +8,14 @@ package com.fima.cardsui;
 
 public final class R {
 	public static final class id {
-		public static final int textView2 = 0x7f0a000e;
-		public static final int listView = 0x7f0a0041;
-		public static final int title = 0x7f0a003f;
-		public static final int sticky = 0x7f0a0042;
-		public static final int cardContent = 0x7f0a0066;
-		public static final int placeholder = 0x7f0a004b;
-		public static final int stackContainer = 0x7f0a0068;
-		public static final int stackTitle = 0x7f0a0067;
+		public static final int textView2 = 0x7f0a001a;
+		public static final int listView = 0x7f0a004d;
+		public static final int title = 0x7f0a004b;
+		public static final int sticky = 0x7f0a004e;
+		public static final int cardContent = 0x7f0a0072;
+		public static final int placeholder = 0x7f0a0057;
+		public static final int stackContainer = 0x7f0a0074;
+		public static final int stackTitle = 0x7f0a0073;
 	}
 	public static final class style {
 		public static final int CardTitleBold = 0x7f090009;

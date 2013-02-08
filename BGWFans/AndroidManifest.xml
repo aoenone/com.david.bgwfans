@@ -33,11 +33,22 @@
 
         <activity
             android:name="com.david.bgwfans.InfoScreen">
+            
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            
+            	<intent-filter>
+    				<action android:name="android.intent.action.VIEW" />
+    				<category android:name="android.intent.category.DEFAULT"/>
+  					<category android:name="android.intent.category.BROWSABLE"/>
+  					<data android:scheme="http" android:host="bgwfans.com"/>
+    				<data android:scheme="http" android:host="www.bgwfans.com"/>
+    				<data android:scheme="http" android:host="parkfans.net"/>
+    				<data android:scheme="http" android:host="www.parkfans.net"/>
+				</intent-filter>
+						
         </activity>
         <activity android:name="com.david.bgwfans.WindowSample" />
         <activity android:name="com.david.bgwfans.ContentSample" />

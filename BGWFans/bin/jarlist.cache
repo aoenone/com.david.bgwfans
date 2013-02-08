@@ -1,3 +1,7 @@
 # cache for current jar dependecy. DO NOT EDIT.
 # format is <lastModified> <length> <SHA-1> <path>
 # Encoding is UTF-8
+1359688940000 110746 59f19e43354d32de831379c23ce03bb259a4c2b7 C:\Users\David\Documents\android_reference\JazzyViewPager-master\lib\libs\nineoldandroids-2.4.0.jar
+1356303930000 110746 59f19e43354d32de831379c23ce03bb259a4c2b7 C:\Users\David\Documents\android_reference\nadavfima-cardsui-for-android-ca55cb9c0e75\CardsUILib\libs\nineoldandroids-2.4.0.jar
+1359688940000 385685 48c94ae70fa65718b382098237806a5909bb096e C:\Users\David\Documents\android_reference\JazzyViewPager-master\lib\libs\android-support-v4.jar
+1357770414000 385685 48c94ae70fa65718b382098237806a5909bb096e C:\Users\David\Documents\android_reference\SlidingMenu-master\library\libs\android-support-v4.jar

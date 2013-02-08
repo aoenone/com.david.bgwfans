@@ -11,18 +11,14 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.RelativeLayout;
-import net.simonvt.widget.MenuDrawer;
-import net.simonvt.widget.MenuDrawerManager;
 
 import java.util.ArrayList;
-
-import com.slidingmenu.lib.app.SlidingFragmentActivity;
 
 public class Attractions extends SideMenuActivity implements OnClickListener{
         
         FragmentTransaction transaction;
         static ViewPager mViewPager;
-        private MenuDrawerManager mMenuDrawer;
+        //private JazzyViewPager mJazzy;
         RelativeLayout b1;
         
     /** Called when the activity is first created. 
@@ -55,8 +51,7 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
         mPagerAdapter.addFragment(tabFourFragment);
         
         //transaction = getSupportFragmentManager().beginTransaction();
-        
-        mViewPager = (ViewPager) findViewById(R.id.pager);
+       mViewPager = (ViewPager) findViewById(R.id.pager);
                 mViewPager.setAdapter(mPagerAdapter);
                 mViewPager.setOffscreenPageLimit(2);
             mViewPager.setCurrentItem(0);

@@ -60,7 +60,7 @@
         <item name="android:dropDownListViewStyle">@style/bgwfans_DropDownListView</item>
         <item name="android:actionBarTabStyle">@style/bgwfans_ActionBarTabStyle</item>
         <item name="android:actionDropDownStyle">@style/bgwfans_DropDownNav</item>
-        <item name="android:actionBarStyle">@style/bgwfans_transparent_ActionBar</item>
+		<item name="android:actionBarStyle">@style/bgwfans_transparent_ActionBar</item>
         <item name="android:panelBackground">@drawable/menu_hardkey_panel_bgwfans</item></style>
         
         <style parent="@android:style/Widget.Holo.ActionBar.Solid" name="bgwfans_solid_ActionBar">

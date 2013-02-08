@@ -21,7 +21,6 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 	//protected MapActivity mFrag;
 	private GoogleMap mMap;
 	private SlidingActivityHelper mHelper;
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

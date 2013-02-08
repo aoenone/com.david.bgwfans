@@ -113,6 +113,44 @@ public class ParkMap extends android.support.v4.app.FragmentActivity{
 	private static final LatLng GRILL = new LatLng(37.235862,-76.647386);
 	private Marker grill;
 	
+	//geo points for all shows in the park'
+	private static final LatLng ENGLANDSHOW = new LatLng(37.236323,-76.645976);
+	private Marker englandshow;
+	private static final LatLng ITALYSHOW = new LatLng(37.233538,-76.644061);
+	private Marker italyshow;
+	private static final LatLng FESTSHOW = new LatLng(37.231193,-76.64626);
+	private Marker festshow;
+	private static final LatLng FRENCHSHOW = new LatLng(37.234251,-76.649176);
+	private Marker frenchshow;
+	private static final LatLng PETSHOW = new LatLng(37.235649,-76.648825);
+	private Marker petshow;
+	private static final LatLng IRELANDSHOW = new LatLng(37.236089,-76.647955);
+	private Marker irelandshow;
+	
+	//geo points for all bathrooms in the park
+	private Marker b1;
+	private static final LatLng B1 = new LatLng(37.235452,-76.645974);
+	private Marker b2;
+	private static final LatLng B2 = new LatLng(37.236357,-76.645663);
+	private Marker b3;
+	private static final LatLng B3 = new LatLng(37.234975,-76.649074);
+	private Marker b4;
+	private static final LatLng B4 = new LatLng(37.235768,-76.647556);
+	private Marker b5;
+	private static final LatLng B5 = new LatLng(37.236265,-76.647742);
+	private Marker b6;
+	private static final LatLng B6 = new LatLng(37.234072,-76.648717);
+	private Marker b7;
+	private static final LatLng B7 = new LatLng(37.233079,-76.646847);
+	private Marker b8;
+	private static final LatLng B8 = new LatLng(37.231436,-76.646203);
+	private Marker b9;
+	private static final LatLng B9 = new LatLng(37.233756,-76.643855);
+	private Marker b10;
+	private static final LatLng B10 = new LatLng(37.234635,-76.641682);
+	private Marker b11;
+	private static final LatLng B11 = new LatLng(37.237228,-76.645271);
+	
 	//set up ploygons for each hamlet in the park
 	private Polygon England;
 	private Polygon Banbury;
@@ -164,6 +202,10 @@ public class ParkMap extends android.support.v4.app.FragmentActivity{
 		case android.R.id.home:
 			//toggle();
 			return true;
+		case R.id.bathrooms:
+			mMap.clear();
+			addBathroomsToMap();
+			break;
 		case R.id.alloption:
 			mMap.clear();
 			addCoastersToMap();
@@ -171,6 +213,7 @@ public class ParkMap extends android.support.v4.app.FragmentActivity{
 			addWaterToMap();
 			addTransportationToMap();
 			addAnimalToMap();
+			addShowsToMap();
 			break;
 		case R.id.coastersoption:
 			mMap.clear();
@@ -196,15 +239,17 @@ public class ParkMap extends android.support.v4.app.FragmentActivity{
 			mMap.clear();
 			addEatToMap();
 			break;
-		//case R.id.seekbar:
-		//	displaySeekBar();
-		case R.id.hamlets:
+		case R.id.shows:
 			mMap.clear();
-			addHamletsToMap();
-			
+			addShowsToMap();
+			break;
+		case R.id.banbury:
+			mMap.clear();
+			addBanburyToMap();
+			break;
 		}
 		return super.onOptionsItemSelected(item);
-		}
+	}
 	
 	@Override
     protected void onResume() 
@@ -234,8 +279,10 @@ public class ParkMap extends android.support.v4.app.FragmentActivity{
 		addWaterToMap();
 		addTransportationToMap();
 		addAnimalToMap();
+		addShowsToMap();
 		addEatToMap();
-		addHamletsToMap();
+		addBanburyToMap();
+		addBathroomsToMap();
 		mMap.setMyLocationEnabled(true);
 		mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 		mMap.getUiSettings().setZoomControlsEnabled(false);
@@ -465,9 +512,90 @@ public class ParkMap extends android.support.v4.app.FragmentActivity{
 		
 	}
 	
-	public void addHamletsToMap()
+	public void addShowsToMap()
 	{
+		englandshow = mMap.addMarker(new MarkerOptions()
+		.position(ENGLANDSHOW)
+		.title("Pirates 4D")
+		.snippet("A 4d Pirate Adventure"));
 		
+		italyshow = mMap.addMarker(new MarkerOptions()
+		.position(ITALYSHOW)
+		.title("Mix it up!")
+		.snippet("The chefs are at it again"));
+		
+		festshow = mMap.addMarker(new MarkerOptions()
+		.position(FESTSHOW)
+		.title("Entwined(AM)/Roll out the Barrel(PM)")
+		.snippet("Entwined runs during the day, RotB runs at night"));
+		
+		frenchshow = mMap.addMarker(new MarkerOptions()
+		.position(FRENCHSHOW)
+		.title("Summer Concert Series")
+		.snippet("Various artist play throughout the summer, check the site for dates"));
+		
+		petshow = mMap.addMarker(new MarkerOptions()
+		.position(PETSHOW)
+		.title("More Pet Shinnanigans")
+		.snippet("Pet tricks and more"));
+		
+		irelandshow = mMap.addMarker(new MarkerOptions()
+		.position(IRELANDSHOW)
+		.title("Celtic Fyre")
+		.snippet("Pure energy of Irish dance explode on stage"));
+		
+	}
+	
+	public void addBathroomsToMap()
+	{
+		b1 = mMap.addMarker(new MarkerOptions()
+		.position(B1)
+		.title("Bathroom"));
+		
+		b2 = mMap.addMarker(new MarkerOptions()
+		.position(B2)
+		.title("Bathroom"));
+		
+		b3 = mMap.addMarker(new MarkerOptions()
+		.position(B3)
+		.title("Bathroom"));
+		
+		b4 = mMap.addMarker(new MarkerOptions()
+		.position(B4)
+		.title("Bathroom"));
+		
+		b5 = mMap.addMarker(new MarkerOptions()
+		.position(B5)
+		.title("Bathroom"));
+		
+		b6 = mMap.addMarker(new MarkerOptions()
+		.position(B6)
+		.title("Bathroom"));
+		
+		b7 = mMap.addMarker(new MarkerOptions()
+		.position(B7)
+		.title("Bathroom"));
+		
+		b8 = mMap.addMarker(new MarkerOptions()
+		.position(B8)
+		.title("Bathroom"));
+		
+		b9 = mMap.addMarker(new MarkerOptions()
+		.position(B9)
+		.title("Bathroom"));
+		
+		b10 = mMap.addMarker(new MarkerOptions()
+		.position(B10)
+		.title("Bathroom"));
+		
+		b11 = mMap.addMarker(new MarkerOptions()
+		.position(B11)
+		.title("Bathroom"));
+	}
+	
+	public void addBanburyToMap()
+	{
+
 		PolygonOptions rectOptions = new PolygonOptions()
 			.add(new LatLng(37.236758,-76.646559),
 				 new LatLng(37.236632,-76.646091),
@@ -482,12 +610,77 @@ public class ParkMap extends android.support.v4.app.FragmentActivity{
 				 new LatLng(37.236705,-76.646625))
 				 .strokeWidth(4)
 				 .strokeColor(Color.BLACK);
-				 rectOptions.fillColor(Color.RED);
 		
 		Polygon polygon = mMap.addPolygon(rectOptions);
 		
+		englandshow = mMap.addMarker(new MarkerOptions()
+		.position(ENGLANDSHOW)
+		.title("Pirates 4D")
+		.snippet("A 4d Pirate Adventure"));
+		
+		b2 = mMap.addMarker(new MarkerOptions()
+		.position(B2)
+		.title("Bathroom"));
+		
+		grille = mMap.addMarker(new MarkerOptions()
+		.position(GRILLE)
+		.title("Squire's Grille")
+		.snippet("serves breakfast, along with a diverse lunch and dinner menu"));
+		
 		
 	}
+	
+	
+	public void addScotlandToMap()
+	{
+		
+	}
+	
+	public void addIrelandToMap()
+	{
+		
+	}
+	
+	public void addWildToMap()
+	{	
+		
+		
+	}
+	
+	public void addAquaToMap()
+	{
+		
+	}
+	
+	public void addFranceToMap()
+	{
+		
+	}
+	
+	public void addRhineToMap()
+	{
+		
+	}
+	
+	public void addOktoberToMap()
+	{
+		
+	}
+	
+	public void addItalyToMap()
+	{
+		
+	}
+	
+	public void addFestaToMap()
+	{
+		
+	}
+	
+	
+	
+	
+	
 	public void displaySeekBar()
 	{
 		 	mAlphaBar = (SeekBar) findViewById(R.id.tseek);

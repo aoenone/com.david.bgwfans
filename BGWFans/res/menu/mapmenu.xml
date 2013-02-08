@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
  
-  <!--  <item android:id="@+id/info"
+  <item android:id="@+id/info"
     android:icon="@drawable/ic_action_about"
-    android:showAsAction="always"/> -->
+    android:showAsAction="always">
+      <menu>
+          <item android:id="@+id/reset"
+              	android:title="Reset Map"
+              	android:showAsAction="always"/>
+          <item android:id="@+id/bathrooms"
+              	android:title="Bathrooms"
+              	android:showAsAction="always"/>
+          <item android:id="@+id/atm"
+              	android:title="ATM"
+              	android:showAsAction="always"/>
+          <item android:id="@+id/shops"
+              	android:title="Shops"
+              	android:showAsAction="always"/>
+          </menu>   
+  </item>
   
-  <item android:id="@+id/rideoption"
-    android:title="Rides"
+  <item android:id="@+id/attroption"
+    android:title="Attractions"
     android:showAsAction="always">
   		<menu>
   		    <item android:id="@+id/alloption"
@@ -27,6 +42,9 @@
   		    <item android:id="@+id/animal"
   		        android:title="Animal Exhibits"
   		        android:showAsAction="always"/>
+  		    <item android:id="@+id/shows"
+  		        android:title="Shows"
+  		        android:showAsAction="always"/>
   	</menu>
   </item>
   
@@ -35,8 +53,8 @@
     android:showAsAction="always" />
   
   <item android:id="@+id/hamlets"
-    android:title="Hamlets"
-    android:showAsAction="always" >
+      	android:icon="@drawable/ic_location_map"
+    	android:showAsAction="always" >
      	<menu>
      	    <item android:id="@+id/banbury"
   		        android:title="Banbury Cross"
@@ -63,13 +81,10 @@
   		        android:title="Oktoberfest"
   		        android:showAsAction="always"/>
      	    <item android:id="@+id/italy"
-  		        android:title="italy"
+  		        android:title="Italy"
   		        android:showAsAction="always"/>
      	    <item android:id="@+id/festa"
   		        android:title="Festa Italia"
-  		        android:showAsAction="always"/>
-     	    <item android:id="@+id/allhamlets"
-  		        android:title="Display All"
   		        android:showAsAction="always"/>
      	</menu> 
      
