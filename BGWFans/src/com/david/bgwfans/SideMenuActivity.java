@@ -1,8 +1,11 @@
 package com.david.bgwfans;
 
 
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.MenuInflater;
 import android.view.View;
 import com.google.android.gms.maps.GoogleMap;
@@ -19,14 +22,20 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 
 	//private int mTitleRes;
 	//protected MapActivity mFrag;
-	private GoogleMap mMap;
+	public GoogleMap mMap;
 	private SlidingActivityHelper mHelper;
+	private Fragment mFrag;
+	public SlidingMenu sm;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		//setTitle(mTitleRes);
 		// set the Behind View
 		setBehindContentView(R.layout.menu_scrollview);
+		//FragmentTransaction t = this.getSupportFragmentManager().beginTransaction();
+		//mFrag = new Fragment();
+		//t.replace(R.layout.menu_scrollview, mFrag);
+		//t.commit();
 		//super.onCreate(savedInstanceState);
 		//setTitle(mTitleRes);
 		// set the Behind View
@@ -74,11 +83,13 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 	        //findViewById(R.id.item14).setOnClickListener(this);
 
 	}
+
 	
 	@Override
     protected void onResume() {
         super.onResume();
         setUpMapIfNeeded();
+        toggle();
     }
 	
 	private void setUpMapIfNeeded() {
@@ -97,17 +108,17 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 		 
 		 	mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 			mMap.getUiSettings().setZoomControlsEnabled(false);
-	        mMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+	        //mMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
 	    }
 	 
 	 
 	
-	public boolean onCreateOptionsMenu(android.view.Menu menu) {
+	/** public boolean onCreateOptionsMenu(android.view.Menu menu) {
 		super.onCreateOptionsMenu(menu);
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.sidemapmenu, menu);
 		return true;
-	}
+	} **/
 	
 	public boolean onOptionsItemSelected(android.view.MenuItem item) {
 		switch (item.getItemId()) {

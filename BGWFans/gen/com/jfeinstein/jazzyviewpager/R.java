@@ -15,7 +15,7 @@ public final class R {
 		public static final int zoomout = 0x7f0a000f;
 		public static final int rotatedown = 0x7f0a0011;
 		public static final int tablet = 0x7f0a0009;
-		public static final int jazzy_pager = 0x7f0a0075;
+		public static final int jazzy_pager = 0x7f0a0079;
 		public static final int cubeout = 0x7f0a000b;
 		public static final int jazzy_key = 0x7f0a0013;
 		public static final int stack = 0x7f0a000d;

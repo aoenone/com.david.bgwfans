@@ -13,16 +13,16 @@ public final class R {
 		public static final int rotateup = 0x7f0a0010;
 		public static final int zoomout = 0x7f0a000f;
 		public static final int zoomin = 0x7f0a000e;
-		public static final int slidingmenurowicon = 0x7f0a0097;
+		public static final int slidingmenurowicon = 0x7f0a009a;
 		public static final int fullscreen = 0x7f0a0017;
-		public static final int slidingmenumain = 0x7f0a0095;
+		public static final int slidingmenumain = 0x7f0a0098;
 		public static final int rotatedown = 0x7f0a0011;
 		public static final int tablet = 0x7f0a0009;
-		public static final int slidingmenulayout = 0x7f0a0096;
-		public static final int jazzy_pager = 0x7f0a0075;
+		public static final int slidingmenulayout = 0x7f0a0099;
+		public static final int jazzy_pager = 0x7f0a0079;
 		public static final int cubeout = 0x7f0a000b;
 		public static final int selected_view = 0x7f0a0018;
-		public static final int slidingmenurowtitle = 0x7f0a0098;
+		public static final int slidingmenurowtitle = 0x7f0a009b;
 		public static final int jazzy_key = 0x7f0a0013;
 		public static final int left = 0x7f0a0014;
 		public static final int margin = 0x7f0a0016;
@@ -46,11 +46,11 @@ public final class R {
 		public static final int activity_main = 0x7f0d0001;
 	}
 	public static final class layout {
-		public static final int slidingmenumain = 0x7f030053;
-		public static final int list = 0x7f030038;
-		public static final int slidingmenurow = 0x7f030055;
-		public static final int slidingmenumainlist = 0x7f030054;
-		public static final int shadow = 0x7f03004e;
+		public static final int slidingmenumain = 0x7f030054;
+		public static final int list = 0x7f030039;
+		public static final int slidingmenurow = 0x7f030056;
+		public static final int slidingmenumainlist = 0x7f030055;
+		public static final int shadow = 0x7f03004f;
 		public static final int activity_main = 0x7f030003;
 	}
 	public static final class styleable {

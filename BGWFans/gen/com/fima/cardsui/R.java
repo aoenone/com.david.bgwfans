@@ -9,13 +9,13 @@ package com.fima.cardsui;
 public final class R {
 	public static final class id {
 		public static final int textView2 = 0x7f0a001a;
-		public static final int listView = 0x7f0a004d;
-		public static final int title = 0x7f0a004b;
-		public static final int sticky = 0x7f0a004e;
-		public static final int cardContent = 0x7f0a0072;
-		public static final int placeholder = 0x7f0a0057;
-		public static final int stackContainer = 0x7f0a0074;
-		public static final int stackTitle = 0x7f0a0073;
+		public static final int listView = 0x7f0a004f;
+		public static final int title = 0x7f0a004d;
+		public static final int sticky = 0x7f0a0050;
+		public static final int cardContent = 0x7f0a0076;
+		public static final int placeholder = 0x7f0a0059;
+		public static final int stackContainer = 0x7f0a0078;
+		public static final int stackTitle = 0x7f0a0077;
 	}
 	public static final class style {
 		public static final int CardTitleBold = 0x7f090009;
@@ -38,12 +38,12 @@ public final class R {
 		public static final int card_grid_text = 0x7f060008;
 	}
 	public static final class layout {
-		public static final int item_card = 0x7f030031;
-		public static final int item_card_empty_first = 0x7f030033;
-		public static final int item_card_empty_last = 0x7f030034;
-		public static final int item_stack = 0x7f030035;
+		public static final int item_card = 0x7f030032;
+		public static final int item_card_empty_first = 0x7f030034;
+		public static final int item_card_empty_last = 0x7f030035;
+		public static final int item_stack = 0x7f030036;
 		public static final int cards_view = 0x7f030010;
-		public static final int item_card_empty = 0x7f030032;
+		public static final int item_card_empty = 0x7f030033;
 		public static final int header = 0x7f03001b;
 	}
 	public static final class drawable {
@@ -51,7 +51,7 @@ public final class R {
 		public static final int card = 0x7f020012;
 		public static final int card_background = 0x7f020013;
 		public static final int card_shadow = 0x7f020015;
-		public static final int top_shadow = 0x7f020082;
+		public static final int top_shadow = 0x7f020085;
 	}
 	public static final class dimen {
 		public static final int web_suggestion_icon_size = 0x7f07000b;

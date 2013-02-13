@@ -38,7 +38,6 @@
         	android:text="Verbolten"
         	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
-    
 
     <RelativeLayout
         android:layout_width="fill_parent"

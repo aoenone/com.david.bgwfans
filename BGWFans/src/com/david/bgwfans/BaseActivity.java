@@ -92,12 +92,18 @@ public class BaseActivity extends SlidingMapActivity implements View.OnClickList
 
 	}
 	
+	//@Override
+	//protected void onResume()
+	//{
+	//	toggle();
+	//}
+	
 	@Override
     protected void onStart() {
         super.onStart();
         mMapView.onStart();
         mMapView.setUserTrackingButtonEnabled(false);
-        //sm.isVisible(false);
+        toggle();
     }
 
     @Override
@@ -107,7 +113,7 @@ public class BaseActivity extends SlidingMapActivity implements View.OnClickList
     }
 	
 	public boolean onCreateOptionsMenu(android.view.Menu menu) {
-		super.onCreateOptionsMenu(menu);
+		//super.onCreateOptionsMenu(menu);
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.sidemapmenu, menu);
 		return true;

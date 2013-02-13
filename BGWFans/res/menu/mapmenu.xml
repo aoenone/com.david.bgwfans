@@ -81,7 +81,7 @@
   		        android:title="Oktoberfest"
   		        android:showAsAction="always"/>
      	    <item android:id="@+id/italy"
-  		        android:title="Italy"
+  		        android:title="San Marco"
   		        android:showAsAction="always"/>
      	    <item android:id="@+id/festa"
   		        android:title="Festa Italia"

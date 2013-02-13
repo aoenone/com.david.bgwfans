@@ -20,7 +20,7 @@ import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.PolygonOptions;
 
 
-public class ParkMap extends android.support.v4.app.FragmentActivity{
+public class ParkMap extends SideMenuActivity{
 	
 	private GoogleMap mMap;
 	//geo points for all the roller coasters in the park
@@ -155,9 +155,6 @@ public class ParkMap extends android.support.v4.app.FragmentActivity{
 	private Polygon England;
 	private Polygon Banbury;
 	
-	//set up seekbar and its relative variables
-	 private SeekBar mAlphaBar;
-	 private static final int ALPHA_MAX = 255;
 	
 	
 	
@@ -184,7 +181,7 @@ public class ParkMap extends android.support.v4.app.FragmentActivity{
 	
 	ActionBar actionbar = getActionBar();
     actionbar.setDisplayShowTitleEnabled(false);
-    actionbar.setDisplayHomeAsUpEnabled(false);
+    actionbar.setDisplayHomeAsUpEnabled(true);
     
 	}
 	
@@ -200,7 +197,7 @@ public class ParkMap extends android.support.v4.app.FragmentActivity{
 		{
 		switch (item.getItemId()) {
 		case android.R.id.home:
-			//toggle();
+			toggle();
 			return true;
 		case R.id.bathrooms:
 			mMap.clear();
@@ -678,21 +675,6 @@ public class ParkMap extends android.support.v4.app.FragmentActivity{
 	}
 	
 	
-	
-	
-	
-	public void displaySeekBar()
-	{
-		 	mAlphaBar = (SeekBar) findViewById(R.id.tseek);
-		    mAlphaBar.setMax(ALPHA_MAX);
-		    mAlphaBar.setProgress(127);
-		    //mAlphaBar.setVisibility(View.VISIBLE);
-		    
-		    LayoutParams lp = new LayoutParams(200,50);
-		    mAlphaBar.setLayoutParams(lp);
-		    mAlphaBar.setOnSeekBarChangeListener((OnSeekBarChangeListener) this);
-		
-	}
 	public void onStopTrackingTouch(SeekBar seekBar) {
         // Don't do anything here.
     }

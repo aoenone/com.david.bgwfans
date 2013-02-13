@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     	android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:padding="5dp">  
+  <LinearLayout
+     	android:id="@+id/mainsView"
+      	android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp">
        
    <RelativeLayout
         android:layout_width="fill_parent"
@@ -71,6 +77,7 @@
     	android:apiKey="0iid2UPftb5W-lQslChgHYBKBg1Mhi6VoRzeRqA" />
    	</RelativeLayout>
    	
+  
    <RelativeLayout
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
@@ -93,8 +100,8 @@
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
         	android:text="Wiki"
-        	android:fontFamily="sans-serif-light"></TextView> 
+        	android:fontFamily="sans-serif-light"/>
     		</RelativeLayout>
-
-
    </LinearLayout>
+  
+</RelativeLayout>
