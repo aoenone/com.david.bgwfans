@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.webkit.WebView;
@@ -27,7 +28,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 
 
-public class Verbolten extends SideMenuActivity implements View.OnClickListener {
+public class Verbolten extends FragmentActivity implements View.OnClickListener {
 	private GoogleMap mMap;
 	public WebView webViewWiki;
 	

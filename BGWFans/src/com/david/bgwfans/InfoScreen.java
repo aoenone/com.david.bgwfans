@@ -6,7 +6,7 @@ import com.fima.cardsui.objects.CardStack;
 import com.fima.cardsui.views.CardUI;
 import com.slidingmenu.lib.SlidingMenu;
 
-public class InfoScreen extends BaseActivity{
+public class InfoScreen extends SideMenuActivity{
 
 	private CardUI mCardView;
 

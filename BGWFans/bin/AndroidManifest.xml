@@ -39,6 +39,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             
+            
+            <!-- This allows for the app to pick up on any links of the site, and add as an option to open with the app instead of with a browser -->
             	<intent-filter>
     				<action android:name="android.intent.action.VIEW" />
     				<category android:name="android.intent.category.DEFAULT"/>
@@ -54,7 +56,8 @@
         <activity android:name="com.david.bgwfans.ContentSample" />
         <activity android:name="com.david.bgwfans.ListActivitySample" />
         <activity android:name="com.david.bgwfans.Attractions"/>
-        <activity android:name="com.david.bgwfans.Verbolten"/>
+        <activity android:name="com.david.bgwfans.Verbolten"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
         <activity android:name="com.david.bgwfans.Shows"/>
         <activity android:name="com.david.bgwfans.Coasters"/>
         <activity android:name="com.david.bgwfans.MapScreen"

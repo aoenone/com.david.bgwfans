@@ -8,9 +8,14 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.MenuInflater;
 import android.view.View;
+
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.slidingmenu.lib.SlidingMenu;
 import com.slidingmenu.lib.SlidingMenu.OnOpenedListener;
@@ -20,12 +25,43 @@ import com.slidingmenu.lib.app.SlidingFragmentActivity;
 
 public class SideMenuActivity extends SlidingFragmentActivity implements View.OnClickListener{
 
-	//private int mTitleRes;
-	//protected MapActivity mFrag;
+	
+	//geo points for all bathrooms in the park
+		private Marker b1;
+		private static final LatLng B1 = new LatLng(37.235452,-76.645974);
+		private Marker b2;
+		private static final LatLng B2 = new LatLng(37.236357,-76.645663);
+		private Marker b3;
+		private static final LatLng B3 = new LatLng(37.234975,-76.649074);
+		private Marker b4;
+		private static final LatLng B4 = new LatLng(37.235768,-76.647556);
+		private Marker b5;
+		private static final LatLng B5 = new LatLng(37.236265,-76.647742);
+		private Marker b6;
+		private static final LatLng B6 = new LatLng(37.234072,-76.648717);
+		private Marker b7;
+		private static final LatLng B7 = new LatLng(37.233079,-76.646847);
+		private Marker b8;
+		private static final LatLng B8 = new LatLng(37.231436,-76.646203);
+		private Marker b9;
+		private static final LatLng B9 = new LatLng(37.233756,-76.643855);
+		private Marker b10;
+		private static final LatLng B10 = new LatLng(37.234635,-76.641682);
+		private Marker b11;
+		private static final LatLng B11 = new LatLng(37.237228,-76.645271);
+		
+	
 	public GoogleMap mMap;
 	private SlidingActivityHelper mHelper;
 	private Fragment mFrag;
 	public SlidingMenu sm;
+	
+	static final CameraPosition HOME =
+            new CameraPosition.Builder().target(new LatLng(37.235466, -76.646328))
+                    .zoom(17)
+                    .bearing(0)
+                    .tilt(25)
+                    .build();
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -62,6 +98,7 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 		getSlidingMenu().setOnOpenedListener(new OnOpenedListener() {
 			  public void onOpened() {
 			    getSlidingMenu().invalidate();
+			    //mMap.setMyLocationEnabled(true);
 			  }
 			});
 		setUpMapIfNeeded();
@@ -96,7 +133,9 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
         // Do a null check to confirm that we have not already instantiated the map.
         if (mMap == null) {
             // Try to obtain the map from the SupportMapFragment.
-            mMap = ((MapView) findViewById(R.id.map)).getMap();
+            //mMap = ((MapView) findViewById(R.id.map)).getMap();
+        	mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.swipemap))
+                    .getMap();
             // Check if we were successful in obtaining the map.
             if (mMap != null) {
                 setUpMap();
@@ -108,7 +147,8 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 		 
 		 	mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 			mMap.getUiSettings().setZoomControlsEnabled(false);
-	        //mMap.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+			mMap.moveCamera(CameraUpdateFactory.newCameraPosition(HOME));
+			addBathroomsToMap();
 	    }
 	 
 	 
@@ -177,5 +217,52 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 				break;
 	    	}
 	    }
+	 
+	 public void addBathroomsToMap()
+		{
+			b1 = mMap.addMarker(new MarkerOptions()
+			.position(B1)
+			.title("Bathroom"));
+			
+			b2 = mMap.addMarker(new MarkerOptions()
+			.position(B2)
+			.title("Bathroom"));
+			
+			b3 = mMap.addMarker(new MarkerOptions()
+			.position(B3)
+			.title("Bathroom"));
+			
+			b4 = mMap.addMarker(new MarkerOptions()
+			.position(B4)
+			.title("Bathroom"));
+			
+			b5 = mMap.addMarker(new MarkerOptions()
+			.position(B5)
+			.title("Bathroom"));
+			
+			b6 = mMap.addMarker(new MarkerOptions()
+			.position(B6)
+			.title("Bathroom"));
+			
+			b7 = mMap.addMarker(new MarkerOptions()
+			.position(B7)
+			.title("Bathroom"));
+			
+			b8 = mMap.addMarker(new MarkerOptions()
+			.position(B8)
+			.title("Bathroom"));
+			
+			b9 = mMap.addMarker(new MarkerOptions()
+			.position(B9)
+			.title("Bathroom"));
+			
+			b10 = mMap.addMarker(new MarkerOptions()
+			.position(B10)
+			.title("Bathroom"));
+			
+			b11 = mMap.addMarker(new MarkerOptions()
+			.position(B11)
+			.title("Bathroom"));
+		}
 }
 
