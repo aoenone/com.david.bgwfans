@@ -2,6 +2,7 @@ package com.david.bgwfans;
 
 
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -65,19 +66,7 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		//setTitle(mTitleRes);
-		// set the Behind View
 		setBehindContentView(R.layout.menu_scrollview);
-		//FragmentTransaction t = this.getSupportFragmentManager().beginTransaction();
-		//mFrag = new Fragment();
-		//t.replace(R.layout.menu_scrollview, mFrag);
-		//t.commit();
-		//super.onCreate(savedInstanceState);
-		//setTitle(mTitleRes);
-		// set the Behind View
-		//setBehindContentView(R.layout.mapv2);
-		//mHelper = new SlidingActivityHelper(this);
-		//mHelper.onCreate(savedInstanceState);
 
 		// customize the SlidingMenu
 		SlidingMenu sm = getSlidingMenu();
@@ -126,7 +115,7 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
     protected void onResume() {
         super.onResume();
         setUpMapIfNeeded();
-        toggle();
+        //toggle();
     }
 	
 	private void setUpMapIfNeeded() {
@@ -174,19 +163,24 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 			switch(v.getId())
 	    	{ 
 			case R.id.item1: Intent infoActivity = new Intent(this, InfoScreen.class);
+				toggle();
 				startActivity(infoActivity);
 				break;
 			case R.id.item2: Intent attrActivity = new Intent(this, Attractions.class);
+				toggle();
 				startActivity(attrActivity);
 				break;
 			case R.id.item3: Intent showsActivity = new Intent(this, HOS_Shows.class);
 				startActivity(showsActivity);
+				toggle();
 				break;
 			case R.id.item4: Intent eatActivity = new Intent(this, Eateries.class);
 				startActivity(eatActivity);
+				toggle();
 				break;
 			case R.id.item5: Intent mapActivity = new Intent(this, ParkMap.class);
 				startActivity(mapActivity);
+				toggle();
 				break;
 			/**case R.id.item6: Intent hhActivity = new Intent(this, HOS_Houses.class);
 				startActivity(hhActivity);
@@ -202,18 +196,23 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 				break; **/
 	    	case R.id.item9: Intent blogActivity = new Intent(this, BGWFans.class);
 	    		startActivity(blogActivity);
+	    		toggle();
 	    		break;
 	    	case R.id.item10: Intent forumActivity = new Intent(this, Forums.class);
 	    		startActivity(forumActivity);
+	    		toggle();
 	    		break;
 	    	case R.id.item11: Intent wikiActivity = new Intent(this, Wiki.class);
 	    		startActivity(wikiActivity);
+	    		toggle();
 	    		break;
 	    	case R.id.item12: Intent settingsActivity = new Intent(this, Settings.class);
 				startActivity(settingsActivity);
+				toggle();
 				break;
 	    	case R.id.item13: Intent aboutActivity = new Intent(this, About.class);
 				startActivity(aboutActivity);
+				toggle();
 				break;
 	    	}
 	    }

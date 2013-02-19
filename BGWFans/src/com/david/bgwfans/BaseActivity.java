@@ -1,43 +1,47 @@
 package com.david.bgwfans;
 
+
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.MenuInflater;
 import android.view.View;
-import com.cyrilmottier.polaris.PolarisMapView;
-import com.google.android.maps.GeoPoint;
-import com.google.android.maps.MapActivity;
-import com.google.android.maps.MapController;
+
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CameraPosition;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
 import com.slidingmenu.lib.SlidingMenu;
-import com.slidingmenu.lib.SlidingMenu.OnCloseListener;
-import com.slidingmenu.lib.app.SlidingMapActivity;
+import com.slidingmenu.lib.SlidingMenu.OnOpenedListener;
+import com.slidingmenu.lib.app.SlidingActivity;
+import com.slidingmenu.lib.app.SlidingActivityHelper;
+import com.slidingmenu.lib.app.SlidingFragmentActivity;
 
-public class BaseActivity extends SlidingMapActivity implements View.OnClickListener {
-
-	//private int mTitleRes;
-	protected MapActivity mFrag;
-	private PolarisMapView mMapView;
+public class BaseActivity extends SlidingFragmentActivity implements View.OnClickListener{
+		
+	
+	public GoogleMap mMap;
+	private SlidingActivityHelper mHelper;
+	private Fragment mFrag;
 	public SlidingMenu sm;
-	private SlidingMenu smr;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
 		//setTitle(mTitleRes);
-
 		// set the Behind View
 		setBehindContentView(R.layout.menu_scrollview);
-		//android.app.FragmentTransaction t = this.getFragmentManager().beginTransaction();
-		//mFrag = new HOS_Map();
-		//t.replace(R.id.menu_frame, mFrag);
-		//t.commit();
 
 		// customize the SlidingMenu
 		SlidingMenu sm = getSlidingMenu();
-		//SlidingMenu smr = showSecondaryMenu();
 		sm.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
-		sm.setMode(SlidingMenu.LEFT_RIGHT);
+		sm.setMode(SlidingMenu.LEFT);
 		sm.setBehindOffsetRes(R.dimen.slidingmenu_offset);
 		sm.setShadowDrawable(R.drawable.shadow);
 		sm.setShadowWidthRes(R.dimen.shadow_width);
@@ -45,36 +49,18 @@ public class BaseActivity extends SlidingMapActivity implements View.OnClickList
 		sm.setFadeEnabled(true);
 		sm.setFadeEnabled(true);
 		sm.setFadeDegree(0.95f);
-		sm.setSecondaryMenu(R.layout.sidemap);
-		sm.setSecondaryShadowDrawable(R.drawable.shadowright);
-		//sm.attachToActivity(this,  SlidingMenu.SLIDING_CONTENT);
-		//sm.viewBehind();
-
-		getSlidingMenu().setOnCloseListener(new OnCloseListener(){
-			public void onClose(){
-				mMapView.setUserTrackingButtonEnabled(false);
-			}
-		});
-		
-		//getSlidingMenu().setOnOpenListener(new OnOpenListener(){
-		//	public void onOpen(){
-		//		 mMapView.setUserTrackingButtonEnabled(true);
-		//	}
-		//});
-		
+		//sm.setSecondaryMenu(R.layout.sidemenumap);
+		//sm.setSecondaryShadowDrawable(R.drawable.shadowright);
+		sm.setBackgroundColor(0x000000000);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		
-		 	mMapView = (PolarisMapView) findViewById(R.id.mapview);
-	        //getSlidingMenu().setOnOpenedListener(new OnOpenedListener(){
-			
-		 	mMapView.setUserTrackingButtonEnabled(true);
-	        mMapView.setSatellite(true);
-	        MapController mapController = mMapView.getController();
-			mapController.animateTo(new GeoPoint(37235407, -76646019));
-			mMapView.invalidate();
-			mapController.setZoom(19);
-			
-			
+		getSlidingMenu().setOnOpenedListener(new OnOpenedListener() {
+			  public void onOpened() {
+			    getSlidingMenu().invalidate();
+			    //mMap.setMyLocationEnabled(true);
+			  }
+			});
+	
+
 			findViewById(R.id.item1).setOnClickListener(this);
 	        findViewById(R.id.item2).setOnClickListener(this);
 	        findViewById(R.id.item3).setOnClickListener(this);
@@ -92,48 +78,31 @@ public class BaseActivity extends SlidingMapActivity implements View.OnClickList
 
 	}
 	
-	//@Override
-	//protected void onResume()
-	//{
-	//	toggle();
-	//}
-	
 	@Override
-    protected void onStart() {
-        super.onStart();
-        mMapView.onStart();
-        mMapView.setUserTrackingButtonEnabled(false);
+    protected void onResume() {
+        super.onResume();
         toggle();
     }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        mMapView.onStop();
-    }
+	 
 	
-	public boolean onCreateOptionsMenu(android.view.Menu menu) {
-		//super.onCreateOptionsMenu(menu);
+	/** public boolean onCreateOptionsMenu(android.view.Menu menu) {
+		super.onCreateOptionsMenu(menu);
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.sidemapmenu, menu);
 		return true;
-	}
+	} **/
 	
 	public boolean onOptionsItemSelected(android.view.MenuItem item) {
 		switch (item.getItemId()) {
 		case android.R.id.home:
 			toggle();
 			return true;
-		case R.id.open_sidemap: getSlidingMenu().showSecondaryMenu(true);
-								mMapView.setUserTrackingButtonEnabled(true);
-			break;
 		}
 		return super.onOptionsItemSelected(item);
 	}
 	
 	
 	 public void onClick(View v) {
-	    	//int postion = 0;
 			switch(v.getId())
 	    	{ 
 			case R.id.item1: Intent infoActivity = new Intent(this, InfoScreen.class);
@@ -179,18 +148,6 @@ public class BaseActivity extends SlidingMapActivity implements View.OnClickList
 				startActivity(aboutActivity);
 				break;
 	    	}
-	        //sm.setActivated(v);
-	        //mContentTextView.setText("Active item: " + ((TextView) v).getText());
-	        //sm.closeMenu();
-	        //mActiveViewId = v.getId();
 	    }
-
-	@Override
-	protected boolean isRouteDisplayed() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-
-
 }
+

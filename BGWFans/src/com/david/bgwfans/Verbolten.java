@@ -92,45 +92,9 @@ public class Verbolten extends FragmentActivity implements View.OnClickListener 
 	
 	public void Wiki(View view){
 		
-		LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View v = inflater.inflate(R.layout.hidden, null);
-        WebView rl = (WebView)findViewById(R.id.hideWiki);
-        RelativeLayout.LayoutParams parametri = new  RelativeLayout.LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT);
-        parametri.addRule(RelativeLayout.ALIGN_PARENT_TOP);
-        rl.addView(v, parametri);
-        
-		//WebView webViewWiki = (WebView) findViewById(R.id.webViewWiki);
-		LinearLayout hiddenLayout = (LinearLayout) findViewById(R.id.hiddenLayout);
-		//WebView hiddenLayout = (WebView) findViewById(R.id.wiki);
-		//webViewWiki.loadUrl("http://wiki.parkfans.net/index.php/Verbolten");
-		if (hiddenLayout == null)
-		{
-			LinearLayout myLayout = (LinearLayout)findViewById(R.id.linearLayout2);
-			View hiddenInfo = getLayoutInflater().inflate(R.layout.hidden, myLayout, false);
-			myLayout.addView(hiddenInfo);
-			//WebView myLayout = (WebView)findViewById(R.id.webView3);
-			//View hiddenWiki = getLayoutInflater().inflate(R.layout.wiki, myLayout, false);
-			//myLayout.addView(webViewWiki);
-			//webViewWiki.loadUrl("http://wiki.parkfans.net/index.php/Verbolten");
-		}
-		//int visibility = webViewWiki.getVisibility();
-
-	    //    if(visibility==View.GONE)
-	    //        webViewWiki.setVisibility(View.VISIBLE);
-		
-		Context context = getApplicationContext();
-		CharSequence text = "Coming Soon!";
-		int duration = Toast.LENGTH_SHORT;
-
-		Toast toast = Toast.makeText(context, text, duration);
-		toast.show();
-		//String wikiLink = new String();
-		// Intent s = new Intent(Verbolten.this, Wiki.class);
-        // Bundle d = new Bundle();
-        // d.putString("http://wiki.parkfans.net/index.php/Verbolten", wikiLink);
-		
-		//Intent wikiActivity = new Intent(this, Verbolten.class);
-		//startActivity(wikiActivity);
+		Intent i = new Intent(getApplicationContext(), HiddenWiki.class);
+		i.putExtra("wikiLink", "http://wiki.parkfans.net/index.php/Verbolten");
+		startActivity(i);
 	}
 
 }

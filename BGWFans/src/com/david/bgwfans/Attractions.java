@@ -272,8 +272,8 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
 	}
 	
 	public void Griffon(View view){
-		Intent vboltActivity = new Intent(this, Verbolten.class);
-		startActivity(vboltActivity);
+		Intent griffonActivity = new Intent(this, Griffon.class);
+		startActivity(griffonActivity);
 	}
 	
 	public void Apollo(View view){

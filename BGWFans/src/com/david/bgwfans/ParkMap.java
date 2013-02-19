@@ -20,7 +20,7 @@ import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.PolygonOptions;
 
 
-public class ParkMap extends SideMenuActivity{
+public class ParkMap extends BaseActivity{
 	
 	private GoogleMap mMap;
 	//geo points for all the roller coasters in the park

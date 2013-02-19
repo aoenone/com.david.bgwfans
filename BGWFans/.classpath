@@ -10,6 +10,5 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry combineaccessrules="false" kind="src" path="/SlidingMenuActivity"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/android-mapviewballoons"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

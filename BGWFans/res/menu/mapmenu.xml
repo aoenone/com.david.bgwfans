@@ -21,7 +21,7 @@
   </item>
   
   <item android:id="@+id/attroption"
-    android:title="Attractions"
+    android:icon="@drawable/ride"
     android:showAsAction="always">
   		<menu>
   		    <item android:id="@+id/alloption"
@@ -49,8 +49,8 @@
   </item>
   
   <item android:id="@+id/eatoption"
-    android:title="Eateries"
-    android:showAsAction="always" />
+      android:icon="@drawable/ic_menu_food"
+    	android:showAsAction="always" />
   
   <item android:id="@+id/hamlets"
       	android:icon="@drawable/ic_location_map"

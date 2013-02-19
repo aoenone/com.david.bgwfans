@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:orientation= "vertical"
     android:paddingBottom="16dp" >
 
     <LinearLayout
@@ -77,14 +77,10 @@
             android:text="Water Country USA requires a seperate ticket from BGW, but multi-park season passes are available." />
     </LinearLayout>
     
-    <!--<com.google.android.gms.maps.MapView
-    android:id="@+id/wcmap"
-    android:layout_width="match_parent"
-    android:layout_height="100dp" /> -->
-    <!-- <fragment
-  		android:id="@+id/map"
+    <fragment
+  		android:id="@+id/wcmap"
   		android:layout_width="match_parent"
   		android:layout_height="100dp"
-  		class="com.google.android.gms.maps.SupportMapFragment"/> -->
+  		class="com.google.android.gms.maps.SupportMapFragment"/>
 
 </LinearLayout>

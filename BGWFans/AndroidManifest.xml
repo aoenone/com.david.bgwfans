@@ -58,6 +58,8 @@
         <activity android:name="com.david.bgwfans.Attractions"/>
         <activity android:name="com.david.bgwfans.Verbolten"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+        <activity android:name="com.david.bgwfans.Griffon"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
         <activity android:name="com.david.bgwfans.Shows"/>
         <activity android:name="com.david.bgwfans.Coasters"/>
         <activity android:name="com.david.bgwfans.MapScreen"
@@ -73,6 +75,7 @@
         <activity android:name="com.david.bgwfans.BGWFans"/>
         <activity android:name="com.david.bgwfans.Forums"/>
         <activity android:name="com.david.bgwfans.Wiki"/>
+        <activity android:name="com.david.bgwfans.HiddenWiki"/>
         <activity android:name="com.david.bgwfans.Settings"/>
         <activity android:name="com.david.bgwfans.About"/>
         <activity android:name="com.david.bgwfans.Mistletoe"/>
