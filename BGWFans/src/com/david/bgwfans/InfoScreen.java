@@ -1,15 +1,13 @@
 package com.david.bgwfans;
 
 import android.os.Bundle;
-
 import com.fima.cardsui.objects.CardStack;
 import com.fima.cardsui.views.CardUI;
-import com.slidingmenu.lib.SlidingMenu;
 
 public class InfoScreen extends SideMenuActivity{
 
 	private CardUI mCardView;
-
+	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
@@ -66,11 +64,6 @@ public class InfoScreen extends SideMenuActivity{
 
 		// draw cards
 		mCardView.refresh();
-		
-		//android.app.FragmentManager fragmentManager = getFragmentManager();
-		//android.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-		//mMap = ((SupportMapFragment) getFragmentManager().findFragmentById(R.id.map))
-        //        .getMap();
-	}
 	
+	}
 }

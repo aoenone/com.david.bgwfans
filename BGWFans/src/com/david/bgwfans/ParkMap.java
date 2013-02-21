@@ -20,7 +20,7 @@ import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.PolygonOptions;
 
 
-public class ParkMap extends BaseActivity{
+public class ParkMap extends BaseActivity {
 	
 	private GoogleMap mMap;
 	//geo points for all the roller coasters in the park
@@ -278,16 +278,12 @@ public class ParkMap extends BaseActivity{
 		addAnimalToMap();
 		addShowsToMap();
 		addEatToMap();
-		addBanburyToMap();
+		//addBanburyToMap();
 		addBathroomsToMap();
 		mMap.setMyLocationEnabled(true);
 		mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 		mMap.getUiSettings().setZoomControlsEnabled(false);
 		mMap.moveCamera(CameraUpdateFactory.newCameraPosition(HOME));
-        //mMap.addMarker(new MarkerOptions()
-        //	.position(new LatLng(37.232449, -76.645534))
-        //	.title("Verbolten")
-        //	.snippet("Brave the black forest!"));
     }
 	
 	

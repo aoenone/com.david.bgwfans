@@ -12,7 +12,6 @@ import android.view.View;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
@@ -20,7 +19,6 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.slidingmenu.lib.SlidingMenu;
 import com.slidingmenu.lib.SlidingMenu.OnOpenedListener;
-import com.slidingmenu.lib.app.SlidingActivity;
 import com.slidingmenu.lib.app.SlidingActivityHelper;
 import com.slidingmenu.lib.app.SlidingFragmentActivity;
 
@@ -53,8 +51,8 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 		
 	
 	public GoogleMap mMap;
-	private SlidingActivityHelper mHelper;
-	private Fragment mFrag;
+	//private SlidingActivityHelper mHelper;
+	//private Fragment mFrag;
 	public SlidingMenu sm;
 	
 	static final CameraPosition HOME =
@@ -80,16 +78,20 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 		sm.setFadeEnabled(true);
 		sm.setFadeDegree(0.95f);
 		sm.setSecondaryMenu(R.layout.sidemenumap);
+		sm.setSelectorEnabled(true);
+		//sm.attachToActivity(this, SlidingMenu.SLIDING_WINDOW);
+		sm.setSelectorDrawable(R.drawable.ab_solid_bgwfans);
 		//sm.setSecondaryMenu(R.layout.menu_scrollview);
 		sm.setSecondaryShadowDrawable(R.drawable.shadowright);
 		sm.setBackgroundColor(0x000000000);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		getSlidingMenu().setOnOpenedListener(new OnOpenedListener() {
-			  public void onOpened() {
+		/**getSlidingMenu().setOnOpenedListener(new OnOpenedListener() {
+			 public void onOpened() {
+			    //getSlidingMenu().invalidate();
+			    mMap.setMyLocationEnabled(true);
 			    getSlidingMenu().invalidate();
-			    //mMap.setMyLocationEnabled(true);
 			  }
-			});
+			});**/
 		setUpMapIfNeeded();
 	
 
@@ -174,7 +176,7 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 				startActivity(showsActivity);
 				toggle();
 				break;
-			case R.id.item4: Intent eatActivity = new Intent(this, Eateries.class);
+			case R.id.item4: Intent eatActivity = new Intent(this, Coasters.class);
 				startActivity(eatActivity);
 				toggle();
 				break;

@@ -55,31 +55,11 @@ public class TodayCard extends Card {
 		{
 			t.setText("Hours: 10am - 7pm");
 		}
-		else if (fDate.equals("2013-03-25"))
+		else if (fDate.equals("2013-03-25") || fDate.equals("2013-03-26") || fDate.equals("2013-03-27") || fDate.equals("2013-03-28") || fDate.equals("2013-03-29"))
 		{
 			t.setText("Hours: 9am - 8pm");
 		}
-		else if (fDate.equals("2013-03-26"))
-		{
-			t.setText("Hours: 9am - 8pm");
-		}
-		else if (fDate.equals("2013-03-27"))
-		{
-			t.setText("Hours: 9am - 8pm");
-		}
-		else if (fDate.equals("2013-03-28"))
-		{
-			t.setText("Hours: 9am - 8pm");
-		}
-		else if (fDate.equals("2013-03-29"))
-		{
-			t.setText("Hours: 9am - 8pm");
-		}
-		else if (fDate.equals("2013-03-30"))
-		{
-			t.setText("Hours: 9am - 10pm");
-		}
-		else if (fDate.equals("2013-03-31"))
+		else if (fDate.equals("2013-03-30") || fDate.equals("2013-03-31"))
 		{
 			t.setText("Hours: 9am - 10pm");
 		}

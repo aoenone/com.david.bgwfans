@@ -19,7 +19,7 @@
     	
      <ImageView
         android:id="@+id/vboltimg"
-        android:src="@drawable/vbolt4"
+        android:src="@drawable/vbolt2"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>

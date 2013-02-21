@@ -22,10 +22,10 @@ public final class R {
 		public static final int holo_blue_bright = 0x7f040009;
 	}
 	public static final class layout {
-		public static final int slidingmenumain = 0x7f030052;
+		public static final int slidingmenumain = 0x7f030053;
 		public static final int list = 0x7f030039;
-		public static final int slidingmenurow = 0x7f030054;
-		public static final int slidingmenumainlist = 0x7f030053;
+		public static final int slidingmenurow = 0x7f030055;
+		public static final int slidingmenumainlist = 0x7f030054;
 		public static final int shadow = 0x7f03004d;
 	}
 	public static final class styleable {
@@ -46,8 +46,8 @@ public final class R {
 		public static final int SlidingMenu_viewBehind = 2;
 	}
 	public static final class drawable {
-		public static final int defaultshadow = 0x7f020018;
-		public static final int defaultshadowright = 0x7f020019;
+		public static final int defaultshadow = 0x7f020015;
+		public static final int defaultshadowright = 0x7f020016;
 	}
 	public static final class attr {
 		public static final int shadowWidth = 0x7f01001c;

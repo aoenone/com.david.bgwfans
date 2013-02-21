@@ -75,12 +75,7 @@
             android:ellipsize="end"
             android:maxLines="4"
             android:text="Water Country USA requires a seperate ticket from BGW, but multi-park season passes are available." />
+        
     </LinearLayout>
-    
-    <fragment
-  		android:id="@+id/wcmap"
-  		android:layout_width="match_parent"
-  		android:layout_height="100dp"
-  		class="com.google.android.gms.maps.SupportMapFragment"/>
 
 </LinearLayout>
