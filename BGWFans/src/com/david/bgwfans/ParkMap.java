@@ -182,6 +182,7 @@ public class ParkMap extends BaseActivity {
 	ActionBar actionbar = getActionBar();
     actionbar.setDisplayShowTitleEnabled(false);
     actionbar.setDisplayHomeAsUpEnabled(true);
+    setSlidingActionBarEnabled(false);
     
 	}
 	

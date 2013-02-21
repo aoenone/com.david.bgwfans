@@ -3,6 +3,8 @@ package com.david.bgwfans;
 
 
 
+import android.app.ActionBar;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -18,6 +20,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.slidingmenu.lib.SlidingMenu;
+import com.slidingmenu.lib.SlidingMenu.OnCloseListener;
 import com.slidingmenu.lib.SlidingMenu.OnOpenedListener;
 import com.slidingmenu.lib.app.SlidingActivityHelper;
 import com.slidingmenu.lib.app.SlidingFragmentActivity;
@@ -84,14 +87,30 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 		//sm.setSecondaryMenu(R.layout.menu_scrollview);
 		sm.setSecondaryShadowDrawable(R.drawable.shadowright);
 		sm.setBackgroundColor(0x000000000);
+		setSlidingActionBarEnabled(false);
+
+		final ActionBar actionbar = getActionBar();
+	    actionbar.setDisplayShowTitleEnabled(false);
+	    actionbar.setDisplayHomeAsUpEnabled(true);
 		getActionBar().setDisplayHomeAsUpEnabled(true);
-		/**getSlidingMenu().setOnOpenedListener(new OnOpenedListener() {
+		getSlidingMenu().setOnOpenedListener(new OnOpenedListener() {
 			 public void onOpened() {
 			    //getSlidingMenu().invalidate();
+			    actionbar.setDisplayHomeAsUpEnabled(false);
 			    mMap.setMyLocationEnabled(true);
 			    getSlidingMenu().invalidate();
 			  }
-			});**/
+			});
+		getSlidingMenu().setOnCloseListener(new OnCloseListener()
+		{
+			public void onClose()
+			{
+				actionbar.setDisplayHomeAsUpEnabled(true);
+				mMap.setMyLocationEnabled(false);
+			    getSlidingMenu().invalidate();
+			}
+
+		});
 		setUpMapIfNeeded();
 	
 
