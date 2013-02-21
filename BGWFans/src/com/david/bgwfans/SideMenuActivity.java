@@ -58,7 +58,7 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 	static final CameraPosition HOME =
             new CameraPosition.Builder().target(new LatLng(37.235466, -76.646328))
                     .zoom(17)
-                    .bearing(0)
+                    .bearing(0) 
                     .tilt(25)
                     .build();
 	@Override
