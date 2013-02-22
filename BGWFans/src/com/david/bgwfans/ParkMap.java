@@ -82,7 +82,7 @@ public class ParkMap extends BaseActivity {
 	private Marker eskyride;
 	private static final LatLng ASKYRIDE = new LatLng(37.234617,-76.648591);
 	private Marker askyride;
-	private static final LatLng RRC = new LatLng(37.233472,-76.645332);
+	private static final LatLng RRC = new LatLng(37.233472,-76.645332); 
 	private Marker rrc;
 	
 	//geo points for the animal attractions in the park
@@ -151,6 +151,15 @@ public class ParkMap extends BaseActivity {
 	private Marker b11;
 	private static final LatLng B11 = new LatLng(37.237228,-76.645271);
 	
+	//geo points for ATM's in the park
+	private Marker a1;
+	private static final LatLng A1 = new LatLng(37.236391,-76.646529);
+	private Marker a2;
+	private static final LatLng A2 = new LatLng(37.234191,-76.648491);
+	private Marker a3;
+	private static final LatLng A3 = new LatLng(37.231714,-76.646054);
+	
+	
 	//set up ploygons for each hamlet in the park
 	private Polygon England;
 	private Polygon Banbury;
@@ -204,6 +213,10 @@ public class ParkMap extends BaseActivity {
 			mMap.clear();
 			addBathroomsToMap();
 			break;
+		case R.id.atm:
+			mMap.clear();
+			addATMToMap();
+			break;
 		case R.id.alloption:
 			mMap.clear();
 			addCoastersToMap();
@@ -212,6 +225,8 @@ public class ParkMap extends BaseActivity {
 			addTransportationToMap();
 			addAnimalToMap();
 			addShowsToMap();
+			addATMToMap();
+			addBathroomsToMap();
 			break;
 		case R.id.coastersoption:
 			mMap.clear();
@@ -279,6 +294,7 @@ public class ParkMap extends BaseActivity {
 		addAnimalToMap();
 		addShowsToMap();
 		addEatToMap();
+		addATMToMap();
 		//addBanburyToMap();
 		addBathroomsToMap();
 		mMap.setMyLocationEnabled(true);
@@ -585,6 +601,21 @@ public class ParkMap extends BaseActivity {
 		b11 = mMap.addMarker(new MarkerOptions()
 		.position(B11)
 		.title("Bathroom"));
+	}
+	
+	public void addATMToMap()
+	{
+		a1 = mMap.addMarker(new MarkerOptions()
+		.position(A1)
+		.title("ATM"));
+		
+		a2 = mMap.addMarker(new MarkerOptions()
+		.position(A2)
+		.title("ATM"));
+		
+		a3 = mMap.addMarker(new MarkerOptions()
+		.position(A3)
+		.title("ATM"));
 	}
 	
 	public void addBanburyToMap()

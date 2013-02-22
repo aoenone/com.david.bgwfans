@@ -9,11 +9,11 @@ package com.slidingmenu.lib;
 public final class R {
 	public static final class id {
 		public static final int fullscreen = 0x7f05000b;
-		public static final int slidingmenumain = 0x7f050089;
-		public static final int slidingmenulayout = 0x7f05008a;
-		public static final int slidingmenurowicon = 0x7f05008b;
+		public static final int slidingmenumain = 0x7f05008d;
+		public static final int slidingmenulayout = 0x7f05008e;
+		public static final int slidingmenurowicon = 0x7f05008f;
 		public static final int selected_view = 0x7f05000c;
-		public static final int slidingmenurowtitle = 0x7f05008c;
+		public static final int slidingmenurowtitle = 0x7f050090;
 		public static final int margin = 0x7f05000a;
 		public static final int left = 0x7f050008;
 		public static final int right = 0x7f050009;
@@ -46,8 +46,8 @@ public final class R {
 		public static final int SlidingMenu_viewBehind = 2;
 	}
 	public static final class drawable {
-		public static final int defaultshadow = 0x7f020015;
-		public static final int defaultshadowright = 0x7f020016;
+		public static final int defaultshadow = 0x7f020018;
+		public static final int defaultshadowright = 0x7f020019;
 	}
 	public static final class attr {
 		public static final int shadowWidth = 0x7f01001c;

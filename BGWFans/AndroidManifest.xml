@@ -49,7 +49,8 @@
     				<data android:scheme="http" android:host="www.bgwfans.com"/>
     				<data android:scheme="http" android:host="parkfans.net"/>
     				<data android:scheme="http" android:host="www.parkfans.net"/>
-				</intent-filter>
+				</intent-filter> 
+			
 						
         </activity>
         <activity android:name="com.david.bgwfans.WindowSample" />
@@ -59,6 +60,20 @@
         <activity android:name="com.david.bgwfans.Verbolten"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
         <activity android:name="com.david.bgwfans.Griffon"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.Apollo"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.Alpen"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.LochNess"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.Grover"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.Train"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.Skyride"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.Cruise"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
         <activity android:name="com.david.bgwfans.Shows"/>
         <activity android:name="com.david.bgwfans.Coasters"/>

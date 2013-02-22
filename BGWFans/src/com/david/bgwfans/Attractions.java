@@ -8,9 +8,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.*;
 import android.support.v4.view.ViewPager;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
 import android.app.ListFragment;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ArrayAdapter;
 import android.widget.RelativeLayout;
@@ -23,6 +27,7 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
         static ViewPager mViewPager;
         //private JazzyViewPager mJazzy;
         RelativeLayout b1;
+        //Button button;
         
         
     /** Called when the activity is first created. 
@@ -32,6 +37,9 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
+  
+        // Register the onClick listener with the implementation above
+        //ImageView apolloimg = (ImageView)findViewById(R.id.apolloimg);
         Fragment tabOneFragment = new TabOne();
         Fragment tabTwoFragment = new TabTwo();
         Fragment tabThreeFragment = new TabThree();
@@ -188,25 +196,40 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
 		Intent griffonActivity = new Intent(this, Griffon.class);
 		startActivity(griffonActivity);
 	}
-	
+		
 	public void Apollo(View view){
-		Intent vboltActivity = new Intent(this, Verbolten.class);
-		startActivity(vboltActivity);
+		Intent apolloActivity = new Intent(this, Apollo.class);
+		startActivity(apolloActivity);
 	}
     
 	public void Alpen(View view){
-		Intent vboltActivity = new Intent(this, Verbolten.class);
-		startActivity(vboltActivity);
+		Intent alpenActivity = new Intent(this, Alpen.class);
+		startActivity(alpenActivity);
 	}
 	
 	public void Lochness(View view){
-		Intent vboltActivity = new Intent(this, Verbolten.class);
-		startActivity(vboltActivity);
+		Intent lochnessActivity = new Intent(this, LochNess.class);
+		startActivity(lochnessActivity);
 	}
 	
 	public void Grover(View view){
-		Intent vboltActivity = new Intent(this, Verbolten.class);
-		startActivity(vboltActivity);
+		Intent groverActivity = new Intent(this, Grover.class);
+		startActivity(groverActivity);
+	}
+	
+	public void SteamTrain(View view){
+		Intent steamActivity = new Intent(this, Train.class);
+		startActivity(steamActivity);
+	}
+	
+	public void Skyride(View view){
+		Intent skyrideActivity = new Intent(this, Skyride.class);
+		startActivity(skyrideActivity);
+	}
+	
+	public void Cruise(View view){
+		Intent cruiseActivity = new Intent(this, Cruise.class);
+		startActivity(cruiseActivity);
 	}
 }
 

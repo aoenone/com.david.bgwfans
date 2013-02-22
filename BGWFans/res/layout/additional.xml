@@ -13,11 +13,12 @@
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/vbolt"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="SteamTrain">
     	
      <ImageView
         android:id="@+id/vboltimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/train2"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -41,7 +42,8 @@
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/griffon"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="Skyride">
     	
      <ImageView
         android:id="@+id/griffonimg"
@@ -68,11 +70,12 @@
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/apollo"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="Cruise">
     	
      <ImageView
         android:id="@+id/apolloimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/rrc"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
