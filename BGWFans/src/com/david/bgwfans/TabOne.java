@@ -1,5 +1,9 @@
 package com.david.bgwfans;
 
+import com.google.ads.AdRequest;
+import com.google.ads.AdSize;
+import com.google.ads.AdView;
+
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.os.Bundle;
@@ -9,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnLongClickListener;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,6 +22,7 @@ public class TabOne extends Fragment
 {
 	RelativeLayout b1;
 	Context ctx = null;
+	public AdView adView;
 
          public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -27,7 +33,6 @@ public class TabOne extends Fragment
                         Bundle savedInstanceState)
         {
                 View view = inflater.inflate(R.layout.coasters, container, false);
-                
                 
                 //Pay no mind, this is for a few easter eggs. Gotta change it up every now and then
                 final Button aButton = (Button)view.findViewById(R.id.apolloButton);
@@ -52,8 +57,7 @@ public class TabOne extends Fragment
             	{
             	@Override
             	public boolean onLongClick(View v) {
-            	
-
+           
             			gButton.setBackgroundResource(R.drawable.lemans);
             			gText.setText("Griffon -> RIP Le Mans Raceway");
             			return true;

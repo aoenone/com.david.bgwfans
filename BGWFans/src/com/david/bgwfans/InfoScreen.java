@@ -1,18 +1,36 @@
 package com.david.bgwfans;
 
 import android.os.Bundle;
+import android.view.Gravity;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+
 import com.fima.cardsui.objects.CardStack;
 import com.fima.cardsui.views.CardUI;
+import com.google.ads.AdRequest;
+import com.google.ads.AdSize;
+import com.google.ads.AdView;
 
 public class InfoScreen extends SideMenuActivity{
 
 	private CardUI mCardView;
+	private AdView adView;
+    String adMobId = "a151350c50621fc";
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		//View myFragmentView = inflater.inflate(R.layout.wccard, container, false);
-		
+		RelativeLayout layout = (RelativeLayout)findViewById(R.id.homelayout);
+		RelativeLayout.LayoutParams lay = new RelativeLayout.LayoutParams(
+        	    RelativeLayout.LayoutParams.MATCH_PARENT, 
+        	    RelativeLayout.LayoutParams.MATCH_PARENT);
+        lay.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+        adView = new AdView(this, AdSize.BANNER, adMobId);
+        layout.addView(adView, lay);
+        adView.setGravity(Gravity.BOTTOM);
+        adView.loadAd(new AdRequest());
+        
 		android.app.ActionBar actionbar = getActionBar();
         actionbar.setDisplayShowTitleEnabled(false);
 		actionbar.setListNavigationCallbacks(null, null);
@@ -66,4 +84,12 @@ public class InfoScreen extends SideMenuActivity{
 		mCardView.refresh();
 	
 	}
+	
+	@Override
+    public void onDestroy() {
+      if (adView != null) {
+        adView.destroy();
+      }
+      super.onDestroy();
+    }
 }

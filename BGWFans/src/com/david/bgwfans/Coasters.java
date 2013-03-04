@@ -22,7 +22,7 @@ public class Coasters extends BaseActivity implements OnClickListener{
         
         ScrollView scrollview = (ScrollView) findViewById(R.id.scroll);
         
-        scrollview.setDrawingCacheEnabled(false);
+        scrollview.setDrawingCacheEnabled(true);
         
         RelativeLayout b1 = (RelativeLayout) findViewById(R.id.vbolt);
         b1.setOnClickListener(this);

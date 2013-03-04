@@ -8,18 +8,18 @@ package com.slidingmenu.lib;
 
 public final class R {
 	public static final class id {
-		public static final int fullscreen = 0x7f05000b;
-		public static final int slidingmenumain = 0x7f05008d;
-		public static final int slidingmenulayout = 0x7f05008e;
-		public static final int slidingmenurowicon = 0x7f05008f;
-		public static final int selected_view = 0x7f05000c;
-		public static final int slidingmenurowtitle = 0x7f050090;
-		public static final int margin = 0x7f05000a;
-		public static final int left = 0x7f050008;
-		public static final int right = 0x7f050009;
+		public static final int fullscreen = 0x7f04000c;
+		public static final int slidingmenumain = 0x7f040091;
+		public static final int slidingmenulayout = 0x7f040092;
+		public static final int slidingmenurowicon = 0x7f040093;
+		public static final int selected_view = 0x7f04000d;
+		public static final int slidingmenurowtitle = 0x7f040094;
+		public static final int margin = 0x7f04000b;
+		public static final int left = 0x7f040009;
+		public static final int right = 0x7f04000a;
 	}
 	public static final class color {
-		public static final int holo_blue_bright = 0x7f040009;
+		public static final int holo_blue_bright = 0x7f060009;
 	}
 	public static final class layout {
 		public static final int slidingmenumain = 0x7f030053;
@@ -66,9 +66,9 @@ public final class R {
 		public static final int viewBehind = 0x7f010015;
 	}
 	public static final class dimen {
-		public static final int menu_header_line = 0x7f0700ae;
-		public static final int menu_item_padding = 0x7f0700ac;
-		public static final int menu_header_padding_top = 0x7f0700ad;
-		public static final int menu_icon_side = 0x7f0700af;
+		public static final int menu_header_line = 0x7f0800ae;
+		public static final int menu_item_padding = 0x7f0800ac;
+		public static final int menu_header_padding_top = 0x7f0800ad;
+		public static final int menu_icon_side = 0x7f0800af;
 	}
 }

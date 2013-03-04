@@ -1,13 +1,13 @@
 package com.david.bgwfans;
 
 import android.app.ActionBar;
-
 import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.*;
 import android.support.v4.view.ViewPager;
+import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -15,11 +15,16 @@ import android.view.View.OnLongClickListener;
 import android.app.ListFragment;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListAdapter;
 import android.widget.ArrayAdapter;
 import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
+
+import com.google.ads.AdRequest;
+import com.google.ads.AdSize;
+import com.google.ads.AdView;
 
 public class Attractions extends SideMenuActivity implements OnClickListener{
         
@@ -27,8 +32,17 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
         static ViewPager mViewPager;
         //private JazzyViewPager mJazzy;
         RelativeLayout b1;
+        private AdView adView;
+        String adMobId = "a151350c50621fc";
         //Button button;
         
+        @Override
+        public void onDestroy() {
+          if (adView != null) {
+            adView.destroy();
+          }
+          super.onDestroy();
+        }
         
     /** Called when the activity is first created. 
      * @param AFragmentTab */
@@ -36,7 +50,15 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        
+        //LinearLayout layout = (LinearLayout)findViewById(R.id.mainlayout);
+        RelativeLayout.LayoutParams lay = new RelativeLayout.LayoutParams(
+        	    RelativeLayout.LayoutParams.MATCH_PARENT, 
+        	    RelativeLayout.LayoutParams.MATCH_PARENT);
+        lay.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+        adView = new AdView(this, AdSize.BANNER, adMobId);
+        //layout.addView(adView, lay);
+        adView.setGravity(Gravity.BOTTOM);
+        adView.loadAd(new AdRequest());
   
         // Register the onClick listener with the implementation above
         //ImageView apolloimg = (ImageView)findViewById(R.id.apolloimg);
@@ -52,9 +74,10 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
         mPagerAdapter.addFragment(tabFourFragment);
         
         //transaction = getSupportFragmentManager().beginTransaction();
-       mViewPager = (ViewPager) findViewById(R.id.pager);
-                mViewPager.setAdapter(mPagerAdapter);
-                mViewPager.setOffscreenPageLimit(2);
+        	mViewPager = (ViewPager) findViewById(R.id.pager);
+       		mViewPager.setPageTransformer(true, new ZoomOutPageTransformer());
+            mViewPager.setAdapter(mPagerAdapter);
+            mViewPager.setOffscreenPageLimit(2);
             mViewPager.setCurrentItem(0);
                 
                 mViewPager.setOnPageChangeListener(
