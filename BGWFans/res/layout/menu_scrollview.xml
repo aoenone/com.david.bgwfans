@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.david.bgwfans.MenuScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:myapp="http://schemas.android.com/apk/res/com.david.bgwfans"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<com.david.bgwfans.MenuScrollView 
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,7 +17,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:overScrollHeader="@drawable/pressed_background_bgwfans"
-   	 	android:overScrollFooter="@drawable/pressed_background_bgwfans">
+   	 	android:overScrollFooter="@drawable/pressed_background_bgwfans"
+   	 	android:id="@+id/sidelayout">
         
         <TextView
             android:layout_width="match_parent"
@@ -166,6 +174,31 @@
             android:text="About"
             android:textColor="@color/text_color"
             style="@style/MenuDrawer.Widget.Title" />
+        
+        		<com.google.ads.AdView
+            			   android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/adMob"
+                           ads:adUnitId="a151350c50621fc"
+                           ads:adSize="SMART_BANNER"
+                           ads:loadAdOnCreate="true"
+                           android:layout_alignParentBottom="true"/>
+        		
+        <TextView
+            android:id="@+id/item13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/text_color"
+            style="@style/MenuDrawer.Widget.Title" />
+        		
+        	<ImageView
+        	    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/parkfansimg" 
+                android:src="@drawable/parkfans">
+            </ImageView>
 
     </LinearLayout>
 </com.david.bgwfans.MenuScrollView>
+</RelativeLayout>

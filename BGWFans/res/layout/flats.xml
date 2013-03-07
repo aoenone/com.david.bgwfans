@@ -13,11 +13,12 @@
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/vbolt"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="DarKastle">
     	
      <ImageView
         android:id="@+id/vboltimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/darkastle"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>

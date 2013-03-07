@@ -159,6 +159,27 @@ public class ParkMap extends BaseActivity {
 	private Marker a3;
 	private static final LatLng A3 = new LatLng(37.231714,-76.646054);
 	
+	//geopoints for main shops in the park
+	private Marker s1;
+	private static final LatLng S1 = new LatLng(37.235307, -76.645841);
+	private Marker s2;
+	private static final LatLng S2 = new LatLng(37.235614,-76.647399);
+	private Marker s3;
+	private static final LatLng S3 = new LatLng(37.235844,-76.64765);
+	private Marker s4;
+	private static final LatLng S4 = new LatLng(37.234529,-76.648741);
+	private Marker s5;
+	private static final LatLng S5 = new LatLng(37.233398,-76.648453);
+	private Marker s6;
+	private static final LatLng S6 = new LatLng(37.232947,-76.646853);
+	private Marker s7;
+	private static final LatLng S7 = new LatLng(37.232238,-76.646329);
+	private Marker s8;
+	private static final LatLng S8 = new LatLng(37.233964,-76.644144);
+	private Marker s9;
+	private static final LatLng S9 = new LatLng(37.23486,-76.642759);
+	private Marker s10;
+	private static final LatLng S10 = new LatLng(37.236154,-76.646235);
 	
 	//set up ploygons for each hamlet in the park
 	private Polygon England;
@@ -205,19 +226,22 @@ public class ParkMap extends BaseActivity {
 	@Override
 	public boolean onOptionsItemSelected(android.view.MenuItem item) 
 		{
-		switch (item.getItemId()) {
-		case android.R.id.home:
+		int itemId = item.getItemId();
+		if (itemId == android.R.id.home) {
 			toggle();
 			return true;
-		case R.id.bathrooms:
+		} else if (itemId == R.id.clear) {
+			mMap.clear();
+		} else if (itemId == R.id.bathrooms) {
 			mMap.clear();
 			addBathroomsToMap();
-			break;
-		case R.id.atm:
+		} else if (itemId == R.id.atm) {
 			mMap.clear();
 			addATMToMap();
-			break;
-		case R.id.alloption:
+		} else if (itemId == R.id.shops) {
+			mMap.clear();
+			addShopsToMap();
+		} else if (itemId == R.id.alloption) {
 			mMap.clear();
 			addCoastersToMap();
 			addFlatsToMap();
@@ -225,41 +249,30 @@ public class ParkMap extends BaseActivity {
 			addTransportationToMap();
 			addAnimalToMap();
 			addShowsToMap();
-			addATMToMap();
-			addBathroomsToMap();
-			break;
-		case R.id.coastersoption:
+		} else if (itemId == R.id.coastersoption) {
 			mMap.clear();
 			addCoastersToMap();
-			break;
-		case R.id.flatsoption:
+		} else if (itemId == R.id.flatsoption) {
 			mMap.clear();
 			addFlatsToMap();
-			break;
-		case R.id.wateroption:
+		} else if (itemId == R.id.wateroption) {
 			mMap.clear();
 			addWaterToMap();
-			break;
-		case R.id.transportation:
+		} else if (itemId == R.id.transportation) {
 			mMap.clear();
 			addTransportationToMap();
-			break;
-		case R.id.animal:
+		} else if (itemId == R.id.animal) {
 			mMap.clear();
 			addAnimalToMap();
-			break;
-		case R.id.eatoption:
+		} else if (itemId == R.id.eatoption) {
 			mMap.clear();
 			addEatToMap();
-			break;
-		case R.id.shows:
+		} else if (itemId == R.id.shows) {
 			mMap.clear();
 			addShowsToMap();
-			break;
-		case R.id.banbury:
+		} else if (itemId == R.id.banbury) {
 			mMap.clear();
 			addBanburyToMap();
-			break;
 		}
 		return super.onOptionsItemSelected(item);
 	}
@@ -295,13 +308,13 @@ public class ParkMap extends BaseActivity {
 		addShowsToMap();
 		addEatToMap();
 		addATMToMap();
-		//addBanburyToMap();
 		addBathroomsToMap();
 		mMap.setMyLocationEnabled(true);
 		mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 		mMap.getUiSettings().setZoomControlsEnabled(false);
 		mMap.moveCamera(CameraUpdateFactory.newCameraPosition(HOME));
     }
+	
 	
 	
 	private void addCoastersToMap() 
@@ -476,6 +489,48 @@ public class ParkMap extends BaseActivity {
 		.title("Wolf Valley")
 		.snippet("wolf exhibit"));
 		
+	}
+	
+	private void addShopsToMap(){
+		s1 = mMap.addMarker(new MarkerOptions()
+		.position(S1)
+		.title("Shop"));
+		
+		s2 = mMap.addMarker(new MarkerOptions()
+		.position(S2)
+		.title("Shop"));
+		
+		s3 = mMap.addMarker(new MarkerOptions()
+		.position(S3)
+		.title("Shop"));
+		
+		s4 = mMap.addMarker(new MarkerOptions()
+		.position(S4)
+		.title("Shop"));
+		
+		s5 = mMap.addMarker(new MarkerOptions()
+		.position(S5)
+		.title("Shop"));
+		
+		s6 = mMap.addMarker(new MarkerOptions()
+		.position(S6)
+		.title("Shop"));
+		
+		s7 = mMap.addMarker(new MarkerOptions()
+		.position(S7)
+		.title("Shop"));
+		
+		s8 = mMap.addMarker(new MarkerOptions()
+		.position(S8)
+		.title("Shop"));
+		
+		s9 = mMap.addMarker(new MarkerOptions()
+		.position(S9)
+		.title("Shop"));
+		
+		s10 = mMap.addMarker(new MarkerOptions()
+		.position(S10)
+		.title("Shop"));
 	}
 	
 	private void addEatToMap()

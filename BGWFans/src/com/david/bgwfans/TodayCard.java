@@ -39,6 +39,10 @@ public class TodayCard extends Card {
 		
 		TextView t = (TextView) view.findViewById(R.id.hours);
 		//t.setText(fDate);
+		if (fDate.equals("2013-03-16"))
+		{
+			t.setText("(Pass holders only) 10am - 6pm");
+		}
 		if (fDate.equals("2013-03-17"))
 		{
 			t.setText("Hours: 10am - 6pm");

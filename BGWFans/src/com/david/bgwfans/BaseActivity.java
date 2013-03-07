@@ -103,51 +103,38 @@ public class BaseActivity extends SlidingFragmentActivity implements View.OnClic
 	
 	
 	 public void onClick(View v) {
-			switch(v.getId())
-	    	{ 
-			case R.id.item1: Intent infoActivity = new Intent(this, InfoScreen.class);
+			int id = v.getId();
+			if (id == R.id.item1) {
+				Intent infoActivity = new Intent(this, InfoScreen.class);
 				startActivity(infoActivity);
-				break;
-			case R.id.item2: Intent attrActivity = new Intent(this, Attractions.class);
+			} else if (id == R.id.item2) {
+				Intent attrActivity = new Intent(this, Attractions.class);
 				startActivity(attrActivity);
-				break;
-			case R.id.item3: Intent showsActivity = new Intent(this, HOS_Shows.class);
+			} else if (id == R.id.item3) {
+				Intent showsActivity = new Intent(this, HOS_Shows.class);
 				startActivity(showsActivity);
-				break;
-			case R.id.item4: Intent eatActivity = new Intent(this, Eateries.class);
+			} else if (id == R.id.item4) {
+				Intent eatActivity = new Intent(this, Eateries.class);
 				startActivity(eatActivity);
-				break;
-			case R.id.item5: Intent mapActivity = new Intent(this, ParkMap.class);
+			} else if (id == R.id.item5) {
+				Intent mapActivity = new Intent(this, ParkMap.class);
 				startActivity(mapActivity);
-				break;
-			/**case R.id.item6: Intent hhActivity = new Intent(this, HOS_Houses.class);
-				startActivity(hhActivity);
-				break;
-			case R.id.item7: Intent hshowActivity = new Intent(this, HOS_Shows.class);
-				startActivity(hshowActivity);
-				break;
-			case R.id.item8: Intent featuresActivity = new Intent(this, HOS_Features.class);
-				startActivity(featuresActivity);
-				break;
-			case R.id.item14: Intent hosMapActivity = new Intent(this, HOS_Map.class);
-				startActivity(hosMapActivity);
-				break; **/
-	    	case R.id.item9: Intent blogActivity = new Intent(this, BGWFans.class);
-	    		startActivity(blogActivity);
-	    		break;
-	    	case R.id.item10: Intent forumActivity = new Intent(this, Forums.class);
-	    		startActivity(forumActivity);
-	    		break;
-	    	case R.id.item11: Intent wikiActivity = new Intent(this, Wiki.class);
-	    		startActivity(wikiActivity);
-	    		break;
-	    	case R.id.item12: Intent settingsActivity = new Intent(this, Settings.class);
+			} else if (id == R.id.item9) {
+				Intent blogActivity = new Intent(this, BGWFans.class);
+				startActivity(blogActivity);
+			} else if (id == R.id.item10) {
+				Intent forumActivity = new Intent(this, Forums.class);
+				startActivity(forumActivity);
+			} else if (id == R.id.item11) {
+				Intent wikiActivity = new Intent(this, Wiki.class);
+				startActivity(wikiActivity);
+			} else if (id == R.id.item12) {
+				Intent settingsActivity = new Intent(this, Settings.class);
 				startActivity(settingsActivity);
-				break;
-	    	case R.id.item13: Intent aboutActivity = new Intent(this, About.class);
+			} else if (id == R.id.item13) {
+				Intent aboutActivity = new Intent(this, About.class);
 				startActivity(aboutActivity);
-				break;
-	    	}
+			}
 	    }
 }
 

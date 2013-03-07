@@ -22,8 +22,4 @@ public class XmasCard extends Card {
 		
 		return view;
 	}
-
-	
-	
-	
 }

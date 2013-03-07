@@ -8,18 +8,18 @@ package com.slidingmenu.lib;
 
 public final class R {
 	public static final class id {
-		public static final int fullscreen = 0x7f04000c;
-		public static final int slidingmenumain = 0x7f040091;
-		public static final int slidingmenulayout = 0x7f040092;
-		public static final int slidingmenurowicon = 0x7f040093;
-		public static final int selected_view = 0x7f04000d;
-		public static final int slidingmenurowtitle = 0x7f040094;
-		public static final int margin = 0x7f04000b;
-		public static final int left = 0x7f040009;
-		public static final int right = 0x7f04000a;
+		public static final int fullscreen = 0x7f05000c;
+		public static final int slidingmenumain = 0x7f050095;
+		public static final int slidingmenulayout = 0x7f050096;
+		public static final int slidingmenurowicon = 0x7f050097;
+		public static final int selected_view = 0x7f05000d;
+		public static final int slidingmenurowtitle = 0x7f050098;
+		public static final int margin = 0x7f05000b;
+		public static final int left = 0x7f050009;
+		public static final int right = 0x7f05000a;
 	}
 	public static final class color {
-		public static final int holo_blue_bright = 0x7f060009;
+		public static final int holo_blue_bright = 0x7f040009;
 	}
 	public static final class layout {
 		public static final int slidingmenumain = 0x7f030053;

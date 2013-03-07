@@ -18,7 +18,6 @@ public class Settings extends SideMenuActivity{
     String adMobId = "a151350c50621fc";
     
 	public void onCreate(Bundle savedInstanceState) {
-		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.settings_screen);
 		
@@ -27,15 +26,17 @@ public class Settings extends SideMenuActivity{
         	    RelativeLayout.LayoutParams.MATCH_PARENT, 
         	    RelativeLayout.LayoutParams.MATCH_PARENT);
         lay.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
-        adView = new AdView(this, AdSize.BANNER, adMobId);
+        adView = new AdView(this, AdSize.SMART_BANNER, adMobId);
         layout.addView(adView, lay);
         adView.setGravity(Gravity.BOTTOM);
         adView.loadAd(new AdRequest());
-        
-		ActionBar actionbar = getActionBar();
-	    actionbar.setDisplayShowTitleEnabled(false);
-		actionbar.setListNavigationCallbacks(null, null);
-	    actionbar.setDisplayHomeAsUpEnabled(true);
-	    
-		}
+		} 
+	
+	@Override
+    public void onDestroy() {
+     // if (adView != null) {
+     //   adView.destroy();
+     // }
+      super.onDestroy();
+    }
 }

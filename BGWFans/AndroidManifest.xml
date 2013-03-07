@@ -3,13 +3,14 @@
     android:versionCode="1"
     android:versionName="1.0" >
 
-   <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17" />
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_CORSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="com.android.vending.BILLING" />
 	<permission
           android:name="com.david.bgwfans.MAPS_RECEIVE"
           android:protectionLevel="signature"/>
@@ -42,7 +43,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             
-            
             <!-- This allows for the app to pick up on any links of the site, and add as an option to open with the app instead of with a browser -->
             	<intent-filter>
     				<action android:name="android.intent.action.VIEW" />
@@ -71,6 +71,8 @@
          <activity android:name="com.david.bgwfans.LochNess"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
          <activity android:name="com.david.bgwfans.Grover"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.DarKastle"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
          <activity android:name="com.david.bgwfans.Train"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>

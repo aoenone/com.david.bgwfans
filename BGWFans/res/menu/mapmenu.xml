@@ -5,8 +5,8 @@
     android:icon="@drawable/ic_action_about"
     android:showAsAction="always">
       <menu>
-          <item android:id="@+id/reset"
-              	android:title="Reset Map"
+          <item android:id="@+id/clear"
+              	android:title="Clear Map"
               	android:showAsAction="always"/>
           <item android:id="@+id/bathrooms"
               	android:title="Bathrooms"

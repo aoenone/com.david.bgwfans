@@ -20,7 +20,8 @@
         android:src="@drawable/vbolt2"
         android:scaleType="center"
         android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
+        android:layout_height="95dp"
+        android:onClick="Roman"/>
     	<TextView
     	  	android:id="@+id/coast"
     	    android:layout_width="match_parent"
@@ -48,7 +49,8 @@
         android:src="@drawable/vbolt2"
         android:scaleType="center"
         android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
+        android:layout_height="95dp"
+        android:onClick="Pompeii"/>
     	<TextView
     	  	android:id="@+id/griff"
     	    android:layout_width="match_parent"
@@ -75,7 +77,8 @@
         android:src="@drawable/vbolt2"
         android:scaleType="center"
         android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
+        android:layout_height="95dp"
+        android:onClick="Flume"/>
     	<TextView
     	  	android:id="@+id/apol"
     	    android:layout_width="match_parent"

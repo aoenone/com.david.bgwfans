@@ -54,19 +54,16 @@ public class Forums extends SideMenuActivity implements View.OnClickListener{
 	}
 	
 	public boolean onOptionsItemSelected(android.view.MenuItem item) {
-		switch (item.getItemId()) {
-		case android.R.id.home:
+		int itemId = item.getItemId();
+		if (itemId == android.R.id.home) {
 			toggle();
 			return true;
-		case R.id.web_back:
+		} else if (itemId == R.id.web_back) {
 			webview2.goBack();
-			break;
-		case R.id.web_forward:
+		} else if (itemId == R.id.web_forward) {
 			webview2.goForward();
-			break;
-		case R.id.web_refresh:
+		} else if (itemId == R.id.web_refresh) {
 			webview2.reload();
-			break;
 		}
 		return super.onOptionsItemSelected(item);
 	}

@@ -8,34 +8,34 @@ package com.fima.cardsui;
 
 public final class R {
 	public static final class id {
-		public static final int textView2 = 0x7f04000f;
-		public static final int listView = 0x7f040042;
-		public static final int title = 0x7f040040;
-		public static final int sticky = 0x7f040043;
-		public static final int cardContent = 0x7f040074;
-		public static final int placeholder = 0x7f040057;
-		public static final int stackContainer = 0x7f040076;
-		public static final int stackTitle = 0x7f040075;
+		public static final int textView2 = 0x7f05000f;
+		public static final int listView = 0x7f050043;
+		public static final int title = 0x7f050041;
+		public static final int sticky = 0x7f050044;
+		public static final int cardContent = 0x7f050075;
+		public static final int placeholder = 0x7f050058;
+		public static final int stackContainer = 0x7f050077;
+		public static final int stackTitle = 0x7f050076;
 	}
 	public static final class style {
-		public static final int CardTitleBold = 0x7f070005;
-		public static final int CardLightText = 0x7f070003;
-		public static final int CardText = 0x7f070002;
-		public static final int Item_Top = 0x7f070008;
-		public static final int Item = 0x7f070007;
-		public static final int Item_Sticky = 0x7f070009;
-		public static final int CardTitle = 0x7f070004;
-		public static final int StackTitle = 0x7f070006;
+		public static final int CardTitleBold = 0x7f060005;
+		public static final int CardLightText = 0x7f060003;
+		public static final int CardText = 0x7f060002;
+		public static final int Item_Top = 0x7f060008;
+		public static final int Item = 0x7f060007;
+		public static final int Item_Sticky = 0x7f060009;
+		public static final int CardTitle = 0x7f060004;
+		public static final int StackTitle = 0x7f060006;
 	}
 	public static final class color {
-		public static final int stroke = 0x7f060001;
-		public static final int text_light = 0x7f060002;
-		public static final int card_text = 0x7f060003;
-		public static final int card_border = 0x7f060008;
-		public static final int card_light_text = 0x7f060005;
-		public static final int card_separator = 0x7f060007;
-		public static final int card_title_text = 0x7f060004;
-		public static final int card_grid_text = 0x7f060006;
+		public static final int stroke = 0x7f040001;
+		public static final int text_light = 0x7f040002;
+		public static final int card_text = 0x7f040003;
+		public static final int card_border = 0x7f040008;
+		public static final int card_light_text = 0x7f040005;
+		public static final int card_separator = 0x7f040007;
+		public static final int card_title_text = 0x7f040004;
+		public static final int card_grid_text = 0x7f040006;
 	}
 	public static final class layout {
 		public static final int item_card = 0x7f030032;
@@ -47,11 +47,11 @@ public final class R {
 		public static final int header = 0x7f03001b;
 	}
 	public static final class drawable {
-		public static final int card_background_shadow = 0x7f020014;
-		public static final int card = 0x7f020012;
-		public static final int card_background = 0x7f020013;
-		public static final int card_shadow = 0x7f020015;
-		public static final int top_shadow = 0x7f020073;
+		public static final int card_background_shadow = 0x7f020013;
+		public static final int card = 0x7f020011;
+		public static final int card_background = 0x7f020012;
+		public static final int card_shadow = 0x7f020014;
+		public static final int top_shadow = 0x7f020074;
 	}
 	public static final class dimen {
 		public static final int web_suggestion_icon_size = 0x7f080006;

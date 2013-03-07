@@ -240,6 +240,11 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
 		startActivity(groverActivity);
 	}
 	
+	public void DarKastle(View view){
+		Intent kastleActivity = new Intent(this, DarKastle.class);
+		startActivity(kastleActivity);
+	}
+	
 	public void SteamTrain(View view){
 		Intent steamActivity = new Intent(this, Train.class);
 		startActivity(steamActivity);

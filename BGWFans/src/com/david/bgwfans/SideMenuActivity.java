@@ -9,9 +9,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.view.Gravity;
 import android.view.MenuInflater;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
+import com.google.ads.AdRequest;
+import com.google.ads.AdSize;
+import com.google.ads.AdView;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -57,6 +63,8 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 	//private SlidingActivityHelper mHelper;
 	//private Fragment mFrag;
 	public SlidingMenu sm;
+	private AdView adView;
+	String adMobId = "a151350c50621fc";
 	
 	static final CameraPosition HOME =
             new CameraPosition.Builder().target(new LatLng(37.235466, -76.646328))
@@ -89,6 +97,12 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 		sm.setBackgroundColor(0x000000000);
 		setSlidingActionBarEnabled(false);
 
+		
+		//AdRequest adRequest = new AdRequest();
+		AdView adView = (AdView)findViewById(R.id.adMob);
+		adView.loadAd(new AdRequest());
+		//adView.loadAd(adRequest);
+
 		final ActionBar actionbar = getActionBar();
 	    actionbar.setDisplayShowTitleEnabled(false);
 	    actionbar.setDisplayHomeAsUpEnabled(true);
@@ -98,6 +112,8 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 			    //getSlidingMenu().invalidate();
 			    actionbar.setDisplayHomeAsUpEnabled(false);
 			    mMap.setMyLocationEnabled(true);
+			    AdView adView = (AdView)findViewById(R.id.adMob);
+				adView.loadAd(new AdRequest());
 			    getSlidingMenu().invalidate();
 			  }
 			});
@@ -181,62 +197,63 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 	
 	
 	 public void onClick(View v) {
-			switch(v.getId())
-	    	{ 
-			case R.id.item1: Intent infoActivity = new Intent(this, InfoScreen.class);
+			int id = v.getId();
+			if (id == R.id.item1) {
+				Intent infoActivity = new Intent(this, InfoScreen.class);
 				toggle();
 				startActivity(infoActivity);
-				break;
-			case R.id.item2: Intent attrActivity = new Intent(this, Attractions.class);
+			} else if (id == R.id.item2) {
+				Intent attrActivity = new Intent(this, Attractions.class);
 				toggle();
 				startActivity(attrActivity);
-				break;
-			case R.id.item3: Intent showsActivity = new Intent(this, HOS_Shows.class);
+			} else if (id == R.id.item3) {
+				Intent showsActivity = new Intent(this, HOS_Shows.class);
 				startActivity(showsActivity);
 				toggle();
-				break;
-			case R.id.item4: Intent eatActivity = new Intent(this, Coasters.class);
+			} else if (id == R.id.item4) {
+				Intent eatActivity = new Intent(this, Coasters.class);
 				startActivity(eatActivity);
 				toggle();
-				break;
-			case R.id.item5: Intent mapActivity = new Intent(this, ParkMap.class);
+			} else if (id == R.id.item5) {
+				Intent mapActivity = new Intent(this, ParkMap.class);
 				startActivity(mapActivity);
 				toggle();
-				break;
-			/**case R.id.item6: Intent hhActivity = new Intent(this, HOS_Houses.class);
-				startActivity(hhActivity);
-				break;
-			case R.id.item7: Intent hshowActivity = new Intent(this, HOS_Shows.class);
-				startActivity(hshowActivity);
-				break;
-			case R.id.item8: Intent featuresActivity = new Intent(this, HOS_Features.class);
-				startActivity(featuresActivity);
-				break;
-			case R.id.item14: Intent hosMapActivity = new Intent(this, HOS_Map.class);
-				startActivity(hosMapActivity);
-				break; **/
-	    	case R.id.item9: Intent blogActivity = new Intent(this, BGWFans.class);
-	    		startActivity(blogActivity);
-	    		toggle();
-	    		break;
-	    	case R.id.item10: Intent forumActivity = new Intent(this, Forums.class);
-	    		startActivity(forumActivity);
-	    		toggle();
-	    		break;
-	    	case R.id.item11: Intent wikiActivity = new Intent(this, Wiki.class);
-	    		startActivity(wikiActivity);
-	    		toggle();
-	    		break;
-	    	case R.id.item12: Intent settingsActivity = new Intent(this, Settings.class);
+			} else if (id == R.id.item9) {
+				Intent blogActivity = new Intent(this, BGWFans.class);
+				startActivity(blogActivity);
+				toggle();
+			} else if (id == R.id.item10) {
+				Intent forumActivity = new Intent(this, Forums.class);
+				startActivity(forumActivity);
+				toggle();
+			} else if (id == R.id.item11) {
+				Intent wikiActivity = new Intent(this, Wiki.class);
+				startActivity(wikiActivity);
+				toggle();
+			} else if (id == R.id.item12) {
+				Intent settingsActivity = new Intent(this, Settings.class);
 				startActivity(settingsActivity);
 				toggle();
-				break;
-	    	case R.id.item13: Intent aboutActivity = new Intent(this, About.class);
+			} else if (id == R.id.item13) {
+				Intent aboutActivity = new Intent(this, About.class);
 				startActivity(aboutActivity);
 				toggle();
-				break;
-	    	}
+			}
+
 	    }
+	 
+		/**case R.id.item6: Intent hhActivity = new Intent(this, HOS_Houses.class);
+		startActivity(hhActivity);
+		break;
+	case R.id.item7: Intent hshowActivity = new Intent(this, HOS_Shows.class);
+		startActivity(hshowActivity);
+		break;
+	case R.id.item8: Intent featuresActivity = new Intent(this, HOS_Features.class);
+		startActivity(featuresActivity);
+		break;
+	case R.id.item14: Intent hosMapActivity = new Intent(this, HOS_Map.class);
+		startActivity(hosMapActivity);
+		break; **/
 	 
 	 public void addBathroomsToMap()
 		{
@@ -284,5 +301,13 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 			.position(B11)
 			.title("Bathroom"));
 		}
+	 
+	 @Override
+	    public void onDestroy() {
+	        if (adView != null) {
+	            adView.destroy();
+	        }
+	        super.onDestroy();
+	    }
 }
 
