@@ -13,7 +13,8 @@
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/vbolt"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="Rapids">
     	
      <ImageView
         android:id="@+id/vboltimg"
@@ -34,7 +35,8 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Roman Rapids" />
+        	android:text="Roman Rapids"
+        	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     
 
@@ -42,7 +44,8 @@
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/griffon"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="Pompeii">
     	
      <ImageView
         android:id="@+id/griffonimg"
@@ -63,14 +66,16 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Escape from Pompeii" />
+        	android:text="Escape from Pompeii"
+        	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     
      <RelativeLayout
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/apollo"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="Flume">
     	
      <ImageView
         android:id="@+id/apolloimg"
@@ -91,7 +96,8 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Log Flume" />
+        	android:text="Log Flume"
+        	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     	</LinearLayout>
     </ScrollView>

@@ -1,8 +1,6 @@
 package com.david.bgwfans;
 
 
-
-
 import android.app.ActionBar;
 
 import android.content.Intent;
@@ -63,8 +61,6 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 	//private SlidingActivityHelper mHelper;
 	//private Fragment mFrag;
 	public SlidingMenu sm;
-	private AdView adView;
-	String adMobId = "a151350c50621fc";
 	
 	static final CameraPosition HOME =
             new CameraPosition.Builder().target(new LatLng(37.235466, -76.646328))
@@ -72,8 +68,9 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
                     .bearing(0) 
                     .tilt(25)
                     .build();
-	@Override
+	@Override 
 	public void onCreate(Bundle savedInstanceState) {
+		//setTheme(R.style.Theme_bgwfans);
 		super.onCreate(savedInstanceState);
 		setBehindContentView(R.layout.menu_scrollview);
 
@@ -97,11 +94,6 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 		sm.setBackgroundColor(0x000000000);
 		setSlidingActionBarEnabled(false);
 
-		
-		//AdRequest adRequest = new AdRequest();
-		AdView adView = (AdView)findViewById(R.id.adMob);
-		adView.loadAd(new AdRequest());
-		//adView.loadAd(adRequest);
 
 		final ActionBar actionbar = getActionBar();
 	    actionbar.setDisplayShowTitleEnabled(false);
@@ -112,8 +104,6 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 			    //getSlidingMenu().invalidate();
 			    actionbar.setDisplayHomeAsUpEnabled(false);
 			    mMap.setMyLocationEnabled(true);
-			    AdView adView = (AdView)findViewById(R.id.adMob);
-				adView.loadAd(new AdRequest());
 			    getSlidingMenu().invalidate();
 			  }
 			});
@@ -128,8 +118,7 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 
 		});
 		setUpMapIfNeeded();
-	
-
+		
 			findViewById(R.id.item1).setOnClickListener(this);
 	        findViewById(R.id.item2).setOnClickListener(this);
 	        findViewById(R.id.item3).setOnClickListener(this);
@@ -301,13 +290,5 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 			.position(B11)
 			.title("Bathroom"));
 		}
-	 
-	 @Override
-	    public void onDestroy() {
-	        if (adView != null) {
-	            adView.destroy();
-	        }
-	        super.onDestroy();
-	    }
 }
 

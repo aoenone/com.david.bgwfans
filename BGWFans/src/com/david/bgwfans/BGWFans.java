@@ -1,34 +1,48 @@
 package com.david.bgwfans;
 
+import com.google.ads.AdRequest;
+import com.google.ads.AdSize;
+import com.google.ads.AdView;
+
 import android.app.ActionBar;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.MenuInflater;
 import android.view.View;
 import android.webkit.WebChromeClient;
+import android.webkit.WebSettings.LayoutAlgorithm;
+import android.webkit.WebSettings.ZoomDensity;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 
 public class BGWFans extends SideMenuActivity implements View.OnClickListener{
 
 	private WebView webview;
 	private ProgressBar Pbar;
+	private AdView adView;
+	String adMobId = "a151350c50621fc";
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.bgwfans);
-		
-		ActionBar actionbar = getActionBar();
-        actionbar.setDisplayShowTitleEnabled(false);
-		actionbar.setListNavigationCallbacks(null, null);
-        actionbar.setDisplayHomeAsUpEnabled(true);
- 
+        
+        AdView adView = (AdView)findViewById(R.id.adMob);
+		adView.loadAd(new AdRequest());
+        
 		webview = (WebView) findViewById(R.id.webView1);
 		webview.getSettings().setJavaScriptEnabled(true);
+		//webview.getSettings().setLayoutAlgorithm(LayoutAlgorithm.SINGLE_COLUMN); 
+		webview.getSettings().setLoadWithOverviewMode(true);
+		webview.getSettings().setBuiltInZoomControls(true);
+		webview.getSettings().setUseWideViewPort(true);
+		webview.getSettings().setSupportZoom(true);
+		webview.getSettings().setDefaultZoom(ZoomDensity.FAR);
 		webview.loadUrl("http://www.bgwfans.com");
 		webview.setWebViewClient(new WebViewClient());
-		webview.getSettings().setBuiltInZoomControls(true);
 		webview.setBackgroundColor(0x00000000);
 		Pbar = (ProgressBar) findViewById(R.id.pb1);
 		
@@ -67,4 +81,12 @@ public class BGWFans extends SideMenuActivity implements View.OnClickListener{
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	}
+	
+	@Override
+    public void onDestroy() {
+        if (adView != null) {
+            adView.destroy();
+        }
+        super.onDestroy();
+    }
+}

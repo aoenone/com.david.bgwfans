@@ -245,7 +245,80 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
 		startActivity(kastleActivity);
 	}
 	
-	public void SteamTrain(View view){
+	public void EITA(View view)
+	{
+		Intent eitaActivity = new Intent(this, EITA.class);
+		startActivity(eitaActivity);
+	}
+	
+	public void Mach(View view)
+	{
+		Intent machActivity = new Intent(this, Mach.class);
+		startActivity(machActivity); 
+	}
+	
+	public void AutoBahn(View view)
+	{
+		Intent autoActivity = new Intent(this, AutoBahn.class);
+		startActivity(autoActivity);
+	}
+	
+	public void Cradle(View view)
+	{
+		//Intent cradleActivity = new Intent(this, Cradle.class);
+		//startActivity(cradleActivity);
+	}
+	
+	public void Flying(View view)
+	{
+		//Intent flyingActivity = new Intent(this, Flying.class);
+		//startActivity(flyingActivity);
+	}
+	
+	public void TradeWind(View view)
+	{
+		//Intent tradeActivity = new Intent(this, TradeWind.class);
+		//startActivity(tradeActivity);
+	}
+	
+	public void Catapult(View view)
+	{
+		//Intent catapultActivity = new Intent(this, Catapult.class);
+		//startActivity(catapultActivity);
+	}
+	
+	public void Delight(View view)
+	{
+		//Intent delightActivity = new Intent(this, Delight.class);
+		//startActivity(delightActivity);
+	}
+	
+	public void Ram(View view)
+	{
+		//Intent ramActivity = new Intent(this, Ram.class);
+		//startActivity(ramActivity);
+	}
+	
+	public void Rapid(View view)
+	{
+		//Intent rapidActivity = new Intent(this, Rapid.class);
+		//startActivity(rapidActivity);
+	}
+	
+	public void Pompeii(View view)
+	{
+		//Intent pompeiiActivity = new Intent(this, Pompeii.class);
+		//startActivity(pompeiiActivity);
+	}
+	
+	public void Flume(View view)
+	{
+		//Intent flumeActivity = new Intent(this, Flume.class);
+		//startActivity(flumeActivity);
+	}
+	
+	public void SteamTrain(View view)
+	{
 		Intent steamActivity = new Intent(this, Train.class);
 		startActivity(steamActivity);
 	}

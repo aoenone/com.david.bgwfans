@@ -34,7 +34,8 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="DarKastle" />
+        	android:text="DarKastle"
+        	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     
 
@@ -42,7 +43,8 @@
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/griffon"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="EITA">
     	
      <ImageView
         android:id="@+id/griffonimg"
@@ -62,14 +64,16 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Europe in the Air" />
+        	android:text="Europe in the Air"
+        	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     
      <RelativeLayout
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/apollo"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="Mach">
     	
      <ImageView
         android:id="@+id/apolloimg"
@@ -89,14 +93,16 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Mach Tower" />
+        	android:text="Mach Tower" 
+        	android:fontFamily="sans-serif-light"/>
     		</RelativeLayout>
     
     <RelativeLayout
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/alpen"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="AutoBahn">
     	
      <ImageView
         android:id="@+id/alpenimg"
@@ -116,14 +122,16 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Der AutoBahn" />
+        	android:text="Der AutoBahn" 
+        	android:fontFamily="sans-serif-light"/>
     		</RelativeLayout>
     
      <RelativeLayout
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/lochness"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="Cradle">
     	
      <ImageView
         android:id="@+id/lochimg"
@@ -143,14 +151,16 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Da Vinci's Cradle" />
+        	android:text="Da Vinci's Cradle" 
+        	android:fontFamily="sans-serif-light"/>
     		</RelativeLayout>
      
       <RelativeLayout
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/grover"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="FlyingMachine">
     	
      <ImageView
         android:id="@+id/grovimg"
@@ -170,14 +180,16 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Flying Machine" />
+        	android:text="Flying Machine" 
+        	android:fontFamily="sans-serif-light"/>
     		</RelativeLayout>
     		
       <RelativeLayout
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/grover"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="Wirbelwind">
     	
       <ImageView
         android:id="@+id/grovimg"
@@ -197,14 +209,16 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Der Wirbelwind" />
+        	android:text="Der Wirbelwind" 
+        	android:fontFamily="sans-serif-light"/>
     		</RelativeLayout>
     		
       <RelativeLayout
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/grover"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="TradeWind">
     	
     <ImageView
         android:id="@+id/grovimg"
@@ -224,14 +238,16 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Trade Wind" />
+        	android:text="Trade Wind"
+        	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     		
       <RelativeLayout
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/grover"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="Catapult">
     	
 	<ImageView
         android:id="@+id/grovimg"
@@ -251,14 +267,16 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Le Catapult" />
+        	android:text="Le Catapult" 
+        	android:fontFamily="sans-serif-light"/>
     		</RelativeLayout>
     		
       <RelativeLayout
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/grover"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="Delight">
     	
 	<ImageView
         android:id="@+id/grovimg"
@@ -278,14 +296,16 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Turkisk Delight" />
+        	android:text="Turkisk Delight"
+        	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     		
       <RelativeLayout
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/grover"
-    	android:layout_margin="5dp">
+    	android:layout_margin="5dp"
+    	android:onClick="Ram">
     	
 	<ImageView
         android:id="@+id/grovimg"
@@ -305,7 +325,8 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Battering Ram" />
+        	android:text="Battering Ram"
+        	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     	</LinearLayout>
     </ScrollView>

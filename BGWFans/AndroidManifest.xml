@@ -74,6 +74,12 @@
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
          <activity android:name="com.david.bgwfans.DarKastle"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.EITA"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.Mach"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+          <activity android:name="com.david.bgwfans.AutoBahn"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
          <activity android:name="com.david.bgwfans.Train"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
          <activity android:name="com.david.bgwfans.Skyride"

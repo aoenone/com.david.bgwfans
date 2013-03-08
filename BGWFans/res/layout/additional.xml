@@ -34,7 +34,8 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Steam Trains" />
+        	android:text="Steam Trains"
+        	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     
 
@@ -63,7 +64,8 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Le Areonauts" />
+        	android:text="Le Areonauts"
+        	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     
      <RelativeLayout
@@ -91,7 +93,8 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Rhine River Cruise" />
+        	android:text="Rhine River Cruise"
+        	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     	</LinearLayout>
     </ScrollView>
