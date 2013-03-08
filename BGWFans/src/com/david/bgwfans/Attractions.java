@@ -255,66 +255,72 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
 	{
 		Intent machActivity = new Intent(this, Mach.class);
 		startActivity(machActivity); 
-	}
+	} 
 	
 	public void AutoBahn(View view)
 	{
 		Intent autoActivity = new Intent(this, AutoBahn.class);
 		startActivity(autoActivity);
 	}
-	
+	 
 	public void Cradle(View view)
 	{
-		//Intent cradleActivity = new Intent(this, Cradle.class);
-		//startActivity(cradleActivity);
+		Intent cradleActivity = new Intent(this, Cradle.class);
+		startActivity(cradleActivity);
 	}
 	
-	public void Flying(View view)
+	public void FlyingMachine(View view) 
 	{
-		//Intent flyingActivity = new Intent(this, Flying.class);
-		//startActivity(flyingActivity);
+		Intent flyingActivity = new Intent(this, FlyingMachine.class);
+		startActivity(flyingActivity);
+	}
+	
+	public void Wirbelwind(View view)
+	{
+		Intent wirbelActivity = new Intent(this, Wirbelwind.class);
+		startActivity(wirbelActivity);
 	}
 	
 	public void TradeWind(View view)
 	{
-		//Intent tradeActivity = new Intent(this, TradeWind.class);
-		//startActivity(tradeActivity);
+		Intent tradeActivity = new Intent(this, TradeWind.class);
+		startActivity(tradeActivity);
 	}
 	
 	public void Catapult(View view)
 	{
-		//Intent catapultActivity = new Intent(this, Catapult.class);
-		//startActivity(catapultActivity);
+		Intent catapultActivity = new Intent(this, Catapult.class);
+		startActivity(catapultActivity);
 	}
 	
 	public void Delight(View view)
 	{
-		//Intent delightActivity = new Intent(this, Delight.class);
-		//startActivity(delightActivity);
+		Intent delightActivity = new Intent(this, Delight.class);
+		startActivity(delightActivity);
 	}
 	
 	public void Ram(View view)
 	{
-		//Intent ramActivity = new Intent(this, Ram.class);
-		//startActivity(ramActivity);
+		Intent ramActivity = new Intent(this, Ram.class);
+		startActivity(ramActivity);
 	}
 	
-	public void Rapid(View view)
+	public void Rapids(View view)
 	{
-		//Intent rapidActivity = new Intent(this, Rapid.class);
-		//startActivity(rapidActivity);
+		Intent rapidsActivity = new Intent(this, Rapids.class);
+		startActivity(rapidsActivity);
 	}
 	
 	public void Pompeii(View view)
 	{
-		//Intent pompeiiActivity = new Intent(this, Pompeii.class);
-		//startActivity(pompeiiActivity);
+		Intent pompeiiActivity = new Intent(this, Pompeii.class);
+		startActivity(pompeiiActivity);
 	}
 	
 	public void Flume(View view)
 	{
-		//Intent flumeActivity = new Intent(this, Flume.class);
-		//startActivity(flumeActivity);
+		Intent flumeActivity = new Intent(this, Flume.class);
+		startActivity(flumeActivity);
 	}
 	
 	public void SteamTrain(View view)

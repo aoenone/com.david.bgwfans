@@ -14,7 +14,7 @@
     	android:layout_height="95dp"
     	android:id="@+id/vbolt"
     	android:layout_margin="5dp"
-    	android:onClick="Verbolten">
+    	android:onClick="Barrel">
     	
      <ImageView
         android:id="@+id/vboltimg"
@@ -34,26 +34,25 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Deck the Halls"
+        	android:text="Roll out the Barrel"
         	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
-    
-
+    		
     <RelativeLayout
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
-    	android:id="@+id/griffon"
+    	android:id="@+id/vbolt"
     	android:layout_margin="5dp"
-    	android:onClick="Griffon">
+    	android:onClick="Celtic">
     	
      <ImageView
-        android:id="@+id/griffonimg"
-        android:src="@drawable/griffon3"
+        android:id="@+id/vboltimg"
+        android:src="@drawable/vbolt2"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
     	<TextView
-    	  	android:id="@+id/griffont"
+    	  	android:id="@+id/vboltt"
     	    android:layout_width="match_parent"
         	android:layout_height="wrap_content"
         	android:layout_alignParentBottom="true"
@@ -64,16 +63,17 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Gloria!" 
-        	android:fontFamily="sans-serif-light"/>
+        	android:text="Celtic Fyre"
+        	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
+   
     
      <RelativeLayout
         android:layout_width="fill_parent"
     	android:layout_height="95dp"
     	android:id="@+id/apollo"
     	android:layout_margin="5dp"
-    	android:onClick="Apollo">
+    	android:onClick="Mix">
     	
      <ImageView
         android:id="@+id/apolloimg"
@@ -93,7 +93,7 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Miracles"
+        	android:text="Mix it Up!"
         	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     
@@ -102,7 +102,7 @@
     	android:layout_height="95dp"
     	android:id="@+id/alpen"
     	android:layout_margin="5dp"
-    	android:onClick="Alpen">
+    	android:onClick="Pets">
     	
      <ImageView
         android:id="@+id/alpenimg"
@@ -122,7 +122,7 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="O Tannenbaum"
+        	android:text="More... Pet Shenanigans!"
         	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     
@@ -131,7 +131,7 @@
     	android:layout_height="95dp"
     	android:id="@+id/lochness"
     	android:layout_margin="5dp"
-    	android:onClick="Lochness">
+    	android:onClick="Entwined">
     	
      <ImageView
         android:id="@+id/lochimg"
@@ -151,7 +151,7 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="a Seasame Street Christmas"
+        	android:text="Entwined"
         	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     	</LinearLayout>

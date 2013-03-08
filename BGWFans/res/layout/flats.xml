@@ -48,7 +48,7 @@
     	
      <ImageView
         android:id="@+id/griffonimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/eita"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -77,7 +77,7 @@
     	
      <ImageView
         android:id="@+id/apolloimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/machtower"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -106,7 +106,7 @@
     	
      <ImageView
         android:id="@+id/alpenimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/autobahn"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -122,7 +122,7 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Der AutoBahn" 
+        	android:text="Die AutoBahn" 
         	android:fontFamily="sans-serif-light"/>
     		</RelativeLayout>
     
@@ -135,7 +135,7 @@
     	
      <ImageView
         android:id="@+id/lochimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/parkfans"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -164,7 +164,7 @@
     	
      <ImageView
         android:id="@+id/grovimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/parkfans"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -193,7 +193,7 @@
     	
       <ImageView
         android:id="@+id/grovimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/parkfans"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -222,7 +222,7 @@
     	
     <ImageView
         android:id="@+id/grovimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/parkfans"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -251,7 +251,7 @@
     	
 	<ImageView
         android:id="@+id/grovimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/parkfans"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -280,7 +280,7 @@
     	
 	<ImageView
         android:id="@+id/grovimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/parkfans"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -309,7 +309,7 @@
     	
 	<ImageView
         android:id="@+id/grovimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/parkfans"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>

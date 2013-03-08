@@ -60,16 +60,70 @@ public class InfoScreen extends SideMenuActivity implements OnClickListener {
 		
 		//event card stack
 		CardStack eventstack = new CardStack();
-		eventstack.add(new XmasCard("Christmas Town"));
-		eventstack.add(new HosCard("Howl-O-Scream"));
-		eventstack.add(new IllCard("Illuminights"));
-		eventstack.add(new WineCard("Food and Wine Festival"));
-		eventstack.add(new PmCard("Passmember Preview Weekend"));
+		XmasCard xmas = new XmasCard("Christmas Town");
+		HosCard hos = new HosCard("Howl-o-Scream");
+		IllCard ill = new IllCard("Illuminights");
+		WineCard wine = new WineCard("Food and Wine Festival");
+		PmCard pm = new PmCard("Passmember Preview Day");
+		eventstack.add(xmas);
+		eventstack.add(hos);
+		eventstack.add(ill);
+		eventstack.add(wine);
+		eventstack.add(pm);
+		//eventstack.add(new XmasCard("Christmas Town"));
+		//eventstack.add(new HosCard("Howl-O-Scream"));
+		//eventstack.add(new IllCard("Illuminights"));
+		//eventstack.add(new WineCard("Food and Wine Festival"));
+		//eventstack.add(new PmCard("Passmember Preview Weekend"));
 		mCardView.addStack(eventstack);
+		xmas.setOnClickListener(new OnClickListener() 
+		{
+			@Override
+			public void onClick(View v) {
+				
+				Intent i = new Intent(getApplicationContext(), HiddenWiki.class);
+				i.putExtra("wikiLink", "http://seaworldparks.com/christmastownbgw");
+				startActivity(i);	
+			}
+		});
+		
+		hos.setOnClickListener(new OnClickListener() 
+		{
+			@Override
+			public void onClick(View v) {
+				
+				Intent i = new Intent(getApplicationContext(), HiddenWiki.class);
+				i.putExtra("wikiLink", "http://www.howloscream.com/Williamsburg/homepage.aspx");
+				startActivity(i);		
+			}
+		});
+		
+		ill.setOnClickListener(new OnClickListener() 
+		{
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getApplicationContext(), HiddenWiki.class);
+				i.putExtra("wikiLink", "http://seaworldparks.com/en/buschgardens-williamsburg/Park-Info/Events/Content/IllumiNights?from=Top_Nav");
+				startActivity(i);		
+			}
+		});
+		
 		
 		CardStack wcstack = new CardStack();
-		wcstack.add(new WcCard("Water Country USA"));
+		WcCard wccard = new WcCard("Water Country USA");
+		wcstack.add(wccard);
+		//wcstack.add(new WcCard("Water Country USA"));
 		mCardView.addStack(wcstack);
+		wccard.setOnClickListener(new OnClickListener() 
+		{
+			@Override
+			public void onClick(View v) {
+				Intent i = new Intent(getApplicationContext(), HiddenWiki.class);
+				i.putExtra("wikiLink", "http://watercountryusa.com/wc/");
+				startActivity(i);	
+			}
+		});
+		
 		
 		CardStack paidstack = new CardStack();
 		PaidCard paidOpen = new PaidCard("Go Platinum!");
@@ -80,19 +134,12 @@ public class InfoScreen extends SideMenuActivity implements OnClickListener {
 		{
 			@Override
 			public void onClick(View v) {
-
-                
-				
-				Intent intent = new Intent(Intent.ACTION_VIEW);
-				intent.setData(Uri.parse("http://www.bgwfans.com"));
-				startActivity(intent);
-				
+				Intent i = new Intent(getApplicationContext(), HiddenWiki.class);
+				i.putExtra("wikiLink", "http://www.bgwfans.com");
+				startActivity(i);	
 			}
 		});
 		
-		//mCardView.addCardToLastStack(androidViewsCard);
-
-		// draw cards
 		mCardView.refresh();
 	
 	}

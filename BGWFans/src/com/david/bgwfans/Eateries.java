@@ -1,32 +1,16 @@
 package com.david.bgwfans;
 
-
-import android.app.ActionBar;
 import android.os.Bundle;
 import android.view.View;
-import net.simonvt.widget.MenuDrawerManager;
 
-public class Eateries extends BaseActivity implements View.OnClickListener{
-	
-	private MenuDrawerManager mMenuDrawer;
-	private static final String STATE_MENUDRAWER = "net.simonvt.menudrawer.samples.WindowSample.menuDrawer";
-	
+public class Eateries extends SideMenuActivity implements View.OnClickListener{
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.park_eateries);
 
-		
-		ActionBar actionbar = getActionBar();
-        actionbar.setDisplayShowTitleEnabled(false);
-		actionbar.setListNavigationCallbacks(null, null);
-        actionbar.setDisplayHomeAsUpEnabled(true);
-        createNavigation();
-
 }
 	
-	private void createNavigation() {
-		// TODO Auto-generated method stub
-		
-	}
+
 }

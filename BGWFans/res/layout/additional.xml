@@ -48,7 +48,7 @@
     	
      <ImageView
         android:id="@+id/griffonimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/parkfans"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>

@@ -53,13 +53,15 @@
     				<data android:scheme="http" android:host="parkfans.net"/>
     				<data android:scheme="http" android:host="www.parkfans.net"/>
 				</intent-filter> 
+			</activity>
 			
-						
-        </activity>
+		<!-- Yes this area is a mess. Will be cleaned up before too long -->				
         <activity android:name="com.david.bgwfans.WindowSample" />
         <activity android:name="com.david.bgwfans.ContentSample" />
         <activity android:name="com.david.bgwfans.ListActivitySample" />
         <activity android:name="com.david.bgwfans.Attractions"/>
+        
+        <!-- roller coasters -->
         <activity android:name="com.david.bgwfans.Verbolten"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
         <activity android:name="com.david.bgwfans.Griffon"
@@ -72,21 +74,50 @@
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
          <activity android:name="com.david.bgwfans.Grover"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         
+         <!-- flat rides -->
          <activity android:name="com.david.bgwfans.DarKastle"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
          <activity android:name="com.david.bgwfans.EITA"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
          <activity android:name="com.david.bgwfans.Mach"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
-          <activity android:name="com.david.bgwfans.AutoBahn"
+         <activity android:name="com.david.bgwfans.AutoBahn"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.Cradle"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.FlyingMachine"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+          <activity android:name="com.david.bgwfans.Wirbelwind"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.TradeWind"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.Catapult"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.Delight"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.Ram"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         
+         <!-- water rides -->
+         <activity android:name="com.david.bgwfans.Rapids"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.Pompeii"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         <activity android:name="com.david.bgwfans.Flume"
+            	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         
+         <!-- transportation attractions -->
          <activity android:name="com.david.bgwfans.Train"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
          <activity android:name="com.david.bgwfans.Skyride"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
          <activity android:name="com.david.bgwfans.Cruise"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
+         
+         
         <activity android:name="com.david.bgwfans.Shows"/>
+        <activity android:name="com.david.bgwfans.Eateries"/>
         <activity android:name="com.david.bgwfans.Coasters"/>
         <activity android:name="com.david.bgwfans.MapScreen"
             		android:uiOptions="splitActionBarWhenNarrow"/>

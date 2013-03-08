@@ -46,8 +46,8 @@ public final class R {
 		public static final int SlidingMenu_viewBehind = 2;
 	}
 	public static final class drawable {
-		public static final int defaultshadow = 0x7f020018;
-		public static final int defaultshadowright = 0x7f020019;
+		public static final int defaultshadow = 0x7f020017;
+		public static final int defaultshadowright = 0x7f020018;
 	}
 	public static final class attr {
 		public static final int shadowWidth = 0x7f01001c;

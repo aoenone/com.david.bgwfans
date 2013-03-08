@@ -200,7 +200,7 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 				startActivity(showsActivity);
 				toggle();
 			} else if (id == R.id.item4) {
-				Intent eatActivity = new Intent(this, Coasters.class);
+				Intent eatActivity = new Intent(this, Eateries.class);
 				startActivity(eatActivity);
 				toggle();
 			} else if (id == R.id.item5) {
