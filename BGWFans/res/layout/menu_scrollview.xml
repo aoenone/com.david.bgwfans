@@ -172,21 +172,6 @@
             android:text="About"
             android:textColor="@color/text_color"
             style="@style/MenuDrawer.Widget.Title" />
-        		
-        <TextView
-            android:id="@+id/item13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" />
-        		
-        	<ImageView
-        	    android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/parkfansimg" 
-                android:src="@drawable/parkfans">
-            </ImageView>
 
     	</LinearLayout>
 	</com.david.bgwfans.MenuScrollView>

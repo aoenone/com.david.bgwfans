@@ -115,6 +115,35 @@
          <activity android:name="com.david.bgwfans.Cruise"
             	  android:parentActivityName="com.david.bgwfans.Attractions"/>
          
+         <!-- shows -->
+         <activity android:name="com.david.bgwfans.Barrel"
+            	  android:parentActivityName="com.david.bgwfans.HOS_Shows"/>
+         <activity android:name="com.david.bgwfans.Celtic"
+            	  android:parentActivityName="com.david.bgwfans.HOS_Shows"/>
+         <activity android:name="com.david.bgwfans.Mix"
+            	  android:parentActivityName="com.david.bgwfans.HOS_Shows"/>
+         <activity android:name="com.david.bgwfans.Pets"
+            	  android:parentActivityName="com.david.bgwfans.HOS_Shows"/>
+         <activity android:name="com.david.bgwfans.Entwined"
+            	  android:parentActivityName="com.david.bgwfans.HOS_Shows"/>
+         
+         <!-- eateries -->
+         <activity android:name="com.david.bgwfans.Festhaus"
+            	  android:parentActivityName="com.david.bgwfans.Eateries"/>
+         <activity android:name="com.david.bgwfans.Smokehouse"
+            	  android:parentActivityName="com.david.bgwfans.Eateries"/>
+         <activity android:name="com.david.bgwfans.Piazza"
+            	  android:parentActivityName="com.david.bgwfans.Eateries"/>
+         <activity android:name="com.david.bgwfans.Grille"
+            	  android:parentActivityName="com.david.bgwfans.Eateries"/>
+         <activity android:name="com.david.bgwfans.Cucina"
+            	  android:parentActivityName="com.david.bgwfans.Eateries"/>
+         <activity android:name="com.david.bgwfans.Pub"
+            	  android:parentActivityName="com.david.bgwfans.Eateries"/>
+         <activity android:name="com.david.bgwfans.Grill"
+            	  android:parentActivityName="com.david.bgwfans.Eateries"/>
+         <activity android:name="com.david.bgwfans.Bier"
+            	  android:parentActivityName="com.david.bgwfans.Eateries"/>
          
         <activity android:name="com.david.bgwfans.Shows"/>
         <activity android:name="com.david.bgwfans.Eateries"/>

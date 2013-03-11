@@ -21,8 +21,8 @@
     	android:layout_height="95dp"
     	android:id="@+id/vboltButton"
     	android:background="@drawable/vbolt2"
-    	android:scaleType="center"
     	android:onClick="Verbolten"
+    	android:scaleType="center"
     	android:longClickable="true" />
 
     	<TextView

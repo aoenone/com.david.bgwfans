@@ -38,20 +38,20 @@ public final class R {
 		public static final int card_grid_text = 0x7f040006;
 	}
 	public static final class layout {
-		public static final int item_card = 0x7f030032;
-		public static final int item_card_empty_first = 0x7f030034;
-		public static final int item_card_empty_last = 0x7f030035;
-		public static final int item_stack = 0x7f030036;
-		public static final int cards_view = 0x7f030010;
-		public static final int item_card_empty = 0x7f030033;
-		public static final int header = 0x7f03001b;
+		public static final int item_card = 0x7f03003a;
+		public static final int item_card_empty_first = 0x7f03003c;
+		public static final int item_card_empty_last = 0x7f03003d;
+		public static final int item_stack = 0x7f03003e;
+		public static final int cards_view = 0x7f030012;
+		public static final int item_card_empty = 0x7f03003b;
+		public static final int header = 0x7f030023;
 	}
 	public static final class drawable {
 		public static final int card_background_shadow = 0x7f020011;
 		public static final int card = 0x7f02000f;
 		public static final int card_background = 0x7f020010;
 		public static final int card_shadow = 0x7f020012;
-		public static final int top_shadow = 0x7f02007c;
+		public static final int top_shadow = 0x7f02007d;
 	}
 	public static final class dimen {
 		public static final int web_suggestion_icon_size = 0x7f080006;

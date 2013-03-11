@@ -218,7 +218,7 @@
     	android:layout_height="95dp"
     	android:id="@+id/grover"
     	android:layout_margin="5dp"
-    	android:onClick="Beer">
+    	android:onClick="Bier">
     	
     <ImageView
         android:id="@+id/grovimg"

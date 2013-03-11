@@ -18,7 +18,7 @@
     	
      <ImageView
         android:id="@+id/vboltimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/parkfans"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -47,7 +47,7 @@
     	
      <ImageView
         android:id="@+id/vboltimg"
-        android:src="@drawable/vbolt2"
+        android:src="@drawable/parkfans"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -77,7 +77,7 @@
     	
      <ImageView
         android:id="@+id/apolloimg"
-        android:src="@drawable/apollo2"
+        android:src="@drawable/parkfans"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -106,7 +106,7 @@
     	
      <ImageView
         android:id="@+id/alpenimg"
-        android:src="@drawable/alpen3"
+        android:src="@drawable/parkfans"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -135,7 +135,7 @@
     	
      <ImageView
         android:id="@+id/lochimg"
-        android:src="@drawable/lochness2"
+        android:src="@drawable/parkfans"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
