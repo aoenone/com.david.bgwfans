@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.david.bgwfans"
-    android:versionCode="1"
+    android:versionCode="1" 
     android:versionName="1.0" >
 
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="17" />
@@ -10,7 +10,6 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_CORSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-	<uses-permission android:name="com.android.vending.BILLING" />
 	<permission
           android:name="com.david.bgwfans.MAPS_RECEIVE"
           android:protectionLevel="signature"/>
@@ -24,9 +23,10 @@
         android:label="BGWFans"
         android:icon="@drawable/icon"
         android:logo="@drawable/bgwhite"
-        android:theme="@style/Theme.bgwfans"
+        android:theme="@style/Theme.Bgwfans2"
         android:hardwareAccelerated="true"
         android:allowBackup="true">
+        
         <meta-data
     	android:name="com.google.android.maps.v2.API_KEY"
     	android:value="AIzaSyAz1TiujG7GbWK9TCcApqdhK-eTaa3g-Z4"/>
@@ -127,7 +127,7 @@
          <activity android:name="com.david.bgwfans.Entwined"
             	  android:parentActivityName="com.david.bgwfans.HOS_Shows"/>
          
-         <!-- eateries -->
+         <!-- eateries -->  
          <activity android:name="com.david.bgwfans.Festhaus"
             	  android:parentActivityName="com.david.bgwfans.Eateries"/>
          <activity android:name="com.david.bgwfans.Smokehouse"

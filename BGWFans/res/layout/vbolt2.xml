@@ -5,18 +5,19 @@
         android:layout_height="fill_parent"
         android:padding="5dp">  
        
-   <RelativeLayout
+    <RelativeLayout
         android:layout_width="fill_parent"
     	android:layout_height="0px"
-    	android:layout_weight="1">  	
-     <ImageView
-        android:id="@+id/vbolt"
-        android:src="@drawable/vbolt2"
-        android:scaleType="center"
+    	android:layout_weight="1" >
+    	
+      <Button 
         android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
+    	android:layout_height="95dp"
+    	android:id="@+id/vas"
+    	android:background="@drawable/vbolt23" />
+
     	<TextView
-    	  	android:id="@+id/attr"
+    	  	android:id="@+id/vboltt"
     	    android:layout_width="match_parent"
         	android:layout_height="wrap_content"
         	android:layout_alignParentBottom="true"
@@ -29,7 +30,7 @@
         	android:textSize="22sp"
         	android:text="Verbolten"
         	android:fontFamily="sans-serif-light" />
-    		</RelativeLayout>
+    </RelativeLayout>
 
     <ScrollView
     		android:layout_width="fill_parent"

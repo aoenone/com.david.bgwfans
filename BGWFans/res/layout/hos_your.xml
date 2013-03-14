@@ -7,7 +7,7 @@
         
     <Button
         android:id="@+id/vbolt"
-        android:background="@drawable/verbolten" 
+        android:background="@drawable/parkfans" 
         android:layout_width="fill_parent"
         android:layout_height="95dp"
         android:padding="15dp"/>

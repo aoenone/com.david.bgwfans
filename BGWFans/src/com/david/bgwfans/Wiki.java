@@ -1,5 +1,8 @@
 package com.david.bgwfans;
 
+import com.google.analytics.tracking.android.GoogleAnalytics;
+import com.google.analytics.tracking.android.Tracker;
+
 import android.app.ActionBar;
 import android.os.Bundle;
 import android.view.MenuInflater;
@@ -14,12 +17,17 @@ public class Wiki extends SideMenuActivity implements View.OnClickListener{
 	
 	private WebView webview3;
 	private ProgressBar Pbar;
+	private Tracker mGaTracker;
+	private GoogleAnalytics maInstance;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		//this.getWindow().requestFeature(Window.FEATURE_PROGRESS);
 		setContentView(R.layout.wiki);
+		
+		maInstance = GoogleAnalytics.getInstance(this);
+		mGaTracker = maInstance.getTracker("UA-39204043-1");
 		
 		//getWindow().setFeatureInt( Window.FEATURE_PROGRESS, Window.PROGRESS_VISIBILITY_ON);
 		

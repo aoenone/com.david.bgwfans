@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 
+import com.google.analytics.tracking.android.GoogleAnalytics;
+import com.google.analytics.tracking.android.Tracker;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -184,6 +186,8 @@ public class ParkMap extends BaseActivity {
 	//set up ploygons for each hamlet in the park
 	private Polygon England;
 	private Polygon Banbury;
+	private Tracker mGaTracker;
+	private GoogleAnalytics mGaInstance;
 	
 	
 	
@@ -208,6 +212,9 @@ public class ParkMap extends BaseActivity {
 	super.onCreate(savedInstanceState);
 	setContentView(R.layout.mapv2);
 	setUpMapIfNeeded();
+	
+	mGaInstance = GoogleAnalytics.getInstance(this);
+	mGaTracker = mGaInstance.getTracker("UA-39204043-1");
 	
 	ActionBar actionbar = getActionBar();
     actionbar.setDisplayShowTitleEnabled(false);
@@ -273,6 +280,33 @@ public class ParkMap extends BaseActivity {
 		} else if (itemId == R.id.banbury) {
 			mMap.clear();
 			addBanburyToMap();
+		} else if (itemId == R.id.scotland){
+			mMap.clear();
+			addScotlandToMap();
+		} else if (itemId == R.id.ireland){
+			mMap.clear();
+			addIrelandToMap();
+		} else if (itemId == R.id.wildlife){
+			mMap.clear();
+			addWildToMap();
+		} else if (itemId == R.id.aquitaine){
+			mMap.clear();
+			addAquaToMap();
+		} else if (itemId == R.id.newfrance){
+			mMap.clear();
+			addFranceToMap();
+		} else if (itemId == R.id.rhinefeld){
+			mMap.clear();
+			addRhineToMap();
+		} else if (itemId == R.id.oktoberfest){
+			mMap.clear();
+			addOktoberToMap();
+		} else if (itemId == R.id.italy){
+			mMap.clear();
+			addItalyToMap();
+		} else if (itemId == R.id.festa){
+			mMap.clear();
+			addFestaToMap();
 		}
 		return super.onOptionsItemSelected(item);
 	}
@@ -298,7 +332,7 @@ public class ParkMap extends BaseActivity {
         }
     }
 	
-	private void setUpMap() 
+	private void setUpMap()  
 	{
 		addCoastersToMap();
 		addFlatsToMap();
@@ -691,16 +725,16 @@ public class ParkMap extends BaseActivity {
 				 .strokeWidth(4)
 				 .strokeColor(Color.BLACK);
 		
-		Polygon polygon = mMap.addPolygon(rectOptions);
+		//Polygon polygon = mMap.addPolygon(rectOptions);
 		
 		englandshow = mMap.addMarker(new MarkerOptions()
 		.position(ENGLANDSHOW)
 		.title("Pirates 4D")
 		.snippet("A 4d Pirate Adventure"));
 		
-		b2 = mMap.addMarker(new MarkerOptions()
-		.position(B2)
-		.title("Bathroom"));
+		//b2 = mMap.addMarker(new MarkerOptions()
+		//.position(B2)
+		//.title("Bathroom"));
 		
 		grille = mMap.addMarker(new MarkerOptions()
 		.position(GRILLE)
@@ -713,48 +747,247 @@ public class ParkMap extends BaseActivity {
 	
 	public void addScotlandToMap()
 	{
+		loch = mMap.addMarker(new MarkerOptions()
+	     .position(LOCH)
+	     .title("Loch Ness Monster")
+	     .snippet("Legendary Loch Ness Monster"));
+
+		etrain = mMap.addMarker(new MarkerOptions()
+			.position(ETRAIN)
+			.title("England train stop")
+			.snippet("departs to Festa Italia"));
+
+		stables = mMap.addMarker(new MarkerOptions()
+			.position(STABLES)
+			.title("Highland Stables")
+			.snippet("Horse, sheep, and dog exhibit"));
 		
 	}
 	
 	public void addIrelandToMap()
 	{
-		
+
+		eita = mMap.addMarker(new MarkerOptions()
+		.position(EITA)
+		.title("Europe in the Air")
+		.snippet("A high flying adventure over Europe"));
+
+		grill = mMap.addMarker(new MarkerOptions()
+		.position(GRILL)
+		.title("Grogran's Grill")
+		.snippet("Irish style eatery, with nearby street performers"));
+
+		pub = mMap.addMarker(new MarkerOptions()
+		.position(PUB)
+		.title("Grogan's Pub")
+		.snippet("Drinks, snacks and speciality beers"));
+
+		irelandshow = mMap.addMarker(new MarkerOptions()
+		.position(IRELANDSHOW)
+		.title("Celtic Fyre")
+		.snippet("Pure energy of Irish dance explode on stage"));
 	}
 	
 	public void addWildToMap()
 	{	
+		ridge = mMap.addMarker(new MarkerOptions()
+		.position(RIDGE)
+		.title("Eagle Ridge")
+		.snippet("Eagle exhibit"));
 		
+		valley = mMap.addMarker(new MarkerOptions()
+		.position(VALLEY)
+		.title("Wolf Valley")
+		.snippet("wolf exhibit"));
+
+
+		glen = mMap.addMarker(new MarkerOptions()
+		.position(GLEN)
+		.title("Lorikeet Glen")
+		.snippet("bird exhibit"));
+
+		petshow = mMap.addMarker(new MarkerOptions()
+		.position(PETSHOW)
+		.title("More Pet Shinnanigans")
+		.snippet("Pet tricks and more"));
 		
 	}
 	
 	public void addAquaToMap()
 	{
+		griffon = mMap.addMarker(new MarkerOptions()
+	     .position(GRIFFON)
+	     .title("Griffon")
+	     .snippet("Escape the Griffon"));
 		
+		frenchshow = mMap.addMarker(new MarkerOptions()
+		.position(FRENCHSHOW)
+		.title("Summer Concert Series")
+		.snippet("Various artist play throughout the summer, check the site for dates"));
+
+		askyride = mMap.addMarker(new MarkerOptions()
+			.position(ASKYRIDE)
+			.title("Aquitaine Skyride")
+			.snippet("departs to Rhinefeld"));
 	}
 	
 	public void addFranceToMap()
 	{
-		
+		catapult = mMap.addMarker(new MarkerOptions()
+		.position(CATAPULT)
+		.title("Le Catapult")
+		.snippet("scrambler"));
+
+
+		scoot = mMap.addMarker(new MarkerOptions()
+		.position(SCOOT)
+		.title("Le Scoot")
+		.snippet("log flume"));
+
+
+		ntrain = mMap.addMarker(new MarkerOptions()
+		.position(NTRAIN)
+		.title("New France train station")
+		.snippet("departs to England"));
+
+		smokehouse = mMap.addMarker(new MarkerOptions()
+		.position(SMOKEHOUSE)
+		.title("Trapper's Smokehouse")
+		.snippet("Classic smokehouse style food and scenery"));
 	}
 	
 	public void addRhineToMap()
 	{
-		
+		alpen = mMap.addMarker(new MarkerOptions()
+	     .position(ALPEN)
+	     .title("Alpengeist")
+	     .snippet("Slopes are closed"));
+
+
+		rskyride = mMap.addMarker(new MarkerOptions()
+			.position(RSKYRIDE)
+			.title("Rhinefeld Skyride")
+			.snippet("departs to England"));
+
+		rrc = mMap.addMarker(new MarkerOptions()
+			.position(RRC)
+			.title("Rhine River Cruise")
+			.snippet("Boat ride on the Rhine River"));
 	}
 	
 	public void addOktoberToMap()
 	{
-		
+		vbolt = mMap.addMarker(new MarkerOptions()
+	     .position(VBOLT)
+	     .title("Verbolten")
+	     .snippet("Brave the black forest!"));
+
+
+
+		mach = mMap.addMarker(new MarkerOptions()
+			.position(MACH)
+			.title("Mach Tower")
+			.snippet("Watch your fall"));
+
+		castle = mMap.addMarker(new MarkerOptions()
+			.position(CASTLE)
+			.title("DarKastle")
+			.snippet("Escape the haunted castle"));
+
+		auto = mMap.addMarker(new MarkerOptions()
+			.position(AUTO)
+			.title("Der Autobahn")
+			.snippet("bumper cars"));
+
+		festhaus = mMap.addMarker(new MarkerOptions()
+			.position(FESTHAUS)
+			.title("Das Festhaus")
+			.snippet("German style eatery with daily shows"));
+
+		beer = mMap.addMarker(new MarkerOptions()
+			.position(BEER)
+			.title("Beste Brezeln und Bier")
+			.snippet("speciality beer and pretzels"));
+
+		festshow = mMap.addMarker(new MarkerOptions()
+			.position(FESTSHOW)
+			.title("Entwined(AM)/Roll out the Barrel(PM)")
+			.snippet("Entwined runs during the day, RotB runs at night"));
+
+		wind = mMap.addMarker(new MarkerOptions()
+		.position(WIND)
+		.title("Der Wirbelwind")
+		.snippet("Wave Swinger"));
+
 	}
 	
 	public void addItalyToMap()
 	{
-		
+		cradle = mMap.addMarker(new MarkerOptions()
+		.position(CRADLE)
+		.title("Da Vinci's Cradle")
+		.snippet("flying carpet"));
+
+		machine = mMap.addMarker(new MarkerOptions()
+		.position(MACHINE)
+		.title("The Flying Machine")
+		.snippet(""));
+
+		ram = mMap.addMarker(new MarkerOptions()
+		.position(RAM)
+		.title("Battering Ram")
+		.snippet("swinging boat"));
+
+		pompeii = mMap.addMarker(new MarkerOptions()
+		.position(POMPEII)
+		.title("Escape from Pompeii")
+		.snippet("shoot-the-chutes"));
+
+		piazza = mMap.addMarker(new MarkerOptions()
+		.position(PIAZZA)
+		.title("Ristorante Della Piazza")
+		.snippet("Italian stlye eatery with daily shows"));
+
+		italyshow = mMap.addMarker(new MarkerOptions()
+		.position(ITALYSHOW)
+		.title("Mix it up!")
+		.snippet("The chefs are at it again"));
+
+
 	}
 	
 	public void addFestaToMap()
 	{
-		
+		apollo = mMap.addMarker(new MarkerOptions()
+	     .position(APOLLO)
+	     .title("Apollo's Chariot")
+	     .snippet("Ride the wings to the sun"));
+
+		twind = mMap.addMarker(new MarkerOptions()
+			.position(TWIND)
+			.title("The Trade Wind")
+			.snippet("music express"));
+
+		delight = mMap.addMarker(new MarkerOptions()
+			.position(DELIGHT)
+			.title("Turkish Delight")
+			.snippet(""));
+
+		rapid = mMap.addMarker(new MarkerOptions()
+			.position(RAPID)
+			.title("Roman Rapids")
+			.snippet("flume rapids"));
+
+		ftrain = mMap.addMarker(new MarkerOptions()
+			.position(FTRAIN)
+			.title("Festa Italia train station")
+			.snippet("departs to New France"));
+
+		cucina = mMap.addMarker(new MarkerOptions()
+			.position(CUCINA)
+			.title("La Cucina")
+			.snippet("All you can eat pizza and pasta buffet"));
+
 	}
 	
 	

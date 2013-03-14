@@ -79,7 +79,7 @@
     	
      <ImageView
         android:id="@+id/apolloimg"
-        android:src="@drawable/flume"
+        android:src="@drawable/lescoot"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"
@@ -96,7 +96,7 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Log Flume"
+        	android:text="Le Scoot"
         	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     	</LinearLayout>

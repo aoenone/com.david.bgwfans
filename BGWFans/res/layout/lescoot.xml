@@ -11,7 +11,7 @@
     	android:layout_weight="1">  	
      <ImageView
         android:id="@+id/vbolt"
-        android:src="@drawable/flume"
+        android:src="@drawable/lescoot"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>

@@ -14,18 +14,25 @@ import com.fima.cardsui.views.CardUI;
 import com.google.ads.AdRequest;
 import com.google.ads.AdSize;
 import com.google.ads.AdView;
+import com.google.analytics.tracking.android.GoogleAnalytics;
+import com.google.analytics.tracking.android.Tracker;
 
 public class InfoScreen extends SideMenuActivity implements OnClickListener {
 
 	private CardUI mCardView;
 	private AdView adView;
     String adMobId = "a151350c50621fc";
+    private Tracker mGaTracker;
+    private GoogleAnalytics mGaInstance;
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Log.i("BillingService", "Starting");
 		setContentView(R.layout.activity_main);
 		
+		 mGaInstance = GoogleAnalytics.getInstance(this);
+		 mGaTracker = mGaInstance.getTracker("UA-39204043-1");
+		 
 		//View myFragmentView = inflater.inflate(R.layout.wccard, container, false);
 		RelativeLayout layout = (RelativeLayout)findViewById(R.id.homelayout);
 		RelativeLayout.LayoutParams lay = new RelativeLayout.LayoutParams(
@@ -61,10 +68,10 @@ public class InfoScreen extends SideMenuActivity implements OnClickListener {
 		//event card stack
 		CardStack eventstack = new CardStack();
 		XmasCard xmas = new XmasCard("Christmas Town");
-		HosCard hos = new HosCard("Howl-o-Scream");
-		IllCard ill = new IllCard("Illuminights");
-		WineCard wine = new WineCard("Food and Wine Festival");
-		PmCard pm = new PmCard("Passmember Preview Day");
+		HosCard hos = new HosCard("Howl-O-Scream");
+		IllCard ill = new IllCard("IllumiNights");
+		WineCard wine = new WineCard("Food & Wine Festival");
+		PmCard pm = new PmCard("Pass Member Preview Day");
 		eventstack.add(xmas);
 		eventstack.add(hos);
 		eventstack.add(ill);
@@ -82,7 +89,7 @@ public class InfoScreen extends SideMenuActivity implements OnClickListener {
 			public void onClick(View v) {
 				
 				Intent i = new Intent(getApplicationContext(), HiddenWiki.class);
-				i.putExtra("wikiLink", "http://seaworldparks.com/christmastownbgw");
+				i.putExtra("wikiLink", "http://www.christmastown.com/mobi/#home");
 				startActivity(i);	
 			}
 		});
@@ -93,7 +100,7 @@ public class InfoScreen extends SideMenuActivity implements OnClickListener {
 			public void onClick(View v) {
 				
 				Intent i = new Intent(getApplicationContext(), HiddenWiki.class);
-				i.putExtra("wikiLink", "http://www.howloscream.com/Williamsburg/homepage.aspx");
+				i.putExtra("wikiLink", "http://www.howloscream.com/williamsburg/mobi/#home");
 				startActivity(i);		
 			}
 		});
@@ -103,7 +110,7 @@ public class InfoScreen extends SideMenuActivity implements OnClickListener {
 			@Override
 			public void onClick(View v) {
 				Intent i = new Intent(getApplicationContext(), HiddenWiki.class);
-				i.putExtra("wikiLink", "http://seaworldparks.com/en/buschgardens-williamsburg/Park-Info/Events/Content/IllumiNights?from=Top_Nav");
+				i.putExtra("wikiLink", "http://seaworldparks.com/buschgardens-williamsburg/Park-Info/Events/Content/IllumiNights");
 				startActivity(i);		
 			}
 		});

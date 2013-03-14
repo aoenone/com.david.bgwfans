@@ -34,7 +34,7 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Roll out the Barrel"
+        	android:text="Pirates 4D"
         	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     		
@@ -47,7 +47,7 @@
     	
      <ImageView
         android:id="@+id/vboltimg"
-        android:src="@drawable/parkfans"
+        android:src="@drawable/celtic"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -106,7 +106,7 @@
     	
      <ImageView
         android:id="@+id/alpenimg"
-        android:src="@drawable/parkfans"
+        android:src="@drawable/pets"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -135,7 +135,7 @@
     	
      <ImageView
         android:id="@+id/lochimg"
-        android:src="@drawable/parkfans"
+        android:src="@drawable/entwined"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>

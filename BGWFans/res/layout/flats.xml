@@ -14,7 +14,7 @@
     	android:layout_height="95dp"
     	android:id="@+id/vbolt"
     	android:layout_margin="5dp"
-    	android:onClick="DarKastle">
+    	android:onClick="Curse of DarKastle">
     	
      <ImageView
         android:id="@+id/vboltimg"
@@ -106,7 +106,7 @@
     	
      <ImageView
         android:id="@+id/alpenimg"
-        android:src="@drawable/autobahn"
+        android:src="@drawable/auto"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -222,7 +222,7 @@
     	
     <ImageView
         android:id="@+id/grovimg"
-        android:src="@drawable/parkfans"
+        android:src="@drawable/tradewind"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -238,7 +238,7 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Trade Wind"
+        	android:text="The Trade Wind"
         	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     		
@@ -280,7 +280,7 @@
     	
 	<ImageView
         android:id="@+id/grovimg"
-        android:src="@drawable/parkfans"
+        android:src="@drawable/delight"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -296,7 +296,7 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Turkisk Delight"
+        	android:text="Turkish Delight"
         	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
     		
@@ -309,7 +309,7 @@
     	
 	<ImageView
         android:id="@+id/grovimg"
-        android:src="@drawable/parkfans"
+        android:src="@drawable/ram"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>

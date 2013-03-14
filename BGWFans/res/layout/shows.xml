@@ -6,7 +6,7 @@
     
     <Button
         android:id="@+id/entwined"
-        android:background="@drawable/verbolten" 
+        android:background="@drawable/parkfans" 
         android:layout_width="295dp"
         android:layout_height="95dp"
         android:layout_margin="5dp"
@@ -18,12 +18,12 @@
         android:layout_width="295dp"
         android:layout_height="95dp"
         android:layout_margin="5dp"
-        android:background="@drawable/verbolten" 
+        android:background="@drawable/parkfans" 
         android:layout_gravity="center"/>
     
     <Button
         android:id="@+id/celticfyre"
-        android:background="@drawable/verbolten" 
+        android:background="@drawable/parkfans" 
         android:layout_width="295dp"
         android:layout_height="95dp"
         android:layout_margin="5dp"
@@ -31,7 +31,7 @@
     
     <Button
         android:id="@+id/morepets"
-        android:background="@drawable/verbolten" 
+        android:background="@drawable/parkfans" 
         android:layout_width="295dp"
         android:layout_height="95dp"
         android:layout_margin="5dp"

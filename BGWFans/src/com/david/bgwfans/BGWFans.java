@@ -3,6 +3,8 @@ package com.david.bgwfans;
 import com.google.ads.AdRequest;
 import com.google.ads.AdSize;
 import com.google.ads.AdView;
+import com.google.analytics.tracking.android.GoogleAnalytics;
+import com.google.analytics.tracking.android.Tracker;
 
 import android.app.ActionBar;
 import android.os.Bundle;
@@ -24,12 +26,17 @@ public class BGWFans extends SideMenuActivity implements View.OnClickListener{
 	private ProgressBar Pbar;
 	private AdView adView;
 	String adMobId = "a151350c50621fc";
+	private Tracker mGaTracker;
+	private GoogleAnalytics mGaInstance;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.bgwfans);
         
+		mGaInstance = GoogleAnalytics.getInstance(this);
+		mGaTracker = mGaInstance.getTracker("UA-39204043-1");
+		 
         AdView adView = (AdView)findViewById(R.id.adMob);
 		adView.loadAd(new AdRequest());
         

@@ -25,6 +25,8 @@ import java.util.ArrayList;
 import com.google.ads.AdRequest;
 import com.google.ads.AdSize;
 import com.google.ads.AdView;
+import com.google.analytics.tracking.android.GoogleAnalytics;
+import com.google.analytics.tracking.android.Tracker;
 
 public class Attractions extends SideMenuActivity implements OnClickListener{
         
@@ -34,6 +36,8 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
         RelativeLayout b1;
         private AdView adView;
         String adMobId = "a151350c50621fc";
+        private Tracker mGaTracker;
+    	private GoogleAnalytics mGaInstance;
         //Button button;
         
         @Override
@@ -50,6 +54,10 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        
+        mGaInstance = GoogleAnalytics.getInstance(this);
+		mGaTracker = mGaInstance.getTracker("UA-39204043-1");
+		
         //LinearLayout layout = (LinearLayout)findViewById(R.id.mainlayout);
         RelativeLayout.LayoutParams lay = new RelativeLayout.LayoutParams(
         	    RelativeLayout.LayoutParams.MATCH_PARENT, 
@@ -77,8 +85,8 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
         	mViewPager = (ViewPager) findViewById(R.id.pager);
        		mViewPager.setPageTransformer(true, new ZoomOutPageTransformer());
             mViewPager.setAdapter(mPagerAdapter);
-            mViewPager.setOffscreenPageLimit(2);
-            mViewPager.setCurrentItem(0);
+            mViewPager.setOffscreenPageLimit(4);
+           // mViewPager.setCurrentItem(0);
                 
                 mViewPager.setOnPageChangeListener(
                     new ViewPager.SimpleOnPageChangeListener() {
@@ -116,6 +124,12 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
                 ab.addTab(tab2);
                 ab.addTab(tab3);
                 ab.addTab(tab4);         
+    }
+    
+    public void destroyItem(View collection, int position, Object o) {
+        View view = (View)o;
+        ((ViewPager) collection).removeView(view);
+        view = null;
     }
     
     public static class TabListener<T extends Fragment> implements ActionBar.TabListener {

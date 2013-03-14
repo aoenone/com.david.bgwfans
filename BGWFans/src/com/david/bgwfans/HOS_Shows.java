@@ -1,6 +1,9 @@
 package com.david.bgwfans;
 
 
+import com.google.analytics.tracking.android.GoogleAnalytics;
+import com.google.analytics.tracking.android.Tracker;
+
 import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,14 +11,16 @@ import android.view.View;
 import net.simonvt.widget.MenuDrawerManager;
 
 public class HOS_Shows extends SideMenuActivity implements View.OnClickListener{
-
+	private Tracker mGaTracker;
+	private GoogleAnalytics mGaInstance;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.hos_shows);
 
- 
+		mGaInstance = GoogleAnalytics.getInstance(this);
+		 mGaTracker = mGaInstance.getTracker("UA-39204043-1");
 }
 	
 	public void Barrel(View view)

@@ -8,14 +8,14 @@ package com.fima.cardsui;
 
 public final class R {
 	public static final class id {
-		public static final int textView2 = 0x7f05000f;
-		public static final int listView = 0x7f050043;
-		public static final int title = 0x7f050041;
-		public static final int sticky = 0x7f050044;
-		public static final int cardContent = 0x7f050076;
-		public static final int placeholder = 0x7f050058;
-		public static final int stackContainer = 0x7f050078;
-		public static final int stackTitle = 0x7f050077;
+		public static final int textView2 = 0x7f05003b;
+		public static final int listView = 0x7f05003e;
+		public static final int title = 0x7f05003c;
+		public static final int sticky = 0x7f05003f;
+		public static final int cardContent = 0x7f050079;
+		public static final int placeholder = 0x7f050053;
+		public static final int stackContainer = 0x7f05007b;
+		public static final int stackTitle = 0x7f05007a;
 	}
 	public static final class style {
 		public static final int CardTitleBold = 0x7f060005;
@@ -47,11 +47,11 @@ public final class R {
 		public static final int header = 0x7f030023;
 	}
 	public static final class drawable {
-		public static final int card_background_shadow = 0x7f020011;
-		public static final int card = 0x7f02000f;
-		public static final int card_background = 0x7f020010;
-		public static final int card_shadow = 0x7f020012;
-		public static final int top_shadow = 0x7f02007d;
+		public static final int card_background_shadow = 0x7f02001b;
+		public static final int card = 0x7f020019;
+		public static final int card_background = 0x7f02001a;
+		public static final int card_shadow = 0x7f02001c;
+		public static final int top_shadow = 0x7f0200ac;
 	}
 	public static final class dimen {
 		public static final int web_suggestion_icon_size = 0x7f080006;

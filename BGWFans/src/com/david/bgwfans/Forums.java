@@ -1,5 +1,8 @@
 package com.david.bgwfans;
 
+import com.google.analytics.tracking.android.GoogleAnalytics;
+import com.google.analytics.tracking.android.Tracker;
+
 import android.app.ActionBar;
 import android.os.Bundle;
 import android.view.MenuInflater;
@@ -13,11 +16,17 @@ public class Forums extends SideMenuActivity implements View.OnClickListener{
 	
 	private WebView webview2;
 	private ProgressBar Pbar;
+	private Tracker mGaTracker;
+	private GoogleAnalytics mGaInstance;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.forums);
 		
+		mGaInstance = GoogleAnalytics.getInstance(this);
+		mGaTracker = mGaInstance.getTracker("UA-39204043-1");
+		 
 		ActionBar actionbar = getActionBar();
         actionbar.setDisplayShowTitleEnabled(false);
 		actionbar.setListNavigationCallbacks(null, null);
@@ -26,6 +35,7 @@ public class Forums extends SideMenuActivity implements View.OnClickListener{
  
 		webview2 = (WebView) findViewById(R.id.webView2);
 		webview2.getSettings().setJavaScriptEnabled(true);
+		webview2.getSettings().setPluginsEnabled(true);
 		webview2.loadUrl("http://www.bgwfans.com/forums");
 		webview2.setWebViewClient(new WebViewClient());
 		webview2.getSettings().setBuiltInZoomControls(true);

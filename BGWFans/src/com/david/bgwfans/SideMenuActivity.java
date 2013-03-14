@@ -5,9 +5,11 @@ import android.app.ActionBar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.view.Gravity;
+import android.view.KeyEvent;
 import android.view.MenuInflater;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -16,6 +18,9 @@ import android.widget.RelativeLayout;
 import com.google.ads.AdRequest;
 import com.google.ads.AdSize;
 import com.google.ads.AdView;
+import com.google.analytics.tracking.android.EasyTracker;
+import com.google.analytics.tracking.android.GoogleAnalytics;
+import com.google.analytics.tracking.android.Tracker;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -56,11 +61,39 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 		private Marker b11;
 		private static final LatLng B11 = new LatLng(37.237228,-76.645271);
 		
+		//geo points for ATM's in the park
+		private Marker a1;
+		private static final LatLng A1 = new LatLng(37.236391,-76.646529);
+		private Marker a2;
+		private static final LatLng A2 = new LatLng(37.234191,-76.648491);
+		private Marker a3;
+		private static final LatLng A3 = new LatLng(37.231714,-76.646054);
+		
+		//geo points for the main eating areas in the park
+		private static final LatLng BEER = new LatLng(37.232464,-76.64566);
+		private Marker beer;
+		private static final LatLng FESTHAUS = new LatLng(37.2314,-76.646201);
+		private Marker festhaus;
+		private static final LatLng SMOKEHOUSE = new LatLng(37.23381,-76.648819);
+		private Marker smokehouse;
+		private static final LatLng PIAZZA = new LatLng(37.233835,-76.643954);
+		private Marker piazza;
+		private static final LatLng GRILLE = new LatLng(37.236133,-76.645618);
+		private Marker grille;
+		private static final LatLng CUCINA = new LatLng(37.234501,-76.641524);
+		private Marker cucina;
+		private static final LatLng PUB = new LatLng(37.236011,-76.647567);
+		private Marker pub;
+		private static final LatLng GRILL = new LatLng(37.235862,-76.647386);
+		private Marker grill;
+		
 	
 	public GoogleMap mMap;
 	//private SlidingActivityHelper mHelper;
 	//private Fragment mFrag;
 	public SlidingMenu sm;
+	private Tracker mGaTracker;
+	private GoogleAnalytics mGaInstance;
 	
 	static final CameraPosition HOME =
             new CameraPosition.Builder().target(new LatLng(37.235466, -76.646328))
@@ -70,10 +103,13 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
                     .build();
 	@Override 
 	public void onCreate(Bundle savedInstanceState) {
-		//setTheme(R.style.Theme_bgwfans);
+		setTheme(R.style.DrawerTheme);
 		super.onCreate(savedInstanceState);
 		setBehindContentView(R.layout.menu_scrollview);
 
+		 mGaInstance = GoogleAnalytics.getInstance(this);
+		 mGaTracker = mGaInstance.getTracker("UA-39204043-1");
+		 
 		// customize the SlidingMenu
 		SlidingMenu sm = getSlidingMenu();
 		sm.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
@@ -103,7 +139,7 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 			 public void onOpened() {
 			    //getSlidingMenu().invalidate();
 			    actionbar.setDisplayHomeAsUpEnabled(false);
-			    mMap.setMyLocationEnabled(true);
+			    //mMap.setMyLocationEnabled(true);
 			    getSlidingMenu().invalidate();
 			  }
 			});
@@ -112,7 +148,7 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 			public void onClose()
 			{
 				actionbar.setDisplayHomeAsUpEnabled(true);
-				mMap.setMyLocationEnabled(false);
+				//mMap.setMyLocationEnabled(false);
 			    getSlidingMenu().invalidate();
 			}
 
@@ -135,14 +171,36 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 	        //findViewById(R.id.item14).setOnClickListener(this);
 
 	}
-
 	
+	 @Override
+	  public void onStart() {
+	    super.onStart();
+	    EasyTracker.getInstance().activityStart(this); // Add this method.\
+	    //mGaTracker.sendView("/SlidingMenu");
+	  }
+	 
+	 @Override
+	  public void onStop() {
+	    super.onStop();
+	    EasyTracker.getInstance().activityStop(this); // Add this method.
+	  }
+
 	@Override
     protected void onResume() {
         super.onResume();
         setUpMapIfNeeded();
         //toggle();
     }
+	
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+	    if ( keyCode == KeyEvent.KEYCODE_MENU ) {
+	        //Put the code for an action menu from the top here
+	    	toggle();
+	        return true;
+	    }
+	    return super.onKeyDown(keyCode, event);
+	}
 	
 	private void setUpMapIfNeeded() {
         // Do a null check to confirm that we have not already instantiated the map.
@@ -164,7 +222,9 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 			mMap.getUiSettings().setZoomControlsEnabled(false);
 			mMap.moveCamera(CameraUpdateFactory.newCameraPosition(HOME));
 			addBathroomsToMap();
-	    }
+			addEatToMap();
+			addATMToMap();
+	 }
 	 
 	 
 	
@@ -289,6 +349,65 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 			b11 = mMap.addMarker(new MarkerOptions()
 			.position(B11)
 			.title("Bathroom"));
+		}
+	 
+	 private void addEatToMap()
+		{
+			beer = mMap.addMarker(new MarkerOptions()
+			.position(BEER)
+			.title("Beste Brezeln und Bier")
+			.snippet("speciality beer and pretzels"));
+			
+			festhaus = mMap.addMarker(new MarkerOptions()
+			.position(FESTHAUS)
+			.title("Das Festhaus")
+			.snippet("German style eatery with daily shows"));
+			
+			smokehouse = mMap.addMarker(new MarkerOptions()
+			.position(SMOKEHOUSE)
+			.title("Trapper's Smokehouse")
+			.snippet("Classic smokehouse style food and scenery"));
+			
+			piazza = mMap.addMarker(new MarkerOptions()
+			.position(PIAZZA)
+			.title("Ristorante Della Piazza")
+			.snippet("Italian stlye eatery with daily shows"));
+			
+			grille = mMap.addMarker(new MarkerOptions()
+			.position(GRILLE)
+			.title("Squire's Grille")
+			.snippet("serves breakfast, along with a diverse lunch and dinner menu"));
+			
+			grill = mMap.addMarker(new MarkerOptions()
+			.position(GRILL)
+			.title("Grogran's Grill")
+			.snippet("Irish style eatery, with nearby street performers"));
+			
+			pub = mMap.addMarker(new MarkerOptions()
+			.position(PUB)
+			.title("Grogan's Pub")
+			.snippet("Drinks, snacks and speciality beers"));
+			
+			cucina = mMap.addMarker(new MarkerOptions()
+			.position(CUCINA)
+			.title("La Cucina")
+			.snippet("All you can eat pizza and pasta buffet"));
+			
+		}
+	 
+	 public void addATMToMap()
+		{
+			a1 = mMap.addMarker(new MarkerOptions()
+			.position(A1)
+			.title("ATM"));
+			
+			a2 = mMap.addMarker(new MarkerOptions()
+			.position(A2)
+			.title("ATM"));
+			
+			a3 = mMap.addMarker(new MarkerOptions()
+			.position(A3)
+			.title("ATM"));
 		}
 }
 

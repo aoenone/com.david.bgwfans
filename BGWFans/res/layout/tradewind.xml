@@ -11,7 +11,7 @@
     	android:layout_weight="1">  	
      <ImageView
         android:id="@+id/vbolt"
-        android:src="@drawable/parkfans"
+        android:src="@drawable/tradewind"
         android:scaleType="center"
         android:layout_width="fill_parent"
         android:layout_height="95dp"/>
@@ -27,7 +27,7 @@
         	android:paddingLeft="5dp"
         	android:paddingBottom="2dp"
         	android:textSize="22sp"
-        	android:text="Trade Wind"
+        	android:text="The Trade Wind"
         	android:fontFamily="sans-serif-light" />
     		</RelativeLayout>
 

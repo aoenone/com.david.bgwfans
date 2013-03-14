@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.view.KeyEvent;
 import android.view.MenuInflater;
 import android.view.View;
 
@@ -34,6 +35,7 @@ public class BaseActivity extends SlidingFragmentActivity implements View.OnClic
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setTheme(R.style.DrawerTheme);
 		//setTitle(mTitleRes);
 		// set the Behind View
 		setBehindContentView(R.layout.menu_scrollview);
@@ -83,6 +85,16 @@ public class BaseActivity extends SlidingFragmentActivity implements View.OnClic
         super.onResume();
         toggle();
     }
+	
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+	    if ( keyCode == KeyEvent.KEYCODE_MENU ) {
+	        //Put the code for an action menu from the top here
+	    	toggle();
+	        return true;
+	    }
+	    return super.onKeyDown(keyCode, event);
+	}
 	 
 	
 	/** public boolean onCreateOptionsMenu(android.view.Menu menu) {
