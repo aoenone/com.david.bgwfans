@@ -1,6 +1,7 @@
 package com.david.bgwfans;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -140,9 +141,9 @@ public class InfoScreen extends SideMenuActivity implements OnClickListener {
 		{
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(getApplicationContext(), HiddenWiki.class);
-				i.putExtra("wikiLink", "http://www.bgwfans.com");
-				startActivity(i);	
+				Intent intent = new Intent(Intent.ACTION_VIEW);
+				intent.setData(Uri.parse("market://details?id=com.david.bgwfanspaid"));
+				startActivity(intent);	
 			}
 		});
 		
