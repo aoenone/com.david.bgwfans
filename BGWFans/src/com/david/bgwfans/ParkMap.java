@@ -1,13 +1,10 @@
 package com.david.bgwfans;
 
 import android.app.ActionBar;
-import android.app.ActionBar.LayoutParams;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuInflater;
-import android.view.View;
 import android.widget.SeekBar;
-import android.widget.SeekBar.OnSeekBarChangeListener;
 
 import com.google.analytics.tracking.android.GoogleAnalytics;
 import com.google.analytics.tracking.android.Tracker;

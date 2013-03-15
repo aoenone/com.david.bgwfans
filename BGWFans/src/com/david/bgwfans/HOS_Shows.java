@@ -1,14 +1,12 @@
 package com.david.bgwfans;
 
 
-import com.google.analytics.tracking.android.GoogleAnalytics;
-import com.google.analytics.tracking.android.Tracker;
-
-import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import net.simonvt.widget.MenuDrawerManager;
+
+import com.google.analytics.tracking.android.GoogleAnalytics;
+import com.google.analytics.tracking.android.Tracker;
 
 public class HOS_Shows extends SideMenuActivity implements View.OnClickListener{
 	private Tracker mGaTracker;

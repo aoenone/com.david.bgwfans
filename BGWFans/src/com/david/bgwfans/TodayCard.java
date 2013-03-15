@@ -1,16 +1,15 @@
 package com.david.bgwfans;
 
-import java.net.URL;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-
 import java.io.BufferedReader;
+
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -25,15 +24,14 @@ import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
 import android.content.Context;
-
-import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 
 import com.fima.cardsui.objects.Card;
 
@@ -52,21 +50,10 @@ public class TodayCard extends Card {
 	}
 	
 	class MyWeather{
-		String description;
-		String city;
-		String region;
-		String country;
-
-		String windChill;
-		String windDirection;
-		String windSpeed;
-
-		String sunrise;
-		String sunset;
 	
-		String conditiontext;
-		String conditiondate;
-		String conditioncode;
+		public String conditiontext;
+		public String conditiondate;
+		public String conditioncode;
 		
 	public String toString(){
 
@@ -78,11 +65,11 @@ public class TodayCard extends Card {
 	@Override
 	public View getCardContent(Context context) {
 		View view = LayoutInflater.from(context).inflate(R.layout.todaycard, null);
+		//View view = inflater.inflate(R.layout.todaycard, container, false);
 		
 		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
         
-        ImageView wImg = (ImageView) view.findViewById(R.id.wimg);
 		TextView weather = (TextView) view.findViewById(R.id.weather);
 
 	    String weatherString = QueryYahooWeather();
@@ -90,7 +77,6 @@ public class TodayCard extends Card {
 
 	    MyWeather weatherResult = parseWeather(weatherDoc);
 	    weather.setText(weatherResult.toString());
-	    
 	    //MyWeather conditioncode = parseWeather(weatherDoc);
 	    //wImg.setImageDrawable(conditioncode);
 		
@@ -133,59 +119,16 @@ public class TodayCard extends Card {
 		{
 			t.setText("Hours: Closed");
 		}
-		return view;
 		
-	}
+		return view;
+       }
+
+	
+	
 	
 	private MyWeather parseWeather(Document srcDoc){
 
 		  MyWeather myWeather = new MyWeather();
-
-		 /** //<description>Yahoo! Weather for New York, NY</description>
-		  myWeather.description = srcDoc.getElementsByTagName("description")
-		    .item(0)
-		    .getTextContent();
-
-		  //<yweather:location city="New York" region="NY" country="United States"/>
-		  Node locationNode = srcDoc.getElementsByTagName("yweather:location").item(0);
-		  myWeather.city = locationNode.getAttributes()
-		  .getNamedItem("city")
-		  .getNodeValue()
-		  .toString();
-		myWeather.region = locationNode.getAttributes()
-		  .getNamedItem("region")
-		  .getNodeValue()
-		  .toString();
-		myWeather.country = locationNode.getAttributes()
-		  .getNamedItem("country")
-		  .getNodeValue()
-		  .toString();
-
-		//<yweather:wind chill="60" direction="0" speed="0"/>
-		Node windNode = srcDoc.getElementsByTagName("yweather:wind").item(0);
-		myWeather.windChill = windNode.getAttributes()
-		  .getNamedItem("chill")
-		  .getNodeValue()
-		  .toString();
-		myWeather.windDirection = windNode.getAttributes()
-		  .getNamedItem("direction")
-		  .getNodeValue()
-		  .toString();
-		myWeather.windSpeed = windNode.getAttributes()
-		  .getNamedItem("speed")
-		  .getNodeValue()
-		  .toString();
-
-		//<yweather:astronomy sunrise="6:52 am" sunset="7:10 pm"/>
-		Node astronomyNode = srcDoc.getElementsByTagName("yweather:astronomy").item(0);
-		myWeather.sunrise = astronomyNode.getAttributes()
-		  .getNamedItem("sunrise")
-		  .getNodeValue()
-		  .toString();
-		myWeather.sunset = astronomyNode.getAttributes()
-		  .getNamedItem("sunset")
-		  .getNodeValue()
-		  .toString();  **/
 
 		//<yweather:condition text="Fair" code="33" temp="60" date="Fri, 23 Mar 2012 8:49 pm EDT"/>
 		Node conditionNode = srcDoc.getElementsByTagName("yweather:condition").item(0);
@@ -220,6 +163,7 @@ public class TodayCard extends Card {
 		 //    e1.toString(), Toast.LENGTH_LONG).show();
 		} catch (SAXException e) {
 		 e.printStackTrace();
+		 String unavil = ("unavilable");
 		// Toast.makeText(AndroidYahooWeatherDOMActivity.this,
 		 //    e.toString(), Toast.LENGTH_LONG).show();
 		} catch (IOException e) {
@@ -270,4 +214,5 @@ public class TodayCard extends Card {
 		     return qResult;
 		 }
 	}
+
 	

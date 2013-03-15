@@ -1,16 +1,14 @@
 package com.david.bgwfans;
 
-import java.net.URL;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -25,16 +23,10 @@ import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
 import android.content.Context;
-
-import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.StrictMode;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 
 import com.fima.cardsui.objects.Card;
 

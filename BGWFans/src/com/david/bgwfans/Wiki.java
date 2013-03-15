@@ -1,17 +1,16 @@
 package com.david.bgwfans;
 
-import com.google.analytics.tracking.android.GoogleAnalytics;
-import com.google.analytics.tracking.android.Tracker;
-
 import android.app.ActionBar;
 import android.os.Bundle;
 import android.view.MenuInflater;
 import android.view.View;
-import android.view.Window;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
+
+import com.google.analytics.tracking.android.GoogleAnalytics;
+import com.google.analytics.tracking.android.Tracker;
 
 public class Wiki extends SideMenuActivity implements View.OnClickListener{
 	

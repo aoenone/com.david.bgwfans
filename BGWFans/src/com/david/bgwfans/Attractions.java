@@ -1,30 +1,21 @@
 package com.david.bgwfans;
 
+import java.util.ArrayList;
+
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.*;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
-import android.view.Gravity;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.view.View.OnLongClickListener;
-import android.app.ListFragment;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.ListAdapter;
-import android.widget.ArrayAdapter;
 import android.widget.RelativeLayout;
 
-import java.util.ArrayList;
-
-import com.google.ads.AdRequest;
-import com.google.ads.AdSize;
-import com.google.ads.AdView;
 import com.google.analytics.tracking.android.GoogleAnalytics;
 import com.google.analytics.tracking.android.Tracker;
 
@@ -34,20 +25,11 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
         static ViewPager mViewPager;
         //private JazzyViewPager mJazzy;
         RelativeLayout b1;
-        private AdView adView;
-        String adMobId = "a151350c50621fc";
         private Tracker mGaTracker;
     	private GoogleAnalytics mGaInstance;
         //Button button;
         
-        @Override
-        public void onDestroy() {
-          if (adView != null) {
-            adView.destroy();
-          }
-          super.onDestroy();
-        }
-        
+
     /** Called when the activity is first created. 
      * @param AFragmentTab */
     @Override
@@ -58,15 +40,6 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
         mGaInstance = GoogleAnalytics.getInstance(this);
 		mGaTracker = mGaInstance.getTracker("UA-39204043-1");
 		
-        //LinearLayout layout = (LinearLayout)findViewById(R.id.mainlayout);
-        RelativeLayout.LayoutParams lay = new RelativeLayout.LayoutParams(
-        	    RelativeLayout.LayoutParams.MATCH_PARENT, 
-        	    RelativeLayout.LayoutParams.MATCH_PARENT);
-        lay.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
-        adView = new AdView(this, AdSize.BANNER, adMobId);
-        //layout.addView(adView, lay);
-        adView.setGravity(Gravity.BOTTOM);
-        adView.loadAd(new AdRequest());
   
         // Register the onClick listener with the implementation above
         //ImageView apolloimg = (ImageView)findViewById(R.id.apolloimg);
@@ -86,7 +59,7 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
        		mViewPager.setPageTransformer(true, new ZoomOutPageTransformer());
             mViewPager.setAdapter(mPagerAdapter);
             mViewPager.setOffscreenPageLimit(4);
-           // mViewPager.setCurrentItem(0);
+            mViewPager.setCurrentItem(0);
                 
                 mViewPager.setOnPageChangeListener(
                     new ViewPager.SimpleOnPageChangeListener() {
@@ -126,11 +99,6 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
                 ab.addTab(tab4);         
     }
     
-    public void destroyItem(View collection, int position, Object o) {
-        View view = (View)o;
-        ((ViewPager) collection).removeView(view);
-        view = null;
-    }
     
     public static class TabListener<T extends Fragment> implements ActionBar.TabListener {
         private Fragment mFragment;
@@ -201,10 +169,10 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
             super(manager);
         }
 
-        public void addFragmentActivity(FragmentActivity tabOneFragment) {
-			// TODO Auto-generated method stub
+       // public void addFragmentActivity(FragmentActivity tabOneFragment) {
+		//	// TODO Auto-generated method stub
 			
-		}
+		//}
 
 		public void addFragment(Fragment fragment) {
             mFragments.add(fragment);
@@ -216,10 +184,17 @@ public class Attractions extends SideMenuActivity implements OnClickListener{
             return mFragments.size();
         }
 
-        @Override
+        @Override 
         public Fragment getItem(int position) {
             return mFragments.get(position);
         }
+    }
+    
+    @Override
+    public void destroyItem(View collection, int position, Object o) {
+        View view = (View)o;
+        ((ViewPager) collection).removeView(view);
+        view = null;
     }
     
     

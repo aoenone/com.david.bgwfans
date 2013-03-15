@@ -1,11 +1,11 @@
 package com.david.bgwfans;
 
-import com.google.analytics.tracking.android.GoogleAnalytics;
-import com.google.analytics.tracking.android.Tracker;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.google.analytics.tracking.android.GoogleAnalytics;
+import com.google.analytics.tracking.android.Tracker;
 
 public class Eateries extends SideMenuActivity implements View.OnClickListener{
 	private Tracker mGaTracker;

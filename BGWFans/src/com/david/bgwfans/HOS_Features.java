@@ -1,10 +1,10 @@
 package com.david.bgwfans;
 
 
+import net.simonvt.widget.MenuDrawerManager;
 import android.app.ActionBar;
 import android.os.Bundle;
 import android.view.View;
-import net.simonvt.widget.MenuDrawerManager;
 
 public class HOS_Features extends BaseActivity implements View.OnClickListener{
 	

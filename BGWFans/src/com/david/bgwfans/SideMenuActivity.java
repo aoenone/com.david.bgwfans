@@ -2,22 +2,11 @@ package com.david.bgwfans;
 
 
 import android.app.ActionBar;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.view.Gravity;
 import android.view.KeyEvent;
-import android.view.MenuInflater;
 import android.view.View;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdSize;
-import com.google.ads.AdView;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.analytics.tracking.android.GoogleAnalytics;
 import com.google.analytics.tracking.android.Tracker;
@@ -31,7 +20,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.slidingmenu.lib.SlidingMenu;
 import com.slidingmenu.lib.SlidingMenu.OnCloseListener;
 import com.slidingmenu.lib.SlidingMenu.OnOpenedListener;
-import com.slidingmenu.lib.app.SlidingActivityHelper;
 import com.slidingmenu.lib.app.SlidingFragmentActivity;
 
 public class SideMenuActivity extends SlidingFragmentActivity implements View.OnClickListener{
@@ -409,5 +397,10 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
 			.position(A3)
 			.title("ATM"));
 		}
+
+	public void destroyItem(View collection, int position, Object o) {
+		// TODO Auto-generated method stub
+		
+	}
 }
 

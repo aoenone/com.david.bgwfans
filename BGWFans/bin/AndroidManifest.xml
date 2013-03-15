@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_CORSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-	<permission
+	<permission 
           android:name="com.david.bgwfans.MAPS_RECEIVE"
           android:protectionLevel="signature"/>
         <uses-permission android:name="com.david.bgwfans.permission.MAPS_RECEIVE"/>
@@ -21,7 +21,7 @@
 
     <application
         android:label="BGWFans"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/iconv2"
         android:logo="@drawable/bgwhite"
         android:theme="@style/Theme.Bgwfans2"
         android:hardwareAccelerated="true"
