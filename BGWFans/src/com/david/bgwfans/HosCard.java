@@ -1,30 +1,28 @@
 package com.david.bgwfans;
 
+import com.fima.cardsui.objects.Card;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
-import com.fima.cardsui.objects.Card;
-
 public class HosCard extends Card {
 
-	public HosCard(String title){
-		super(title);
-	}
+    public HosCard(String title) {
+        super(title);
+    }
 
 
-	@Override
-	public View getCardContent(Context context) {
-		View view = LayoutInflater.from(context).inflate(R.layout.hoscard, null);
+    @Override
+    public View getCardContent(Context context) {
+        View view = LayoutInflater.from(context).inflate(R.layout.hoscard, null);
 
-		((TextView) view.findViewById(R.id.title)).setText(title);
+        ((TextView) view.findViewById(R.id.title)).setText(title);
 
-		
-		return view;
-	}
 
-	
-	
-	
+        return view;
+    }
+
+
 }

@@ -1,13 +1,13 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-    
+
     <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
-         <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:actionBarStyle">@style/ActionBar</item>
         <item name="android:actionBarTabStyle">@style/ActionBarTabStyle</item>
     </style>
 
-    <style name="MenuDrawer" />
+    <style name="MenuDrawer"/>
 
-    <style name="MenuDrawer.Widget" />
+    <style name="MenuDrawer.Widget"/>
 
     <style name="MenuDrawer.Widget.Container">
         <item name="mdMenuBackground">@color/md__defaultBackground</item>
@@ -40,112 +40,125 @@
         <item name="android:drawablePadding">16dp</item>
         <item name="android:gravity">center_vertical</item>
     </style>
-    
-    
+
+
     <style name="ActionBar" parent="@android:style/Widget.Holo.ActionBar.Solid">
         <item name="android:background">@color/bgwfans_red</item>
         <item name="android:backgroundStacked">@color/stacked</item>
         <item name="android:backgroundSplit">@color/stacked</item>
     </style>
-    
+
     <style name="ActionBarTabStyle" parent="@android:style/Widget.Holo.ActionBar.TabView">
-    <item name="android:background">@drawable/tab_indicator_ab_bgwfans</item>
-</style>
-    
-    
-    
+        <item name="android:background">@drawable/tab_indicator_ab_bgwfans</item>
+    </style>
+
+
     <style parent="@android:style/Theme.Holo" name="Theme.bgwfans">
         <item name="android:actionBarItemBackground">@drawable/selectable_background_bgwfans</item>
         <item name="android:popupMenuStyle">@style/bgwfans_PopupMenu</item>
         <item name="android:dropDownListViewStyle">@style/bgwfans_DropDownListView</item>
         <item name="android:actionBarTabStyle">@style/bgwfans_ActionBarTabStyle</item>
         <item name="android:actionDropDownStyle">@style/bgwfans_DropDownNav</item>
-		<item name="android:actionBarStyle">@style/bgwfans_transparent_ActionBar</item>
-        <item name="android:panelBackground">@drawable/menu_hardkey_panel_bgwfans</item></style>
-        
-        <style parent="@android:style/Widget.Holo.ActionBar.Solid" name="bgwfans_solid_ActionBar">
-            <item name="android:background">@drawable/ab_solid_bgwfans</item>
-            <item name="android:backgroundStacked">@drawable/ab_stacked_solid_bgwfans</item>
-            <item name="android:backgroundSplit">@drawable/ab_bottom_solid_bgwfans</item>
-            <item name="android:progressBarStyle">@style/bgwfans_ProgressBar</item></style>
-                      
-            <style parent="@android:style/Widget.Holo.ActionBar" name="bgwfans_transparent_ActionBar">   
-               <item name="android:background">@drawable/ab_transparent_bgwfans</item>
-               <item name="android:progressBarStyle">@style/bgwfans_ProgressBar</item></style>
-               
-               <style parent="@android:style/Widget.Holo.ListPopupWindow" name="bgwfans_PopupMenu">
-                   <item name="android:popupBackground">@drawable/menu_dropdown_panel_bgwfans</item></style>
-                   
-                   <style parent="@android:style/Widget.Holo.ListView.DropDown" name="bgwfans_DropDownListView">
-                       <item name="android:listSelector">@drawable/selectable_background_bgwfans</item></style>
-                       <style parent="@android:style/Widget.Holo.ActionBar.TabView" name="bgwfans_ActionBarTabStyle">
-                           <item name="android:background">@drawable/tab_indicator_ab_bgwfans</item></style>
-                           
-                           <style parent="@android:style/Widget.Holo.Spinner" name="bgwfans_DropDownNav">
-                               <item name="android:background">@drawable/spinner_background_ab_bgwfans</item>
-                               <item name="android:popupBackground">@drawable/menu_dropdown_panel_bgwfans</item>
-                               <item name="android:dropDownSelector">@drawable/selectable_background_bgwfans</item></style>
-                               
-                               <style parent="@android:style/Widget.Holo.ProgressBar.Horizontal" name="bgwfans_ProgressBar">
-                                   <item name="android:progressDrawable">@drawable/progress_horizontal_bgwfans</item></style>
-                                   
-<!-- this style is only referenced in a Light.DarkActionBar based theme -->
-<style parent="@android:style/Theme.Holo" name="Theme.bgwfans.widget"><item name="android:popupMenuStyle">@style/bgwfans_PopupMenu</item><item name="android:dropDownListViewStyle">@style/bgwfans_DropDownListView</item></style>
-
-<style name="DrawerTheme" parent="Theme.Bgwfans2">
-    <item name="android:homeAsUpIndicator">@drawable/sidemenuicon</item>
-</style>
-
-
-
-<!-- BGWFans theme 03/13 -->
-<style parent="@android:style/Theme.Holo" name="Theme.Bgwfans2">
-    <item name="android:actionBarItemBackground">@drawable/selectable_background_bgwfans2</item>
-    <item name="android:popupMenuStyle">@style/PopupMenu.Bgwfans2</item>
-    <item name="android:dropDownListViewStyle">@style/DropDownListView.Bgwfans2</item>
-    <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Bgwfans2</item>
-    <item name="android:actionDropDownStyle">@style/DropDownNav.Bgwfans2</item>
-    <item name="android:actionBarStyle">@style/ActionBar.Solid.Bgwfans2</item>
-    <item name="android:actionModeBackground">@drawable/cab_background_top_bgwfans2</item>
-    <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_bgwfans2</item>
-    <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Bgwfans2</item>
+        <item name="android:actionBarStyle">@style/bgwfans_transparent_ActionBar</item>
+        <item name="android:panelBackground">@drawable/menu_hardkey_panel_bgwfans</item>
     </style>
-    
+
+    <style parent="@android:style/Widget.Holo.ActionBar.Solid" name="bgwfans_solid_ActionBar">
+        <item name="android:background">@drawable/ab_solid_bgwfans</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_bgwfans</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_bgwfans</item>
+        <item name="android:progressBarStyle">@style/bgwfans_ProgressBar</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ActionBar" name="bgwfans_transparent_ActionBar">
+        <item name="android:background">@drawable/ab_transparent_bgwfans</item>
+        <item name="android:progressBarStyle">@style/bgwfans_ProgressBar</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ListPopupWindow" name="bgwfans_PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_bgwfans</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ListView.DropDown" name="bgwfans_DropDownListView">
+        <item name="android:listSelector">@drawable/selectable_background_bgwfans</item>
+    </style>
+    <style parent="@android:style/Widget.Holo.ActionBar.TabView" name="bgwfans_ActionBarTabStyle">
+        <item name="android:background">@drawable/tab_indicator_ab_bgwfans</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.Spinner" name="bgwfans_DropDownNav">
+        <item name="android:background">@drawable/spinner_background_ab_bgwfans</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_bgwfans</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_bgwfans</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ProgressBar.Horizontal" name="bgwfans_ProgressBar">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_bgwfans</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style parent="@android:style/Theme.Holo" name="Theme.bgwfans.widget">
+        <item name="android:popupMenuStyle">@style/bgwfans_PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/bgwfans_DropDownListView</item>
+    </style>
+
+    <style name="DrawerTheme" parent="Theme.Bgwfans2">
+        <item name="android:homeAsUpIndicator">@drawable/sidemenuicon</item>
+    </style>
+
+
+    <!-- BGWFans theme 03/13 -->
+    <style parent="@android:style/Theme.Holo" name="Theme.Bgwfans2">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_bgwfans2</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Bgwfans2</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Bgwfans2</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Bgwfans2</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Bgwfans2</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Bgwfans2</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_bgwfans2</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_bgwfans2</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Bgwfans2</item>
+    </style>
+
     <style parent="@android:style/Widget.Holo.ActionBar.Solid" name="ActionBar.Solid.Bgwfans2">
         <item name="android:background">@drawable/ab_solid_bgwfans2</item>
         <item name="android:backgroundStacked">@drawable/ab_stacked_solid_bgwfans2</item>
         <item name="android:backgroundSplit">@drawable/ab_bottom_solid_bgwfans2</item>
         <item name="android:progressBarStyle">@style/ProgressBar.Bgwfans2</item>
-        </style>
-        
-        <style parent="@android:style/Widget.Holo.ActionBar" name="ActionBar.Transparent.Bgwfans2">
-            <item name="android:background">@drawable/ab_transparent_bgwfans2</item>
-            <item name="android:progressBarStyle">@style/ProgressBar.Bgwfans2</item> 
-            </style>
-            
-            <style parent="@android:style/Widget.Holo.ListPopupWindow" name="PopupMenu.Bgwfans2">
-            <item name="android:popupBackground">@drawable/menu_dropdown_panel_bgwfans2</item></style>
-            <style parent="@android:style/Widget.Holo.ListView.DropDown" name="DropDownListView.Bgwfans2">
-                <item name="android:listSelector">@drawable/selectable_background_bgwfans2</item></style>
-                <style parent="@android:style/Widget.Holo.ActionBar.TabView" name="ActionBarTabStyle.Bgwfans2">
-                    <item name="android:background">@drawable/tab_indicator_ab_bgwfans2</item> 
-                    </style>
-                    
-                    <style parent="@android:style/Widget.Holo.Spinner" name="DropDownNav.Bgwfans2">
-                        <item name="android:background">@drawable/spinner_background_ab_bgwfans2</item>
-                        <item name="android:popupBackground">@drawable/menu_dropdown_panel_bgwfans2</item>
-                        <item name="android:dropDownSelector">@drawable/selectable_background_bgwfans2</item>
-                        </style>
-                        
-                        <style parent="@android:style/Widget.Holo.ProgressBar.Horizontal" name="ProgressBar.Bgwfans2">
-                            <item name="android:progressDrawable">@drawable/progress_horizontal_bgwfans2</item></style>
-                            <style parent="@android:style/Widget.Holo.ActionButton.CloseMode" name="ActionButton.CloseMode.Bgwfans2">
-                                <item name="android:background">@drawable/btn_cab_done_bgwfans2</item>
-                                
-                                </style>
-<!-- this style is only referenced in a Light.DarkActionBar based theme -->
-<style parent="@android:style/Theme.Holo" name="Theme.Bgwfans2.Widget">
-    <item name="android:popupMenuStyle">@style/PopupMenu.Bgwfans2</item>
-    <item name="android:dropDownListViewStyle">@style/DropDownListView.Bgwfans2</item></style>
-    
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ActionBar" name="ActionBar.Transparent.Bgwfans2">
+        <item name="android:background">@drawable/ab_transparent_bgwfans2</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Bgwfans2</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ListPopupWindow" name="PopupMenu.Bgwfans2">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_bgwfans2</item>
+    </style>
+    <style parent="@android:style/Widget.Holo.ListView.DropDown" name="DropDownListView.Bgwfans2">
+        <item name="android:listSelector">@drawable/selectable_background_bgwfans2</item>
+    </style>
+    <style parent="@android:style/Widget.Holo.ActionBar.TabView" name="ActionBarTabStyle.Bgwfans2">
+        <item name="android:background">@drawable/tab_indicator_ab_bgwfans2</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.Spinner" name="DropDownNav.Bgwfans2">
+        <item name="android:background">@drawable/spinner_background_ab_bgwfans2</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_bgwfans2</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_bgwfans2</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ProgressBar.Horizontal" name="ProgressBar.Bgwfans2">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_bgwfans2</item>
+    </style>
+    <style parent="@android:style/Widget.Holo.ActionButton.CloseMode" name="ActionButton.CloseMode.Bgwfans2">
+        <item name="android:background">@drawable/btn_cab_done_bgwfans2</item>
+
+    </style>
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style parent="@android:style/Theme.Holo" name="Theme.Bgwfans2.Widget">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Bgwfans2</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Bgwfans2</item>
+    </style>
+
 </resources>

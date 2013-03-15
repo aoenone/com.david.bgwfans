@@ -1,179 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/side_menu_color"
-    >
-    
-<com.david.bgwfans.MenuScrollView 
-    android:id="@+id/scrollView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
-    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:overScrollHeader="@drawable/pressed_background_bgwfans"
-   	 	android:overScrollFooter="@drawable/pressed_background_bgwfans"
-   	 	android:id="@+id/sidelayout">
-        
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Park Info"
-            android:textColor="@color/header_color"
-            style="@style/MenuDrawer.Widget.Category" />
+        android:layout_height="match_parent"
+        android:background="@color/side_menu_color"
+        >
 
-        <TextView
-            android:id="@+id/item1"
+    <com.david.bgwfans.MenuScrollView
+            android:id="@+id/scrollView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_action_about"
-            android:text="Info"
-            android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" />
-        
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/item2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ridewhite"
-            android:text="Attractions"
-            android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" />
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:overScrollHeader="@drawable/pressed_background_bgwfans"
+                android:overScrollFooter="@drawable/pressed_background_bgwfans"
+                android:id="@+id/sidelayout">
 
-        <TextView
-            android:id="@+id/item3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_menu_show"
-            android:text="Shows"
-            android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" />
-        
-        <TextView
-            android:id="@+id/item4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_menu_food"
-            android:text="Eateries"
-            android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" />
-        
-        <TextView
-            android:id="@+id/item5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_location_map"
-            android:text="Map"
-            android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" />
-        
-        <!-- Removed during normal season<TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Christmas Town"
-            android:textColor="@color/header_color"
-            style="@style/MenuDrawer.Widget.Category" />
-        
-        <TextView
-            android:id="@+id/item6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_action_star"
-            android:text="Experiences"
-            android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" />
-        
-        <TextView
-            android:id="@+id/item7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_menu_show"
-            android:text="Shows"
-            android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" />
-        
-        <TextView
-            android:id="@+id/item8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_menu_food"
-            android:text="Shopping"
-            android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" />
-        
-        <TextView
-            android:id="@+id/item14"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_location_map"
-            android:text="Map"
-            android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" /> -->
-        
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="BGWFans"
-            android:textColor="@color/header_color"
-            style="@style/MenuDrawer.Widget.Category" />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Park Info"
+                    android:textColor="@color/header_color"
+                    style="@style/MenuDrawer.Widget.Category"/>
 
-        <TextView
-            android:id="@+id/item9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_menu_blog"
-            android:text="Blog"
-            android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" />
+            <TextView
+                    android:id="@+id/item1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_about"
+                    android:text="Info"
+                    android:textColor="@color/text_color"
+                    style="@style/MenuDrawer.Widget.Title"/>
 
-        <TextView
-            android:id="@+id/item10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_menu_forums"
-            android:text="Forums"
-            android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" />
-        
-        <TextView
-            android:id="@+id/item11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_menu_wiki"
-            android:text="Wiki"
-            android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="App"
-            android:textColor="@color/header_color"
-            style="@style/MenuDrawer.Widget.Category" />
+            <TextView
+                    android:id="@+id/item2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ridewhite"
+                    android:text="Attractions"
+                    android:textColor="@color/text_color"
+                    style="@style/MenuDrawer.Widget.Title"/>
 
-        <TextView
-            android:id="@+id/item12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_menu_settings"
-            android:text="Settings and Tips"
-            android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" />
+            <TextView
+                    android:id="@+id/item3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_show"
+                    android:text="Shows"
+                    android:textColor="@color/text_color"
+                    style="@style/MenuDrawer.Widget.Title"/>
 
-        <TextView
-            android:id="@+id/item13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@drawable/ic_menu_about"
-            android:text="About"
-            android:textColor="@color/text_color"
-            style="@style/MenuDrawer.Widget.Title" />
+            <TextView
+                    android:id="@+id/item4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_food"
+                    android:text="Eateries"
+                    android:textColor="@color/text_color"
+                    style="@style/MenuDrawer.Widget.Title"/>
 
-    	</LinearLayout>
-	</com.david.bgwfans.MenuScrollView>
+            <TextView
+                    android:id="@+id/item5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_location_map"
+                    android:text="Map"
+                    android:textColor="@color/text_color"
+                    style="@style/MenuDrawer.Widget.Title"/>
+
+            <!-- Removed during normal season<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Christmas Town"
+                android:textColor="@color/header_color"
+                style="@style/MenuDrawer.Widget.Category" />
+
+            <TextView
+                android:id="@+id/item6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_action_star"
+                android:text="Experiences"
+                android:textColor="@color/text_color"
+                style="@style/MenuDrawer.Widget.Title" />
+
+            <TextView
+                android:id="@+id/item7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_menu_show"
+                android:text="Shows"
+                android:textColor="@color/text_color"
+                style="@style/MenuDrawer.Widget.Title" />
+
+            <TextView
+                android:id="@+id/item8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_menu_food"
+                android:text="Shopping"
+                android:textColor="@color/text_color"
+                style="@style/MenuDrawer.Widget.Title" />
+
+            <TextView
+                android:id="@+id/item14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location_map"
+                android:text="Map"
+                android:textColor="@color/text_color"
+                style="@style/MenuDrawer.Widget.Title" /> -->
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BGWFans"
+                    android:textColor="@color/header_color"
+                    style="@style/MenuDrawer.Widget.Category"/>
+
+            <TextView
+                    android:id="@+id/item9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_blog"
+                    android:text="Blog"
+                    android:textColor="@color/text_color"
+                    style="@style/MenuDrawer.Widget.Title"/>
+
+            <TextView
+                    android:id="@+id/item10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_forums"
+                    android:text="Forums"
+                    android:textColor="@color/text_color"
+                    style="@style/MenuDrawer.Widget.Title"/>
+
+            <TextView
+                    android:id="@+id/item11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_wiki"
+                    android:text="Wiki"
+                    android:textColor="@color/text_color"
+                    style="@style/MenuDrawer.Widget.Title"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="App"
+                    android:textColor="@color/header_color"
+                    style="@style/MenuDrawer.Widget.Category"/>
+
+            <TextView
+                    android:id="@+id/item12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_settings"
+                    android:text="Settings and Tips"
+                    android:textColor="@color/text_color"
+                    style="@style/MenuDrawer.Widget.Title"/>
+
+            <TextView
+                    android:id="@+id/item13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_about"
+                    android:text="About"
+                    android:textColor="@color/text_color"
+                    style="@style/MenuDrawer.Widget.Title"/>
+
+        </LinearLayout>
+    </com.david.bgwfans.MenuScrollView>
 </RelativeLayout>

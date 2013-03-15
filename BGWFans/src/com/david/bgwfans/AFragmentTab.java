@@ -6,19 +6,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class AFragmentTab extends Fragment{
+public class AFragmentTab extends Fragment {
 
-	@Override
+    @Override
     public void onActivityCreated(Bundle savedInstanceState) {
-    super.onActivityCreated(savedInstanceState);
+        super.onActivityCreated(savedInstanceState);
     }
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState)
-	{
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.coasters, container, false);
-        
+
         return view;
-	}
+    }
 }

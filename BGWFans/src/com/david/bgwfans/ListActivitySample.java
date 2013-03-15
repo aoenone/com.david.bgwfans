@@ -5,6 +5,7 @@ import java.util.List;
 
 import net.simonvt.widget.MenuDrawer;
 import net.simonvt.widget.MenuDrawerManager;
+
 import android.app.ListActivity;
 import android.os.Build;
 import android.os.Bundle;
@@ -26,6 +27,17 @@ public class ListActivitySample extends ListActivity {
     private Handler mHandler;
     private Runnable mToggleUpRunnable;
     private boolean mDisplayUp = true;
+
+    @Override
+    public void onBackPressed() {
+        final int drawerState = mMenuDrawer.getDrawerState();
+        if (drawerState == MenuDrawer.STATE_OPEN || drawerState == MenuDrawer.STATE_OPENING) {
+            mMenuDrawer.closeMenu();
+            return;
+        }
+
+        super.onBackPressed();
+    }
 
     @Override
     public void onCreate(Bundle inState) {
@@ -73,16 +85,20 @@ public class ListActivitySample extends ListActivity {
     }
 
     @Override
-    public void setContentView(int layoutResID) {
-        // This override is only needed when using MENU_DRAG_CONTENT.
-        mMenuDrawer.setContentView(layoutResID);
-        onContentChanged();
-    }
-
-    @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         String str = (String) getListAdapter().getItem(position);
         Toast.makeText(this, "Clicked: " + str, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                mMenuDrawer.toggleMenu();
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -98,24 +114,9 @@ public class ListActivitySample extends ListActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                mMenuDrawer.toggleMenu();
-                return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void onBackPressed() {
-        final int drawerState = mMenuDrawer.getDrawerState();
-        if (drawerState == MenuDrawer.STATE_OPEN || drawerState == MenuDrawer.STATE_OPENING) {
-            mMenuDrawer.closeMenu();
-            return;
-        }
-
-        super.onBackPressed();
+    public void setContentView(int layoutResID) {
+        // This override is only needed when using MENU_DRAG_CONTENT.
+        mMenuDrawer.setContentView(layoutResID);
+        onContentChanged();
     }
 }

@@ -1,158 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-        
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-    
-    <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/vbolt"
-    	android:layout_margin="5dp"
-    	android:onClick="Barrel">
-    	
-     <ImageView
-        android:id="@+id/vboltimg"
-        android:src="@drawable/parkfans"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/vboltt"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="Pirates 4D"
-        	android:fontFamily="sans-serif-light" />
-    		</RelativeLayout>
-    		
-    <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/vbolt"
-    	android:layout_margin="5dp"
-    	android:onClick="Celtic">
-    	
-     <ImageView
-        android:id="@+id/vboltimg"
-        android:src="@drawable/celtic"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/vboltt"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="Celtic Fyre"
-        	android:fontFamily="sans-serif-light" />
-    		</RelativeLayout>
-   
-    
-     <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/apollo"
-    	android:layout_margin="5dp"
-    	android:onClick="Mix">
-    	
-     <ImageView
-        android:id="@+id/apolloimg"
-        android:src="@drawable/parkfans"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/apollot"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="Mix it Up!"
-        	android:fontFamily="sans-serif-light" />
-    		</RelativeLayout>
-    
-    <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/alpen"
-    	android:layout_margin="5dp"
-    	android:onClick="Pets">
-    	
-     <ImageView
-        android:id="@+id/alpenimg"
-        android:src="@drawable/pets"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/alpent"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="More... Pet Shenanigans!"
-        	android:fontFamily="sans-serif-light" />
-    		</RelativeLayout>
-    
-     <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/lochness"
-    	android:layout_margin="5dp"
-    	android:onClick="Entwined">
-    	
-     <ImageView
-        android:id="@+id/lochimg"
-        android:src="@drawable/entwined"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/locht"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="Entwined"
-        	android:fontFamily="sans-serif-light" />
-    		</RelativeLayout>
-    	</LinearLayout>
-    </ScrollView>
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/vbolt"
+                android:layout_margin="5dp"
+                android:onClick="Barrel">
+
+            <ImageView
+                    android:id="@+id/vboltimg"
+                    android:src="@drawable/parkfans"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/vboltt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Pirates 4D"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/vbolt"
+                android:layout_margin="5dp"
+                android:onClick="Celtic">
+
+            <ImageView
+                    android:id="@+id/vboltimg"
+                    android:src="@drawable/celtic"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/vboltt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Celtic Fyre"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/apollo"
+                android:layout_margin="5dp"
+                android:onClick="Mix">
+
+            <ImageView
+                    android:id="@+id/apolloimg"
+                    android:src="@drawable/parkfans"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/apollot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Mix it Up!"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/alpen"
+                android:layout_margin="5dp"
+                android:onClick="Pets">
+
+            <ImageView
+                    android:id="@+id/alpenimg"
+                    android:src="@drawable/pets"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/alpent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="More... Pet Shenanigans!"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/lochness"
+                android:layout_margin="5dp"
+                android:onClick="Entwined">
+
+            <ImageView
+                    android:id="@+id/lochimg"
+                    android:src="@drawable/entwined"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/locht"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Entwined"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

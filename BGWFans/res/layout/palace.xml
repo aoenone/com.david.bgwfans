@@ -1,66 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    	android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:padding="5dp">  
-       
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="5dp">
+
     <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:onClick="Palace">
-    	
-     <ImageView
-        android:src="@drawable/penguin2"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="Ice Palace: A Penguin Paradise"
-        	android:fontFamily="sans-serif-light" />
-    		</RelativeLayout>
+            android:layout_width="fill_parent"
+            android:layout_height="95dp"
+            android:onClick="Palace">
+
+        <ImageView
+                android:src="@drawable/penguin2"
+                android:scaleType="center"
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#8000"
+                android:textColor="#fff"
+                android:gravity="center|left"
+                android:paddingTop="2dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="2dp"
+                android:textSize="22sp"
+                android:text="Ice Palace: A Penguin Paradise"
+                android:fontFamily="sans-serif-light"/>
+    </RelativeLayout>
 
     <ScrollView
-    		android:layout_width="fill_parent"
-    		android:layout_height="160dp"
-    		android:paddingTop="10dp"
-    		android:paddingBottom="10dp"
-    		android:id="@+id/info">
+            android:layout_width="fill_parent"
+            android:layout_height="160dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/info">
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        		android:orientation="vertical"
-        		android:layout_width="fill_parent"
-        		android:layout_height="fill_parent"
-        		android:padding="5dp"
-        		android:background="@color/md__defaultBackground">
-            <TextView android:text="LOCATION" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="20sp"></TextView>
-            <TextView android:text="Royal Palace Theatre" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="15sp" ></TextView>
-            <TextView android:text="TYPE" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="20sp"></TextView>
-            <TextView android:text="Holiday animal attraction" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="15sp"></TextView>
-            <TextView android:text="ABOUT" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="20sp"></TextView>
-            <TextView android:text="explore an ice-themed world with dazzling lights, snow and an up-close encounter with live penguins" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="15sp"></TextView>
-    </LinearLayout>
+                      android:orientation="vertical"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:padding="5dp"
+                      android:background="@color/md__defaultBackground">
+            <TextView android:text="LOCATION" android:layout_width="wrap_content" android:layout_height="fill_parent"
+                      android:textSize="20sp"></TextView>
+            <TextView android:text="Royal Palace Theatre" android:layout_width="wrap_content"
+                      android:layout_height="fill_parent" android:textSize="15sp"></TextView>
+            <TextView android:text="TYPE" android:layout_width="wrap_content" android:layout_height="fill_parent"
+                      android:textSize="20sp"></TextView>
+            <TextView android:text="Holiday animal attraction" android:layout_width="wrap_content"
+                      android:layout_height="fill_parent" android:textSize="15sp"></TextView>
+            <TextView android:text="ABOUT" android:layout_width="wrap_content" android:layout_height="fill_parent"
+                      android:textSize="20sp"></TextView>
+            <TextView
+                    android:text="explore an ice-themed world with dazzling lights, snow and an up-close encounter with live penguins"
+                    android:layout_width="wrap_content" android:layout_height="fill_parent"
+                    android:textSize="15sp"></TextView>
+        </LinearLayout>
     </ScrollView>
-   
-   <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="160dp">       
-   	<com.cyrilmottier.polaris.PolarisMapView
-    	android:id="@+id/vmapview"
-    	android:layout_width="fill_parent"
-    	android:layout_height="fill_parent"
-    	android:clickable="true"
-    	android:apiKey="0iid2UPftb5W-lQslChgHYBKBg1Mhi6VoRzeRqA" />
-   	</RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="160dp">
+        <com.cyrilmottier.polaris.PolarisMapView
+                android:id="@+id/vmapview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:apiKey="0iid2UPftb5W-lQslChgHYBKBg1Mhi6VoRzeRqA"/>
+    </RelativeLayout>
 
 
-   </LinearLayout>
+</LinearLayout>

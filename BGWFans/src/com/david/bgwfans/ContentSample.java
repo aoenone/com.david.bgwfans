@@ -5,6 +5,7 @@ import java.util.List;
 
 import net.simonvt.widget.MenuDrawer;
 import net.simonvt.widget.MenuDrawerManager;
+
 import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
@@ -17,18 +18,130 @@ import android.widget.TextView;
 
 public class ContentSample extends Activity {
 
+    private static class Category {
+
+        String mTitle;
+
+        Category(String title) {
+            mTitle = title;
+        }
+    }
+
+    private static class Item {
+
+        String mTitle;
+        int mIconRes;
+
+        Item(String title, int iconRes) {
+            mTitle = title;
+            mIconRes = iconRes;
+        }
+    }
+
+    private class MenuAdapter extends BaseAdapter {
+
+        private List<Object> mItems;
+
+        MenuAdapter(List<Object> items) {
+            mItems = items;
+        }
+
+        @Override
+        public boolean areAllItemsEnabled() {
+            return false;
+        }
+
+        public int getCount() {
+            return mItems.size();
+        }
+
+        public Object getItem(int position) {
+            return mItems.get(position);
+        }
+
+        public long getItemId(int position) {
+            return position;
+        }
+
+        @Override
+        public int getItemViewType(int position) {
+            return getItem(position) instanceof Item ? 0 : 1;
+        }
+
+        public View getView(int position, View convertView, ViewGroup parent) {
+            View v = convertView;
+            Object item = getItem(position);
+
+            if (item instanceof Category) {
+                if (v == null) {
+                    v = getLayoutInflater().inflate(R.layout.md__category, parent, false);
+                }
+
+                ((TextView) v).setText(((Category) item).mTitle);
+
+            } else {
+                if (v == null) {
+                    v = getLayoutInflater().inflate(R.layout.md__item, parent, false);
+                }
+
+                TextView tv = (TextView) v;
+                tv.setText(((Item) item).mTitle);
+                tv.setCompoundDrawablesWithIntrinsicBounds(((Item) item).mIconRes, 0, 0, 0);
+            }
+
+            v.setTag(R.id.mdActiveViewPosition, position);
+
+            if (position == mActivePosition) {
+                mMenuDrawer.setActiveView(v, position);
+            }
+
+            return v;
+        }
+
+        @Override
+        public int getViewTypeCount() {
+            return 2;
+        }
+
+        @Override
+        public boolean isEnabled(int position) {
+            return getItem(position) instanceof Item;
+        }
+    }
+
     private static final String STATE_MENUDRAWER = "net.simonvt.menudrawer.samples.ContentSample.menuDrawer";
+
     private static final String STATE_ACTIVE_POSITION = "net.simonvt.menudrawer.samples.ContentSample.activePosition";
     private static final String STATE_CONTENT_TEXT = "net.simonvt.menudrawer.samples.ContentSample.contentText";
 
     private MenuDrawerManager mMenuDrawer;
-
     private MenuAdapter mAdapter;
     private MenuListView mList;
 
     private int mActivePosition = -1;
+
     private String mContentText;
+
     private TextView mContentTextView;
+
+    private AdapterView.OnItemClickListener mItemClickListener = new AdapterView.OnItemClickListener() {
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            mActivePosition = position;
+            mMenuDrawer.setActiveView(view, position);
+            mContentTextView.setText(((TextView) view).getText());
+            mMenuDrawer.closeMenu();
+        }
+    };
+
+    @Override
+    public void onBackPressed() {
+        if (mMenuDrawer.isMenuVisible()) {
+            mMenuDrawer.closeMenu();
+            return;
+        }
+
+        super.onBackPressed();
+    }
 
     @Override
     protected void onCreate(Bundle inState) {
@@ -72,14 +185,16 @@ public class ContentSample extends Activity {
         mContentTextView.setText(mContentText);
     }
 
-    private AdapterView.OnItemClickListener mItemClickListener = new AdapterView.OnItemClickListener() {
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            mActivePosition = position;
-            mMenuDrawer.setActiveView(view, position);
-            mContentTextView.setText(((TextView) view).getText());
-            mMenuDrawer.closeMenu();
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                mMenuDrawer.toggleMenu();
+                return true;
         }
-    };
+
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onRestoreInstanceState(Bundle inState) {
@@ -93,117 +208,5 @@ public class ContentSample extends Activity {
         outState.putParcelable(STATE_MENUDRAWER, mMenuDrawer.onSaveDrawerState());
         outState.putInt(STATE_ACTIVE_POSITION, mActivePosition);
         outState.putString(STATE_CONTENT_TEXT, mContentText);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                mMenuDrawer.toggleMenu();
-                return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    @Override
-    public void onBackPressed() {
-        if (mMenuDrawer.isMenuVisible()) {
-            mMenuDrawer.closeMenu();
-            return;
-        }
-
-        super.onBackPressed();
-    }
-
-    private static class Item {
-
-        String mTitle;
-        int mIconRes;
-
-        Item(String title, int iconRes) {
-            mTitle = title;
-            mIconRes = iconRes;
-        }
-    }
-
-    private static class Category {
-
-        String mTitle;
-
-        Category(String title) {
-            mTitle = title;
-        }
-    }
-
-    private class MenuAdapter extends BaseAdapter {
-
-        private List<Object> mItems;
-
-        MenuAdapter(List<Object> items) {
-            mItems = items;
-        }
-
-        public int getCount() {
-            return mItems.size();
-        }
-
-        public Object getItem(int position) {
-            return mItems.get(position);
-        }
-
-        public long getItemId(int position) {
-            return position;
-        }
-
-        @Override
-        public int getItemViewType(int position) {
-            return getItem(position) instanceof Item ? 0 : 1;
-        }
-
-        @Override
-        public int getViewTypeCount() {
-            return 2;
-        }
-
-        @Override
-        public boolean isEnabled(int position) {
-            return getItem(position) instanceof Item;
-        }
-
-        @Override
-        public boolean areAllItemsEnabled() {
-            return false;
-        }
-
-        public View getView(int position, View convertView, ViewGroup parent) {
-            View v = convertView;
-            Object item = getItem(position);
-
-            if (item instanceof Category) {
-                if (v == null) {
-                    v = getLayoutInflater().inflate(R.layout.md__category, parent, false);
-                }
-
-                ((TextView) v).setText(((Category) item).mTitle);
-
-            } else {
-                if (v == null) {
-                    v = getLayoutInflater().inflate(R.layout.md__item, parent, false);
-                }
-
-                TextView tv = (TextView) v;
-                tv.setText(((Item) item).mTitle);
-                tv.setCompoundDrawablesWithIntrinsicBounds(((Item) item).mIconRes, 0, 0, 0);
-            }
-
-            v.setTag(R.id.mdActiveViewPosition, position);
-
-            if (position == mActivePosition) {
-                mMenuDrawer.setActiveView(v, position);
-            }
-
-            return v;
-        }
     }
 }

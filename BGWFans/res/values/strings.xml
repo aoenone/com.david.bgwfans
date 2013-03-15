@@ -2,10 +2,10 @@
 <resources>
 
     <string name="app_name">BGWFans</string>
-    
+
     <string name="annotation_clicked">Check the sidemenu for more information!</string>
-    
+
     <string name="wikiLink">Link goes here</string>
-    
+
     <string name="adMobId">a151350c50621fc</string>
 </resources>

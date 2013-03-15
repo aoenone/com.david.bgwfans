@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- use the custom TapControlledMapView -->
 <com.readystatesoftware.maps.TapControlledMapView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mapview"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:clickable="true"
-	android:apiKey="0iid2UPftb5UexYL6q7gKspJX58N-ixrigb0T7g" />
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:apiKey="0iid2UPftb5UexYL6q7gKspJX58N-ixrigb0T7g"/>

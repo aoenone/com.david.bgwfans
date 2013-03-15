@@ -6,21 +6,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class TabFour extends Fragment
-{
+public class TabFour extends Fragment {
 
-         @Override
-            public void onActivityCreated(Bundle savedInstanceState) {
-            super.onActivityCreated(savedInstanceState);
-            }
-        
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                        Bundle savedInstanceState)
-        {
-                View view = inflater.inflate(R.layout.additional, container, false);
-                
-                return view;
-        }
-        
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.additional, container, false);
+
+        return view;
+    }
+
 }

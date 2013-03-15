@@ -8,17 +8,17 @@ package net.simonvt.menudrawer;
 
 public final class R {
 	public static final class id {
-		public static final int md__menu = 0x7f050002;
-		public static final int mdActiveViewPosition = 0x7f050003;
-		public static final int md__layout = 0x7f050000;
-		public static final int md__content = 0x7f050001;
+		public static final int md__menu = 0x7f070002;
+		public static final int mdActiveViewPosition = 0x7f070003;
+		public static final int md__layout = 0x7f070000;
+		public static final int md__content = 0x7f070001;
 	}
 	public static final class style {
-		public static final int Widget = 0x7f060000;
-		public static final int Widget_MenuDrawer = 0x7f060001;
+		public static final int Widget = 0x7f060008;
+		public static final int Widget_MenuDrawer = 0x7f060009;
 	}
 	public static final class color {
-		public static final int md__defaultBackground = 0x7f040000;
+		public static final int md__defaultBackground = 0x7f040008;
 	}
 	public static final class styleable {
 		public static final int MenuDrawer_mdMenuBackground = 1;

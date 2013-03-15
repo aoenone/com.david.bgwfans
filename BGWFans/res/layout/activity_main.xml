@@ -5,8 +5,8 @@
                 android:background="@color/google_now">
 
     <com.fima.cardsui.views.CardUI
-        android:id="@+id/cardsview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+            android:id="@+id/cardsview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
 </RelativeLayout>

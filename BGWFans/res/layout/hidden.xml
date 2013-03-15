@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
-	android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:id="@+id/hiddenLayout">
-    
-		<WebView
-    		android:id="@+id/hideWiki"
-    		android:layout_width="match_parent"
-    		android:layout_height="match_parent" >
-		</WebView>
-		
-		<com.google.ads.AdView
-            			   android:layout_width="wrap_content"
-                           android:layout_height="wrap_content"
-                           android:id="@+id/adMob"
-                           ads:adUnitId="a151350c50621fc"
-                           ads:adSize="SMART_BANNER"
-                           ads:loadAdOnCreate="true"
-                           ads:refreshInterval="60"
-                           android:layout_alignParentBottom="true"/>
+              xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@+id/hiddenLayout">
+
+    <WebView
+            android:id="@+id/hideWiki"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </WebView>
+
+    <com.google.ads.AdView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adMob"
+            ads:adUnitId="a151350c50621fc"
+            ads:adSize="SMART_BANNER"
+            ads:loadAdOnCreate="true"
+            ads:refreshInterval="60"
+            android:layout_alignParentBottom="true"/>
 
 </LinearLayout>

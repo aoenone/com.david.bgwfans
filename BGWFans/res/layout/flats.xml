@@ -1,332 +1,332 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-        
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-    
-    <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/vbolt"
-    	android:layout_margin="5dp"
-    	android:onClick="DarKastle">
-    	
-     <ImageView
-        android:id="@+id/vboltimg"
-        android:src="@drawable/darkastle"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/coast"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="Curse of DarKastle"
-        	android:fontFamily="sans-serif-light" />
-    		</RelativeLayout>
-    
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
-    <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/griffon"
-    	android:layout_margin="5dp"
-    	android:onClick="EITA">
-    	
-     <ImageView
-        android:id="@+id/griffonimg"
-        android:src="@drawable/eita"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/griff"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="Europe in the Air"
-        	android:fontFamily="sans-serif-light" />
-    		</RelativeLayout>
-    
-     <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/apollo"
-    	android:layout_margin="5dp"
-    	android:onClick="Mach">
-    	
-     <ImageView
-        android:id="@+id/apolloimg"
-        android:src="@drawable/machtower"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/apol"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="Mach Tower" 
-        	android:fontFamily="sans-serif-light"/>
-    		</RelativeLayout>
-    
-    <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/alpen"
-    	android:layout_margin="5dp"
-    	android:onClick="AutoBahn">
-    	
-     <ImageView
-        android:id="@+id/alpenimg"
-        android:src="@drawable/auto"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/alp"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="Die AutoBahn" 
-        	android:fontFamily="sans-serif-light"/>
-    		</RelativeLayout>
-    
-     <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/lochness"
-    	android:layout_margin="5dp"
-    	android:onClick="Cradle">
-    	
-     <ImageView
-        android:id="@+id/lochimg"
-        android:src="@drawable/parkfans"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/loch"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="Da Vinci's Cradle" 
-        	android:fontFamily="sans-serif-light"/>
-    		</RelativeLayout>
-     
-      <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/grover"
-    	android:layout_margin="5dp"
-    	android:onClick="FlyingMachine">
-    	
-     <ImageView
-        android:id="@+id/grovimg"
-        android:src="@drawable/parkfans"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/grov"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="Flying Machine" 
-        	android:fontFamily="sans-serif-light"/>
-    		</RelativeLayout>
-    		
-      <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/grover"
-    	android:layout_margin="5dp"
-    	android:onClick="Wirbelwind">
-    	
-      <ImageView
-        android:id="@+id/grovimg"
-        android:src="@drawable/parkfans"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/grov"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="Der Wirbelwind" 
-        	android:fontFamily="sans-serif-light"/>
-    		</RelativeLayout>
-    		
-      <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/grover"
-    	android:layout_margin="5dp"
-    	android:onClick="TradeWind">
-    	
-    <ImageView
-        android:id="@+id/grovimg"
-        android:src="@drawable/tradewind"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/grov"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="The Trade Wind"
-        	android:fontFamily="sans-serif-light" />
-    		</RelativeLayout>
-    		
-      <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/grover"
-    	android:layout_margin="5dp"
-    	android:onClick="Catapult">
-    	
-	<ImageView
-        android:id="@+id/grovimg"
-        android:src="@drawable/parkfans"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/grov"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="Le Catapult" 
-        	android:fontFamily="sans-serif-light"/>
-    		</RelativeLayout>
-    		
-      <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/grover"
-    	android:layout_margin="5dp"
-    	android:onClick="Delight">
-    	
-	<ImageView
-        android:id="@+id/grovimg"
-        android:src="@drawable/delight"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/grov"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="Turkish Delight"
-        	android:fontFamily="sans-serif-light" />
-    		</RelativeLayout>
-    		
-      <RelativeLayout
-        android:layout_width="fill_parent"
-    	android:layout_height="95dp"
-    	android:id="@+id/grover"
-    	android:layout_margin="5dp"
-    	android:onClick="Ram">
-    	
-	<ImageView
-        android:id="@+id/grovimg"
-        android:src="@drawable/ram"
-        android:scaleType="center"
-        android:layout_width="fill_parent"
-        android:layout_height="95dp"/>
-    	<TextView
-    	  	android:id="@+id/grov"
-    	    android:layout_width="match_parent"
-        	android:layout_height="wrap_content"
-        	android:layout_alignParentBottom="true"
-        	android:background="#8000"
-        	android:textColor="#fff"
-        	android:gravity="center|left"
-        	android:paddingTop="2dp"
-        	android:paddingLeft="5dp"
-        	android:paddingBottom="2dp"
-        	android:textSize="22sp"
-        	android:text="Battering Ram"
-        	android:fontFamily="sans-serif-light" />
-    		</RelativeLayout>
-    	</LinearLayout>
-    </ScrollView>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/vbolt"
+                android:layout_margin="5dp"
+                android:onClick="DarKastle">
+
+            <ImageView
+                    android:id="@+id/vboltimg"
+                    android:src="@drawable/darkastle"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/coast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Curse of DarKastle"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/griffon"
+                android:layout_margin="5dp"
+                android:onClick="EITA">
+
+            <ImageView
+                    android:id="@+id/griffonimg"
+                    android:src="@drawable/eita"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/griff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Europe in the Air"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/apollo"
+                android:layout_margin="5dp"
+                android:onClick="Mach">
+
+            <ImageView
+                    android:id="@+id/apolloimg"
+                    android:src="@drawable/machtower"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/apol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Mach Tower"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/alpen"
+                android:layout_margin="5dp"
+                android:onClick="AutoBahn">
+
+            <ImageView
+                    android:id="@+id/alpenimg"
+                    android:src="@drawable/auto"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/alp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Die AutoBahn"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/lochness"
+                android:layout_margin="5dp"
+                android:onClick="Cradle">
+
+            <ImageView
+                    android:id="@+id/lochimg"
+                    android:src="@drawable/parkfans"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/loch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Da Vinci's Cradle"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/grover"
+                android:layout_margin="5dp"
+                android:onClick="FlyingMachine">
+
+            <ImageView
+                    android:id="@+id/grovimg"
+                    android:src="@drawable/parkfans"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/grov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Flying Machine"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/grover"
+                android:layout_margin="5dp"
+                android:onClick="Wirbelwind">
+
+            <ImageView
+                    android:id="@+id/grovimg"
+                    android:src="@drawable/parkfans"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/grov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Der Wirbelwind"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/grover"
+                android:layout_margin="5dp"
+                android:onClick="TradeWind">
+
+            <ImageView
+                    android:id="@+id/grovimg"
+                    android:src="@drawable/tradewind"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/grov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="The Trade Wind"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/grover"
+                android:layout_margin="5dp"
+                android:onClick="Catapult">
+
+            <ImageView
+                    android:id="@+id/grovimg"
+                    android:src="@drawable/parkfans"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/grov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Le Catapult"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/grover"
+                android:layout_margin="5dp"
+                android:onClick="Delight">
+
+            <ImageView
+                    android:id="@+id/grovimg"
+                    android:src="@drawable/delight"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/grov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Turkish Delight"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/grover"
+                android:layout_margin="5dp"
+                android:onClick="Ram">
+
+            <ImageView
+                    android:id="@+id/grovimg"
+                    android:src="@drawable/ram"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/grov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Battering Ram"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
