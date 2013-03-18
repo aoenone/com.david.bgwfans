@@ -38,13 +38,13 @@ public final class R {
 		public static final int card_grid_text = 0x7f040005;
 	}
 	public static final class layout {
-		public static final int item_card = 0x7f03003a;
-		public static final int item_card_empty_first = 0x7f03003c;
-		public static final int item_card_empty_last = 0x7f03003d;
-		public static final int item_stack = 0x7f03003e;
-		public static final int cards_view = 0x7f030012;
-		public static final int item_card_empty = 0x7f03003b;
-		public static final int header = 0x7f030023;
+		public static final int item_card = 0x7f03003e;
+		public static final int item_card_empty_first = 0x7f030040;
+		public static final int item_card_empty_last = 0x7f030041;
+		public static final int item_stack = 0x7f030042;
+		public static final int cards_view = 0x7f030014;
+		public static final int item_card_empty = 0x7f03003f;
+		public static final int header = 0x7f030027;
 	}
 	public static final class drawable {
 		public static final int card_background_shadow = 0x7f02001b;

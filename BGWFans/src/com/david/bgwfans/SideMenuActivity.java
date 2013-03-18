@@ -255,6 +255,18 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
             Intent aboutActivity = new Intent(this, About.class);
             startActivity(aboutActivity);
             toggle();
+        } else if (id == R.id.wineinfo){
+        	Intent eventInfo = new Intent(this, EventInfo.class);
+        	startActivity(eventInfo);
+        	toggle();        	
+        } else if (id == R.id.wineattractions){
+        	Intent eventAttractions = new Intent(this, EventAttractions.class);
+        	startActivity(eventAttractions);
+        	toggle();
+        } else if (id == R.id.winemap){
+        	Intent eventMap = new Intent(this, EventMap.class);
+        	startActivity(eventMap);
+        	toggle();
         }
 
     }
@@ -324,7 +336,9 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
         findViewById(R.id.item11).setOnClickListener(this);
         findViewById(R.id.item12).setOnClickListener(this);
         findViewById(R.id.item13).setOnClickListener(this);
-        //findViewById(R.id.item14).setOnClickListener(this);
+        findViewById(R.id.wineinfo).setOnClickListener(this);
+        findViewById(R.id.wineattractions).setOnClickListener(this);
+        findViewById(R.id.winemap).setOnClickListener(this);
 
     }
 
@@ -337,16 +351,6 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
         }
         return super.onKeyDown(keyCode, event);
     }
-
-
-    /**
-     * public boolean onCreateOptionsMenu(android.view.Menu menu) {
-     * super.onCreateOptionsMenu(menu);
-     * MenuInflater inflater = getMenuInflater();
-     * inflater.inflate(R.menu.sidemapmenu, menu);
-     * return true;
-     * } *
-     */
 
     public boolean onOptionsItemSelected(android.view.MenuItem item) {
         switch (item.getItemId()) {
@@ -378,7 +382,7 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
         EasyTracker.getInstance().activityStop(this); // Add this method.
     }
 
-    private void setUpMap() {
+    protected void setUpMap() {
 
         mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
         mMap.getUiSettings().setZoomControlsEnabled(false);

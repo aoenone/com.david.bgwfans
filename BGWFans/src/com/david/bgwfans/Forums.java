@@ -20,12 +20,6 @@ public class Forums extends SideMenuActivity implements View.OnClickListener {
     private ProgressBar Pbar;
     private Tracker mGaTracker;
     private GoogleAnalytics mGaInstance;
-
-    private void createNavigation() {
-        // TODO Auto-generated method stub
-
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +32,6 @@ public class Forums extends SideMenuActivity implements View.OnClickListener {
         actionbar.setDisplayShowTitleEnabled(false);
         actionbar.setListNavigationCallbacks(null, null);
         actionbar.setDisplayHomeAsUpEnabled(true);
-        createNavigation();
 
         webview2 = (WebView) findViewById(R.id.webView2);
         webview2.getSettings().setJavaScriptEnabled(true);
@@ -46,7 +39,7 @@ public class Forums extends SideMenuActivity implements View.OnClickListener {
         webview2.loadUrl("http://www.bgwfans.com/forums");
         webview2.setWebViewClient(new WebViewClient());
         webview2.getSettings().setBuiltInZoomControls(true);
-        webview2.setBackgroundColor(0x00000000);
+        //webview2.setBackgroundColor(0x00000000);
         Pbar = (ProgressBar) findViewById(R.id.pb1);
 
         webview2.setWebChromeClient(new WebChromeClient() {

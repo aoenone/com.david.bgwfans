@@ -21,10 +21,6 @@ public class Wiki extends SideMenuActivity implements View.OnClickListener {
     private Tracker mGaTracker;
     private GoogleAnalytics maInstance;
 
-    private void createNavigation() {
-        // TODO Auto-generated method stub
-
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,7 +37,6 @@ public class Wiki extends SideMenuActivity implements View.OnClickListener {
         actionbar.setDisplayShowTitleEnabled(false);
         actionbar.setListNavigationCallbacks(null, null);
         actionbar.setDisplayHomeAsUpEnabled(true);
-        createNavigation();
 
         webview3 = (WebView) findViewById(R.id.webView3);
         webview3.getSettings().setJavaScriptEnabled(true);
@@ -64,19 +59,6 @@ public class Wiki extends SideMenuActivity implements View.OnClickListener {
             }
         });
     }
-
-    /**
-     * @Override public boolean onKeyDown(int keyCode, KeyEvent event) {
-     * // Check if the key event was the Back button and if there's history
-     * if ((keyCode == KeyEvent.KEYCODE_BACK) && webview3.canGoBack()) {
-     * webview3.goBack();
-     * return true;
-     * }
-     * // If it wasn't the Back key or there's no web page history, bubble up to the default
-     * // system behavior (probably exit the activity)
-     * return super.onKeyDown(keyCode, event);
-     * } *
-     */
 
     public boolean onCreateOptionsMenu(android.view.Menu menu) {
         super.onCreateOptionsMenu(menu);

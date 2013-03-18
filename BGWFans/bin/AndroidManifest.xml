@@ -145,6 +145,30 @@
                   android:parentActivityName="com.david.bgwfans.Eateries"/>
         <activity android:name="com.david.bgwfans.Bier"
                   android:parentActivityName="com.david.bgwfans.Eateries"/>
+        
+        <!-- special event (Food and Wine) -->
+        <activity android:name="com.david.bgwfans.EventInfo"/>
+        <activity android:name="com.david.bgwfans.EventAttractions"/>
+        <activity android:name="com.david.bgwfans.Austria"
+            	  android:parentActivityName="com.david.bgwfans.EventAttractions"/>
+        <activity android:name="com.david.bgwfans.Canada"
+            	  android:parentActivityName="com.david.bgwfans.EventAttractions"/>
+        <activity android:name="com.david.bgwfans.France"
+            	  android:parentActivityName="com.david.bgwfans.EventAttractions"/>
+        <activity android:name="com.david.bgwfans.Germany"
+            	  android:parentActivityName="com.david.bgwfans.EventAttractions"/>
+        <activity android:name="com.david.bgwfans.Greece"
+            	  android:parentActivityName="com.david.bgwfans.EventAttractions"/>
+        <activity android:name="com.david.bgwfans.Italy"
+            	  android:parentActivityName="com.david.bgwfans.EventAttractions"/>
+        <activity android:name="com.david.bgwfans.Scandinavia"
+            	  android:parentActivityName="com.david.bgwfans.EventAttractions"/>
+        <activity android:name="com.david.bgwfans.Scotland"
+            	  android:parentActivityName="com.david.bgwfans.EventAttractions"/>
+        <activity android:name="com.david.bgwfans.Spain"
+            	  android:parentActivityName="com.david.bgwfans.EventAttractions"/>
+        <activity android:name="com.david.bgwfans.EventMap"/>
+        
 
         <activity android:name="com.david.bgwfans.Shows"/>
         <activity android:name="com.david.bgwfans.Eateries"/>

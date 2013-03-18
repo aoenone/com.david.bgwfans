@@ -20,7 +20,7 @@ import com.google.android.gms.maps.model.Polygon;
 import com.google.android.gms.maps.model.PolygonOptions;
 
 
-public class ParkMap extends BaseActivity {
+public class ParkMap extends BaseActivity {	
 
     private GoogleMap mMap;
     //geo points for all the roller coasters in the park
@@ -239,7 +239,7 @@ public class ParkMap extends BaseActivity {
         askyride = mMap.addMarker(new MarkerOptions()
                 .position(ASKYRIDE)
                 .title("Aquitaine Skyride")
-                .snippet("departs to Rhinefeld"));
+                .snippet("Departs to Rhinefeld"));
     }
 
     public void addATMToMap() {
@@ -279,10 +279,6 @@ public class ParkMap extends BaseActivity {
                 .position(ENGLANDSHOW)
                 .title("Pirates 4D")
                 .snippet("A 4d Pirate Adventure"));
-
-        //b2 = mMap.addMarker(new MarkerOptions()
-        //.position(B2)
-        //.title("Bathroom"));
 
         grille = mMap.addMarker(new MarkerOptions()
                 .position(GRILLE)
@@ -356,8 +352,7 @@ public class ParkMap extends BaseActivity {
 
         griffon = mMap.addMarker(new MarkerOptions()
                 .position(GRIFFON)
-                .title("Griffon")
-                .snippet("Escape the Griffon"));
+                .title("Griffon"));
 
         loch = mMap.addMarker(new MarkerOptions()
                 .position(LOCH)
@@ -366,8 +361,7 @@ public class ParkMap extends BaseActivity {
 
         grover = mMap.addMarker(new MarkerOptions()
                 .position(GROVER)
-                .title("Grover's Express")
-                .snippet("Alpine Express"));
+                .title("Grover's Alpine Express"));
     }
 
 
@@ -427,8 +421,7 @@ public class ParkMap extends BaseActivity {
 
         delight = mMap.addMarker(new MarkerOptions()
                 .position(DELIGHT)
-                .title("Turkish Delight")
-                .snippet(""));
+                .title("Turkish Delight"));
 
         rapid = mMap.addMarker(new MarkerOptions()
                 .position(RAPID)
@@ -450,8 +443,7 @@ public class ParkMap extends BaseActivity {
     private void addFlatsToMap() {
         mach = mMap.addMarker(new MarkerOptions()
                 .position(MACH)
-                .title("Mach Tower")
-                .snippet("Watch your fall"));
+                .title("Mach Tower"));
 
         eita = mMap.addMarker(new MarkerOptions()
                 .position(EITA)
@@ -460,8 +452,7 @@ public class ParkMap extends BaseActivity {
 
         castle = mMap.addMarker(new MarkerOptions()
                 .position(CASTLE)
-                .title("DarKastle")
-                .snippet("Escape the haunted castle"));
+                .title("DarKastle"));
 
         auto = mMap.addMarker(new MarkerOptions()
                 .position(AUTO)
@@ -475,8 +466,7 @@ public class ParkMap extends BaseActivity {
 
         machine = mMap.addMarker(new MarkerOptions()
                 .position(MACHINE)
-                .title("The Flying Machine")
-                .snippet(""));
+                .title("The Flying Machine"));
 
         wind = mMap.addMarker(new MarkerOptions()
                 .position(WIND)
@@ -496,7 +486,7 @@ public class ParkMap extends BaseActivity {
         delight = mMap.addMarker(new MarkerOptions()
                 .position(DELIGHT)
                 .title("Turkish Delight")
-                .snippet(""));
+                .snippet("spinning tea cups"));
 
         ram = mMap.addMarker(new MarkerOptions()
                 .position(RAM)
@@ -561,8 +551,7 @@ public class ParkMap extends BaseActivity {
 
         machine = mMap.addMarker(new MarkerOptions()
                 .position(MACHINE)
-                .title("The Flying Machine")
-                .snippet(""));
+                .title("The Flying Machine"));
 
         ram = mMap.addMarker(new MarkerOptions()
                 .position(RAM)
@@ -596,13 +585,11 @@ public class ParkMap extends BaseActivity {
 
         mach = mMap.addMarker(new MarkerOptions()
                 .position(MACH)
-                .title("Mach Tower")
-                .snippet("Watch your fall"));
+                .title("Mach Tower"));
 
         castle = mMap.addMarker(new MarkerOptions()
                 .position(CASTLE)
-                .title("DarKastle")
-                .snippet("Escape the haunted castle"));
+                .title("DarKastle"));
 
         auto = mMap.addMarker(new MarkerOptions()
                 .position(AUTO)
@@ -621,8 +608,8 @@ public class ParkMap extends BaseActivity {
 
         festshow = mMap.addMarker(new MarkerOptions()
                 .position(FESTSHOW)
-                .title("Entwined(AM)/Roll out the Barrel(PM)")
-                .snippet("Entwined runs during the day, RotB runs at night"));
+                .title("Entwined(AM)/This is Oktoberfest(PM)")
+                .snippet("Entwined runs during the day, Oktoberfest runs at night"));
 
         wind = mMap.addMarker(new MarkerOptions()
                 .position(WIND)
@@ -641,7 +628,7 @@ public class ParkMap extends BaseActivity {
         rskyride = mMap.addMarker(new MarkerOptions()
                 .position(RSKYRIDE)
                 .title("Rhinefeld Skyride")
-                .snippet("departs to England"));
+                .snippet("Departs to England"));
 
         rrc = mMap.addMarker(new MarkerOptions()
                 .position(RRC)
@@ -658,7 +645,7 @@ public class ParkMap extends BaseActivity {
         etrain = mMap.addMarker(new MarkerOptions()
                 .position(ETRAIN)
                 .title("England train stop")
-                .snippet("departs to Festa Italia"));
+                .snippet("Departs to Festa Italia"));
 
         stables = mMap.addMarker(new MarkerOptions()
                 .position(STABLES)
@@ -747,32 +734,32 @@ public class ParkMap extends BaseActivity {
         etrain = mMap.addMarker(new MarkerOptions()
                 .position(ETRAIN)
                 .title("England train stop")
-                .snippet("departs to Festa Italia"));
+                .snippet("Departs to Festa Italia"));
 
         ftrain = mMap.addMarker(new MarkerOptions()
                 .position(FTRAIN)
                 .title("Festa Italia train station")
-                .snippet("departs to New France"));
+                .snippet("Departs to New France"));
 
         ntrain = mMap.addMarker(new MarkerOptions()
                 .position(NTRAIN)
                 .title("New France train station")
-                .snippet("departs to England"));
+                .snippet("Departs to England"));
 
         rskyride = mMap.addMarker(new MarkerOptions()
                 .position(RSKYRIDE)
                 .title("Rhinefeld Skyride")
-                .snippet("departs to England"));
+                .snippet("Departs to England"));
 
         eskyride = mMap.addMarker(new MarkerOptions()
                 .position(ESKYRIDE)
                 .title("England Skyride")
-                .snippet("departs to Aquaitaine"));
+                .snippet("Departs to Aquaitaine"));
 
         askyride = mMap.addMarker(new MarkerOptions()
                 .position(ASKYRIDE)
                 .title("Aquitaine Skyride")
-                .snippet("departs to Rhinefeld"));
+                .snippet("Departs to Rhinefeld"));
 
         rrc = mMap.addMarker(new MarkerOptions()
                 .position(RRC)
@@ -930,15 +917,6 @@ public class ParkMap extends BaseActivity {
         super.onResume();
         setUpMapIfNeeded();
     }
-
-    public void onStartTrackingTouch(SeekBar seekBar) {
-        // Don't do anything here.
-    }
-
-    public void onStopTrackingTouch(SeekBar seekBar) {
-        // Don't do anything here.
-    }
-
 
     private void setUpMap() {
         addCoastersToMap();

@@ -115,6 +115,41 @@
                 android:textColor="@color/text_color"
                 style="@style/MenuDrawer.Widget.Title" /> -->
 
+
+			<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Food and Wine Festival"
+                    android:textColor="@color/header_color"
+                    style="@style/MenuDrawer.Widget.Category"/>
+			
+			<TextView
+                    android:id="@+id/wineinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_action_about"
+                    android:text="Info"
+                    android:textColor="@color/text_color"
+                    style="@style/MenuDrawer.Widget.Title"/>
+			
+			<TextView
+                    android:id="@+id/wineattractions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_menu_food"
+                    android:text="Attractions"
+                    android:textColor="@color/text_color"
+                    style="@style/MenuDrawer.Widget.Title"/>
+			
+			<TextView
+                    android:id="@+id/winemap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_location_map"
+                    android:text="Map"
+                    android:textColor="@color/text_color"
+                    style="@style/MenuDrawer.Widget.Title"/>
+			
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

@@ -15,7 +15,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
 
-public class Verbolten extends FragmentActivity implements View.OnClickListener {
+public class Verbolten extends FragmentActivity {
     private GoogleMap mMap;
     public WebView webViewWiki;
 
@@ -25,15 +25,6 @@ public class Verbolten extends FragmentActivity implements View.OnClickListener 
                     .bearing(0)
                     .tilt(25)
                     .build();
-
-    @Override
-    public void onClick(View v) {
-        // TODO Auto-generated method stub
-
-    }
-    //public WebView webViewWiki;
-    //WebView webViewWiki = (WebView)findViewById(R.id.webViewWiki);
-    //webviewWiki.loadUrl("http://wiki.parkfans.net/index.php/Busch_Gardens_Williamsburg");
 
 
     @Override
