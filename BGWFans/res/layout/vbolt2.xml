@@ -7,8 +7,7 @@
 
     <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="0px"
-            android:layout_weight="1">
+            android:layout_height="95dp">
 
         <Button
                 android:layout_width="fill_parent"
@@ -35,7 +34,7 @@
     <ScrollView
             android:layout_width="fill_parent"
             android:layout_height="0px"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:id="@+id/info">
@@ -81,7 +80,7 @@
     <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="0px"
-            android:layout_weight="2">
+            android:layout_weight="1">
         <fragment
                 android:id="@+id/map"
                 android:layout_width="match_parent"
@@ -91,8 +90,7 @@
 
     <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="0px"
-            android:layout_weight="1"
+            android:layout_height="95dp"
             android:id="@+id/wikiButton"
             android:paddingTop="10dp"
             android:onClick="Wiki">

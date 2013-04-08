@@ -123,7 +123,7 @@
                     oak:font="Roboto-Thin.ttf"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="App.net - david_hodge"
+                    android:text="App.net - david_hodge\n"
                     android:textSize="17sp"
                     android:padding="1dp"
                     android:layout_gravity="center"/>

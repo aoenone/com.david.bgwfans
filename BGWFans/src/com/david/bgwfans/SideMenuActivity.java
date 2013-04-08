@@ -328,9 +328,6 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
         findViewById(R.id.item3).setOnClickListener(this);
         findViewById(R.id.item4).setOnClickListener(this);
         findViewById(R.id.item5).setOnClickListener(this);
-        //findViewById(R.id.item6).setOnClickListener(this);
-        //findViewById(R.id.item7).setOnClickListener(this);
-        //findViewById(R.id.item8).setOnClickListener(this);
         findViewById(R.id.item9).setOnClickListener(this);
         findViewById(R.id.item10).setOnClickListener(this);
         findViewById(R.id.item11).setOnClickListener(this);

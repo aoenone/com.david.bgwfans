@@ -76,16 +76,13 @@ public class TomCard extends Card {
             dest = parser.parse(new ByteArrayInputStream(src.getBytes()));
         } catch (ParserConfigurationException e1) {
             e1.printStackTrace();
-            //Toast.makeText(TodayCard.this,
-            //    e1.toString(), Toast.LENGTH_LONG).show();
+
         } catch (SAXException e) {
             e.printStackTrace();
-            // Toast.makeText(AndroidYahooWeatherDOMActivity.this,
-            //    e.toString(), Toast.LENGTH_LONG).show();
+
         } catch (IOException e) {
             e.printStackTrace();
-            //Toast.makeText(AndroidYahooWeatherDOMActivity.this,
-            //    e.toString(), Toast.LENGTH_LONG).show();
+
         }
 
         return dest;
@@ -113,30 +110,24 @@ public class TomCard extends Card {
         ((TextView) view.findViewById(R.id.title)).setText(title);
 
         TextView t = (TextView) view.findViewById(R.id.hours);
-        //t.setText(fDate);
-        if (fDate.equals("2013-03-16")) {
-            t.setText("Hours: 10am - 6pm");
-        }
-        if (fDate.equals("2013-03-17")) {
-            t.setText("(Pass holders only) 10am - 6pm");
-        } else if (fDate.equals("2013-03-21")) {
-            t.setText("Hours: 10am - 7pm");
-        } else if (fDate.equals("2013-03-22")) {
-            t.setText("Hours: 10am - 8pm");
-        } else if (fDate.equals("2013-03-23")) {
-            t.setText("Hours: 10am - 7pm");
-        } else if (fDate.equals("2013-03-24")) {
-            t.setText("Hours: 9am - 8pm");
-        } else if (fDate.equals("2013-03-25") || fDate.equals("2013-03-26") || fDate.equals("2013-03-27") || fDate.equals("2013-03-28")) {
-            t.setText("Hours: 9am - 8pm");
-        } else if (fDate.equals("2013-03-29")) {
-            t.setText("Hours: 9am - 10pm");
-        } else if (fDate.equals("2013-03-30")) {
-            t.setText("Hours: 9am - 8pm");
-        } else {
-            t.setText("Hours: Closed");
-        }
-
+        
+        if (fDate.equals("2013-03-25") || fDate.equals("2013-03-26") || fDate.equals("2013-03-27") || fDate.equals("2013-03-28") || fDate.equals("2013-03-31") || fDate.equals("2013-04-01") || fDate.equals("2013-04-02") || fDate.equals("2013-04-03") || fDate.equals("2013-04-04") || fDate.equals("2013-04-06")) {
+            t.setText("Hours: 9am - 8pm"); } 
+        
+        else if (fDate.equals("2013-03-29")) {
+            t.setText("Hours: 9am - 10pm");}
+        
+        else if (fDate.equals("2013-03-30")) {
+            t.setText("Hours: 9am - 8pm"); }
+        
+        else if(fDate.equals("2013-04-11") || fDate.equals("2013-04-11") || fDate.equals("2013-04-13") || fDate.equals("2013-04-18") || fDate.equals("2013-04-20") || fDate.equals("2013-04-25") || fDate.equals("2013-04-27") || fDate.equals("2013-05-02") || fDate.equals("2013-05-04")){
+        	t.setText("Hours: 10am - 8pm"); }
+    
+        else if (fDate.equals("2013-04-05") || fDate.equals("2013-04-12") || fDate.equals("2013-04-19") || fDate.equals("2013-04-26") || fDate.equals("2013-05-03") || fDate.equals("2013-05-10") || fDate.equals("2013-05-17") || fDate.equals("2013-05-24") || fDate.equals("2013-05-31")) {
+            t.setText("Hours: 10am - 10pm"); }
+        
+        else {
+            t.setText("Hours: Closed"); }
 
         return view;
     }
@@ -144,7 +135,6 @@ public class TomCard extends Card {
     private MyWeather parseWeather(Document srcDoc) {
 
         MyWeather myWeather = new MyWeather();
-
 
         //<yweather:condition text="Fair" code="33" temp="60" date="Fri, 23 Mar 2012 8:49 pm EDT"/>
         Node conditionNode = srcDoc.getElementsByTagName("yweather:forecast").item(0);
@@ -175,6 +165,7 @@ public class TomCard extends Card {
             HttpEntity httpEntity = httpClient.execute(httpGet).getEntity();
 
             if (httpEntity != null) {
+            	
                 InputStream inputStream = httpEntity.getContent();
                 Reader in = new InputStreamReader(inputStream);
                 BufferedReader bufferedreader = new BufferedReader(in);
@@ -191,12 +182,10 @@ public class TomCard extends Card {
 
         } catch (ClientProtocolException e) {
             e.printStackTrace();
-            // Toast.makeText(TodayCard.this,
-            //     e.toString(), Toast.LENGTH_LONG).show();
+           qResult = "Not Avilable";
         } catch (IOException e) {
             e.printStackTrace();
-            // Toast.makeText(TodayCard.this,
-            //     e.toString(), Toast.LENGTH_LONG).show();
+            qResult = "Not Avilable";
         }
 
         return qResult;

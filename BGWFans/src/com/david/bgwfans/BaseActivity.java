@@ -25,35 +25,58 @@ public class BaseActivity extends SlidingFragmentActivity implements View.OnClic
         int id = v.getId();
         if (id == R.id.item1) {
             Intent infoActivity = new Intent(this, InfoScreen.class);
+            toggle();
             startActivity(infoActivity);
         } else if (id == R.id.item2) {
             Intent attrActivity = new Intent(this, Attractions.class);
+            toggle();
             startActivity(attrActivity);
         } else if (id == R.id.item3) {
             Intent showsActivity = new Intent(this, HOS_Shows.class);
             startActivity(showsActivity);
+            toggle();
         } else if (id == R.id.item4) {
             Intent eatActivity = new Intent(this, Eateries.class);
             startActivity(eatActivity);
+            toggle();
         } else if (id == R.id.item5) {
             Intent mapActivity = new Intent(this, ParkMap.class);
             startActivity(mapActivity);
+            toggle();
         } else if (id == R.id.item9) {
             Intent blogActivity = new Intent(this, BGWFans.class);
             startActivity(blogActivity);
+            toggle();
         } else if (id == R.id.item10) {
             Intent forumActivity = new Intent(this, Forums.class);
             startActivity(forumActivity);
+            toggle();
         } else if (id == R.id.item11) {
             Intent wikiActivity = new Intent(this, Wiki.class);
             startActivity(wikiActivity);
+            toggle();
         } else if (id == R.id.item12) {
             Intent settingsActivity = new Intent(this, Settings.class);
             startActivity(settingsActivity);
+            toggle();
         } else if (id == R.id.item13) {
             Intent aboutActivity = new Intent(this, About.class);
             startActivity(aboutActivity);
+            toggle();
+        } else if (id == R.id.wineinfo){
+        	Intent eventInfo = new Intent(this, EventInfo.class);
+        	startActivity(eventInfo);
+        	toggle();        	
+        } else if (id == R.id.wineattractions){
+        	Intent eventAttractions = new Intent(this, EventAttractions.class);
+        	startActivity(eventAttractions);
+        	toggle();
+        } else if (id == R.id.winemap){
+        	Intent eventMap = new Intent(this, EventMap.class);
+        	startActivity(eventMap);
+        	toggle();
         }
+
     }
 
     @Override
@@ -92,15 +115,14 @@ public class BaseActivity extends SlidingFragmentActivity implements View.OnClic
         findViewById(R.id.item3).setOnClickListener(this);
         findViewById(R.id.item4).setOnClickListener(this);
         findViewById(R.id.item5).setOnClickListener(this);
-        //findViewById(R.id.item6).setOnClickListener(this);
-        //findViewById(R.id.item7).setOnClickListener(this);
-        //findViewById(R.id.item8).setOnClickListener(this);
         findViewById(R.id.item9).setOnClickListener(this);
         findViewById(R.id.item10).setOnClickListener(this);
         findViewById(R.id.item11).setOnClickListener(this);
         findViewById(R.id.item12).setOnClickListener(this);
         findViewById(R.id.item13).setOnClickListener(this);
-        //findViewById(R.id.item14).setOnClickListener(this);
+        findViewById(R.id.wineinfo).setOnClickListener(this);
+        findViewById(R.id.wineattractions).setOnClickListener(this);
+        findViewById(R.id.winemap).setOnClickListener(this);
 
     }
 

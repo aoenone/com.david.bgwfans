@@ -41,8 +41,8 @@
                 android:src="@drawable/partlycloudy"/>
 
         <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="8dp">
 
@@ -67,7 +67,8 @@
                     android:text="weather"
                     android:textSize="22sp"
                     android:padding="1dp"
-                    android:paddingLeft="10dp"/>
+                    android:paddingLeft="10dp"
+                    android:paddingBottom="10dp"/>
 
             <!-- <LinearLayout
                 android:layout_width="fill_parent"

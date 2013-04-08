@@ -91,6 +91,7 @@ public class TodayCard extends Card {
         StrictMode.setThreadPolicy(policy);
 
         TextView weather = (TextView) view.findViewById(R.id.weather);
+        //ImageView wImage = (ImageView) view.findViewById(R.id.wimg);
 
         String weatherString = QueryYahooWeather();
         Document weatherDoc = convertStringToDocument(weatherString);
@@ -99,32 +100,29 @@ public class TodayCard extends Card {
         weather.setText(weatherResult.toString());
         //MyWeather conditioncode = parseWeather(weatherDoc);
         //wImg.setImageDrawable(conditioncode);
-
-
+        
         Date cDate = new Date();
         String fDate = new SimpleDateFormat("yyyy-MM-dd").format(cDate);
 
         ((TextView) view.findViewById(R.id.title)).setText(title);
+        
+        //Fixed this area for midly easier readability 
         TextView t = (TextView) view.findViewById(R.id.hours);
-        //t.setText(fDate);
-        if (fDate.equals("2013-03-16")) {
-            t.setText("(Pass holders only) 10am - 6pm");
-        }
-        if (fDate.equals("2013-03-17")) {
-            t.setText("Hours: 10am - 6pm");
-        } else if (fDate.equals("2013-03-22")) {
-            t.setText("Hours: 10am - 7pm");
-        } else if (fDate.equals("2013-03-23")) {
-            t.setText("Hours: 10am - 8pm");
-        } else if (fDate.equals("2013-03-24")) {
-            t.setText("Hours: 10am - 7pm");
-        } else if (fDate.equals("2013-03-25") || fDate.equals("2013-03-26") || fDate.equals("2013-03-27") || fDate.equals("2013-03-28") || fDate.equals("2013-03-29")) {
-            t.setText("Hours: 9am - 8pm");
-        } else if (fDate.equals("2013-03-30") || fDate.equals("2013-03-31")) {
-            t.setText("Hours: 9am - 10pm");
-        } else {
-            t.setText("Hours: Closed");
-        }
+        
+        if (fDate.equals("2013-03-25") || fDate.equals("2013-03-26") || fDate.equals("2013-03-27") || fDate.equals("2013-03-28") || fDate.equals("2013-03-29") || fDate.equals("2013-03-31")) {
+            t.setText("Hours: 9am - 8pm"); } 
+        
+        else if (fDate.equals("2013-03-30") || fDate.equals("2013-04-06")) {
+            t.setText("Hours: 9am - 10pm"); }
+        
+        else if (fDate.equals("2013-04-13") || fDate.equals("2013-04-20") || fDate.equals("2013-04-27") || fDate.equals("2013-05-04") || fDate.equals("2013-05-11") || fDate.equals("2013-05-18") || fDate.equals("2013-05-25") || fDate.equals("2013-05-26")) {
+            t.setText("Hours: 10am - 10pm"); }
+        
+        else if (fDate.equals("2013-04-12") || fDate.equals("2013-04-19") || fDate.equals("2013-04-26") || fDate.equals("2013-04-28") || fDate.equals("2013-05-03") || fDate.equals("2013-05-05") || fDate.equals("2013-05-10") || fDate.equals("2013-05-12") || fDate.equals("2013-05-17") || fDate.equals("2013-05-19") || fDate.equals("2013-05-24") || fDate.equals("2013-05-27") || fDate.equals("2013-05-28") || fDate.equals("2013-05-29") || fDate.equals("2013-05-30") || fDate.equals("2013-05-31")) {
+            t.setText("Hours: 10am - 8pm"); }
+        
+        else {
+            t.setText("Hours: Closed"); }
 
         return view;
     }

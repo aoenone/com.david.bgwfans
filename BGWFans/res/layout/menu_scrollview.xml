@@ -19,6 +19,7 @@
                 android:overScrollFooter="@drawable/pressed_background_bgwfans"
                 android:id="@+id/sidelayout">
 
+            <!-- section for park information and content -->
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -72,50 +73,7 @@
                     android:textColor="@color/text_color"
                     style="@style/MenuDrawer.Widget.Title"/>
 
-            <!-- Removed during normal season<TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Christmas Town"
-                android:textColor="@color/header_color"
-                style="@style/MenuDrawer.Widget.Category" />
-
-            <TextView
-                android:id="@+id/item6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_action_star"
-                android:text="Experiences"
-                android:textColor="@color/text_color"
-                style="@style/MenuDrawer.Widget.Title" />
-
-            <TextView
-                android:id="@+id/item7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_menu_show"
-                android:text="Shows"
-                android:textColor="@color/text_color"
-                style="@style/MenuDrawer.Widget.Title" />
-
-            <TextView
-                android:id="@+id/item8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_menu_food"
-                android:text="Shopping"
-                android:textColor="@color/text_color"
-                style="@style/MenuDrawer.Widget.Title" />
-
-            <TextView
-                android:id="@+id/item14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_location_map"
-                android:text="Map"
-                android:textColor="@color/text_color"
-                style="@style/MenuDrawer.Widget.Title" /> -->
-
-
+			<!-- for special event. this will change based on the event -->
 			<TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -137,7 +95,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/ic_menu_food"
-                    android:text="Attractions"
+                    android:text="Locations"
                     android:textColor="@color/text_color"
                     style="@style/MenuDrawer.Widget.Title"/>
 			
@@ -150,6 +108,7 @@
                     android:textColor="@color/text_color"
                     style="@style/MenuDrawer.Widget.Title"/>
 			
+			<!-- section for BGWFans links and content -->
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -184,13 +143,14 @@
                     android:textColor="@color/text_color"
                     style="@style/MenuDrawer.Widget.Title"/>
 
+            <!-- extra app content -->
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="App"
                     android:textColor="@color/header_color"
                     style="@style/MenuDrawer.Widget.Category"/>
-
+			
             <TextView
                     android:id="@+id/item12"
                     android:layout_width="match_parent"
