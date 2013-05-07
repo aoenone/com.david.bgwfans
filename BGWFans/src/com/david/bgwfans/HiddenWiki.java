@@ -1,8 +1,5 @@
 package com.david.bgwfans;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdView;
-
 import android.app.ActionBar;
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,6 +8,8 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
+import com.google.ads.AdRequest;
+import com.google.ads.AdView;
 
 public class HiddenWiki extends Activity {
 

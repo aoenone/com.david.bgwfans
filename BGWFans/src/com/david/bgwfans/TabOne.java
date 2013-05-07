@@ -1,7 +1,5 @@
 package com.david.bgwfans;
 
-import com.google.ads.AdView;
-
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.os.Bundle;
@@ -13,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import com.google.ads.AdView;
 
 public class TabOne extends Fragment {
     RelativeLayout b1;

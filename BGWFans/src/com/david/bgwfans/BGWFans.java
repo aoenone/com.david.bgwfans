@@ -1,7 +1,6 @@
 package com.david.bgwfans;
 
 import android.os.Bundle;
-
 import android.view.MenuInflater;
 import android.view.View;
 import android.webkit.WebChromeClient;
@@ -9,7 +8,6 @@ import android.webkit.WebSettings.ZoomDensity;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
-
 import com.google.ads.AdRequest;
 import com.google.ads.AdView;
 import com.google.analytics.tracking.android.GoogleAnalytics;

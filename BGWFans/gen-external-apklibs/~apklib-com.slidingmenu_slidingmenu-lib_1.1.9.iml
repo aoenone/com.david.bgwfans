@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="GEN_FOLDER_RELATIVE_PATH_APT" value="/com.slidingmenu_slidingmenu-lib_1.1.9/gen" />
+        <option name="GEN_FOLDER_RELATIVE_PATH_AIDL" value="/com.slidingmenu_slidingmenu-lib_1.1.9/gen" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/com.slidingmenu_slidingmenu-lib_1.1.9/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/com.slidingmenu_slidingmenu-lib_1.1.9/res" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/com.slidingmenu_slidingmenu-lib_1.1.9/assets" />
+        <option name="LIBS_FOLDER_RELATIVE_PATH" value="/com.slidingmenu_slidingmenu-lib_1.1.9/libs" />
+        <option name="LIBRARY_PROJECT" value="true" />
+        <resOverlayFolders>
+          <path>/com.slidingmenu_slidingmenu-lib_1.1.9/res-overlay</path>
+        </resOverlayFolders>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/com.slidingmenu_slidingmenu-lib_1.1.9">
+      <sourceFolder url="file://$MODULE_DIR$/com.slidingmenu_slidingmenu-lib_1.1.9/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/com.slidingmenu_slidingmenu-lib_1.1.9/gen" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.android:android:4.2_r1" level="project" />
+    <orderEntry type="library" name="Maven: com.github.rtyley:roboguice-sherlock:1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.roboguice:roboguice:2.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.inject:guice:no_aop:3.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.android.maps:maps:15_r2" level="project" />
+    <orderEntry type="library" name="Maven: com.google.android:support-v4:11" level="project" />
+    <orderEntry type="module" module-name="~apklib-com.actionbarsherlock_actionbarsherlock_4.2.0" />
+  </component>
+</module>
+

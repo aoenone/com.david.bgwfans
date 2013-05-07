@@ -1,8 +1,5 @@
 package com.david.bgwfans;
 
-import java.util.ArrayList;
-
-
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.Activity;
@@ -16,9 +13,10 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.RelativeLayout;
-
 import com.google.analytics.tracking.android.GoogleAnalytics;
 import com.google.analytics.tracking.android.Tracker;
+
+import java.util.ArrayList;
 
 public class Attractions extends SideMenuActivity implements OnClickListener {
 

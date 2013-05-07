@@ -1,12 +1,10 @@
 package com.david.bgwfans;
 
 
+import android.content.Intent;
+import android.os.Bundle;
 import com.google.analytics.tracking.android.GoogleAnalytics;
 import com.google.analytics.tracking.android.Tracker;
-
-import android.content.Intent;
-
-import android.os.Bundle;
 
 
 public class Settings extends SideMenuActivity {

@@ -1,13 +1,5 @@
 package com.david.bgwfans;
 
-import com.fima.cardsui.objects.CardStack;
-import com.fima.cardsui.views.CardUI;
-import com.google.ads.AdRequest;
-import com.google.ads.AdSize;
-import com.google.ads.AdView;
-import com.google.analytics.tracking.android.GoogleAnalytics;
-import com.google.analytics.tracking.android.Tracker;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -16,6 +8,13 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.RelativeLayout;
+import com.fima.cardsui.objects.CardStack;
+import com.fima.cardsui.views.CardUI;
+import com.google.ads.AdRequest;
+import com.google.ads.AdSize;
+import com.google.ads.AdView;
+import com.google.analytics.tracking.android.GoogleAnalytics;
+import com.google.analytics.tracking.android.Tracker;
 
 
 public class InfoScreen extends SideMenuActivity implements OnClickListener {

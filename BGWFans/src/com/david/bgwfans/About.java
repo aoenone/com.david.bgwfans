@@ -1,11 +1,10 @@
 package com.david.bgwfans;
 
 
-import com.google.analytics.tracking.android.GoogleAnalytics;
-import com.google.analytics.tracking.android.Tracker;
-
 import android.os.Bundle;
 import android.view.View.OnClickListener;
+import com.google.analytics.tracking.android.GoogleAnalytics;
+import com.google.analytics.tracking.android.Tracker;
 
 
 public class About extends SideMenuActivity implements OnClickListener {

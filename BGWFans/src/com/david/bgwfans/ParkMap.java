@@ -1,12 +1,9 @@
 package com.david.bgwfans;
 
 import android.app.ActionBar;
-
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuInflater;
-import android.widget.SeekBar;
-
 import com.google.analytics.tracking.android.GoogleAnalytics;
 import com.google.analytics.tracking.android.Tracker;
 import com.google.android.gms.maps.CameraUpdateFactory;
