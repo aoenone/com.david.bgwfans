@@ -7,8 +7,7 @@
 
     <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="0px"
-            android:layout_weight="1">
+            android:layout_height="95dp" >
         <ImageView
                 android:id="@+id/loch"
                 android:src="@drawable/lochness2"
@@ -90,8 +89,7 @@
 
     <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="0px"
-            android:layout_weight="1"
+            android:layout_height="95dp"
             android:id="@+id/wikiButton"
             android:paddingTop="10dp"
             android:onClick="Wiki">

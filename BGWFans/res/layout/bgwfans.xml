@@ -22,14 +22,4 @@
             android:layout_weight="1">
 
     </WebView>
-
-    <com.google.ads.AdView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/adMob"
-            ads:adUnitId="a151350c50621fc"
-            ads:adSize="SMART_BANNER"
-            ads:loadAdOnCreate="true"
-            ads:refreshInterval="60"
-            android:layout_alignParentBottom="true"/>
 </LinearLayout>

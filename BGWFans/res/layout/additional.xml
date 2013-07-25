@@ -12,7 +12,7 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/vbolt"
+                android:id="@+id/steam_button"
                 android:layout_margin="5dp"
                 android:onClick="SteamTrain">
 
@@ -42,7 +42,7 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/griffon"
+                android:id="@+id/skyride_button"
                 android:layout_margin="5dp"
                 android:onClick="Skyride">
 
@@ -71,7 +71,7 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/apollo"
+                android:id="@+id/cruise_button"
                 android:layout_margin="5dp"
                 android:onClick="Cruise">
 

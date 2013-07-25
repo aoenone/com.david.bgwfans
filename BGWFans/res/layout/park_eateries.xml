@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
 
     <LinearLayout
             android:orientation="vertical"
@@ -12,12 +13,10 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/vbolt"
-                android:layout_margin="5dp"
-                android:onClick="Festhaus">
+                android:id="@+id/festhaus_button"
+                android:layout_margin="5dp" >
 
             <ImageView
-                    android:id="@+id/vboltimg"
                     android:src="@drawable/festhaus"
                     android:scaleType="center"
                     android:layout_width="fill_parent"
@@ -42,12 +41,10 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/griffon"
-                android:layout_margin="5dp"
-                android:onClick="Smokehouse">
+                android:id="@+id/smokehouse_button"
+                android:layout_margin="5dp" >
 
             <ImageView
-                    android:id="@+id/griffonimg"
                     android:src="@drawable/smokehouse"
                     android:scaleType="center"
                     android:layout_width="fill_parent"
@@ -71,12 +68,10 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/apollo"
-                android:layout_margin="5dp"
-                android:onClick="Piazza">
+                android:id="@+id/piazza_button"
+                android:layout_margin="5dp" >
 
             <ImageView
-                    android:id="@+id/apolloimg"
                     android:src="@drawable/parkfans"
                     android:scaleType="center"
                     android:layout_width="fill_parent"
@@ -100,12 +95,10 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/alpen"
-                android:layout_margin="5dp"
-                android:onClick="Grille">
+                android:id="@+id/grille_button"
+                android:layout_margin="5dp" >
 
             <ImageView
-                    android:id="@+id/alpenimg"
                     android:src="@drawable/squires"
                     android:scaleType="center"
                     android:layout_width="fill_parent"
@@ -129,12 +122,10 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/lochness"
-                android:layout_margin="5dp"
-                android:onClick="Cucina">
+                android:id="@+id/cucina_button"
+                android:layout_margin="5dp" >
 
             <ImageView
-                    android:id="@+id/lochimg"
                     android:src="@drawable/cucina"
                     android:scaleType="center"
                     android:layout_width="fill_parent"
@@ -158,12 +149,10 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/grover"
-                android:layout_margin="5dp"
-                android:onClick="Pub">
+                android:id="@+id/pub_button"
+                android:layout_margin="5dp" >
 
             <ImageView
-                    android:id="@+id/grovimg"
                     android:src="@drawable/parkfans"
                     android:scaleType="center"
                     android:layout_width="fill_parent"
@@ -187,12 +176,10 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/grover"
-                android:layout_margin="5dp"
-                android:onClick="Grill">
+                android:id="@+id/grill_button"
+                android:layout_margin="5dp" >
 
             <ImageView
-                    android:id="@+id/grovimg"
                     android:src="@drawable/grill"
                     android:scaleType="center"
                     android:layout_width="fill_parent"
@@ -216,12 +203,10 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/grover"
-                android:layout_margin="5dp"
-                android:onClick="Bier">
+                android:id="@+id/bier_button"
+                android:layout_margin="5dp" >
 
             <ImageView
-                    android:id="@+id/grovimg"
                     android:src="@drawable/parkfans"
                     android:scaleType="center"
                     android:layout_width="fill_parent"

@@ -6,7 +6,7 @@
         android:background="@color/side_menu_color"
         >
 
-    <com.david.bgwfans.MenuScrollView
+    <com.david.bgwfanspaid.MenuScrollView
             android:id="@+id/scrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -73,7 +73,7 @@
                     android:textColor="@color/text_color"
                     style="@style/MenuDrawer.Widget.Title"/>
 
-			<!-- for special event. this will change based on the event -->
+			<!-- for special event. this will change based on the event
 			<TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -106,15 +106,18 @@
                     android:drawableLeft="@drawable/ic_location_map"
                     android:text="Map"
                     android:textColor="@color/text_color"
-                    style="@style/MenuDrawer.Widget.Title"/>
+                    style="@style/MenuDrawer.Widget.Title"/>   -->
 			
 			<!-- section for BGWFans links and content -->
+	
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="BGWFans"
                     android:textColor="@color/header_color"
-                    style="@style/MenuDrawer.Widget.Category"/>
+                    style="@style/MenuDrawer.Widget.Category"
+                    android:longClickable="true"
+                    android:id="@+id/chatroom"/>
 
             <TextView
                     android:id="@+id/item9"
@@ -170,5 +173,5 @@
                     style="@style/MenuDrawer.Widget.Title"/>
 
         </LinearLayout>
-    </com.david.bgwfans.MenuScrollView>
+    </com.david.bgwfanspaid.MenuScrollView>
 </RelativeLayout>

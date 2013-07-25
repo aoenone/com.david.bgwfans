@@ -2,13 +2,24 @@
 
     <style name="SampleBase" parent="@android:style/Theme.Light"/>
 
-    <style name="SampleTheme" parent="SampleBase">
 
-        <item name="menuDrawerStyle">@style/MenuDrawerStyle</item>
+    
+     <style name="AppTheme" parent="Theme.Sherlock.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
+        <item name="actionBarStyle">@style/Widget.ActionBar</item>
     </style>
-
-    <style name="MenuDrawerStyle" parent="MenuDrawer.Widget.Container">
-        <item name="mdArrowDrawable">@drawable/menu_arrow</item>
-        <item name="mdMenuWidth">250dp</item>
+    
+    <style name="AppTheme.TranslucentActionBar" parent="Theme.Sherlock">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar.Transparent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="actionBarStyle">@style/Widget.ActionBar.Transparent</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+    
+    <style name="AppTheme.Light.TranslucentActionBar" parent="Theme.Sherlock.Light">
+        <item name="android:actionBarStyle">@style/Widget.Light.ActionBar.Transparent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="actionBarStyle">@style/Widget.Light.ActionBar.Transparent</item>
+        <item name="windowActionBarOverlay">true</item>
     </style>
 </resources>

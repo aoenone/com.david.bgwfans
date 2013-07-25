@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/libGoogleAnalyticsV2-1c1e94305d7c6dfd1ce11ecbf52d60ad.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/cardsuilib-884ec67532f1f882681686c6697cf0fe.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/GoogleAdMobAdsSdk-6.3.0-ec216e63e6efe3a1607fc62e15afe6ac.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/android-support-v4-19b7f3761118fe581d6ec27f301bb79e.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/nineoldandroids-2.4.0-f975a12ac3cbfe28c3f42d1e45066186.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/annotations-62bab95d6948a2db17bbc7976160b014.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/slidemenulibrary-119b8f5de48c6d0fc48fa0c9ffd7fd08.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/google-play-services-564f314dfeaf8eb81be8d93c4d6a5854.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/google-play-services_lib-44ca9aa798a0a8f8419ab4b06c23c79c.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/slidingmenuactivity-67601f074154483fe9f4af170f8ef453.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/oak-library-1.0.9-cc71b327bea6c205c393f87d7550a2d2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -3,7 +3,8 @@
             android:id="@+id/scroll"
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
 
     <LinearLayout
             android:orientation="vertical"
@@ -12,6 +13,7 @@
 
 
         <RelativeLayout
+                android:id="@+id/vbolt_button"
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
                 android:layout_margin="5dp">
@@ -41,6 +43,7 @@
         </RelativeLayout>
 
         <RelativeLayout
+                android:id="@+id/griffon_button"
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
                 android:layout_margin="5dp">
@@ -71,6 +74,7 @@
 
 
         <RelativeLayout
+                android:id="@+id/apollo_button"
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
                 android:layout_margin="5dp">
@@ -103,7 +107,7 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/alpen"
+                android:id="@+id/alpen_button"
                 android:layout_margin="5dp"
                 android:onClick="Alpen">
 
@@ -132,7 +136,7 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/lochness"
+                android:id="@+id/lochness_button"
                 android:layout_margin="5dp"
                 android:onClick="Lochness">
 
@@ -157,20 +161,21 @@
                     android:text="Loch Ness Monster"
                     android:fontFamily="sans-serif-light"/>
         </RelativeLayout>
-
+        
         <RelativeLayout
+                android:id="@+id/grover_button"
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/grover"
-                android:layout_margin="5dp"
-                android:onClick="Grover">
+                android:layout_margin="5dp">
 
-            <ImageView
-                    android:id="@+id/grovimg"
-                    android:src="@drawable/grover1"
-                    android:scaleType="center"
+            <Button
                     android:layout_width="fill_parent"
-                    android:layout_height="95dp"/>
+                    android:layout_height="95dp"
+                    android:id="@+id/grovButton"
+                    android:background="@drawable/grover1"
+                    android:onClick="Grover"
+                    android:longClickable="true"/>
+
             <TextView
                     android:id="@+id/grovt"
                     android:layout_width="match_parent"

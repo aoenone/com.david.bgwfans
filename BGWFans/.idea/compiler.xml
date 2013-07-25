@@ -25,7 +25,7 @@
         <module name="BGWFans" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.6">
+    <bytecodeTargetLevel>
       <module name="BGWFans" target="1.6" />
     </bytecodeTargetLevel>
   </component>

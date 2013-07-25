@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="nineoldandroids-2.4.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/gen-external-apklibs/com.fima.cardsui_cardsui_1.1-20130409.184639-1/libs/nineoldandroids-2.4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -8,4 +8,12 @@
     <string name="wikiLink">Link goes here</string>
 
     <string name="adMobId">a151350c50621fc</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="coasters">Coasters</string>
+    <string name="flats">Flats</string>
+    <string name="water">Water</string>
+    <string name="additonal">Additional</string>
 </resources>

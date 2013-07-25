@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <item android:id="@+id/info"
           android:icon="@drawable/ic_action_about"
           android:showAsAction="always">
         <menu>
             <item android:id="@+id/clear"
                   android:title="Clear Map"
+                  android:showAsAction="always"/>
+            <item android:id="@+id/landmarks"
+                  android:title="Landmarks"
                   android:showAsAction="always"/>
             <item android:id="@+id/bathrooms"
                   android:title="Bathrooms"
@@ -21,7 +25,7 @@
     </item>
 
     <item android:id="@+id/attroption"
-          android:icon="@drawable/ride"
+          android:icon="@drawable/ridewhite"
           android:showAsAction="always">
         <menu>
             <item android:id="@+id/alloption"

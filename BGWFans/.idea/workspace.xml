@@ -5,6 +5,7 @@
       <entry key="com.actionbarsherlock_actionbarsherlock_4.2.0" value="$MAVEN_REPOSITORY$/com/actionbarsherlock/actionbarsherlock/4.2.0/actionbarsherlock-4.2.0.apklib" />
       <entry key="com.fima.cardsui_cardsui_1.1-20130409.184639-1" value="$MAVEN_REPOSITORY$/com/fima/cardsui/cardsui/1.1-SNAPSHOT/cardsui-1.1-SNAPSHOT.apklib" />
       <entry key="com.google.android.gms_google-play-services_6" value="$MAVEN_REPOSITORY$/com/google/android/gms/google-play-services/6/google-play-services-6.apklib" />
+      <entry key="com.google.android.gms_google-play-services_7" value="$MAVEN_REPOSITORY$/com/google/android/gms/google-play-services/7/google-play-services-7.apklib" />
       <entry key="com.slidingmenu_slidingmenu-lib_1.1.9" value="$MAVEN_REPOSITORY$/com/slidingmenu/slidingmenu-lib/1.1.9/slidingmenu-lib-1.1.9.apklib" />
       <entry key="net.simonvt_android-menudrawer_2.0.2" value="$MAVEN_REPOSITORY$/net/simonvt/android-menudrawer/2.0.2/android-menudrawer-2.0.2.apklib" />
     </artifacts>
@@ -154,6 +155,13 @@
         </value>
       </entry>
       <entry key="com.google.android.gms_google-play-services_6">
+        <value>
+          <resolved-info>
+            <option name="apiLevel" value="" />
+          </resolved-info>
+        </value>
+      </entry>
+      <entry key="com.google.android.gms_google-play-services_7">
         <value>
           <resolved-info>
             <option name="apiLevel" value="" />
@@ -342,145 +350,22 @@
       </entry>
     </sdk-infos>
   </component>
+  <component name="AndroidLayoutPreviewToolWindow">
+    <option name="state">
+      <GlobalState>
+        <option name="visible" value="false" />
+      </GlobalState>
+    </option>
+  </component>
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="00bc9edf-a98e-4b7e-806e-561102e826b4" name="Default" comment="" />
     <ignored path="BGWFans.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$PROJECT_DIR$/res/values/themes.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313166423" ignored="false" />
-    <file path="$PROJECT_DIR$/res/values-v11/styles.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313166423" ignored="false" />
-    <file path="$PROJECT_DIR$/res/values-v14/styles.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313166423" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/verbolten.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/water.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/wccard.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/weather.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/whirbelwind.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/wiki.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/winecard.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/xmascard.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/xmas_info.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout-sw600dp/vbolt2.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout-xlarge-land/vbolt2.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/menu/abmenu.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/menu/hosmenu.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/menu/mapmenu.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/menu/sidemapmenu.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/menu/webmenu.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/values/analytics.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/values/colors.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/values/strings.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/turkish.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/vbolt2.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167791" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/roman.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/rrc.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/settings_screen.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/shows.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/sidemap.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/sidemenumap.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/sidemenuv2.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/skyride.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/smokehouse.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/todaycard.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313168422" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/tomcard.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313168422" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/tradewind.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/trains.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/piazza.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/pmcard.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/polar.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/pompeii.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/pub.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/mapv2.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/md__category.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/md__item.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/menu_frame.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/menu_scrollview.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313168423" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/mistletoe.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/mix.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/paidcard.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/palace.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/park_eateries.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/pets.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/info.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313168421" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/info_screen.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/jazzy_main.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1367891300028" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/lescoot.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/lochness.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/mach.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/main.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/mapscreen.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313167792" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_map.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313168421" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_nightbeats.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313168421" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_root.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313168421" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_shop.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313168421" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_shows.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313168421" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_your.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313168421" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/illcard.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313168421" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_digitup.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_fearfair.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_features.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_fiends.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_hordes.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_houses.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_inoculation.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/grill.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/grille.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/grover.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hidden.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hoscard.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_bitten.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_casket.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_catacombs.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/hos_deadline.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169190" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/davinci.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169191" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/eita.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169191" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/entwined.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169191" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/festhaus.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169191" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/flats.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169191" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/flying.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169191" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/forums.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169191" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/griffon.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169191" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/cucina.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/darkastle.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/additional.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/alpengeist.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/apollo.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/attractions.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/attr_wiki.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/autobahn.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/balloon_overlay_example2.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/barrel.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/battering.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/bgwfans.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/bier.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/calview.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/card_ex.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/catapult.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/celtic.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/coasters.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169225" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/about_screen.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169573" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/accessory.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169573" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/activity_contentsample.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169573" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/activity_main.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169573" ignored="false" />
-    <file path="$PROJECT_DIR$/res/layout/activity_windowsample.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169573" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/selectable_background_bgwfans.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169573" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/selectable_background_bgwfans2.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/selectable_background_cardbank.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/shadow.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/shadowright.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/md__list_selector_background_transition_holo_dark.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/md__list_selector_holo_dark.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/sidemenuicon.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/balloon_overlay_bg_selector.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/spinner_background_ab_bgwfans.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/spinner_background_ab_bgwfans2.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/tab_indicator_ab_bgwfans.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/tab_indicator_ab_bgwfans2.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/btn_cab_done_bgwfans2.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/pressed_background_bgwfans.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/pressed_background_bgwfans2.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/progress_horizontal_bgwfans.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/res/drawable/progress_horizontal_bgwfans2.xml" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1363313169574" ignored="false" />
-    <file path="$PROJECT_DIR$/gen/com/david/bgwfans/Manifest.java" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1367890076276" ignored="false" />
-    <file path="/a.dummy" changelist="00bc9edf-a98e-4b7e-806e-561102e826b4" time="1367891088447" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -541,22 +426,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="styles.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
+      <file leaf-file-name="TodayCard.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/david/bgwfans/TodayCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="50" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.0">
+            <state line="40" column="54" selection-start="1225" selection-end="1240" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="2955">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SideMenuActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="coasters.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/coasters.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="45" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2925">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SideMenuActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/david/bgwfans/SideMenuActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="13" selection-start="937" selection-end="937" vertical-scroll-proportion="-4.095941">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="293" column="50" selection-start="10984" selection-end="10984" vertical-scroll-proportion="0.0" vertical-offset="4380" max-vertical-offset="6180">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu_scrollview.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/menu_scrollview.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="29" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="2685">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vbolt2.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/vbolt2.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="95" column="35" selection-start="39" selection-end="5733" vertical-scroll-proportion="0.0" vertical-offset="922" max-vertical-offset="1830">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuScrollView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/david/bgwfans/MenuScrollView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="660">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HiddenWiki.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/david/bgwfans/HiddenWiki.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="36" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1290">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -572,14 +509,23 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/com/david/bgwfans/Alpen.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/com/david/bgwfans/InfoScreen.java" />
+        <option value="$PROJECT_DIR$/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/res/layout/mapv2.xml" />
+        <option value="$PROJECT_DIR$/src/com/david/bgwfans/SideMenuActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/david/bgwfans/ParkMap.java" />
+        <option value="$PROJECT_DIR$/res/layout/vbolt2.xml" />
+        <option value="$PROJECT_DIR$/src/com/david/bgwfans/Wiki.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
-    <option name="y" value="-286" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="137" />
+    <option name="y" value="72" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -643,35 +589,95 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BGWFans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BGWFans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BGWFans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BGWFans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BGWFans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BGWFans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BGWFans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BGWFans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="vcs.Git" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Android Application.BGWFans">
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -696,33 +702,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -802,8 +781,6 @@
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <RunnerSettings RunnerId="AndroidDebugRunner" />
-      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
     <list size="1">
@@ -815,7 +792,7 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
     <option name="mySSHConnectionTimeout" value="30000" />
@@ -825,7 +802,6 @@
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
     <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
     <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="DETECT_NESTED_COPIES" value="true" />
     <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
@@ -838,35 +814,47 @@
       <changelist id="00bc9edf-a98e-4b7e-806e-561102e826b4" name="Default" comment="" />
       <created>1363313116543</created>
       <updated>1363313116543</updated>
+      <workItem from="1369082011348" duration="3856000" />
+      <workItem from="1369751212501" duration="1964000" />
+      <workItem from="1369875636321" duration="792000" />
+      <workItem from="1370028298620" duration="2163000" />
+      <workItem from="1370287554271" duration="3289000" />
     </task>
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="12064000" />
+  </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="-286" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
+    <frame x="137" y="72" width="1680" height="1050" extended-state="0" />
+    <editor active="false" />
     <layout>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09791667" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20833333" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1755603" sideWeight="0.90208334" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17747858" sideWeight="0.8205805" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953784" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17941953" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20833333" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="JSON Formatter" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -934,33 +922,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/project.properties">
+    <entry file="file://$PROJECT_DIR$/src/com/david/bgwfans/XMLParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="23" column="13" selection-start="762" selection-end="762" vertical-scroll-proportion="0.09146342" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/david/bgwfans/Alpen.java">
+    <entry file="file://$PROJECT_DIR$/src/com/david/bgwfans/Verbolten.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="29" selection-start="27" selection-end="27" vertical-scroll-proportion="0.019495413">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state line="16" column="13" selection-start="554" selection-end="554" vertical-scroll-proportion="0.11432927" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="26" selection-start="600" selection-end="600" vertical-scroll-proportion="0.26431718" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/david/bgwfans/Wiki.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="45" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.02202643" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/mapv2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="16" selection-start="415" selection-end="531" vertical-scroll-proportion="0.2293578" vertical-offset="0" max-vertical-offset="0" />
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/coasters.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="45" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="2925">
+          <folding />
         </state>
       </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/styles.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/david/bgwfans/TodayCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="50" selection-start="2413" selection-end="2413" vertical-scroll-proportion="0.0">
+        <state line="40" column="54" selection-start="1225" selection-end="1240" vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="2955">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/david/bgwfans/ParkMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="845" column="26" selection-start="30532" selection-end="30532" vertical-scroll-proportion="0.6411483" vertical-offset="11914" max-vertical-offset="14115" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="152" column="57" selection-start="8586" selection-end="8586" vertical-scroll-proportion="1.5853659" vertical-offset="850" max-vertical-offset="3030">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/vbolt2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="35" selection-start="39" selection-end="5733" vertical-scroll-proportion="0.0" vertical-offset="922" max-vertical-offset="1830">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/menu_scrollview.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="29" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="2685">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/david/bgwfans/SideMenuActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="13" selection-start="937" selection-end="937" vertical-scroll-proportion="-4.095941">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="293" column="50" selection-start="10984" selection-end="10984" vertical-scroll-proportion="0.0" vertical-offset="4380" max-vertical-offset="6180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/david/bgwfans/InfoScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="57" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.4104903" vertical-offset="0" max-vertical-offset="2010" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/david/bgwfans/MenuScrollView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/wiki.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="26" selection-start="917" selection-end="917" vertical-scroll-proportion="0.42857143" vertical-offset="0" max-vertical-offset="875" />
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/david/bgwfans/HiddenWiki.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="36" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1290">
+          <folding />
         </state>
       </provider>
     </entry>

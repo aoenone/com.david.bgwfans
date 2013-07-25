@@ -31,8 +31,8 @@
     <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.android.maps:maps:15_r2" level="project" />
-    <orderEntry type="library" name="Maven: com.google.android:support-v4:11" level="project" />
     <orderEntry type="module" module-name="~apklib-com.actionbarsherlock_actionbarsherlock_4.2.0" />
+    <orderEntry type="library" name="Maven: com.google.android:support-v4:13" level="project" />
   </component>
 </module>
 

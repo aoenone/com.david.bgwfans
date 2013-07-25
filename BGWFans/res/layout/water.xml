@@ -12,17 +12,15 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/vbolt"
+                android:id="@+id/roman_button"
                 android:layout_margin="5dp"
                 android:onClick="Rapids">
 
             <ImageView
-                    android:id="@+id/vboltimg"
                     android:src="@drawable/rapids"
                     android:scaleType="center"
                     android:layout_width="fill_parent"
-                    android:layout_height="95dp"
-                    android:onClick="Rapids"/>
+                    android:layout_height="95dp" />
             <TextView
                     android:id="@+id/coast"
                     android:layout_width="match_parent"
@@ -43,17 +41,15 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/griffon"
+                android:id="@+id/pompeii_button"
                 android:layout_margin="5dp"
                 android:onClick="Pompeii">
 
             <ImageView
-                    android:id="@+id/griffonimg"
                     android:src="@drawable/pompeii"
                     android:scaleType="center"
                     android:layout_width="fill_parent"
-                    android:layout_height="95dp"
-                    android:onClick="Pompeii"/>
+                    android:layout_height="95dp"/>
             <TextView
                     android:id="@+id/griff"
                     android:layout_width="match_parent"
@@ -73,17 +69,14 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/apollo"
-                android:layout_margin="5dp"
-                android:onClick="Flume">
+                android:id="@+id/flume_button"
+                android:layout_margin="5dp">
 
             <ImageView
-                    android:id="@+id/apolloimg"
                     android:src="@drawable/lescoot"
                     android:scaleType="center"
                     android:layout_width="fill_parent"
-                    android:layout_height="95dp"
-                    android:onClick="Flume"/>
+                    android:layout_height="95dp"/>
             <TextView
                     android:id="@+id/apol"
                     android:layout_width="match_parent"

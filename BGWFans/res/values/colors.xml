@@ -1,5 +1,8 @@
 <resources>
 
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+
     <color name="md__transparent">#00000000</color>
 
     <color name="md__defaultBackground">#212224</color>
@@ -27,5 +30,10 @@
     <color name="holo_blue">#33B5E5</color>
 
     <color name="pressed_bgwfans2">#CCB8041C</color>
+    
+    <color name="bgwfans_actionbar">#1E1E1E</color>
+
+    <color name="black_overlay">#8000</color>
+
 
 </resources>

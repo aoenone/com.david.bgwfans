@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
 
     <LinearLayout
             android:orientation="vertical"
@@ -12,7 +13,7 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/vbolt"
+                android:id="@+id/dark_button"
                 android:layout_margin="5dp"
                 android:onClick="DarKastle">
 
@@ -39,7 +40,7 @@
         </RelativeLayout>
 
 
-        <RelativeLayout
+     <!--   <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
                 android:id="@+id/griffon"
@@ -66,12 +67,12 @@
                     android:textSize="22sp"
                     android:text="Europe in the Air"
                     android:fontFamily="sans-serif-light"/>
-        </RelativeLayout>
+        </RelativeLayout>                   -->
 
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/apollo"
+                android:id="@+id/mach_button"
                 android:layout_margin="5dp"
                 android:onClick="Mach">
 
@@ -100,7 +101,7 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/alpen"
+                android:id="@+id/autobahn_button"
                 android:layout_margin="5dp"
                 android:onClick="AutoBahn">
 
@@ -129,7 +130,7 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/lochness"
+                android:id="@+id/cradle_button"
                 android:layout_margin="5dp"
                 android:onClick="Cradle">
 
@@ -158,7 +159,7 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/grover"
+                android:id="@+id/flying_machine_button"
                 android:layout_margin="5dp"
                 android:onClick="FlyingMachine">
 
@@ -187,7 +188,7 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/grover"
+                android:id="@+id/wirbelwind_button"
                 android:layout_margin="5dp"
                 android:onClick="Wirbelwind">
 
@@ -216,7 +217,7 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/grover"
+                android:id="@+id/tradewind_button"
                 android:layout_margin="5dp"
                 android:onClick="TradeWind">
 
@@ -245,7 +246,7 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/grover"
+                android:id="@+id/catapult_button"
                 android:layout_margin="5dp"
                 android:onClick="Catapult">
 
@@ -274,7 +275,7 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/grover"
+                android:id="@+id/delight_button"
                 android:layout_margin="5dp"
                 android:onClick="Delight">
 
@@ -303,7 +304,7 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/grover"
+                android:id="@+id/ram_button"
                 android:layout_margin="5dp"
                 android:onClick="Ram">
 

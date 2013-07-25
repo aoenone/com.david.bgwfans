@@ -2,51 +2,22 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
             android:orientation="vertical"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
 
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
 
-        <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="95dp"
-                android:id="@+id/vbolt"
-                android:layout_margin="5dp"
-                android:onClick="Barrel">
-
-            <ImageView
-                    android:id="@+id/vboltimg"
-                    android:src="@drawable/parkfans"
-                    android:scaleType="center"
-                    android:layout_width="fill_parent"
-                    android:layout_height="95dp"/>
-            <TextView
-                    android:id="@+id/vboltt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:background="#8000"
-                    android:textColor="#fff"
-                    android:gravity="center|left"
-                    android:paddingTop="2dp"
-                    android:paddingLeft="5dp"
-                    android:paddingBottom="2dp"
-                    android:textSize="22sp"
-                    android:text="Pirates 4D"
-                    android:fontFamily="sans-serif-light"/>
-        </RelativeLayout>
 
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/vbolt"
-                android:layout_margin="5dp"
-                android:onClick="Celtic">
+                android:id="@+id/fyre_btn"
+                android:layout_margin="5dp" >
 
             <ImageView
-                    android:id="@+id/vboltimg"
                     android:src="@drawable/celtic"
                     android:scaleType="center"
                     android:layout_width="fill_parent"
@@ -71,9 +42,8 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/apollo"
-                android:layout_margin="5dp"
-                android:onClick="Mix">
+                android:id="@+id/mix_button"
+                android:layout_margin="5dp" >
 
             <ImageView
                     android:id="@+id/apolloimg"
@@ -100,12 +70,11 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/alpen"
+                android:id="@+id/pets_button"
                 android:layout_margin="5dp"
                 android:onClick="Pets">
 
             <ImageView
-                    android:id="@+id/alpenimg"
                     android:src="@drawable/pets"
                     android:scaleType="center"
                     android:layout_width="fill_parent"
@@ -129,12 +98,10 @@
         <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="95dp"
-                android:id="@+id/lochness"
-                android:layout_margin="5dp"
-                android:onClick="Entwined">
+                android:id="@+id/ent_button"
+                android:layout_margin="5dp" >
 
             <ImageView
-                    android:id="@+id/lochimg"
                     android:src="@drawable/entwined"
                     android:scaleType="center"
                     android:layout_width="fill_parent"
