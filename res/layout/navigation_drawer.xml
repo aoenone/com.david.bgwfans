@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bgwfans="http://bgwfanspaid-android/schema"
+              xmlns:oak="http://oak/oak/schema"
+              android:orientation="vertical"
+              android:layout_width="240dp"
+              android:layout_height="match_parent"
+              android:layout_gravity="start"
+              android:background="@color/holo_dark">
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:overScrollMode="never">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay">
+            <oak.widget.TextViewWithFont
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:padding="4dp"
+                    android:layout_marginLeft="8dp"
+                    oak:font="Roboto-Thin.otf"
+                    android:text="Park Info" />
+        </LinearLayout>
+
+            <View
+                    style="@style/RedDivider"/>
+
+          <com.david.bgwfanspaid.NavigationDrawerItem
+                style="@style/NavDrawerItem"
+                android:id="@+id/drawer_info_screen"
+                bgwfans:itemIcon="@drawable/ic_action_about"
+                bgwfans:itemText="Info"  />
+
+            <View
+                style="@style/NavigationDrawerDivider"/>
+
+            <com.david.bgwfanspaid.NavigationDrawerItem
+                    style="@style/NavDrawerItem"
+                    android:id="@+id/drawer_attractions"
+                    bgwfans:itemIcon="@drawable/ridewhite"
+                    bgwfans:itemText="Attractions"  />
+
+            <View
+                    style="@style/NavigationDrawerDivider"/>
+
+            <com.david.bgwfanspaid.NavigationDrawerItem
+                    style="@style/NavDrawerItem"
+                    android:id="@+id/drawer_shows"
+                    bgwfans:itemIcon="@drawable/ic_menu_show"
+                    bgwfans:itemText="Shows"  />
+
+            <View
+                    style="@style/NavigationDrawerDivider"/>
+
+            <com.david.bgwfanspaid.NavigationDrawerItem
+                    style="@style/NavDrawerItem"
+                    android:id="@+id/drawer_eateries"
+                    bgwfans:itemIcon="@drawable/ic_menu_food"
+                    bgwfans:itemText="Eateries"  />
+
+            <View
+                    style="@style/NavigationDrawerDivider"/>
+
+            <com.david.bgwfanspaid.NavigationDrawerItem
+                    style="@style/NavDrawerItem"
+                    android:id="@+id/drawer_map"
+                    bgwfans:itemIcon="@drawable/ic_location_map"
+                    bgwfans:itemText="Map"  />
+
+            <View
+                    style="@style/NavigationDrawerDivider"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay">
+            <oak.widget.TextViewWithFont
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:padding="4dp"
+                    android:layout_marginLeft="8dp"
+                    oak:font="Roboto-Thin.otf"
+                    android:text="BGWFans" />
+         </LinearLayout>
+
+            <View
+                    style="@style/RedDivider"/>
+
+            <com.david.bgwfanspaid.NavigationDrawerItem
+                    style="@style/NavDrawerItem"
+                    android:id="@+id/drawer_blog"
+                    bgwfans:itemIcon="@drawable/ic_menu_blog"
+                    bgwfans:itemText="Blog"  />
+
+            <View
+                    style="@style/NavigationDrawerDivider"/>
+
+            <com.david.bgwfanspaid.NavigationDrawerItem
+                    style="@style/NavDrawerItem"
+                    android:id="@+id/drawer_forums"
+                    bgwfans:itemIcon="@drawable/ic_menu_forums"
+                    bgwfans:itemText="Forums"  />
+
+            <View
+                    style="@style/NavigationDrawerDivider"/>
+
+            <com.david.bgwfanspaid.NavigationDrawerItem
+                    style="@style/NavDrawerItem"
+                    android:id="@+id/drawer_wiki"
+                    bgwfans:itemIcon="@drawable/ic_menu_wiki"
+                    bgwfans:itemText="Wiki"  />
+
+            <View
+                    style="@style/NavigationDrawerDivider"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black_overlay">
+            <oak.widget.TextViewWithFont
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:padding="4dp"
+                    android:layout_marginLeft="8dp"
+                    oak:font="Roboto-Thin.otf"
+                    android:text="Extras" />
+        </LinearLayout>
+
+            <View
+                    style="@style/RedDivider"/>
+
+            <com.david.bgwfanspaid.NavigationDrawerItem
+                    style="@style/NavDrawerItem"
+                    android:id="@+id/drawer_settings"
+                    bgwfans:itemIcon="@drawable/ic_menu_settings"
+                    bgwfans:itemText="Settings and Tips"  />
+
+            <View
+                    style="@style/NavigationDrawerDivider"/>
+
+            <com.david.bgwfanspaid.NavigationDrawerItem
+                    style="@style/NavDrawerItem"
+                    android:id="@+id/drawer_about"
+                    bgwfans:itemIcon="@drawable/ic_menu_about"
+                    bgwfans:itemText="About"  />
+
+         </LinearLayout>
+    </ScrollView>
+</LinearLayout>

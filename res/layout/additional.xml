@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/steam_button"
+                android:layout_margin="5dp"
+                android:onClick="SteamTrain">
+
+            <ImageView
+                    android:id="@+id/vboltimg"
+                    android:src="@drawable/train2"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/coast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Steam Trains"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/skyride_button"
+                android:layout_margin="5dp"
+                android:onClick="Skyride">
+
+            <ImageView
+                    android:id="@+id/griffonimg"
+                    android:src="@drawable/skyride"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/griff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Le Areonauts"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/cruise_button"
+                android:layout_margin="5dp"
+                android:onClick="Cruise">
+
+            <ImageView
+                    android:id="@+id/apolloimg"
+                    android:src="@drawable/rrc"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/apol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Rhine River Cruise"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

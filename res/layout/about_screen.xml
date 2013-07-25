@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:oak="http://oak/oak/schema"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/aboutlayout">
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="8dp">
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/creator"
+                    oak:font="Roboto-Light.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Creator"
+                    android:textSize="20sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="David Hodge\n"
+                    android:textSize="17sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/creat"
+                    oak:font="Roboto-Light.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contributors"
+                    android:textSize="20sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zachary Strader"
+                    android:textSize="17sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chris Johnson"
+                    android:textSize="17sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gavin McNabb\n"
+                    android:textSize="17sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+
+
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Light.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Info"
+                    android:textSize="20sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Twitter - @davidhodge229"
+                    android:textSize="17sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email - david.hodgejr229@gmail.com"
+                    android:textSize="17sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone - 757-606-0334"
+                    android:textSize="17sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="App.net - david_hodge\n"
+                    android:textSize="17sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+            
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Light.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Open Source Info"
+                    android:textSize="20sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+            
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SlidingMenu - Jf"
+                    android:textSize="17sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+            
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cards UI"
+                    android:textSize="17sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+            
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OAK android kit"
+                    android:textSize="17sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+            
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ribbon Menu"
+                    android:textSize="17sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

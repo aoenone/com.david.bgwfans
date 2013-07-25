@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingBottom="16dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+        <TextView
+                android:id="@+id/title"
+                style="@style/CardTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="title"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/bgwfans_red"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/selectable_background_cardbank"
+            android:gravity="center_vertical"
+            android:padding="4dp">
+
+        <TextView
+                android:id="@+id/description"
+                style="@style/CardText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="Go Platinum today for less than the cost of a cup of coffee!"/>
+
+        <TextView
+                android:id="@+id/description"
+                style="@style/CardText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="Going Platinum will remove all ads from the app."/>
+
+        <TextView
+                android:id="@+id/description"
+                style="@style/CardText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="It will also unlock any features being experimented and tested."/>
+
+        <TextView
+                android:id="@+id/description"
+                style="@style/CardText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="30dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="This also contributes to further development of all ParkFans apps. (Sadly, College isn't cheap)"/>
+    </LinearLayout>
+
+    <!--<com.google.android.gms.maps.MapView
+    android:id="@+id/wcmap"
+    android:layout_width="match_parent"
+    android:layout_height="100dp" /> -->
+    <!-- <fragment
+  		android:id="@+id/map"
+  		android:layout_width="match_parent"
+  		android:layout_height="100dp"
+  		class="com.google.android.gms.maps.SupportMapFragment"/> -->
+
+</LinearLayout>

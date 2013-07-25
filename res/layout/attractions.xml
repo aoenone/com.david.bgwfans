@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/coasters"
+                android:layout_margin="5dp">
+
+            <ImageView
+                    android:id="@+id/coastersimg"
+                    android:src="@drawable/vbolt2"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/coast"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Roller Coasters"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/flats"
+                android:layout_margin="5dp">
+
+            <ImageView
+                    android:id="@+id/flatsimg"
+                    android:src="@drawable/vbolt2"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/flat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Flat Rides"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/water"
+                android:layout_margin="5dp">
+
+            <ImageView
+                    android:id="@+id/waterimg"
+                    android:src="@drawable/vbolt2"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/wat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Water Rides"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/additional"
+                android:layout_margin="5dp">
+
+            <ImageView
+                    android:id="@+id/addimg"
+                    android:src="@drawable/vbolt2"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Additional"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

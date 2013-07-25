@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:padding="5dp">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="95dp">
+        <ImageView
+                android:id="@+id/xmasImage"
+                android:src="@drawable/xmas"
+                android:scaleType="center"
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"/>
+        <TextView
+                android:id="@+id/attr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#8000"
+                android:textColor="#fff"
+                android:gravity="center|left"
+                android:paddingTop="2dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="2dp"
+                android:textSize="22sp"
+                android:text="Polar Pathway"
+                android:fontFamily="sans-serif-light"/>
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="160dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/info">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="vertical"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:padding="5dp"
+                      android:background="@color/md__defaultBackground">
+            <TextView android:text="LOCATION" android:layout_width="wrap_content" android:layout_height="fill_parent"
+                      android:textSize="20sp"></TextView>
+            <TextView android:text="Escape from Pompeii" android:layout_width="wrap_content"
+                      android:layout_height="fill_parent" android:textSize="15sp"></TextView>
+            <TextView android:text="TYPE" android:layout_width="wrap_content" android:layout_height="fill_parent"
+                      android:textSize="20sp"></TextView>
+            <TextView android:text="Christmas lights attraction" android:layout_width="wrap_content"
+                      android:layout_height="fill_parent" android:textSize="15sp"></TextView>
+            <TextView android:text="ABOUT" android:layout_width="wrap_content" android:layout_height="fill_parent"
+                      android:textSize="20sp"></TextView>
+            <TextView
+                    android:text="The smell of pines trees in the crisp frosty air welcomes visitors to this winter wonderland"
+                    android:layout_width="wrap_content" android:layout_height="fill_parent"
+                    android:textSize="15sp"></TextView>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="160dp">
+        <com.cyrilmottier.polaris.PolarisMapView
+                android:id="@+id/vmapview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:apiKey="0iid2UPftb5W-lQslChgHYBKBg1Mhi6VoRzeRqA"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,255 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle</item>
+    </style>
+
+    <style name="MenuDrawer"/>
+
+    <style name="MenuDrawer.Widget"/>
+
+    <style name="Wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="FillWidth" parent="Wrap">
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="NavDrawerItem" parent="FillWidth">
+        <item name="android:onClick">navigationDrawerItemClick</item>
+    </style>
+
+    <style name="NavigationDrawerDivider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="WhiteDivider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="RedDivider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/bgwfans_red</item>
+    </style>
+
+    <style name="MenuDrawer.Widget.Category">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:attr/textColorSecondaryInverse</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:background">@drawable/md__category_background</item>
+
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MenuDrawer.Widget.Title">
+        <item name="android:background">@drawable/md__list_selector_holo_dark</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+   <!-- <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/custom_tab_indicator</item>
+        <item name="android:textColor">#FF555555</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:divider">@drawable/custom_tab_indicator_divider</item>
+        <item name="android:dividerPadding">10dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>   -->
+
+    <style name="CustomUnderlinePageIndicator">
+        <item name="selectedColor">#FFCC0000</item>
+        <item name="android:background">#FFCCCCCC</item>
+        <item name="fadeLength">1000</item>
+        <item name="fadeDelay">1000</item>
+    </style>
+
+    <style name="CustomTitlePageIndicator">
+        <item name="android:background">#2F2F2F</item>
+        <item name="footerColor">#B8041C</item>
+        <item name="footerLineHeight">1dp</item>
+        <item name="footerIndicatorHeight">3dp</item>
+        <item name="footerIndicatorStyle">underline</item>
+        <item name="android:textColor">#E5E5E5</item>
+        <item name="selectedColor">#E5E5E5</item>
+        <item name="selectedBold">true</item>
+    </style>
+
+
+    <style name="ActionBar" parent="@android:style/Widget.Holo.ActionBar.Solid">
+        <item name="android:background">@color/bgwfans_red</item>
+        <item name="android:backgroundStacked">@color/stacked</item>
+        <item name="android:backgroundSplit">@color/stacked</item>
+    </style>
+
+    <style name="ActionBarTabStyle" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_bgwfans</item>
+    </style>
+
+
+    <style parent="@android:style/Theme.Holo" name="Theme.bgwfans">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_bgwfans</item>
+        <item name="android:popupMenuStyle">@style/bgwfans_PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/bgwfans_DropDownListView</item>
+        <item name="android:actionBarTabStyle">@style/bgwfans_ActionBarTabStyle</item>
+        <item name="android:actionDropDownStyle">@style/bgwfans_DropDownNav</item>
+        <item name="android:actionBarStyle">@style/bgwfans_transparent_ActionBar</item>
+        <item name="android:panelBackground">@drawable/menu_hardkey_panel_bgwfans</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ActionBar.Solid" name="bgwfans_solid_ActionBar">
+        <item name="android:background">@drawable/ab_solid_bgwfans</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_bgwfans</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_bgwfans</item>
+        <item name="android:progressBarStyle">@style/bgwfans_ProgressBar</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ActionBar" name="bgwfans_transparent_ActionBar">
+        <item name="android:background">@drawable/ab_transparent_bgwfans</item>
+        <item name="android:progressBarStyle">@style/bgwfans_ProgressBar</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ListPopupWindow" name="bgwfans_PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_bgwfans</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ListView.DropDown" name="bgwfans_DropDownListView">
+        <item name="android:listSelector">@drawable/selectable_background_bgwfans</item>
+    </style>
+    <style parent="@android:style/Widget.Holo.ActionBar.TabView" name="bgwfans_ActionBarTabStyle">
+        <item name="android:background">@drawable/tab_indicator_ab_bgwfans</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.Spinner" name="bgwfans_DropDownNav">
+        <item name="android:background">@drawable/spinner_background_ab_bgwfans</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_bgwfans</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_bgwfans</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ProgressBar.Horizontal" name="bgwfans_ProgressBar">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_bgwfans</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style parent="@android:style/Theme.Holo" name="Theme.bgwfans.widget">
+        <item name="android:popupMenuStyle">@style/bgwfans_PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/bgwfans_DropDownListView</item>
+    </style>
+
+    <style name="DrawerTheme" parent="Theme.Bgwfans2">
+        <item name="android:homeAsUpIndicator">@drawable/sidemenuicon</item>
+    </style>
+
+    <style name="NoTitleText">
+        <item name="android:textSize">0sp</item>
+        <item name="android:textColor">#00000000</item>
+    </style>
+
+
+    <!-- BGWFans theme 03/13 -->
+    <style parent="@android:style/Theme.Holo" name="Theme.Bgwfans2">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_bgwfans2</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Bgwfans2</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Bgwfans2</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Bgwfans2</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Bgwfans2</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.Bgwfans2</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_bgwfans2</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_bgwfans2</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Bgwfans2</item>
+        <item name="android:titleTextStyle">@style/NoTitleText</item>
+        <item name="android:subtitleTextStyle">@style/NoTitleText</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ActionBar.Solid" name="ActionBar.Solid.Bgwfans2">
+        <item name="android:background">@drawable/ab_solid_bgwfans2</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_bgwfans2</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_bgwfans2</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Bgwfans2</item>
+        <item name="android:titleTextStyle">@style/NoTitleText</item>
+        <item name="android:subtitleTextStyle">@style/NoTitleText</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ActionBar" name="ActionBar.Transparent.Bgwfans2">
+        <item name="android:background">@drawable/ab_transparent_bgwfans2</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Bgwfans2</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ListPopupWindow" name="PopupMenu.Bgwfans2">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_bgwfans2</item>
+    </style>
+    <style parent="@android:style/Widget.Holo.ListView.DropDown" name="DropDownListView.Bgwfans2">
+        <item name="android:listSelector">@drawable/selectable_background_bgwfans2</item>
+    </style>
+    <style parent="@android:style/Widget.Holo.ActionBar.TabView" name="ActionBarTabStyle.Bgwfans2">
+        <item name="android:background">@drawable/tab_indicator_ab_bgwfans2</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.Spinner" name="DropDownNav.Bgwfans2">
+        <item name="android:background">@drawable/spinner_background_ab_bgwfans2</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_bgwfans2</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_bgwfans2</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ProgressBar.Horizontal" name="ProgressBar.Bgwfans2">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_bgwfans2</item>
+    </style>
+    <style parent="@android:style/Widget.Holo.ActionButton.CloseMode" name="ActionButton.CloseMode.Bgwfans2">
+        <item name="android:background">@drawable/btn_cab_done_bgwfans2</item>
+
+    </style>
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style parent="@android:style/Theme.Holo" name="Theme.Bgwfans2.Widget">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Bgwfans2</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Bgwfans2</item>
+    </style>
+    
+     <style name="Widget.ActionBar" parent="@style/Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+    </style>
+
+	<style name="Widget.Light" />
+
+    <style name="Widget.Light.ActionBar" parent="@style/Widget.Sherlock.Light.ActionBar.Solid">
+    </style>
+    
+    
+    <style name="Widget.ActionBar.Transparent">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="background">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.Light.ActionBar.Transparent">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="background">@android:color/transparent</item>
+    </style>
+    
+   <!--   <style name="BGWFans_Transparent">
+        <item name="android:actionBarStyle">@style/Widget.ActionBAr.Transparent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="actionBarStyle">@style/Widget.ActionBar.Transparent</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style> -->
+
+</resources>

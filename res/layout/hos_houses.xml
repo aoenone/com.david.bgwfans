@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                android:onClick="Mistletoe">
+
+            <ImageView
+                    android:src="@drawable/xmas_town"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/vboltt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Mistletoe Marketplace"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                android:onClick="Polar">
+
+            <ImageView
+                    android:src="@drawable/polarpathway"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/griffont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Polar Pathway"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                android:onClick="Palace">
+
+            <ImageView
+                    android:src="@drawable/penguin2"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Ice Palace"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/alpen"
+                android:layout_margin="5dp"
+                android:onClick="Stables">
+
+            <ImageView
+                    android:id="@+id/alpenimg"
+                    android:src="@drawable/xmas_town"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/alpent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Highland Stables"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/lochness"
+                android:layout_margin="5dp"
+                android:onClick="SantaFeast">
+
+            <ImageView
+                    android:id="@+id/lochimg"
+                    android:src="@drawable/xmas_town"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/locht"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Santas Fireside Feast"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/grover"
+                android:layout_margin="5dp"
+                android:onClick="SantaWork">
+
+            <ImageView
+                    android:id="@+id/grovimg"
+                    android:src="@drawable/xmas_town"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/grovt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Santa's Workshop"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/grover"
+                android:layout_margin="5dp"
+                android:onClick="JingleJunction">
+
+            <ImageView
+                    android:id="@+id/grovimg"
+                    android:src="@drawable/xmas_town"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/grovt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Jingle Junction"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:layout_margin="5dp"
+                android:onClick="Nacht">
+
+            <ImageView
+                    android:src="@drawable/xmas_town"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Nacht Tower"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"
+                android:id="@+id/grover"
+                android:layout_margin="5dp"
+                android:onClick="Verbolten">
+
+            <ImageView
+                    android:id="@+id/grovimg"
+                    android:src="@drawable/vbolt2"
+                    android:scaleType="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="95dp"/>
+            <TextView
+                    android:id="@+id/grovt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#8000"
+                    android:textColor="#fff"
+                    android:gravity="center|left"
+                    android:paddingTop="2dp"
+                    android:paddingLeft="5dp"
+                    android:paddingBottom="2dp"
+                    android:textSize="22sp"
+                    android:text="Verbolten"
+                    android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

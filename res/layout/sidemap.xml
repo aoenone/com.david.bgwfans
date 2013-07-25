@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- use the custom TapControlledMapView -->
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:paddingLeft="10dp">
+
+    <com.cyrilmottier.polaris.PolarisMapView
+            android:id="@+id/mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:apiKey="0iid2UPftb5W-lQslChgHYBKBg1Mhi6VoRzeRqA"/>
+
+</RelativeLayout>
