@@ -1,45 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-  <RelativeLayout
-          xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:bgwfans="http://bgwfans-android/schema"
-          xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
-          xmlns:oak="http://oak/oak/schema"
-      android:layout_width="fill_parent"
-      android:layout_height="fill_parent"
-      android:background="@color/hos_background" >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:bgwfans="http://bgwfanspaid-android/schema"
+            xmlns:oak="http://oak/oak/schema"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/hos_background" >
 
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" >
 
-        <com.david.bgwfans.AttractionItem
+        <com.david.bgwfanspaid.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_dig_it"
                 bgwfans:itemIcon="@drawable/digitup"
                 bgwfans:itemText="Dig it up!"  />
 
-        <com.david.bgwfans.AttractionItem
+        <com.david.bgwfanspaid.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_fiends"
                 bgwfans:itemIcon="@drawable/fiends"
                 bgwfans:itemText="Fiends"  />
 
-        <com.david.bgwfans.AttractionItem
+        <com.david.bgwfanspaid.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_nightbeats"
                 bgwfans:itemIcon="@drawable/nightbeats"
                 bgwfans:itemText="Night Beats"  />
 
     </LinearLayout>
-
-      <com.google.ads.AdView
-              android:id="@+id/adView"
-              android:layout_width="fill_parent"
-              android:layout_height="wrap_content"
-              android:layout_alignParentBottom="true"
-              ads:adUnitId="ca-app-pub-5640708555066600/5346121692"
-              ads:adSize="SMART_BANNER"
-              ads:loadAdOnCreate="true"/>
-  </RelativeLayout>
+</ScrollView>

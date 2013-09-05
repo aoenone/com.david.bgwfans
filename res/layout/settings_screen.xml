@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:oak="http://oak/oak/schema"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
 
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="false"
+            android:background="@drawable/bgwfans_loc" />
 <ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:oak="http://oak/oak/schema"
@@ -19,26 +29,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Settings"
+            style="@style/ShadowText"
             android:textSize="24sp"
             android:padding="3dp"
             android:layout_gravity="center"/>
 
     <oak.widget.TextViewWithFont
             android:id="@+id/settingsoon"
-            oak:font="Roboto-Thin.ttf"
+            oak:font="Roboto-Light.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Settings for GPS, Data, and Themes coming soon!"
+            style="@style/ShadowText"
             android:textSize="20sp"
             android:padding="3dp"
             android:layout_gravity="center"/>
 
     <oak.widget.TextViewWithFont
             android:id="@+id/settingsoon"
-            oak:font="Roboto-Thin.ttf"
+            oak:font="Roboto-Light.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Check back in future updates for more information."
+            style="@style/ShadowText"
             android:textSize="20sp"
             android:padding="3dp"
             android:layout_gravity="center"/>
@@ -49,46 +62,51 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tips"
+            style="@style/ShadowText"
             android:textSize="24sp"
             android:padding="3dp"
             android:layout_gravity="center"/>
 
     <oak.widget.TextViewWithFont
             android:id="@+id/settingsoon"
-            oak:font="Roboto-Thin.ttf"
+            oak:font="Roboto-Light.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="GPS/Data signal and connections can be limited at the park. \nKeep this in mind when trying to load web pages and the map."
+            style="@style/ShadowText"
             android:textSize="20sp"
             android:padding="3dp"
             android:layout_gravity="center"/>
 
     <oak.widget.TextViewWithFont
             android:id="@+id/settingsoon"
-            oak:font="Roboto-Thin.ttf"
+            oak:font="Roboto-Light.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="To avoid ride lines, start from the back of the park and work your way forward."
+            style="@style/ShadowText"
             android:textSize="20sp"
             android:padding="3dp"
             android:layout_gravity="center"/>
 
     <oak.widget.TextViewWithFont
             android:id="@+id/settingsoon"
-            oak:font="Roboto-Thin.ttf"
+            oak:font="Roboto-Light.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="To avoid eatery lines, eat at off times during the day (ex. 2pm instead of 12pm)."
+            style="@style/ShadowText"
             android:textSize="20sp"
             android:padding="3dp"
             android:layout_gravity="center"/>
 
     <oak.widget.TextViewWithFont
             android:id="@+id/settingsoon"
-            oak:font="Roboto-Thin.ttf"
+            oak:font="Roboto-Light.ttf"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Contact information for bugs or request are in the About section, please use them! \nFeedback is appreciated!"
+            style="@style/ShadowText"
             android:textSize="20sp"
             android:padding="3dp"
             android:layout_gravity="center"/>
@@ -96,3 +114,4 @@
 
 </LinearLayout>
 </ScrollView>
+</RelativeLayout>

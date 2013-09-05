@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:bgwfans="http://bgwfans-android/schema"
+              xmlns:bgwfans="http://bgwfanspaid-android/schema"
               xmlns:oak="http://oak/oak/schema"
               android:orientation="vertical"
               android:background="@color/hos_background"
@@ -63,7 +63,7 @@
     </RelativeLayout>
 
 
-    <com.david.bgwfans.AttractionItem
+    <com.david.bgwfanspaid.AttractionItem
             android:id="@+id/ports_forum"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/cove"

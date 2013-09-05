@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:bgwfans="http://bgwfans-android/schema"
-        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
-        xmlns:oak="http://oak/oak/schema"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
-<ScrollView
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:bgwfans="http://bgwfanspaid-android/schema"
+            xmlns:oak="http://oak/oak/schema"
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:fillViewport="true"
             android:background="@color/hos_background" >
 
     <LinearLayout
@@ -18,53 +12,41 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" >
 
-        <com.david.bgwfans.AttractionItem
+        <com.david.bgwfanspaid.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_bitten"
                 bgwfans:itemIcon="@drawable/bitten"
                 bgwfans:itemText="Bitten"  />
 
-        <com.david.bgwfans.AttractionItem
+        <com.david.bgwfanspaid.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_thirteen"
                 bgwfans:itemIcon="@drawable/thirteen"
                 bgwfans:itemText="13: Your Numbers Up"  />
 
-        <com.david.bgwfans.AttractionItem
+        <com.david.bgwfanspaid.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_catacombs"
                 bgwfans:itemIcon="@drawable/catacombs"
                 bgwfans:itemText="Catacombs"  />
 
-        <com.david.bgwfans.AttractionItem
+        <com.david.bgwfanspaid.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_dead_line"
                 bgwfans:itemIcon="@drawable/deadline"
                 bgwfans:itemText="Dead Line"  />
 
-        <com.david.bgwfans.AttractionItem
+        <com.david.bgwfanspaid.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_root"
                 bgwfans:itemIcon="@drawable/root"
                 bgwfans:itemText="Root of All Evil"  />
 
-        <com.david.bgwfans.AttractionItem
+        <com.david.bgwfanspaid.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_cove"
                 bgwfans:itemIcon="@drawable/cove"
-                bgwfans:itemText="Cut Throat Cove"
-                android:layout_marginBottom="70dp" />
+                bgwfans:itemText="Cut Throat Cove"  />
 
     </LinearLayout>
 </ScrollView>
-
-    <com.google.ads.AdView
-            android:id="@+id/adView"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            ads:adUnitId="ca-app-pub-5640708555066600/5346121692"
-            ads:adSize="SMART_BANNER"
-            ads:loadAdOnCreate="true"/>
-
-</RelativeLayout>

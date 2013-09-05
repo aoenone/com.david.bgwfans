@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:oak="http://oak/oak/schema"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent" >
+
+     <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="false"
+                android:background="@drawable/bgwfans_profile" />
+
+    <oak.widget.TextViewWithFont
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="5.0"
+        oak:font="Roboto-Light.ttf"
+        android:text="You have not connected to any social networks. Connect to one of the networks below to enhance your experience." />
+
+    <oak.widget.ButtonWithFont
+        android:id="@+id/user_signin_facebook"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="20dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="4"
+        android:shadowRadius="5.0"
+        oak:font="Roboto-Light.ttf"
+        android:layout_above="@+id/user_signin_foursquare"
+        android:text="Sign In with Facebook" />
+
+    <oak.widget.ButtonWithFont
+            android:id="@+id/user_signin_foursquare"
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:shadowColor="@color/black"
+            android:shadowDx="0"
+            android:shadowDy="4"
+            android:shadowRadius="5.0"
+            oak:font="Roboto-Light.ttf"
+            android:layout_alignParentBottom="true"
+            android:text="Sign In with foursquare" />
+
+</RelativeLayout>
