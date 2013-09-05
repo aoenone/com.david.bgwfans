@@ -3,6 +3,7 @@
               xmlns:oak="http://oak/oak/schema"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
+              android:background="@drawable/card_background_shadow"
               android:orientation="vertical"
               android:paddingBottom="16dp">
 
@@ -30,14 +31,14 @@
 
  <LinearLayout
          android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical">
-        
+         android:layout_height="fill_parent"
+         android:orientation="vertical">
+
     <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            
+
         <oak.widget.TextViewWithFont
                     android:id="@+id/cur_temp_text"
                     oak:font="Roboto-Thin.ttf"
@@ -46,15 +47,16 @@
                     android:layout_gravity="center"
                     android:textColor="@color/card_text"
                     android:text="0"
-                    android:textSize="50sp"
+                    android:textSize="60sp"
                     android:padding="15dp" />
 
         <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+                android:layout_gravity="center_vertical"
                 android:padding="8dp">
-                
+
             <oak.widget.TextViewWithFont
                     android:id="@+id/todayhours"
                     oak:font="Roboto-Light.ttf"
@@ -62,7 +64,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/card_text"
                     android:text="Today's Hours"
-                    android:textSize="22sp"
+                    android:textSize="24sp"
                     android:padding="1dp"
                     android:paddingLeft="10dp"/>
 
@@ -73,45 +75,24 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/card_text"
                     android:text="hours"
-                    android:textSize="20sp"
-                    android:padding="1dp"
-                    android:paddingLeft="10dp"/>
-            
-            <oak.widget.TextViewWithFont
-                    android:id="@+id/tomhours"
-                    oak:font="Roboto-Light.ttf"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/card_text"
-                    android:text="Tomorrow's Hours"
                     android:textSize="22sp"
-                    android:padding="1dp"
-                    android:paddingLeft="10dp"/>
-            
-            <oak.widget.TextViewWithFont
-                    android:id="@+id/hours2"
-                    oak:font="Roboto-Thin.ttf"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/card_text"
-                    android:text="hours"
-                    android:textSize="20sp"
                     android:padding="1dp"
                     android:paddingLeft="10dp"/>
 
         </LinearLayout>
     </LinearLayout>
-    		<oak.widget.TextViewWithFont
-                    android:id="@+id/weather"
-                    oak:font="Roboto-Light.ttf"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textColor="@color/card_text"
-                    android:text="Unavailable (poor signal)"
-                    android:textSize="24sp"
-                    android:padding="2dp"
-                    android:paddingLeft="10dp"/>
+
+     <oak.widget.TextViewWithFont
+             android:id="@+id/weather"
+             oak:font="Roboto-Light.ttf"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:textColor="@color/card_text"
+             android:text="Unavailable (poor signal)"
+             android:textSize="25sp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"/>
  </LinearLayout>
 
 </LinearLayout>

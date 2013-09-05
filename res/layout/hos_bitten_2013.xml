@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bgwfans="http://bgwfans-android/schema"
+              xmlns:oak="http://oak/oak/schema"
+              android:orientation="vertical"
+              android:background="@color/hos_background"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@color/md__defaultBackground">
+
+        <oak.widget.TextViewWithFont
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            oak:font="Roboto-Light.ttf"
+            android:text="Suspicion, darkness and mind-numbing fear surround the “Bitten” house which is set in Eastern Europe in the late 1800s. Full of legends and lore of vampires and the undead that preyed on the innocent, this manor sits by the road upon which all travelers must pass but few return." />
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp" >
+        <fragment
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.SupportMapFragment"/>
+    </RelativeLayout>
+
+    <com.david.bgwfans.AttractionItem
+            android:id="@+id/bitten_forum"
+            style="@style/AttractionParams"
+            bgwfans:itemIcon="@drawable/bitten"
+            bgwfans:itemText="Bitten - Forum"  />
+
+</LinearLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
@@ -97,4 +98,14 @@
                     android:fontFamily="sans-serif-light"/>
         </RelativeLayout>
     </LinearLayout>
-</ScrollView>
+
+    <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adUnitId="ca-app-pub-5640708555066600/5346121692"
+            ads:adSize="SMART_BANNER"
+            ads:loadAdOnCreate="true"/>
+
+</RelativeLayout>

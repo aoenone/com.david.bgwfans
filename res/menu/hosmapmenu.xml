@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/hos_info"
+          android:icon="@drawable/ic_action_about"
+          android:showAsAction="always" >
+        <menu>
+            <item android:id="@+id/hos_houses"
+                  android:title="Haunted Houses"
+                  android:showAsAction="always"/>
+
+            <item android:id="@+id/hos_shows"
+                  android:title="Shows"
+                  android:showAsAction="always"/>
+
+            <item android:id="@+id/hos_terror"
+                  android:title="Terror-tories"
+                  android:showAsAction="always"/>
+
+            <item android:id="@+id/hos_all"
+                  android:title="Show All"
+                  android:showAsAction="always"/>
+
+            <item android:id="@+id/hos_clear"
+                  android:title="Clear Map"
+                  android:showAsAction="always"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/hos_eat"
+          android:icon="@drawable/ic_menu_food"
+          android:showAsAction="always"/>
+
+    <item android:id="@+id/hos_hamlets"
+          android:icon="@drawable/ic_location_map"
+          android:showAsAction="always" >
+        <menu>
+            <item android:id="@+id/banbury"
+                  android:title="England"
+                  android:showAsAction="always"/>
+            <item android:id="@+id/ireland"
+                  android:title="Ireland"
+                  android:showAsAction="always"/>
+            <item android:id="@+id/aquitaine"
+                  android:title="France"
+                  android:showAsAction="always"/>
+            <item android:id="@+id/rhinefeld"
+                  android:title="Rhinefeld"
+                  android:showAsAction="always"/>
+            <item android:id="@+id/oktoberfest"
+                  android:title="Oktoberfest"
+                  android:showAsAction="always"/>
+            <item android:id="@+id/italy"
+                  android:title="Italy"
+                  android:showAsAction="always"/>
+        </menu>
+    </item>
+
+</menu>

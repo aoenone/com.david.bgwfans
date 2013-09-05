@@ -9,6 +9,11 @@
 
     <style name="MenuDrawer.Widget"/>
 
+    <style name="AttractionParams">
+        <item name="android:layout_height">95dp</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
     <style name="Wrap">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -184,7 +189,7 @@
     </style>
 
     <style parent="@android:style/Widget.Holo.ActionBar.Solid" name="ActionBar.Solid.Bgwfans2">
-        <item name="android:background">@drawable/ab_solid_bgwfans2</item>
+        <item name="android:background">@drawable/cab_background_top_bgwfans2</item>
         <item name="android:backgroundStacked">@drawable/ab_stacked_solid_bgwfans2</item>
         <item name="android:backgroundSplit">@drawable/ab_bottom_solid_bgwfans2</item>
         <item name="android:progressBarStyle">@style/ProgressBar.Bgwfans2</item>
@@ -225,7 +230,7 @@
         <item name="android:popupMenuStyle">@style/PopupMenu.Bgwfans2</item>
         <item name="android:dropDownListViewStyle">@style/DropDownListView.Bgwfans2</item>
     </style>
-    
+
      <style name="Widget.ActionBar" parent="@style/Widget.Sherlock.Light.ActionBar.Solid.Inverse">
     </style>
 
@@ -233,8 +238,8 @@
 
     <style name="Widget.Light.ActionBar" parent="@style/Widget.Sherlock.Light.ActionBar.Solid">
     </style>
-    
-    
+
+
     <style name="Widget.ActionBar.Transparent">
         <item name="android:background">@android:color/transparent</item>
         <item name="background">@android:color/transparent</item>
@@ -244,7 +249,7 @@
         <item name="android:background">@android:color/transparent</item>
         <item name="background">@android:color/transparent</item>
     </style>
-    
+
    <!--   <style name="BGWFans_Transparent">
         <item name="android:actionBarStyle">@style/Widget.ActionBAr.Transparent</item>
         <item name="android:windowActionBarOverlay">true</item>

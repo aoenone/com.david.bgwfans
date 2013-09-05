@@ -22,6 +22,8 @@
     <color name="google_now_dark">#6633b5e5</color>
 
     <color name="bgwfans_red">#B8041C</color>
+    <color name="hos_yellow">#40FFFF00</color>
+    <color name="hos_green">#4000FF00</color>
 
     <color name="stacked">#000000</color>
 
@@ -30,10 +32,13 @@
     <color name="holo_blue">#33B5E5</color>
 
     <color name="pressed_bgwfans2">#CCB8041C</color>
-    
+
     <color name="bgwfans_actionbar">#1E1E1E</color>
 
     <color name="black_overlay">#8000</color>
+
+    <color name="hos_background">#1D1D1D</color>
+    <color name="hos_card">#292929</color>
 
 
 </resources>

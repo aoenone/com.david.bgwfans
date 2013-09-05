@@ -4,6 +4,7 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:orientation="vertical"
+              android:background="@color/hos_background"
               android:id="@+id/wikiView">
 
     <ProgressBar
@@ -22,5 +23,14 @@
             android:layout_weight="1">
 
     </WebView>
+
+    <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adUnitId="ca-app-pub-5640708555066600/5346121692"
+            ads:adSize="SMART_BANNER"
+            ads:loadAdOnCreate="true"/>
 
 </LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bgwfans="http://bgwfans-android/schema"
+              xmlns:oak="http://oak/oak/schema"
+              android:orientation="vertical"
+              android:background="@color/hos_background"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@color/md__defaultBackground">
+
+        <oak.widget.TextViewWithFont
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="20sp"
+                oak:font="Roboto-Light.ttf"
+                android:text="The dead are alive and so is the fun at the OPEN CASKet bar" />
+
+        <oak.widget.TextViewWithFont
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="20sp"
+                oak:font="Roboto-Light.ttf"
+                android:text="Menu:" />
+
+        <oak.widget.TextViewWithFont
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="18sp"
+                oak:font="Roboto-Thin.ttf"
+                android:text="Syringe Jello Shots - $9.99" />
+
+        <oak.widget.TextViewWithFont
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="18sp"
+                oak:font="Roboto-Thin.ttf"
+                android:text="Provincia Di Pavia Moscato - $6.99" />
+
+        <oak.widget.TextViewWithFont
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="18sp"
+                oak:font="Roboto-Thin.ttf"
+                android:text="Villa Pozzi Reisling - $6.99" />
+
+        <oak.widget.TextViewWithFont
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="18sp"
+                oak:font="Roboto-Thin.ttf"
+                android:text="Nero Di Aveola Merlot - $6.99" />
+
+        <oak.widget.TextViewWithFont
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="18sp"
+                oak:font="Roboto-Thin.ttf"
+                android:text="Kettle Corn - $4.99" />
+
+        <oak.widget.TextViewWithFont
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="18sp"
+                oak:font="Roboto-Thin.ttf"
+                android:text="Bagged Chips - 2.59" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp" >
+        <fragment
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.SupportMapFragment"/>
+    </RelativeLayout>
+
+
+    <com.david.bgwfans.AttractionItem
+            android:id="@+id/ports_forum"
+            style="@style/AttractionParams"
+            bgwfans:itemIcon="@drawable/opencasket"
+            bgwfans:itemText="OPEN CASKet - Forum"  />
+
+</LinearLayout>

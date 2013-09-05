@@ -3,6 +3,7 @@
               xmlns:oak="http://oak/oak/schema"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
+              android:background="@drawable/card_background_shadow"
               android:orientation="vertical"
               android:paddingBottom="16dp">
 

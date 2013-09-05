@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:bgwfans="http://bgwfans-android/schema"
+              xmlns:oak="http://oak/oak/schema"
+              android:orientation="vertical"
+              android:background="@color/hos_background"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@color/md__defaultBackground">
+
+        <oak.widget.TextViewWithFont
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="20sp"
+                oak:font="Roboto-Light.ttf"
+                android:text="Things that go bump in the night sing, dance and transport you on a musical journey. From the devilish sounds of the roaring '20s to vamping it up with the music of today, this show is filled with dazzling dance numbers, sizzling singers and a barely live band that will leave your heart … beating." />
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp" >
+        <fragment
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="com.google.android.gms.maps.SupportMapFragment"/>
+    </RelativeLayout>
+
+    <com.david.bgwfans.AttractionItem
+            android:id="@+id/nightbeats_forum"
+            style="@style/AttractionParams"
+            bgwfans:itemIcon="@drawable/nightbeats"
+            bgwfans:itemText="Night Beats - Forum"  />
+
+</LinearLayout>

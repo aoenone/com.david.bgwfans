@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="@color/hos_background"
               android:id="@+id/wikiView">
 
     <ProgressBar
@@ -15,7 +18,17 @@
 
     <WebView
             android:id="@+id/webView2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
     </WebView>
+
+    <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adUnitId="ca-app-pub-5640708555066600/5346121692"
+            ads:adSize="SMART_BANNER"
+            ads:loadAdOnCreate="true"/>
 </LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:bgwfans="http://bgwfans-android/schema"
+            xmlns:oak="http://oak/oak/schema"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/hos_background" >
+
+ <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <com.david.bgwfans.AttractionItem
+            style="@style/AttractionParams"
+            android:id="@+id/hos_blood_banquet"
+            bgwfans:itemIcon="@drawable/vampirepoint"
+            bgwfans:itemText="Blood Banquet"  />
+
+    <com.david.bgwfans.AttractionItem
+            style="@style/AttractionParams"
+            android:id="@+id/hos_buccaneer_gallery"
+            bgwfans:itemIcon="@drawable/cove"
+            bgwfans:itemText="Buccaneer Gallery"  />
+
+    <com.david.bgwfans.AttractionItem
+            style="@style/AttractionParams"
+            android:id="@+id/hos_fright_feast"
+            bgwfans:itemIcon="@drawable/irelandhos"
+            bgwfans:itemText="Fright Feast"  />
+
+    <com.david.bgwfans.AttractionItem
+            style="@style/AttractionParams"
+            android:id="@+id/hos_demon_drinks"
+            bgwfans:itemIcon="@drawable/demonstreet"
+            bgwfans:itemText="Demon Drinks"  />
+
+    <com.david.bgwfans.AttractionItem
+            style="@style/AttractionParams"
+            android:id="@+id/hos_pirate_bar"
+            bgwfans:itemIcon="@drawable/cove"
+            bgwfans:itemText="Pirate Baarrrgh"  />
+
+    <com.david.bgwfans.AttractionItem
+            style="@style/AttractionParams"
+            android:id="@+id/hos_inoc_stat"
+            bgwfans:itemIcon="@drawable/inocstation"
+            bgwfans:itemText="Inoculation Station"  />
+
+    <com.david.bgwfans.AttractionItem
+            style="@style/AttractionParams"
+            android:id="@+id/hos_open_cask"
+            bgwfans:itemIcon="@drawable/opencasket"
+            bgwfans:itemText="OPEN CASKet"  />
+
+ </LinearLayout>
+</ScrollView>

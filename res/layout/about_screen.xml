@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
         xmlns:oak="http://oak/oak/schema"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:id="@+id/aboutlayout">
-
-    <ScrollView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_margin="8dp">
 
         <LinearLayout
                 android:layout_width="fill_parent"
@@ -23,7 +19,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Creator"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:padding="1dp"
                     android:layout_gravity="center"/>
 
@@ -43,7 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Contributors"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:padding="1dp"
                     android:layout_gravity="center"/>
 
@@ -72,6 +68,16 @@
                     oak:font="Roboto-Thin.ttf"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="ChickenKing (BGWFans)"
+                    android:textSize="17sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="Gavin McNabb\n"
                     android:textSize="17sp"
                     android:padding="1dp"
@@ -84,7 +90,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Contact Info"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:padding="1dp"
                     android:layout_gravity="center"/>
 
@@ -103,7 +109,17 @@
                     oak:font="Roboto-Thin.ttf"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Email - david.hodgejr229@gmail.com"
+                    android:text="Email - dhodge.jr229@gmail.com"
+                    android:textSize="17sp"
+                    android:padding="1dp"
+                    android:layout_gravity="center"/>
+
+            <oak.widget.TextViewWithFont
+                    android:id="@+id/da"
+                    oak:font="Roboto-Thin.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email - ktmdavid229@gmail.com"
                     android:textSize="17sp"
                     android:padding="1dp"
                     android:layout_gravity="center"/>
@@ -127,27 +143,18 @@
                     android:textSize="17sp"
                     android:padding="1dp"
                     android:layout_gravity="center"/>
-            
+
             <oak.widget.TextViewWithFont
                     android:id="@+id/da"
                     oak:font="Roboto-Light.ttf"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Open Source Info"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:padding="1dp"
                     android:layout_gravity="center"/>
-            
-            <oak.widget.TextViewWithFont
-                    android:id="@+id/da"
-                    oak:font="Roboto-Thin.ttf"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="SlidingMenu - Jf"
-                    android:textSize="17sp"
-                    android:padding="1dp"
-                    android:layout_gravity="center"/>
-            
+
+
             <oak.widget.TextViewWithFont
                     android:id="@+id/da"
                     oak:font="Roboto-Thin.ttf"
@@ -157,7 +164,7 @@
                     android:textSize="17sp"
                     android:padding="1dp"
                     android:layout_gravity="center"/>
-            
+
             <oak.widget.TextViewWithFont
                     android:id="@+id/da"
                     oak:font="Roboto-Thin.ttf"
@@ -166,19 +173,19 @@
                     android:text="OAK android kit"
                     android:textSize="17sp"
                     android:padding="1dp"
+                    android:layout_marginBottom="50dp"
                     android:layout_gravity="center"/>
-            
-            <oak.widget.TextViewWithFont
-                    android:id="@+id/da"
-                    oak:font="Roboto-Thin.ttf"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Ribbon Menu"
-                    android:textSize="17sp"
-                    android:padding="1dp"
-                    android:layout_gravity="center"/>
-            
-        </LinearLayout>
-    </ScrollView>
 
-</LinearLayout>
+        </LinearLayout>
+
+
+    <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adUnitId="ca-app-pub-5640708555066600/5346121692"
+            ads:adSize="SMART_BANNER"
+            ads:loadAdOnCreate="true"/>
+
+</RelativeLayout>

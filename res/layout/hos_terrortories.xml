@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:bgwfans="http://bgwfans-android/schema"
+            xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+            xmlns:oak="http://oak/oak/schema"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/hos_background" >
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+        <com.david.bgwfans.AttractionItem
+                style="@style/AttractionParams"
+                android:id="@+id/hos_ripper_row"
+                bgwfans:itemIcon="@drawable/ripper"
+                bgwfans:itemText="Ripper Row"  />
+
+        <com.david.bgwfans.AttractionItem
+                style="@style/AttractionParams"
+                android:id="@+id/hos_vampire_point"
+                bgwfans:itemIcon="@drawable/vampirepoint"
+                bgwfans:itemText="Vampire Point"  />
+
+        <com.david.bgwfans.AttractionItem
+                style="@style/AttractionParams"
+                android:id="@+id/hos_demon_street"
+                bgwfans:itemIcon="@drawable/demonstreet"
+                bgwfans:itemText="Demon Street"  />
+
+        <com.david.bgwfans.AttractionItem
+                style="@style/AttractionParams"
+                android:id="@+id/hos_ports_of_skull"
+                bgwfans:itemIcon="@drawable/cove"
+                bgwfans:itemText="Ports of Skull"  />
+
+    </LinearLayout>
+
+    <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adUnitId="ca-app-pub-5640708555066600/5346121692"
+            ads:adSize="SMART_BANNER"
+            ads:loadAdOnCreate="true"/>
+</RelativeLayout>
