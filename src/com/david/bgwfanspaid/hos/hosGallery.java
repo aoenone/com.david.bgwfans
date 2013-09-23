@@ -1,23 +1,19 @@
 package com.david.bgwfanspaid.hos;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.view.MenuItem;
-import com.david.bgwfanspaid.AttractionItem;
-import com.david.bgwfanspaid.HiddenWiki;
+import com.david.bgwfanspaid.viewcomponents.AttractionItem;
+import com.david.bgwfanspaid.webviews.HiddenWiki;
 import com.david.bgwfanspaid.R;
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.SupportMapFragment;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
-import com.google.android.gms.maps.model.Circle;
-import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -60,7 +56,7 @@ public class hosGallery extends RoboSherlockFragmentActivity {
 
         FadingActionBarHelper helper = new FadingActionBarHelper()
                 .actionBarBackground(R.drawable.ab_solid_bgwfans2)
-                .headerLayout(R.layout.hos_cove_header)
+                .headerLayout(R.layout.buc_gallery_header)
                 .parallax(true)
                 .contentLayout(R.layout.hos_buc_2013);
 

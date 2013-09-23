@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.david.bgwfanspaid.HOSInfoCard;
+import com.david.bgwfanspaid.cards.HOSInfoCard;
 import com.david.bgwfanspaid.R;
 import com.fima.cardsui.views.CardUI;
 import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockFragment;

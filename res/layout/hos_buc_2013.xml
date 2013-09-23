@@ -36,15 +36,68 @@
                 oak:font="Roboto-Light.ttf"
                 android:text="Menu:" />
 
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Ham and turkey club wrap sandwich" />
+
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Philly cheese steak sandwich" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="4dp"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Chicken ceasar salad" />
+
         <oak.widget.TextViewWithFont
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="4dp"
                 android:textSize="16sp"
                 oak:font="Roboto-Thin.ttf"
-                android:text="Coming Soon!" />
+                android:text="Specialty pizza" />
+
+        <oak.widget.TextViewWithFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"
+                oak:font="Roboto-Thin.ttf"
+                android:text="Coke products" />
+
+        <oak.widget.TextViewWithFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="4dp"
+                android:textSize="16sp"
+                oak:font="Roboto-Thin.ttf"
+                android:text="Assorted beer" />
+
 
     </LinearLayout>
 
@@ -63,10 +116,10 @@
     </RelativeLayout>
 
 
-    <com.david.bgwfanspaid.AttractionItem
+    <com.david.bgwfanspaid.viewcomponents.AttractionItem
             android:id="@+id/ports_forum"
             style="@style/AttractionParams"
-            bgwfans:itemIcon="@drawable/cove"
+            bgwfans:itemIcon="@drawable/ctc_image"
             bgwfans:itemText="Buccaneer Gallery - Forum"  />
 
 </LinearLayout>

@@ -45,7 +45,7 @@
                 android:layout_marginLeft="8dp"
                 android:ellipsize="end"
                 android:maxLines="4"
-                android:text="Howl-O-Scream, the scare is everywhere!"/>
+                android:text="Howl-O-Scream, fear has a way of spreading..."/>
 
         <TextView
                 android:id="@+id/description"

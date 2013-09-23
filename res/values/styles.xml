@@ -36,7 +36,7 @@
     <style name="NavigationDrawerDivider">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">1dp</item>
-        <item name="android:background">@color/black</item>
+        <item name="android:background">@color/white_overlay</item>
     </style>
 
     <style name="WhiteDivider">

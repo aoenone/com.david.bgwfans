@@ -9,7 +9,15 @@ import android.view.KeyEvent;
 import android.view.View;
 
 import com.actionbarsherlock.view.MenuItem;
+import com.david.bgwfanspaid.fragments.About;
+import com.david.bgwfanspaid.fragments.BGWFans;
+import com.david.bgwfanspaid.fragments.Eateries;
+import com.david.bgwfanspaid.fragments.Forums;
+import com.david.bgwfanspaid.fragments.InfoScreen;
+import com.david.bgwfanspaid.fragments.ParkMap;
+import com.david.bgwfanspaid.fragments.Settings;
 import com.david.bgwfanspaid.hos.HOS_Shows;
+import com.david.bgwfanspaid.webviews.Wiki;
 import com.google.android.gms.maps.GoogleMap;
 import com.slidingmenu.lib.SlidingMenu;
 import com.slidingmenu.lib.SlidingMenu.OnOpenedListener;
@@ -31,9 +39,9 @@ public class BaseActivity extends SlidingFragmentActivity implements View.OnClic
             toggle();
             startActivity(infoActivity);
         } else if (id == R.id.item2) {
-            Intent attrActivity = new Intent(this, Attractions.class);
+//            Intent attrActivity = new Intent(this, Attractions.class);
             toggle();
-            startActivity(attrActivity);
+//            startActivity(attrActivity);
         } else if (id == R.id.item3) {
             Intent showsActivity = new Intent(this, HOS_Shows.class);
             startActivity(showsActivity);

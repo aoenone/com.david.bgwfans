@@ -36,15 +36,173 @@
                 oak:font="Roboto-Light.ttf"
                 android:text="Menu:" />
 
-        <oak.widget.TextViewWithFont
-                android:layout_width="fill_parent"
+        <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_width="fill_parent"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="4dp"
-                android:textSize="16sp"
-                oak:font="Roboto-Thin.ttf"
-                android:text="Coming Soon!" />
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Pirate's Punch Souvenir Cup" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$8.29" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Hurricane Souvenir Cup" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$8.29" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Wine" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$7.99" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Bud Light Lime, Heineken" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$6.99" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Bud, Bud Light, Mich Ultra" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$6.49" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Coke Products" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$2.99" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Dasani" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$2.79" />
+
+        </RelativeLayout>
 
     </LinearLayout>
 
@@ -63,10 +221,10 @@
     </RelativeLayout>
 
 
-    <com.david.bgwfanspaid.AttractionItem
+    <com.david.bgwfanspaid.viewcomponents.AttractionItem
             android:id="@+id/ports_forum"
             style="@style/AttractionParams"
-            bgwfans:itemIcon="@drawable/cove"
+            bgwfans:itemIcon="@drawable/ctc_image"
             bgwfans:itemText="Pirate Baarrrgh - Forum"  />
 
 </LinearLayout>

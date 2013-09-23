@@ -9,7 +9,16 @@ import android.view.View;
 import android.view.View.OnLongClickListener;
 import android.widget.TextView;
 import com.actionbarsherlock.view.MenuItem;
+import com.david.bgwfanspaid.fragments.About;
+import com.david.bgwfanspaid.fragments.BGWFans;
+import com.david.bgwfanspaid.fragments.Eateries;
+import com.david.bgwfanspaid.fragments.Forums;
+import com.david.bgwfanspaid.fragments.InfoScreen;
+import com.david.bgwfanspaid.fragments.ParkMap;
+import com.david.bgwfanspaid.fragments.Settings;
 import com.david.bgwfanspaid.hos.HOS_Shows;
+import com.david.bgwfanspaid.webviews.ChatRoom;
+import com.david.bgwfanspaid.webviews.Wiki;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.analytics.tracking.android.GoogleAnalytics;
 import com.google.analytics.tracking.android.Tracker;
@@ -226,9 +235,9 @@ public class SideMenuActivity extends SlidingFragmentActivity implements View.On
             toggle();
             startActivity(infoActivity);
         } else if (id == R.id.item2) {
-            Intent attrActivity = new Intent(this, Attractions.class);
-            toggle();
-            startActivity(attrActivity);
+//            Intent attrActivity = new Intent(this, Attractions.class);
+//            toggle();
+//            startActivity(attrActivity);
         } else if (id == R.id.item3) {
             Intent showsActivity = new Intent(this, HOS_Shows.class);
             startActivity(showsActivity);

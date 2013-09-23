@@ -42,7 +42,7 @@
                 class="com.google.android.gms.maps.SupportMapFragment"/>
     </RelativeLayout>
 
-    <com.david.bgwfanspaid.AttractionItem
+    <com.david.bgwfanspaid.viewcomponents.AttractionItem
             android:id="@+id/dig_forum"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/digitup"

@@ -98,6 +98,8 @@ public class HOSMap extends RoboSherlockFragment {
     private Marker demonDrinks;
     private static final LatLng LOC_PIRATE_ARG = new LatLng(37.234182,-76.644042);
     private Marker pirateArg;
+    private static final LatLng LOC_PLANK_BAR = new LatLng(37.233935,-76.644154);
+    private Marker plankBar;
 
 
 
@@ -267,6 +269,10 @@ public class HOSMap extends RoboSherlockFragment {
                 .position(LOC_PIRATE_ARG)
                 .title("Pirate Baarrrgh")
                 .snippet("Grab a swill o' the grog stolen from Davy Jones' locker and mingle with the likes of Peg Leg Pete, Billy Bones and Blackbeard"));
+
+        plankBar = mMap.addMarker(new MarkerOptions()
+                .position(LOC_PLANK_BAR)
+                .title("Walk the Plank bar"));
 
     }
 
@@ -638,6 +644,10 @@ public class HOSMap extends RoboSherlockFragment {
                 .position(LOC_DEADLINE)
                 .title("Deadline")
                 .snippet("Deep underground, construction of the newest line of the Pompeii Metro was moving smoothly until an ancient pipe was accidentally struck"));
+
+        plankBar = mMap.addMarker(new MarkerOptions()
+                .position(LOC_PLANK_BAR)
+                .title("Walk the Plank bar"));
 
         final CameraPosition italy =
                 new CameraPosition.Builder().target(LOC_PORTS)

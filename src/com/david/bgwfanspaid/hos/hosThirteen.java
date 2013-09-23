@@ -3,15 +3,13 @@ package com.david.bgwfanspaid.hos;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
-import com.david.bgwfanspaid.AttractionItem;
-import com.david.bgwfanspaid.HiddenWiki;
+import com.david.bgwfanspaid.viewcomponents.AttractionItem;
+import com.david.bgwfanspaid.webviews.HiddenWiki;
 import com.david.bgwfanspaid.R;
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity;
-import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockFragment;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -85,8 +83,6 @@ public class hosThirteen extends RoboSherlockFragmentActivity{
         return true;
     }
 
-
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -96,7 +92,7 @@ public class hosThirteen extends RoboSherlockFragmentActivity{
             case R.id.menu_item_share:
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_TEXT, "I'm at Thirteen, via the BGWFans for Android app! " + "https://play.google.com/store/apps/details?id=com.david.bgwfanspaid");
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "I'm at Thirteen, via the BGWFans for Android app! " + "https://play.google.com/store/apps/details?id=com.david.bgwfans");
                 sendIntent.setType("text/plain");
                 startActivity(sendIntent);
                 break;

@@ -36,15 +36,81 @@
                 oak:font="Roboto-Light.ttf"
                 android:text="Menu:" />
 
-        <oak.widget.TextViewWithFont
-                android:layout_width="fill_parent"
+        <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_width="fill_parent"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="4dp"
-                android:textSize="16sp"
-                oak:font="Roboto-Thin.ttf"
-                android:text="Coming Soon!" />
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal" >
+                <oak.widget.TextViewWithFont
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Syringe" />
+
+                <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="6dp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="(gelatin rum shot)" />
+            </LinearLayout>
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$10.00" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal" >
+                <oak.widget.TextViewWithFont
+                        android:id="@+id/type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        oak:font="Roboto-Thin.ttf"
+                        android:text="Test Tube" />
+
+                <oak.widget.TextViewWithFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="6dp"
+                        oak:font="Roboto-Thin.ttf"
+                        android:text="(bloody rum)" />
+            </LinearLayout>
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$6.00" />
+        </RelativeLayout>
+
+
 
     </LinearLayout>
 
@@ -63,7 +129,7 @@
     </RelativeLayout>
 
 
-    <com.david.bgwfanspaid.AttractionItem
+    <com.david.bgwfanspaid.viewcomponents.AttractionItem
             android:id="@+id/ports_forum"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/inocstation"

@@ -6,8 +6,8 @@ import android.view.View;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
-import com.david.bgwfanspaid.AttractionItem;
-import com.david.bgwfanspaid.HiddenWiki;
+import com.david.bgwfanspaid.viewcomponents.AttractionItem;
+import com.david.bgwfanspaid.webviews.HiddenWiki;
 import com.david.bgwfanspaid.R;
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity;
 import com.google.analytics.tracking.android.EasyTracker;
@@ -88,7 +88,7 @@ public class hosBitten extends RoboSherlockFragmentActivity {
             case R.id.menu_item_share:
                 Intent sendIntent = new Intent();
                 sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_TEXT, "I'm at Bitten, via the BGWFans for Android app! " + "https://play.google.com/store/apps/details?id=com.david.bgwfanspaid");
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "I'm at Bitten, via the BGWFans for Android app! " + "https://play.google.com/store/apps/details?id=com.david.bgwfans");
                 sendIntent.setType("text/plain");
                 startActivity(sendIntent);
                 break;

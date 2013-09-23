@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.david.bgwfanspaid.AttractionItem;
+import com.david.bgwfanspaid.viewcomponents.AttractionItem;
 import com.david.bgwfanspaid.R;
 import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockFragment;
 import com.google.analytics.tracking.android.EasyTracker;
@@ -27,6 +27,7 @@ public class HOS_Culinary extends RoboSherlockFragment {
     AttractionItem pirateBar;
     AttractionItem inocStation;
     AttractionItem openCasket;
+    AttractionItem plankBar;
 
 
     @Override
@@ -41,6 +42,7 @@ public class HOS_Culinary extends RoboSherlockFragment {
         pirateBar = (AttractionItem) view.findViewById(R.id.hos_pirate_bar);
         inocStation = (AttractionItem) view.findViewById(R.id.hos_inoc_stat);
         openCasket = (AttractionItem) view.findViewById(R.id.hos_open_cask);
+        plankBar = (AttractionItem) view.findViewById(R.id.hos_plank_bar);
 
         bloodBanq.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,6 +103,15 @@ public class HOS_Culinary extends RoboSherlockFragment {
             public void onClick(View v) {
                 Intent casketIntent = new Intent(getActivity(), hosCasket.class);
                 startActivity(casketIntent);
+                getActivity().overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+            }
+        });
+
+        plankBar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent plankIntent = new Intent(getActivity(), hosPlank.class);
+                startActivity(plankIntent);
                 getActivity().overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
             }
         });

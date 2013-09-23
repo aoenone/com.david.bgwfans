@@ -12,47 +12,53 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-    <com.david.bgwfanspaid.AttractionItem
+    <com.david.bgwfanspaid.viewcomponents.AttractionItem
             style="@style/AttractionParams"
             android:id="@+id/hos_blood_banquet"
             bgwfans:itemIcon="@drawable/vampirepoint"
             bgwfans:itemText="Blood Banquet"  />
 
-    <com.david.bgwfanspaid.AttractionItem
+    <com.david.bgwfanspaid.viewcomponents.AttractionItem
             style="@style/AttractionParams"
             android:id="@+id/hos_buccaneer_gallery"
-            bgwfans:itemIcon="@drawable/cove"
+            bgwfans:itemIcon="@drawable/ctc_image"
             bgwfans:itemText="Buccaneer Gallery"  />
 
-    <com.david.bgwfanspaid.AttractionItem
+    <com.david.bgwfanspaid.viewcomponents.AttractionItem
             style="@style/AttractionParams"
             android:id="@+id/hos_fright_feast"
             bgwfans:itemIcon="@drawable/irelandhos"
             bgwfans:itemText="Fright Feast"  />
 
-    <com.david.bgwfanspaid.AttractionItem
+    <com.david.bgwfanspaid.viewcomponents.AttractionItem
             style="@style/AttractionParams"
             android:id="@+id/hos_demon_drinks"
             bgwfans:itemIcon="@drawable/demonstreet"
             bgwfans:itemText="Demon Drinks"  />
 
-    <com.david.bgwfanspaid.AttractionItem
+    <com.david.bgwfanspaid.viewcomponents.AttractionItem
             style="@style/AttractionParams"
             android:id="@+id/hos_pirate_bar"
-            bgwfans:itemIcon="@drawable/cove"
+            bgwfans:itemIcon="@drawable/ctc_image"
             bgwfans:itemText="Pirate Baarrrgh"  />
 
-    <com.david.bgwfanspaid.AttractionItem
+    <com.david.bgwfanspaid.viewcomponents.AttractionItem
             style="@style/AttractionParams"
             android:id="@+id/hos_inoc_stat"
             bgwfans:itemIcon="@drawable/inocstation"
             bgwfans:itemText="Inoculation Station"  />
 
-    <com.david.bgwfanspaid.AttractionItem
+    <com.david.bgwfanspaid.viewcomponents.AttractionItem
             style="@style/AttractionParams"
             android:id="@+id/hos_open_cask"
             bgwfans:itemIcon="@drawable/opencasket"
             bgwfans:itemText="OPEN CASKet"  />
+
+     <com.david.bgwfanspaid.viewcomponents.AttractionItem
+             style="@style/AttractionParams"
+             android:id="@+id/hos_plank_bar"
+             bgwfans:itemIcon="@drawable/ctc_image"
+             bgwfans:itemText="Walk the Plank Bar"  />
 
  </LinearLayout>
 </ScrollView>

@@ -36,65 +36,270 @@
                 oak:font="Roboto-Light.ttf"
                 android:text="Menu:" />
 
-        <oak.widget.TextViewWithFont
-                android:layout_width="fill_parent"
+        <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_width="fill_parent"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="4dp"
-                android:textSize="18sp"
-                oak:font="Roboto-Thin.ttf"
-                android:text="Syringe Jello Shots - $9.99" />
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
 
-        <oak.widget.TextViewWithFont
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="4dp"
-                android:textSize="18sp"
-                oak:font="Roboto-Thin.ttf"
-                android:text="Provincia Di Pavia Moscato - $6.99" />
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Syringe Jello Shots" />
 
-        <oak.widget.TextViewWithFont
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="4dp"
-                android:textSize="18sp"
-                oak:font="Roboto-Thin.ttf"
-                android:text="Villa Pozzi Reisling - $6.99" />
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$9.99" />
 
-        <oak.widget.TextViewWithFont
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="4dp"
-                android:textSize="18sp"
-                oak:font="Roboto-Thin.ttf"
-                android:text="Nero Di Aveola Merlot - $6.99" />
+        </RelativeLayout>
 
-        <oak.widget.TextViewWithFont
-                android:layout_width="fill_parent"
+        <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_width="fill_parent"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="4dp"
-                android:textSize="18sp"
-                oak:font="Roboto-Thin.ttf"
-                android:text="Kettle Corn - $4.99" />
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
 
-        <oak.widget.TextViewWithFont
-                android:layout_width="fill_parent"
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Vampire Martini Sourvenir Cup" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$8.29" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_width="fill_parent"
                 android:layout_marginRight="20dp"
-                android:layout_marginBottom="4dp"
-                android:textSize="18sp"
-                oak:font="Roboto-Thin.ttf"
-                android:text="Bagged Chips - 2.59" />
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Bloody Sangria Souvenir Cup" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$8.29" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Wine (Moscato, Reisling, Merlot)" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$6.99" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Bud Light Lime, Heineken" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$6.99" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Bud, Bud Light, Mich Ultra, Miller Lite" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$6.49" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Jello Shots" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$4.99" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="4dp" >
+
+                <oak.widget.TextViewWithFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        oak:font="Roboto-Thin.ttf"
+                        android:text="Bottled Coke" />
+
+                <oak.widget.TextViewWithFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_alignParentRight="true"
+                        oak:font="Roboto-Thin.ttf"
+                        android:text="$2.99" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="4dp" >
+
+                <oak.widget.TextViewWithFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        oak:font="Roboto-Thin.ttf"
+                        android:text="Bottled Water" />
+
+                <oak.widget.TextViewWithFont
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_alignParentRight="true"
+                        oak:font="Roboto-Thin.ttf"
+                        android:text="$2.79" />
+
+            </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Kettle Corn" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$4.99" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="4dp" >
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="Bagged Chips" />
+
+            <oak.widget.TextViewWithFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_alignParentRight="true"
+                    oak:font="Roboto-Thin.ttf"
+                    android:text="$2.59" />
+
+        </RelativeLayout>
+
 
     </LinearLayout>
 
@@ -113,7 +318,7 @@
     </RelativeLayout>
 
 
-    <com.david.bgwfanspaid.AttractionItem
+    <com.david.bgwfanspaid.viewcomponents.AttractionItem
             android:id="@+id/ports_forum"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/opencasket"

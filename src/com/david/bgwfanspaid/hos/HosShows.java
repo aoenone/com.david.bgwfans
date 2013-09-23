@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
-import com.david.bgwfanspaid.AttractionItem;
+import com.david.bgwfanspaid.viewcomponents.AttractionItem;
 import com.david.bgwfanspaid.R;
 import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockFragment;
 import com.google.ads.util.i;

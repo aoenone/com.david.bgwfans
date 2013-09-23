@@ -12,7 +12,7 @@ import com.google.analytics.tracking.android.EasyTracker;
 import com.google.analytics.tracking.android.GoogleAnalytics;
 import com.google.analytics.tracking.android.Tracker;
 import roboguice.inject.InjectView;
-import com.david.bgwfanspaid.AttractionItem;
+import com.david.bgwfanspaid.viewcomponents.AttractionItem;
 
 /**
  * Created with IntelliJ IDEA.

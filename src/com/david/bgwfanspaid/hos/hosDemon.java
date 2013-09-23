@@ -5,9 +5,11 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
-import com.david.bgwfanspaid.AttractionItem;
-import com.david.bgwfanspaid.HiddenWiki;
+import com.david.bgwfanspaid.NewMainActivity;
+import com.david.bgwfanspaid.viewcomponents.AttractionItem;
+import com.david.bgwfanspaid.webviews.HiddenWiki;
 import com.david.bgwfanspaid.R;
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity;
 import com.google.analytics.tracking.android.EasyTracker;
@@ -79,12 +81,26 @@ public class hosDemon extends RoboSherlockFragmentActivity {
     }
 
 
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getSupportMenuInflater().inflate(R.menu.hos_attr_menu, menu);
+        return true;
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
                 finish();
-                return true;
+                break;
+            case R.id.menu_item_share:
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "I'm at Demon Street, via the BGWFans for Android app! " + "https://play.google.com/store/apps/details?id=com.david.bgwfans");
+                sendIntent.setType("text/plain");
+                startActivity(sendIntent);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -93,6 +109,12 @@ public class hosDemon extends RoboSherlockFragmentActivity {
     protected void onResume() {
         super.onResume();
         setUpMapIfNeeded();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        hosDemon.this.finish();
     }
 
     private void setUpMapIfNeeded() {
