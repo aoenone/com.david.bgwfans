@@ -37,7 +37,6 @@ public class Forums extends RoboSherlockFragment {
 
         webview2 = (WebView) view.findViewById(R.id.webView2);
         webview2.getSettings().setJavaScriptEnabled(true);
-        webview2.getSettings().setPluginsEnabled(true);
         webview2.loadUrl("http://www.bgwfans.com/forums");
         webview2.setWebViewClient(new WebViewClient());
         webview2.getSettings().setBuiltInZoomControls(true);

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bgwfans="http://bgwfanspaid-android/schema"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.david.bgwfanspaid.viewcomponents.XmasItem
+        android:id="@+id/holiday_hills"
+        style="@style/AttractionParams"
+        bgwfans:itemIcon="@drawable/deadline"
+        bgwfans:itemText="Holiday Hills"  />
+
+    <com.david.bgwfanspaid.viewcomponents.XmasItem
+        android:id="@+id/mistletoe_marketplace"
+        style="@style/AttractionParams"
+        bgwfans:itemIcon="@drawable/deadline"
+        bgwfans:itemText="Mistletoe Marketplace"  />
+
+    <com.david.bgwfanspaid.viewcomponents.XmasItem
+        android:id="@+id/polar_pathway"
+        style="@style/AttractionParams"
+        bgwfans:itemIcon="@drawable/deadline"
+        bgwfans:itemText="Polar Pathway"  />
+
+    <com.david.bgwfanspaid.viewcomponents.XmasItem
+        android:id="@+id/highland_stables"
+        style="@style/AttractionParams"
+        bgwfans:itemIcon="@drawable/deadline"
+        bgwfans:itemText="Highland Stables"  />
+
+    <com.david.bgwfanspaid.viewcomponents.XmasItem
+        android:id="@+id/ice_palace"
+        style="@style/AttractionParams"
+        bgwfans:itemIcon="@drawable/deadline"
+        bgwfans:itemText="Ice Palace: A Penguin Paradise"  />
+
+    <com.david.bgwfanspaid.viewcomponents.XmasItem
+        android:id="@+id/santa_feast"
+        style="@style/AttractionParams"
+        bgwfans:itemIcon="@drawable/deadline"
+        bgwfans:itemText="Santa's Fireside Feast"  />
+
+    <com.david.bgwfanspaid.viewcomponents.XmasItem
+        android:id="@+id/santa_feast"
+        style="@style/AttractionParams"
+        bgwfans:itemIcon="@drawable/deadline"
+        bgwfans:itemText="Santa's Workshop"  />
+
+    <com.david.bgwfanspaid.viewcomponents.XmasItem
+        android:id="@+id/other_rides"
+        style="@style/AttractionParams"
+        bgwfans:itemIcon="@drawable/deadline"
+        bgwfans:itemText="Rides"  />
+
+ </LinearLayout>
+</ScrollView>

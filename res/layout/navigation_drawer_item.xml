@@ -24,6 +24,7 @@
 
     <oak.widget.TextViewWithFont
             android:id="@+id/text"
+            style="@style/ShadowText"
             android:layout_height="wrap_content"
             android:layout_width="fill_parent"
             android:textSize="20sp"

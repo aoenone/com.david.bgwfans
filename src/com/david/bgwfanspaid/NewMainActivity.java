@@ -45,7 +45,6 @@ import com.david.bgwfanspaid.geofence.GeofenceStore;
 import com.david.bgwfanspaid.geofence.GeofenceUtils;
 import com.david.bgwfanspaid.geofence.ParkGeofence;
 import com.david.bgwfanspaid.hos.HOSHouses;
-import com.david.bgwfanspaid.hos.HOSInfo;
 import com.david.bgwfanspaid.hos.HOSMap;
 import com.david.bgwfanspaid.hos.HOS_Culinary;
 import com.david.bgwfanspaid.hos.HOS_Shows;
@@ -55,6 +54,11 @@ import com.david.bgwfanspaid.geofence.GeofenceUtils.REMOVE_TYPE;
 import com.david.bgwfanspaid.geofence.GeofenceUtils.REQUEST_TYPE;
 import com.david.bgwfanspaid.viewcomponents.NavigationDrawerItem;
 import com.david.bgwfanspaid.webviews.Wiki;
+import com.david.bgwfanspaid.xmas.fragments.XmasAttractions;
+import com.david.bgwfanspaid.xmas.fragments.XmasFood;
+import com.david.bgwfanspaid.xmas.fragments.XmasInfoFragment;
+import com.david.bgwfanspaid.xmas.fragments.XmasMap;
+import com.david.bgwfanspaid.xmas.fragments.XmasShows;
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.android.gms.common.ConnectionResult;
@@ -87,7 +91,7 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
     public static final int NAV_HOS_HOUSES = R.id.drawer_hos_houses;
     public static final int NAV_HOS_SHOWS = R.id.drawer_hos_shows;
     public static final int NAV_HOS_CULINARY = R.id.drawer_hos_food;
-    public static final int NAV_HOS_EXP = R.id.drawer_hos_exp;
+//    public static final int NAV_HOS_EXP = R.id.drawer_hos_exp;
     public static final int NAV_HOS_MAP = R.id.drawer_hos_map;
 
     //for BGWFans shit
@@ -266,22 +270,22 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
                 fragment = injector.getInstance(ParkMap.class);
                 break;
             case NAV_HOS_INFO:
-                fragment = injector.getInstance(HOSInfo.class);
+                fragment = injector.getInstance(XmasInfoFragment.class);
                 break;
             case NAV_HOS_HOUSES:
-                fragment = injector.getInstance(HOSHouses.class);
+                fragment = injector.getInstance(XmasAttractions.class);
                 break;
             case NAV_HOS_SHOWS:
-                fragment = injector.getInstance(HosShows.class);
+                fragment = injector.getInstance(XmasShows.class);
                 break;
             case NAV_HOS_CULINARY:
-                fragment = injector.getInstance(HOS_Culinary.class);
+                fragment = injector.getInstance(XmasFood.class);
                 break;
-            case NAV_HOS_EXP:
-                fragment = injector.getInstance(HOS_TERROR.class);
-                break;
+//            case NAV_HOS_EXP:
+//                fragment = injector.getInstance(HOS_TERROR.class);
+//                break;
             case NAV_HOS_MAP:
-                fragment = injector.getInstance(HOSMap.class);
+                fragment = injector.getInstance(XmasMap.class);
                 break;
             case NAV_ID_BLOG:
                 fragment = injector.getInstance(BGWFans.class);

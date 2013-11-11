@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oak="http://oak/oak/schema"
+    android:background="@drawable/selectable_background_bgwfans2"
+    android:duplicateParentState="true"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="95dp"
+        android:paddingBottom="5dp"
+        android:layout_margin="5dp"  >
+
+        <ImageView
+            android:id="@+id/attraction_image"
+            android:src="@drawable/parkfans"
+            android:scaleType="centerCrop"
+            android:layout_width="fill_parent"
+            android:adjustViewBounds="true"
+            android:layout_height="95dp" />
+
+        <oak.widget.TextViewWithFont
+            android:id="@+id/attraction_name"
+            style="@style/ShadowText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_overlay"
+            android:gravity="center|left"
+            android:paddingTop="6dp"
+            android:paddingLeft="6dp"
+            android:paddingBottom="6dp"
+            android:textSize="22sp"
+            android:text="Place holder"
+            oak:font="Roboto-Thin.ttf"/>
+    </RelativeLayout>
+</LinearLayout>

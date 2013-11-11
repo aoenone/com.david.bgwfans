@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/xmas_attr"
+        android:icon="@drawable/ridewhite"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/xmas_eat"
+        android:icon="@drawable/ic_menu_food"
+        android:showAsAction="always"/>
+
+    <item android:id="@+id/xmas_shows"
+        android:icon="@drawable/ic_menu_show"
+        android:showAsAction="always"/>
+
+</menu>

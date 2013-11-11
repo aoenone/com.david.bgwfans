@@ -57,6 +57,18 @@
 		</dependency>
 
         <dependency>
+            <groupId>com.squareup.picasso</groupId>
+            <artifactId>picasso</artifactId>
+            <version>2.0.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>renderscript-v8</artifactId>
+            <version>18.1.1</version>
+        </dependency>
+
+        <dependency>
             <groupId>com.sherlock.navigationdrawer.compat</groupId>
             <artifactId>abs-NavigationDrawer</artifactId>
             <version>1.0</version>
