@@ -3,7 +3,7 @@
           android:versionCode="15"
           android:versionName="2.2.0">
 
-    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="18"/>
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
@@ -81,6 +81,8 @@
         <activity android:name="com.david.bgwfanspaid.hos.hosInoc" />
         <activity android:name="com.david.bgwfanspaid.hos.hosCasket" />
         <activity android:name="com.david.bgwfanspaid.hos.hosPlank" />
+
+        <activity android:name="com.david.bgwfanspaid.xmas.HolidayHills" />
 
         <!-- roller coasters -->
         <activity android:name=".attractions.coasters.Verbolten"
@@ -192,6 +194,8 @@
         <activity android:name=".food_wine.EventMap"/>
 
 
+
+
         <activity android:name="com.david.bgwfanspaid.Shows"/>
         <activity android:name=".fragments.Eateries"/>
         <activity android:name="com.david.bgwfanspaid.Coasters"/>
@@ -227,7 +231,7 @@
         <activity android:name="com.david.bgwfanspaid.Mistletoe"/>
         <activity android:name="com.david.bgwfanspaid.Polar"/>
         <activity android:name="com.david.bgwfanspaid.Palace"/>
-        <activity android:name=".xmas.XmasInfo"/>
+        <activity android:name=".xmas.cards.XmasInfo"/>
         <activity android:name="com.david.bgwfanspaid.BaseActivity"/>
         <service android:name="com.david.bgwfanspaid.geofence.ReceiveTransitionsIntentService" android:exported="false"></service>
     </application>
