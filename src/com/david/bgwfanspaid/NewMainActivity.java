@@ -90,7 +90,7 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
     public static final int NAV_HOS_INFO = R.id.drawer_hos_info;
     public static final int NAV_HOS_HOUSES = R.id.drawer_hos_houses;
     public static final int NAV_HOS_SHOWS = R.id.drawer_hos_shows;
-    public static final int NAV_HOS_CULINARY = R.id.drawer_hos_food;
+//    public static final int NAV_HOS_CULINARY = R.id.drawer_hos_food;
 //    public static final int NAV_HOS_EXP = R.id.drawer_hos_exp;
     public static final int NAV_HOS_MAP = R.id.drawer_hos_map;
 
@@ -190,7 +190,7 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        Crittercism.init(getApplicationContext(), "522b49fe558d6a77d3000001");
+        Crittercism.initialize(getApplicationContext(), "522b49fe558d6a77d3000001");
         setContentView(R.layout.app_main);
         mContext = this;
         mfragmentManager = getSupportFragmentManager();
@@ -200,7 +200,9 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
         actionBar.setDisplayShowTitleEnabled(false);
         actionBar.setIcon(android.R.color.transparent);
 
-        setContentFragment(NAV_ID_INFO_SCREEN);
+        if(savedInstanceState == null){
+            setContentFragment(NAV_ID_INFO_SCREEN);
+        }
 
 //        userProfile.setOnClickListener(new View.OnClickListener() {
 //                userProfileClick();
@@ -278,9 +280,9 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
             case NAV_HOS_SHOWS:
                 fragment = injector.getInstance(XmasShows.class);
                 break;
-            case NAV_HOS_CULINARY:
-                fragment = injector.getInstance(XmasFood.class);
-                break;
+//            case NAV_HOS_CULINARY:
+//                fragment = injector.getInstance(XmasFood.class);
+//                break;
 //            case NAV_HOS_EXP:
 //                fragment = injector.getInstance(HOS_TERROR.class);
 //                break;
@@ -421,8 +423,8 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
         super.onPause();
         mPrefs.setGeofence("1", mUIGeofence1);
         mPrefs.setGeofence("2", mUIGeofence2);
-        mPrefs.setGeofence("3", mUIGeofence3);
-        mPrefs.setGeofence("4", mUIGeofence4);
+//        mPrefs.setGeofence("3", mUIGeofence3);
+//        mPrefs.setGeofence("4", mUIGeofence4);
     }
 
     @Override

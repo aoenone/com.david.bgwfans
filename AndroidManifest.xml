@@ -30,6 +30,9 @@
             android:allowBackup="true"
             android:largeHeap="true">
 
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
         <meta-data
                 android:name="com.google.android.maps.v2.API_KEY"
                 android:value="AIzaSyAz1TiujG7GbWK9TCcApqdhK-eTaa3g-Z4"/>
@@ -48,7 +51,6 @@
         <activity
                 android:name="com.david.bgwfanspaid.NewMainActivity"
                 android:alwaysRetainTaskState="true"
-                android:screenOrientation="portrait"
                 android:uiOptions="splitActionBarWhenNarrow">
 
             <intent-filter>
@@ -82,7 +84,17 @@
         <activity android:name="com.david.bgwfanspaid.hos.hosCasket" />
         <activity android:name="com.david.bgwfanspaid.hos.hosPlank" />
 
-        <activity android:name="com.david.bgwfanspaid.xmas.HolidayHills" />
+        <activity android:name=".xmas.attractions.HolidayHills" />
+        <activity android:name=".xmas.attractions.MistletoeMarketplace" />
+        <activity android:name=".xmas.attractions.IcePalace" />
+        <activity android:name=".xmas.attractions.PolarPathway" />
+        <activity android:name=".xmas.attractions.SantaWorkshop" />
+        <activity android:name=".xmas.attractions.HighlandStables" />
+
+        <activity android:name=".xmas.shows.DeckTheHalls" />
+        <activity android:name=".xmas.shows.Gloria" />
+        <activity android:name=".xmas.shows.Miracles" />
+        <activity android:name=".xmas.shows.Otann" />
 
         <!-- roller coasters -->
         <activity android:name=".attractions.coasters.Verbolten"

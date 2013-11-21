@@ -1,0 +1,37 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bgwfans="http://bgwfanspaid-android/schema"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.david.bgwfanspaid.viewcomponents.XmasItem
+            android:id="@+id/deck_the_halls_btn"
+            style="@style/AttractionParams"
+            bgwfans:itemIcon="@drawable/deckhalls"
+            bgwfans:itemText="Deck the Halls"  />
+
+        <com.david.bgwfanspaid.viewcomponents.XmasItem
+            android:id="@+id/gloria_btn"
+            style="@style/AttractionParams"
+            bgwfans:itemIcon="@drawable/gloria"
+            bgwfans:itemText="Gloria!"  />
+
+        <com.david.bgwfanspaid.viewcomponents.XmasItem
+            android:id="@+id/miracles_btn"
+            style="@style/AttractionParams"
+            bgwfans:itemIcon="@drawable/miracles"
+            bgwfans:itemText="Miracles"  />
+
+        <com.david.bgwfanspaid.viewcomponents.XmasItem
+            android:id="@+id/o_tann_btn"
+            style="@style/AttractionParams"
+            bgwfans:itemIcon="@drawable/otann"
+            bgwfans:itemText="O Tannenbaum"  />
+    </LinearLayout>
+</ScrollView>

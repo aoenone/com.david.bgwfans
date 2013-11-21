@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bgwfans="http://bgwfanspaid-android/schema"
+    xmlns:oak="http://oak/oak/schema"
+    android:orientation="vertical"
+    android:background="@color/hos_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/md__defaultBackground">
+
+        <oak.widget.TextViewWithFont
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            oak:font="Roboto-Light.ttf"
+            android:text="The smell of pine trees coupled with the dazzling light display of Polar Pathway will make you feel as if Christmas is here.  The breathtaking waterfalls of Italy’s Escape from Pompeii® are now a cascading icy wonderland that shimmers under the moonlight.  Relive and preserve this Christmas Town memory by bringing your camera for a once-in-a-lifetime photograph." />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp" >
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment"/>
+    </RelativeLayout>
+
+    <com.david.bgwfanspaid.viewcomponents.XmasItem
+        android:id="@+id/polar_forum"
+        style="@style/AttractionParams"
+        bgwfans:itemIcon="@drawable/polarpath"
+        bgwfans:itemText="Polar Pathway - Forum"  />
+
+</LinearLayout>

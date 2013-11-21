@@ -11,7 +11,6 @@ import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import com.david.bgwfanspaid.R;
 import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockFragment;
-import com.google.ads.util.i;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.analytics.tracking.android.GoogleAnalytics;
 import com.google.analytics.tracking.android.Tracker;

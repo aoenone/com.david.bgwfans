@@ -20,12 +20,12 @@ import com.david.bgwfanspaid.attractions.coasters.Grover;
 import com.david.bgwfanspaid.attractions.coasters.LochNess;
 import com.david.bgwfanspaid.attractions.coasters.Verbolten;
 import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockFragment;
-import com.google.ads.AdView;
+
 
 public class TabOne extends RoboSherlockFragment {
     RelativeLayout b1;
     Context ctx;
-    public AdView adView;
+//    public AdView adView;
     View view;
 
     private AssetManager getAssets() {

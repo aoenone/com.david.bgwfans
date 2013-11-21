@@ -164,4 +164,5 @@ public class HeaderPagerFragment extends RoboSherlockFragment {
         public void onPageScrollStateChanged(int i) {
         }
     };
+
 }

@@ -41,7 +41,6 @@ public class Forums extends RoboSherlockFragment {
         webview2.setWebViewClient(new WebViewClient());
         webview2.getSettings().setBuiltInZoomControls(true);
         webview2.getSettings().setDisplayZoomControls(false);
-        //webview2.setBackgroundColor(0x00000000);
         Pbar = (ProgressBar) view.findViewById(R.id.pb1);
         setHasOptionsMenu(true);
 

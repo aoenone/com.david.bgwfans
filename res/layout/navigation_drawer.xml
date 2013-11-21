@@ -178,14 +178,14 @@
                     bgwfans:itemIcon="@drawable/ic_menu_show"
                     bgwfans:itemText="Shows"  />
 
-            <View
-                    style="@style/NavigationDrawerDivider"/>
+            <!--<View-->
+                    <!--style="@style/NavigationDrawerDivider"/>-->
 
-            <com.david.bgwfanspaid.viewcomponents.NavigationDrawerItem
-                    style="@style/NavDrawerItem"
-                    android:id="@+id/drawer_hos_food"
-                    bgwfans:itemIcon="@drawable/ic_menu_food"
-                    bgwfans:itemText="Special Culinary"  />
+            <!--<com.david.bgwfanspaid.viewcomponents.NavigationDrawerItem-->
+                    <!--style="@style/NavDrawerItem"-->
+                    <!--android:id="@+id/drawer_hos_food"-->
+                    <!--bgwfans:itemIcon="@drawable/ic_menu_food"-->
+                    <!--bgwfans:itemText="Special Culinary"  />-->
 
             <View
                     style="@style/NavigationDrawerDivider"/>

@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.david.bgwfanspaid.R;
 import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockFragment;
-import com.google.ads.util.i;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.analytics.tracking.android.GoogleAnalytics;
 import com.google.analytics.tracking.android.Tracker;

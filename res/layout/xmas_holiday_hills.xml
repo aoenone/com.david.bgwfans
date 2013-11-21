@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bgwfans="http://bgwfanspaid-android/schema"
+    xmlns:oak="http://oak/oak/schema"
+    android:orientation="vertical"
+    android:background="@color/hos_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/md__defaultBackground">
+
+        <oak.widget.TextViewWithFont
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            oak:font="Roboto-Light.ttf"
+            android:text="The rustic Scottish countryside is the perfect setting for our stable of beautiful animals.  The star-filled winter sky and smell of fresh hay will have you humming your favorite Christmas carol.  Bring your family and see the Scottish blackface sheep, Border collies and Clydesdales in their stalls. This hands-on Christmas Town experience will take you back to a simpler time." />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp" >
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment"/>
+    </RelativeLayout>
+
+    <com.david.bgwfanspaid.viewcomponents.XmasItem
+        android:id="@+id/highland_forum"
+        style="@style/AttractionParams"
+        bgwfans:itemIcon="@drawable/hhills"
+        bgwfans:itemText="Holiday Hills - Forum"  />
+
+</LinearLayout>

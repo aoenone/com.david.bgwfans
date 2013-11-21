@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bgwfans="http://bgwfanspaid-android/schema"
+    xmlns:oak="http://oak/oak/schema"
+    android:orientation="vertical"
+    android:background="@color/hos_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/md__defaultBackground">
+
+        <oak.widget.TextViewWithFont
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            oak:font="Roboto-Light.ttf"
+            android:text="Italy’s Il Teatro di San Marco Theatre has been transformed into a magical backdrop for an uplifting celebration of the spirit of Christmas.  Ordinary miracles appear extraordinary in this passionate, action-filled program that will touch your soul.  The show’s classical and contemporary dance movements coupled with live vocalists will inspire you to reach for the stars." />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp" >
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment"/>
+    </RelativeLayout>
+
+    <com.david.bgwfanspaid.viewcomponents.XmasItem
+        android:id="@+id/forum"
+        style="@style/AttractionParams"
+        bgwfans:itemIcon="@drawable/miracles"
+        bgwfans:itemText="Miracles - Forum"  />
+
+</LinearLayout>

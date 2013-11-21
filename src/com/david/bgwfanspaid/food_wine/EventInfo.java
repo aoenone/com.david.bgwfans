@@ -3,7 +3,6 @@ package com.david.bgwfanspaid.food_wine;
 import com.david.bgwfanspaid.R;
 import com.david.bgwfanspaid.SideMenuActivity;
 import com.google.ads.AdRequest;
-import com.google.ads.AdView;
 import com.google.analytics.tracking.android.GoogleAnalytics;
 import com.google.analytics.tracking.android.Tracker;
 

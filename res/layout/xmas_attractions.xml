@@ -13,50 +13,38 @@
     <com.david.bgwfanspaid.viewcomponents.XmasItem
         android:id="@+id/holiday_hills"
         style="@style/AttractionParams"
-        bgwfans:itemIcon="@drawable/deadline"
+        bgwfans:itemIcon="@drawable/hhills"
         bgwfans:itemText="Holiday Hills"  />
 
     <com.david.bgwfanspaid.viewcomponents.XmasItem
         android:id="@+id/mistletoe_marketplace"
         style="@style/AttractionParams"
-        bgwfans:itemIcon="@drawable/deadline"
+        bgwfans:itemIcon="@drawable/otann"
         bgwfans:itemText="Mistletoe Marketplace"  />
 
     <com.david.bgwfanspaid.viewcomponents.XmasItem
         android:id="@+id/polar_pathway"
         style="@style/AttractionParams"
-        bgwfans:itemIcon="@drawable/deadline"
+        bgwfans:itemIcon="@drawable/polarpath"
         bgwfans:itemText="Polar Pathway"  />
 
     <com.david.bgwfanspaid.viewcomponents.XmasItem
         android:id="@+id/highland_stables"
         style="@style/AttractionParams"
-        bgwfans:itemIcon="@drawable/deadline"
+        bgwfans:itemIcon="@drawable/stables"
         bgwfans:itemText="Highland Stables"  />
 
     <com.david.bgwfanspaid.viewcomponents.XmasItem
         android:id="@+id/ice_palace"
         style="@style/AttractionParams"
-        bgwfans:itemIcon="@drawable/deadline"
+        bgwfans:itemIcon="@drawable/penguin"
         bgwfans:itemText="Ice Palace: A Penguin Paradise"  />
 
     <com.david.bgwfanspaid.viewcomponents.XmasItem
-        android:id="@+id/santa_feast"
+        android:id="@+id/santa_workshop"
         style="@style/AttractionParams"
-        bgwfans:itemIcon="@drawable/deadline"
-        bgwfans:itemText="Santa's Fireside Feast"  />
-
-    <com.david.bgwfanspaid.viewcomponents.XmasItem
-        android:id="@+id/santa_feast"
-        style="@style/AttractionParams"
-        bgwfans:itemIcon="@drawable/deadline"
+        bgwfans:itemIcon="@drawable/santa"
         bgwfans:itemText="Santa's Workshop"  />
-
-    <com.david.bgwfanspaid.viewcomponents.XmasItem
-        android:id="@+id/other_rides"
-        style="@style/AttractionParams"
-        bgwfans:itemIcon="@drawable/deadline"
-        bgwfans:itemText="Rides"  />
 
  </LinearLayout>
 </ScrollView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bgwfans="http://bgwfanspaid-android/schema"
+    xmlns:oak="http://oak/oak/schema"
+    android:orientation="vertical"
+    android:background="@color/hos_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/md__defaultBackground">
+
+        <oak.widget.TextViewWithFont
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            oak:font="Roboto-Light.ttf"
+            android:text="Assorted rides across the park will be open for Christmas Town. Check the park map in the side menu to find them!" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp" >
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment"/>
+    </RelativeLayout>
+
+    <com.david.bgwfanspaid.viewcomponents.XmasItem
+        android:id="@+id/polar_forum"
+        style="@style/AttractionParams"
+        bgwfans:itemIcon="@drawable/otann"
+        bgwfans:itemText="Christmas Town - Forum"  />
+
+</LinearLayout>

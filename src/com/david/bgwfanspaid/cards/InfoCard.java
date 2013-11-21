@@ -118,15 +118,26 @@ public class InfoCard extends Card{
 
         //Fixed this area for midly easier readability
         TextView t = (TextView) view.findViewById(R.id.hours);
-        if((fDate.equals("2013-10-05") || fDate.equals("2013-10-12") || fDate.equals("2013-10-19") || fDate.equals("2013-10-26"))){
-            t.setText("Hours: 10am - 11pm");
+        if((fDate.equals("2013-11-24") || fDate.equals("2013-12-01") || fDate.equals("2013-12-08") || fDate.equals("2013-12-15") || fDate.equals("2013-12-24"))){
+            t.setText("Hours: 3pm - 9pm");
 
-        } else if(fDate.equals("2013-09-13") || fDate.equals("2013-09-14") || fDate.equals("2013-09-15") || fDate.equals("2013-09-20") || fDate.equals("2013-09-21") || fDate.equals("2013-09-22") || fDate.equals("2013-09-27") || fDate.equals("2013-09-28") || fDate.equals("2013-09-29") || fDate.equals("2013-10-04") || fDate.equals("2013-10-06") || fDate.equals("2013-10-11") || fDate.equals("2013-10-13") || fDate.equals("2013-10-18") || fDate.equals("2013-10-20") || fDate.equals("2013-10-25") || fDate.equals("2013-10-27") ){
-            t.setText("Hours: 10am - 10pm");
+        } else if(fDate.equals("2013-11-22") || fDate.equals("2013-11-23") || fDate.equals("2013-11-29") || fDate.equals("2013-11-30") || fDate.equals("2013-12-06") || fDate.equals("2013-12-07") || fDate.equals("2013-12-13") || fDate.equals("2013-12-14") || fDate.equals("2013-12-16") || fDate.equals("2013-12-17") || fDate.equals("2013-12-18") || fDate.equals("2013-12-19") || fDate.equals("2013-12-20") || fDate.equals("2013-12-21") || fDate.equals("2013-12-22") || fDate.equals("2013-12-23") || fDate.equals("2013-12-26")
+                || fDate.equals("2013-12-27") || fDate.equals("2013-12-28") || fDate.equals("2013-12-29") || fDate.equals("2013-12-30") || fDate.equals("2013-12-31")){
+            t.setText("Hours: 3pm - 10pm");
 
         } else{
             t.setText("Hours: Closed");
         }
+
+//        if((fDate.equals("2013-10-05") || fDate.equals("2013-10-12") || fDate.equals("2013-10-19") || fDate.equals("2013-10-26"))){
+//            t.setText("Hours: 10am - 11pm");
+//
+//        } else if(fDate.equals("2013-09-13") || fDate.equals("2013-09-14") || fDate.equals("2013-09-15") || fDate.equals("2013-09-20") || fDate.equals("2013-09-21") || fDate.equals("2013-09-22") || fDate.equals("2013-09-27") || fDate.equals("2013-09-28") || fDate.equals("2013-09-29") || fDate.equals("2013-10-04") || fDate.equals("2013-10-06") || fDate.equals("2013-10-11") || fDate.equals("2013-10-13") || fDate.equals("2013-10-18") || fDate.equals("2013-10-20") || fDate.equals("2013-10-25") || fDate.equals("2013-10-27") ){
+//            t.setText("Hours: 10am - 10pm");
+//
+//        } else{
+//            t.setText("Hours: Closed");
+//        }
 
 
        if(isNetworkAvailable(context)) {
