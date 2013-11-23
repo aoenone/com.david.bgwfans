@@ -152,6 +152,8 @@ public class XmasHourCard extends Card {
                     ForecastService.Response response = ( ForecastService.Response ) network;
 
 //                sunset.setText(response.getForecast().getCurrently().getSummary());
+
+                    weatherView.setText(response.getForecast().getCurrently().getSummary());
                     weatherView.setText(response.getForecast().getMinutely().getSummary());
 //                    sunset.setText(response.getForecast().getCurrently().getSummary());
                     long itemPos = Math.round(response.getForecast().getCurrently().getTemperature());
@@ -211,7 +213,7 @@ public class XmasHourCard extends Card {
         protected void onPostExecute(Weather weather) {
             super.onPostExecute(weather);
 
-//            weatherView.setText(weather.currentCondition.getCondition() + "(" + weather.currentCondition.getDescr() + ")");
+            weatherView.setText(weather.currentCondition.getCondition() + "(" + weather.currentCondition.getDescr() + ")");
 
 //			currentTemp.setText((Double.toString(Math.round(weather.temperature.getTemp())) + (char) 0x00B0 ));
             Date d = new Date(weather.location.getSunset());
