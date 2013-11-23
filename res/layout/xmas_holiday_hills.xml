@@ -26,7 +26,7 @@
             android:layout_margin="20dp"
             android:textSize="20sp"
             oak:font="Roboto-Light.ttf"
-            android:text="The rustic Scottish countryside is the perfect setting for our stable of beautiful animals.  The star-filled winter sky and smell of fresh hay will have you humming your favorite Christmas carol.  Bring your family and see the Scottish blackface sheep, Border collies and Clydesdales in their stalls. This hands-on Christmas Town experience will take you back to a simpler time." />
+            android:text="See how Busch Gardens has transformed the Festa Italia area into a piece of old fashioned Americana. Styled after mid 20th century Christmas celebrations and traditions in America." />
 
     </LinearLayout>
 
