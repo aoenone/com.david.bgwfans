@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.david.bgwfanspaid.R;
+import com.david.bgwfanspaid.cards.XmasCard;
 import com.david.bgwfanspaid.xmas.cards.XmasHourCard;
 import com.fima.cardsui.views.CardUI;
 import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockFragment;
@@ -34,7 +35,8 @@ public class XmasInfoFragment extends RoboSherlockFragment {
         mCardView = (CardUI) view.findViewById(R.id.cardsview);
         mCardView.setSwipeable(false);
 
-        mCardView.addCard(new XmasHourCard("Christmastown 2013"));
+        mCardView.addCard(new XmasHourCard("ChristmasTown 2013"));
+        mCardView.addCard(new XmasCard("ChristmasTown"));
         mCardView.refresh();
         return view;
     }

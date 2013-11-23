@@ -154,7 +154,7 @@ public class XmasHourCard extends Card {
 //                sunset.setText(response.getForecast().getCurrently().getSummary());
 
                     weatherView.setText(response.getForecast().getCurrently().getSummary());
-                    weatherView.setText(response.getForecast().getMinutely().getSummary());
+//                    weatherView.setText(response.getForecast().getMinutely().getSummary());
 //                    sunset.setText(response.getForecast().getCurrently().getSummary());
                     long itemPos = Math.round(response.getForecast().getCurrently().getTemperature());
                     DecimalFormat df = new DecimalFormat("###.#");
