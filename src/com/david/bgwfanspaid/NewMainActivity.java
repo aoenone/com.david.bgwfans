@@ -59,6 +59,7 @@ import com.david.bgwfanspaid.xmas.fragments.XmasFood;
 import com.david.bgwfanspaid.xmas.fragments.XmasInfoFragment;
 import com.david.bgwfanspaid.xmas.fragments.XmasMap;
 import com.david.bgwfanspaid.xmas.fragments.XmasShows;
+import com.david.bgwfanspaid.xmas.fragments.XmasSiteFragment;
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.android.gms.common.ConnectionResult;
@@ -92,6 +93,7 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
     public static final int NAV_HOS_SHOWS = R.id.drawer_hos_shows;
 //    public static final int NAV_HOS_CULINARY = R.id.drawer_hos_food;
 //    public static final int NAV_HOS_EXP = R.id.drawer_hos_exp;
+    public static final int NAV_EVENT_SITE = R.id.drawer_event_site;
     public static final int NAV_HOS_MAP = R.id.drawer_hos_map;
 
     //for BGWFans shit
@@ -283,9 +285,9 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
 //            case NAV_HOS_CULINARY:
 //                fragment = injector.getInstance(XmasFood.class);
 //                break;
-//            case NAV_HOS_EXP:
-//                fragment = injector.getInstance(HOS_TERROR.class);
-//                break;
+            case NAV_EVENT_SITE:
+                fragment = injector.getInstance(XmasSiteFragment.class);
+                break;
             case NAV_HOS_MAP:
                 fragment = injector.getInstance(XmasMap.class);
                 break;
@@ -412,17 +414,17 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
          * radius values stored in SharedPreferences. If no values
          * exist, null is returned.
          */
-        mUIGeofence1 = mPrefs.getGeofence("1");
-        mUIGeofence2 = mPrefs.getGeofence("2");
-        mUIGeofence3 = mPrefs.getGeofence("3");
-        mUIGeofence4 = mPrefs.getGeofence("4");
+//        mUIGeofence1 = mPrefs.getGeofence("1");
+//        mUIGeofence2 = mPrefs.getGeofence("2");
+//        mUIGeofence3 = mPrefs.getGeofence("3");
+//        mUIGeofence4 = mPrefs.getGeofence("4");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        mPrefs.setGeofence("1", mUIGeofence1);
-        mPrefs.setGeofence("2", mUIGeofence2);
+//        mPrefs.setGeofence("1", mUIGeofence1);
+//        mPrefs.setGeofence("2", mUIGeofence2);
 //        mPrefs.setGeofence("3", mUIGeofence3);
 //        mPrefs.setGeofence("4", mUIGeofence4);
     }

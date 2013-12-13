@@ -178,6 +178,7 @@
                     bgwfans:itemIcon="@drawable/ic_menu_show"
                     bgwfans:itemText="Shows"  />
 
+
             <!--<View-->
                     <!--style="@style/NavigationDrawerDivider"/>-->
 
@@ -193,9 +194,20 @@
 
             <com.david.bgwfanspaid.viewcomponents.NavigationDrawerItem
                     style="@style/NavDrawerItem"
-                    android:id="@+id/drawer_hos_map"
-                    bgwfans:itemIcon="@drawable/ic_location_map"
-                    bgwfans:itemText="Map"  />
+                    android:id="@+id/drawer_event_site"
+                    bgwfans:itemIcon="@drawable/ic_action_about"
+                    bgwfans:itemText="Official Site"  />
+
+            <View
+                style="@style/NavigationDrawerDivider"/>
+
+
+            <com.david.bgwfanspaid.viewcomponents.NavigationDrawerItem
+                style="@style/NavDrawerItem"
+                android:id="@+id/drawer_hos_map"
+                bgwfans:itemIcon="@drawable/ic_location_map"
+                bgwfans:itemText="Map"  />
+
 
             <View
                     style="@style/NavigationDrawerDivider"/>

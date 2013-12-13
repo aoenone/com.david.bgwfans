@@ -47,5 +47,11 @@
         bgwfans:itemIcon="@drawable/santa"
         bgwfans:itemText="Santa's Workshop"  />
 
+     <com.david.bgwfanspaid.viewcomponents.XmasItem
+         android:id="@+id/xmas_add_rides"
+         style="@style/AttractionParams"
+         bgwfans:itemIcon="@drawable/machtower"
+         bgwfans:itemText="Additonal Rides"  />
+
  </LinearLayout>
 </ScrollView>

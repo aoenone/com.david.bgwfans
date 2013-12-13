@@ -53,7 +53,6 @@ public class SantaWorkshop extends RoboSherlockFragmentActivity {
                 .actionBarBackground(R.color.black_overlay)
                 .headerLayout(R.layout.xmas_header)
                 .parallax(true)
-                .lightActionBar(true)
                 .contentLayout(R.layout.xmas_workshop);
 
         setContentView(helper.createView(this));
