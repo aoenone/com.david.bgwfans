@@ -42,7 +42,7 @@
                 class="com.google.android.gms.maps.SupportMapFragment"/>
     </RelativeLayout>
 
-    <com.david.bgwfanspaid.viewcomponents.AttractionItem
+    <com.david.bgwfans.viewcomponents.AttractionItem
             android:id="@+id/catacombs_forum"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/catacombs"

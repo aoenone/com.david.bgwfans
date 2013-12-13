@@ -44,7 +44,7 @@
             class="com.google.android.gms.maps.SupportMapFragment"/>
     </RelativeLayout>
 
-    <com.david.bgwfanspaid.viewcomponents.XmasItem
+    <com.david.bgwfans.viewcomponents.XmasItem
         android:id="@+id/forum"
         style="@style/AttractionParams"
         bgwfans:itemIcon="@drawable/miracles"

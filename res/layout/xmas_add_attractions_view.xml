@@ -12,68 +12,68 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.david.bgwfanspaid.viewcomponents.XmasItem
+        <com.david.bgwfans.viewcomponents.XmasItem
             android:id="@+id/xmas_bat_ram"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/ram"
             bgwfans:itemText="Battering Ram"  />
 
-        <com.david.bgwfanspaid.viewcomponents.XmasItem
+        <com.david.bgwfans.viewcomponents.XmasItem
             android:id="@+id/xmas_cradle"
             style="@style/AttractionParams"
             bgwfans:itemText="DaVinci's Cradle"  />
 
-        <com.david.bgwfanspaid.viewcomponents.XmasItem
+        <com.david.bgwfans.viewcomponents.XmasItem
             android:id="@+id/xmas_auto"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/auto"
             bgwfans:itemText="Der Autobahn"  />
 
-        <com.david.bgwfanspaid.viewcomponents.XmasItem
+        <com.david.bgwfans.viewcomponents.XmasItem
             android:id="@+id/xmas_wirbelwind"
             style="@style/AttractionParams"
             bgwfans:itemText="Der Wirbelwind"  />
 
-        <com.david.bgwfanspaid.viewcomponents.XmasItem
+        <com.david.bgwfans.viewcomponents.XmasItem
             android:id="@+id/xmas_flying_machine"
             style="@style/AttractionParams"
             bgwfans:itemText="Flying Machine"  />
 
-        <com.david.bgwfanspaid.viewcomponents.XmasItem
+        <com.david.bgwfans.viewcomponents.XmasItem
             android:id="@+id/xmas_karussel"
             style="@style/AttractionParams"
             bgwfans:itemText="Kinder Karussel"  />
 
-        <com.david.bgwfanspaid.viewcomponents.XmasItem
+        <com.david.bgwfans.viewcomponents.XmasItem
             android:id="@+id/xmas_catapult"
             style="@style/AttractionParams"
             bgwfans:itemText="Le Catapult"  />
 
-        <com.david.bgwfanspaid.viewcomponents.XmasItem
+        <com.david.bgwfans.viewcomponents.XmasItem
             android:id="@+id/xmas_tower"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/machtower"
             bgwfans:itemText="Nacht Tower"  />
 
-        <com.david.bgwfanspaid.viewcomponents.XmasItem
+        <com.david.bgwfans.viewcomponents.XmasItem
             android:id="@+id/xmas_twist"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/delight"
             bgwfans:itemText="Peppermint Twist"  />
 
-        <com.david.bgwfanspaid.viewcomponents.XmasItem
+        <com.david.bgwfans.viewcomponents.XmasItem
             android:id="@+id/xmas_snowman_summit"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/tradewind"
             bgwfans:itemText="Snowman Summit"  />
 
-        <com.david.bgwfanspaid.viewcomponents.XmasItem
+        <com.david.bgwfans.viewcomponents.XmasItem
             android:id="@+id/xmas_train"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/train2"
             bgwfans:itemText="Train"  />
 
-        <com.david.bgwfanspaid.viewcomponents.XmasItem
+        <com.david.bgwfans.viewcomponents.XmasItem
             android:id="@+id/xmas_vbolt"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/vbolt23"

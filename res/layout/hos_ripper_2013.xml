@@ -43,7 +43,7 @@
     </RelativeLayout>
 
 
-    <com.david.bgwfanspaid.viewcomponents.AttractionItem
+    <com.david.bgwfans.viewcomponents.AttractionItem
             android:id="@+id/ripper_forum"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/ripper"

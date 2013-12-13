@@ -12,37 +12,37 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" >
 
-        <com.david.bgwfanspaid.viewcomponents.AttractionItem
+        <com.david.bgwfans.viewcomponents.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_bitten"
                 bgwfans:itemIcon="@drawable/bitten"
                 bgwfans:itemText="Bitten"  />
 
-        <com.david.bgwfanspaid.viewcomponents.AttractionItem
+        <com.david.bgwfans.viewcomponents.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_thirteen"
                 bgwfans:itemIcon="@drawable/thirteen"
                 bgwfans:itemText="13: Your Numbers Up"  />
 
-        <com.david.bgwfanspaid.viewcomponents.AttractionItem
+        <com.david.bgwfans.viewcomponents.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_catacombs"
                 bgwfans:itemIcon="@drawable/catacombs"
                 bgwfans:itemText="Catacombs"  />
 
-        <com.david.bgwfanspaid.viewcomponents.AttractionItem
+        <com.david.bgwfans.viewcomponents.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_dead_line"
                 bgwfans:itemIcon="@drawable/deadline"
                 bgwfans:itemText="Dead Line"  />
 
-        <com.david.bgwfanspaid.viewcomponents.AttractionItem
+        <com.david.bgwfans.viewcomponents.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_root"
                 bgwfans:itemIcon="@drawable/root"
                 bgwfans:itemText="Root of All Evil"  />
 
-        <com.david.bgwfanspaid.viewcomponents.AttractionItem
+        <com.david.bgwfans.viewcomponents.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_cove"
                 bgwfans:itemIcon="@drawable/ctc_image"

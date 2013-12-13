@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.david.bgwfanspaid.utils.fadingScroller.RootLayout
+<com.david.bgwfans.utils.fadingScroller.RootLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
     <include layout="@layout/fab__header_container" />
 
-    <com.david.bgwfanspaid.utils.fadingScroller.NotifyScrollView
+    <com.david.bgwfans.utils.fadingScroller.NotifyScrollView
         android:id="@+id/fab__scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
@@ -23,5 +23,5 @@
                 android:layout_height="wrap_content"
                 android:background="@android:color/transparent" />
         </LinearLayout>
-    </com.david.bgwfanspaid.utils.fadingScroller.NotifyScrollView>
-</com.david.bgwfanspaid.utils.fadingScroller.RootLayout>
+    </com.david.bgwfans.utils.fadingScroller.NotifyScrollView>
+</com.david.bgwfans.utils.fadingScroller.RootLayout>
