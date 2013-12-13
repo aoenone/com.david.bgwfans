@@ -129,7 +129,7 @@ public class TabThree extends RoboSherlockFragment {
     private void goProIntent(){
         Tracker tracker = EasyTracker.getTracker();
         tracker.sendEvent("go_pro", "go_pro_clicked", "user_go_pro", null);
-        String url = "https://play.google.com/store/apps/details?id=com.david.bgwfanspro";
+        String url = "https://play.google.com/store/apps/details?id=com.david.bgwfanspaid";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);
