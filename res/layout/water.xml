@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <LinearLayout
             android:orientation="vertical"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="fill_parent">
 
         <RelativeLayout
@@ -93,4 +99,31 @@
                     android:fontFamily="sans-serif-light"/>
         </RelativeLayout>
     </LinearLayout>
-</ScrollView>
+
+        <com.amazon.device.ads.AdLayout
+            android:id="@+id/ad_view"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@color/black_overlay"
+            android:orientation="vertical"
+            android:id="@+id/ad_fail_view"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <oak.widget.TextViewWithFont
+                android:layout_margin="8dp"
+                android:textColor="@color/bgwfans_red"
+                android:layout_gravity="center"
+                android:text="Click to go Pro and remove ads!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

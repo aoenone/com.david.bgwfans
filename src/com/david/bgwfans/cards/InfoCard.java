@@ -141,33 +141,33 @@ public class InfoCard extends Card{
 
        if(isNetworkAvailable(context)) {
 
-        ForecastService.Request request1 = ForecastService.Request.newBuilder("9127a75d40728c2aeab21957e38a5a62")
-                .setLatitude(37.234027)
-                .setLongitude(-76.646109)
-                .build();
+//        ForecastService.Request request1 = ForecastService.Request.newBuilder("9127a75d40728c2aeab21957e38a5a62")
+//                .setLatitude(37.234027)
+//                .setLongitude(-76.646109)
+//                .build();
+//
+//        new NetworkServiceTask() {
+//
+//            @Override
+//            protected void onPostExecute( INetworkResponse network ) {
+//                if ( network == null || network.getStatus() == NetworkResponse.Status.FAIL ) {
+//                    Toast.makeText( context, "FORECAST ERROR", Toast.LENGTH_SHORT ).show();
+//
+//                    return;
+//                }
+//
+//                ForecastService.Response response = ( ForecastService.Response ) network;
+//
+//                weatherView.setText(response.getForecast().getCurrently().getSummary());
+//                long itemPos = Math.round(response.getForecast().getCurrently().getTemperature());
+//                DecimalFormat df = new DecimalFormat("###.#");
+//                String itemPosString = df.format(itemPos);
+//                currentTemp.setText(itemPosString + (char) 0x00B0);
+//            }
+//        }.execute( request1 );
 
-        new NetworkServiceTask() {
-
-            @Override
-            protected void onPostExecute( INetworkResponse network ) {
-                if ( network == null || network.getStatus() == NetworkResponse.Status.FAIL ) {
-                    Toast.makeText( context, "FORECAST ERROR", Toast.LENGTH_SHORT ).show();
-
-                    return;
-                }
-
-                ForecastService.Response response = ( ForecastService.Response ) network;
-
-                weatherView.setText(response.getForecast().getCurrently().getSummary());
-                long itemPos = Math.round(response.getForecast().getCurrently().getTemperature());
-                DecimalFormat df = new DecimalFormat("###.#");
-                String itemPosString = df.format(itemPos);
-                currentTemp.setText(itemPosString + (char) 0x00B0);
-            }
-        }.execute( request1 );
-
-//           JSONWeatherTask task = new JSONWeatherTask();
-//           task.execute(new String[]{city});
+           JSONWeatherTask task = new JSONWeatherTask();
+           task.execute(new String[]{city});
 
 //           String weatherString = QueryYahooWeather();
 //           Document weatherDoc = convertStringToDocument(weatherString);
@@ -217,7 +217,10 @@ public class InfoCard extends Card{
 
 			weatherView.setText(weather.currentCondition.getCondition() + "(" + weather.currentCondition.getDescr() + ")");
 
-//			currentTemp.setText((Double.toString(Math.round(weather.temperature.getTemp())) + (char) 0x00B0 ));
+            long itemPos = Math.round(weather.temperature.getTemp());
+            DecimalFormat df = new DecimalFormat("###.#");
+            String itemPosString = df.format(itemPos);
+			currentTemp.setText(itemPosString + (char) 0x00B0 );
             Date d = new Date(weather.location.getSunset());
             SimpleDateFormat f = new SimpleDateFormat("hh:mm aa");
             f.setTimeZone(TimeZone.getTimeZone("EST"));
