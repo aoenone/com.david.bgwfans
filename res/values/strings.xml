@@ -3,6 +3,9 @@
 
     <string name="app_name">BGWFans Pro</string>
 
+    <string name="glass_voice_trigger">Busch Gardens</string>
+    <string name="check_today">Today\'s info</string>
+
     <string name="annotation_clicked">Check the sidemenu for more information!</string>
 
     <string name="wikiLink">Link goes here</string>

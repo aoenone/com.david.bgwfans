@@ -29,7 +29,7 @@
 
     <style name="TranslucentTheme" parent="android:Theme.Holo">
         <item name="android:windowActionBarOverlay">true</item>
-        <item name="android:windowTranslucentStatus">true</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
     </style>
 
 </resources>

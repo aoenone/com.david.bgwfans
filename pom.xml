@@ -49,6 +49,13 @@
 	</repositories>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.glass.kit</groupId>
+            <artifactId>glass-kit</artifactId>
+            <version>0.0.1</version>
+        </dependency>
+
 		<dependency>
 		    <groupId>com.google.android</groupId>
 		    <artifactId>android</artifactId>

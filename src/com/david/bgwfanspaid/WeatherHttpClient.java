@@ -1,5 +1,7 @@
 package com.david.bgwfanspaid;
 
+import android.util.Log;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -16,6 +18,7 @@ public class WeatherHttpClient {
 		
 		try{
 			con = (HttpURLConnection) (new URL(BASE_URL + location)).openConnection();
+            Log.d("weather", BASE_URL + location);
 			con.setRequestMethod("GET");
 			con.setDoInput(true);
 			con.setDoInput(true);
