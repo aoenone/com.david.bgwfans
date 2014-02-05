@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oak="http://oak/oak/schema"
+    android:background="@color/standard_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:id="@+id/item_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:textIsSelectable="true"
+        android:orientation="vertical"
+        android:text="test" >
+
+        <oak.widget.TextViewWithFont
+            android:textSize="25sp"
+            android:id="@+id/article_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            oak:font="Roboto-Light.ttf"/>
+
+        <oak.widget.TextViewWithFont
+            android:id="@+id/article_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            oak:font="Roboto-Thin.ttf"/>
+
+        <oak.widget.TextViewWithFont
+            android:id="@+id/article_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            oak:font="Roboto-Light.ttf"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -7,7 +7,7 @@
               android:layout_width="240dp"
               android:layout_height="match_parent"
               android:layout_gravity="start"
-              android:background="@color/menu_white_overlay">
+              android:background="@color/holo_dark">
 
     <ScrollView
             android:layout_width="fill_parent"
@@ -128,89 +128,98 @@
             <View
                     style="@style/NavigationDrawerDivider"/>
 
-            <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/black_overlay">
-                <oak.widget.TextViewWithFont
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:textSize="14sp"
-                        android:padding="4dp"
-                        android:layout_marginLeft="8dp"
-                        oak:font="Roboto-Thin.otf"
-                        android:text="Christmas Town 2013" />
-            </LinearLayout>
-
-            <View
-                    style="@style/RedDivider"/>
-
             <com.david.bgwfans.viewcomponents.NavigationDrawerItem
-                    style="@style/NavDrawerItem"
-                    android:id="@+id/drawer_hos_info"
-                    bgwfans:itemIcon="@drawable/ic_action_about"
-                    bgwfans:itemText="Info"  />
-
-            <View
-                    style="@style/NavigationDrawerDivider"/>
-
-            <com.david.bgwfans.viewcomponents.NavigationDrawerItem
-                    style="@style/NavDrawerItem"
-                    android:id="@+id/drawer_hos_houses"
-                    bgwfans:itemIcon="@drawable/ic_nav_home2"
-                    bgwfans:itemText="Attractions"  />
-
-            <!--<View-->
-                    <!--style="@style/NavigationDrawerDivider"/>-->
-
-            <!--<com.david.bgwfanspaid.viewcomponents.NavigationDrawerItem-->
-                    <!--style="@style/NavDrawerItem"-->
-                    <!--android:id="@+id/drawer_hos_exp"-->
-                    <!--bgwfans:itemIcon="@drawable/ic_action_locate"-->
-                    <!--bgwfans:itemText="Terror-tories"  />-->
-
-            <View
-                    style="@style/NavigationDrawerDivider"/>
-
-            <com.david.bgwfans.viewcomponents.NavigationDrawerItem
-                    style="@style/NavDrawerItem"
-                    android:id="@+id/drawer_hos_shows"
-                    bgwfans:itemIcon="@drawable/ic_menu_show"
-                    bgwfans:itemText="Shows"  />
-
-
-            <!--<View-->
-                    <!--style="@style/NavigationDrawerDivider"/>-->
-
-            <!--<com.david.bgwfanspaid.viewcomponents.NavigationDrawerItem-->
-                    <!--style="@style/NavDrawerItem"-->
-                    <!--android:id="@+id/drawer_hos_food"-->
-                    <!--bgwfans:itemIcon="@drawable/ic_menu_food"-->
-                    <!--bgwfans:itemText="Special Culinary"  />-->
-
-            <View
-                    style="@style/NavigationDrawerDivider"/>
-
-
-            <com.david.bgwfans.viewcomponents.NavigationDrawerItem
-                    style="@style/NavDrawerItem"
-                    android:id="@+id/drawer_event_site"
-                    bgwfans:itemIcon="@drawable/ic_action_about"
-                    bgwfans:itemText="Official Site"  />
+                style="@style/NavDrawerItem"
+                android:id="@+id/drawer_bgwthreed"
+                bgwfans:itemIcon="@drawable/ic_location_map"
+                bgwfans:itemText="BGW3D"  />
 
             <View
                 style="@style/NavigationDrawerDivider"/>
 
+            <!--<LinearLayout-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/black_overlay">-->
+                <!--<oak.widget.TextViewWithFont-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textSize="14sp"-->
+                        <!--android:padding="4dp"-->
+                        <!--android:layout_marginLeft="8dp"-->
+                        <!--oak:font="Roboto-Thin.otf"-->
+                        <!--android:text="Christmas Town 2013" />-->
+            <!--</LinearLayout>-->
 
-            <com.david.bgwfans.viewcomponents.NavigationDrawerItem
-                style="@style/NavDrawerItem"
-                android:id="@+id/drawer_hos_map"
-                bgwfans:itemIcon="@drawable/ic_location_map"
-                bgwfans:itemText="Map"  />
+            <!--<View-->
+                    <!--style="@style/RedDivider"/>-->
+
+            <!--<com.david.bgwfans.viewcomponents.NavigationDrawerItem-->
+                    <!--style="@style/NavDrawerItem"-->
+                    <!--android:id="@+id/drawer_hos_info"-->
+                    <!--bgwfans:itemIcon="@drawable/ic_action_about"-->
+                    <!--bgwfans:itemText="Info"  />-->
+
+            <!--<View-->
+                    <!--style="@style/NavigationDrawerDivider"/>-->
+
+            <!--<com.david.bgwfans.viewcomponents.NavigationDrawerItem-->
+                    <!--style="@style/NavDrawerItem"-->
+                    <!--android:id="@+id/drawer_hos_houses"-->
+                    <!--bgwfans:itemIcon="@drawable/ic_nav_home2"-->
+                    <!--bgwfans:itemText="Attractions"  />-->
+
+            <!--&lt;!&ndash;<View&ndash;&gt;-->
+                    <!--&lt;!&ndash;style="@style/NavigationDrawerDivider"/>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<com.david.bgwfanspaid.viewcomponents.NavigationDrawerItem&ndash;&gt;-->
+                    <!--&lt;!&ndash;style="@style/NavDrawerItem"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/drawer_hos_exp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;bgwfans:itemIcon="@drawable/ic_action_locate"&ndash;&gt;-->
+                    <!--&lt;!&ndash;bgwfans:itemText="Terror-tories"  />&ndash;&gt;-->
+
+            <!--<View-->
+                    <!--style="@style/NavigationDrawerDivider"/>-->
+
+            <!--<com.david.bgwfans.viewcomponents.NavigationDrawerItem-->
+                    <!--style="@style/NavDrawerItem"-->
+                    <!--android:id="@+id/drawer_hos_shows"-->
+                    <!--bgwfans:itemIcon="@drawable/ic_menu_show"-->
+                    <!--bgwfans:itemText="Shows"  />-->
 
 
-            <View
-                    style="@style/NavigationDrawerDivider"/>
+            <!--&lt;!&ndash;<View&ndash;&gt;-->
+                    <!--&lt;!&ndash;style="@style/NavigationDrawerDivider"/>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<com.david.bgwfanspaid.viewcomponents.NavigationDrawerItem&ndash;&gt;-->
+                    <!--&lt;!&ndash;style="@style/NavDrawerItem"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/drawer_hos_food"&ndash;&gt;-->
+                    <!--&lt;!&ndash;bgwfans:itemIcon="@drawable/ic_menu_food"&ndash;&gt;-->
+                    <!--&lt;!&ndash;bgwfans:itemText="Special Culinary"  />&ndash;&gt;-->
+
+            <!--<View-->
+                    <!--style="@style/NavigationDrawerDivider"/>-->
+
+
+            <!--<com.david.bgwfans.viewcomponents.NavigationDrawerItem-->
+                    <!--style="@style/NavDrawerItem"-->
+                    <!--android:id="@+id/drawer_event_site"-->
+                    <!--bgwfans:itemIcon="@drawable/ic_action_about"-->
+                    <!--bgwfans:itemText="Official Site"  />-->
+
+            <!--<View-->
+                <!--style="@style/NavigationDrawerDivider"/>-->
+
+
+            <!--<com.david.bgwfans.viewcomponents.NavigationDrawerItem-->
+                <!--style="@style/NavDrawerItem"-->
+                <!--android:id="@+id/drawer_hos_map"-->
+                <!--bgwfans:itemIcon="@drawable/ic_location_map"-->
+                <!--bgwfans:itemText="Map"  />-->
+
+
+            <!--<View-->
+                    <!--style="@style/NavigationDrawerDivider"/>-->
 
         <LinearLayout
                 android:layout_width="fill_parent"
