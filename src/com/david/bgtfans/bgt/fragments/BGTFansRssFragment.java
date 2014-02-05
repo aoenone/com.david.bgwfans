@@ -57,7 +57,7 @@ public class BGTFansRssFragment extends SherlockFragment {
 
         listView.setEmptyView(emptyView);
         mContext = getSherlockActivity();
-        SimpleRss2Parser parser = new SimpleRss2Parser(Constants.BGWFANS_RSS,
+        SimpleRss2Parser parser = new SimpleRss2Parser(Constants.BGTFANS_RSS,
                 new SimpleRss2ParserCallback() {
                     @Override
                     public void onFeedParsed(List<RSSItem> items) {

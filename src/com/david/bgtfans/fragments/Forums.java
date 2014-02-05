@@ -53,7 +53,7 @@ public class Forums extends RoboSherlockFragment {
 
         webview2 = (WebView) view.findViewById(R.id.webView2);
         webview2.getSettings().setJavaScriptEnabled(true);
-        webview2.loadUrl("http://www.bgwfans.com/forums");
+        webview2.loadUrl("http://www.bgtfans.com/forums");
         webview2.setWebViewClient(new WebViewClient(){
             @Override
             public void onPageFinished(WebView view, String url) {
