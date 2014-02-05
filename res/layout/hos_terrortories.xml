@@ -12,25 +12,25 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent" >
 
-        <com.david.bgwfans.viewcomponents.AttractionItem
+        <com.david.bgtfans.viewcomponents.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_ripper_row"
                 bgwfans:itemIcon="@drawable/ripper"
                 bgwfans:itemText="Ripper Row"  />
 
-        <com.david.bgwfans.viewcomponents.AttractionItem
+        <com.david.bgtfans.viewcomponents.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_vampire_point"
                 bgwfans:itemIcon="@drawable/vampirepoint"
                 bgwfans:itemText="Vampire Point"  />
 
-        <com.david.bgwfans.viewcomponents.AttractionItem
+        <com.david.bgtfans.viewcomponents.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_demon_street"
                 bgwfans:itemIcon="@drawable/demonstreet"
                 bgwfans:itemText="Demon Street"  />
 
-        <com.david.bgwfans.viewcomponents.AttractionItem
+        <com.david.bgtfans.viewcomponents.AttractionItem
                 style="@style/AttractionParams"
                 android:id="@+id/hos_ports_of_skull"
                 bgwfans:itemIcon="@drawable/ctc_image"

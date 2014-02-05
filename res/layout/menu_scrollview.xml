@@ -6,7 +6,7 @@
         android:background="@color/side_menu_color"
         >
 
-    <com.david.bgwfans.MenuScrollView
+    <com.david.bgtfans.MenuScrollView
             android:id="@+id/scrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -173,5 +173,5 @@
                     style="@style/MenuDrawer.Widget.Title"/>
 
         </LinearLayout>
-    </com.david.bgwfans.MenuScrollView>
+    </com.david.bgtfans.MenuScrollView>
 </RelativeLayout>

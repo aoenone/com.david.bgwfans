@@ -510,7 +510,7 @@
     </RelativeLayout>
 
 
-    <com.david.bgwfans.viewcomponents.AttractionItem
+    <com.david.bgtfans.viewcomponents.AttractionItem
             android:id="@+id/ports_forum"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/demonstreet"

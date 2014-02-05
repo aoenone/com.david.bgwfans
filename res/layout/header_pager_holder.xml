@@ -13,7 +13,7 @@
         android:background="@color/white_overlay"/>
 
     <fragment
-        android:name="com.david.bgwfans.xmas.fragments.HeaderPagerFragment"
+        android:name="com.david.bgtfans.xmas.fragments.HeaderPagerFragment"
         android:id="@+id/header_fragment"
         android:layout_width="fill_parent"
         android:layout_height="200dp"

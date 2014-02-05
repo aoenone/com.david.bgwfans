@@ -41,7 +41,7 @@
                 class="com.google.android.gms.maps.SupportMapFragment"/>
     </RelativeLayout>
 
-    <com.david.bgwfans.viewcomponents.AttractionItem
+    <com.david.bgtfans.viewcomponents.AttractionItem
             android:id="@+id/nightbeats_forum"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/nightbeats"

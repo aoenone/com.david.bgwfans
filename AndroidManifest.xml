@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.david.bgwfans"
-          android:versionCode="17"
-          android:versionName="2.3.1">
+          package="com.david.bgtfans"
+          android:versionCode="1"
+          android:versionName="1.0.0">
 
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -25,7 +25,7 @@
     <uses-feature android:name="android.hardware.sensor.compass" />
 
     <permission
-            android:name="com.david.bgwfans.MAPS_RECEIVE"
+            android:name="com.david.bgtfans.MAPS_RECEIVE"
             android:protectionLevel="signature" />
     <uses-permission android:name="com.david.bgwfans.permission.MAPS_RECEIVE"/>
 
@@ -34,7 +34,7 @@
             android:required="true"/>
 
     <application
-            android:label="BGWFans"
+            android:label="BGTFans"
             android:icon="@drawable/iconv2"
             android:logo="@drawable/bgwhite"
             android:theme="@style/Theme.Bgwfans2"
@@ -55,7 +55,7 @@
 
         <activity android:name="com.amazon.device.ads.AdActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
 
-        <receiver android:name="com.david.bgwfans.widget.HOSWidget" android:label="BGWFans" >
+        <receiver android:name="com.david.bgtfans.widget.HOSWidget" android:label="BGWFans" >
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -63,7 +63,7 @@
         </receiver>
 
         <activity
-                android:name="com.david.bgwfans.NewMainActivity"
+                android:name="com.david.bgtfans.NewMainActivity"
                 android:alwaysRetainTaskState="true"
                 android:uiOptions="splitActionBarWhenNarrow">
 
@@ -77,7 +77,7 @@
         <activity android:name=".Bgw3dActivity" />
         <activity android:name=".ArticleActivity" />
         <!-- Yes this area is a mess. Will be cleaned up before too long -->
-        <activity android:name="com.david.bgwfans.Attractions"/>
+        <activity android:name="com.david.bgtfans.Attractions"/>
         <activity android:name=".hos.hosBitten" />
         <activity android:name=".hos.hosThirteen" />
         <activity android:name=".hos.hosCatacombs" />
@@ -114,7 +114,7 @@
 
         <!-- roller coasters -->
         <activity android:name=".attractions.coasters.Verbolten"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
+                  android:parentActivityName="com.david.bgtfans.Attractions"/>
         <activity android:name=".attractions.coasters.VBolt"
                   android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
         <activity android:name=".attractions.coasters.Griffon"
@@ -224,18 +224,18 @@
 
 
 
-        <activity android:name="com.david.bgwfans.Shows"/>
+        <activity android:name="com.david.bgtfans.Shows"/>
         <activity android:name=".fragments.Eateries"/>
-        <activity android:name="com.david.bgwfans.Coasters"/>
-        <activity android:name="com.david.bgwfans.MapScreen"
+        <activity android:name="com.david.bgtfans.Coasters"/>
+        <activity android:name="com.david.bgtfans.MapScreen"
                   android:uiOptions="splitActionBarWhenNarrow"/>
         <activity android:name=".fragments.ParkMap"
                   android:uiOptions="splitActionBarWhenNarrow"/>
-        <activity android:name="com.david.bgwfans.HOS_Houses"/>
-        <activity android:name="com.david.bgwfans.HOS_Deadline"/>
+        <activity android:name="com.david.bgtfans.HOS_Houses"/>
+        <activity android:name="com.david.bgtfans.HOS_Deadline"/>
         <activity android:name=".hos.HOS_Shows"/>
-        <activity android:name="com.david.bgwfans.HOS_Features"/>
-        <activity android:name="com.david.bgwfans.HOS_Map"
+        <activity android:name="com.david.bgtfans.HOS_Features"/>
+        <activity android:name="com.david.bgtfans.HOS_Map"
                   android:uiOptions="splitActionBarWhenNarrow"/>
         <activity android:name=".fragments.BGWFans">
         </activity>
@@ -256,9 +256,9 @@
         </activity>
         <activity android:name=".fragments.Settings"/>
         <activity android:name=".fragments.About"/>
-        <activity android:name="com.david.bgwfans.Mistletoe"/>
-        <activity android:name="com.david.bgwfans.Polar"/>
-        <activity android:name="com.david.bgwfans.Palace"/>
+        <activity android:name="com.david.bgtfans.Mistletoe"/>
+        <activity android:name="com.david.bgtfans.Polar"/>
+        <activity android:name="com.david.bgtfans.Palace"/>
         <activity android:name=".xmas.cards.XmasInfo"/>
         <activity android:name=".BaseActivity"/>
         <service android:name=".geofence.ReceiveTransitionsIntentService" android:exported="false"></service>

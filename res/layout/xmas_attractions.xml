@@ -11,43 +11,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.david.bgwfans.viewcomponents.XmasItem
+    <com.david.bgtfans.viewcomponents.XmasItem
         android:id="@+id/holiday_hills"
         style="@style/AttractionParams"
         bgwfans:itemIcon="@drawable/hhills"
         bgwfans:itemText="Holiday Hills"  />
 
-    <com.david.bgwfans.viewcomponents.XmasItem
+    <com.david.bgtfans.viewcomponents.XmasItem
         android:id="@+id/mistletoe_marketplace"
         style="@style/AttractionParams"
         bgwfans:itemIcon="@drawable/otann"
         bgwfans:itemText="Mistletoe Marketplace"  />
 
-    <com.david.bgwfans.viewcomponents.XmasItem
+    <com.david.bgtfans.viewcomponents.XmasItem
         android:id="@+id/polar_pathway"
         style="@style/AttractionParams"
         bgwfans:itemIcon="@drawable/polarpath"
         bgwfans:itemText="Polar Pathway"  />
 
-    <com.david.bgwfans.viewcomponents.XmasItem
+    <com.david.bgtfans.viewcomponents.XmasItem
         android:id="@+id/highland_stables"
         style="@style/AttractionParams"
         bgwfans:itemIcon="@drawable/stables"
         bgwfans:itemText="Highland Stables"  />
 
-    <com.david.bgwfans.viewcomponents.XmasItem
+    <com.david.bgtfans.viewcomponents.XmasItem
         android:id="@+id/ice_palace"
         style="@style/AttractionParams"
         bgwfans:itemIcon="@drawable/penguin"
         bgwfans:itemText="Ice Palace: A Penguin Paradise"  />
 
-    <com.david.bgwfans.viewcomponents.XmasItem
+    <com.david.bgtfans.viewcomponents.XmasItem
         android:id="@+id/santa_workshop"
         style="@style/AttractionParams"
         bgwfans:itemIcon="@drawable/santa"
         bgwfans:itemText="Santa's Workshop"  />
 
-     <com.david.bgwfans.viewcomponents.XmasItem
+     <com.david.bgtfans.viewcomponents.XmasItem
          android:id="@+id/xmas_add_rides"
          style="@style/AttractionParams"
          bgwfans:itemIcon="@drawable/machtower"

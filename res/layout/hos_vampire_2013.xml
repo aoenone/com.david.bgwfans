@@ -43,7 +43,7 @@
     </RelativeLayout>
 
 
-    <com.david.bgwfans.viewcomponents.AttractionItem
+    <com.david.bgtfans.viewcomponents.AttractionItem
             android:id="@+id/vampire_forum"
             style="@style/AttractionParams"
             bgwfans:itemIcon="@drawable/vampirepoint"

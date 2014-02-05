@@ -83,7 +83,7 @@
             <View
                     style="@style/RedDivider"/>
 
-          <com.david.bgwfans.viewcomponents.NavigationDrawerItem
+          <com.david.bgtfans.viewcomponents.NavigationDrawerItem
                 style="@style/NavDrawerItem"
                 android:id="@+id/drawer_info_screen"
                 bgwfans:itemIcon="@drawable/ic_action_about"
@@ -92,7 +92,7 @@
             <View
                 style="@style/NavigationDrawerDivider"/>
 
-            <com.david.bgwfans.viewcomponents.NavigationDrawerItem
+            <com.david.bgtfans.viewcomponents.NavigationDrawerItem
                     style="@style/NavDrawerItem"
                     android:id="@+id/drawer_attractions"
                     bgwfans:itemIcon="@drawable/ridewhite"
@@ -101,7 +101,7 @@
             <View
                     style="@style/NavigationDrawerDivider"/>
 
-            <com.david.bgwfans.viewcomponents.NavigationDrawerItem
+            <com.david.bgtfans.viewcomponents.NavigationDrawerItem
                     style="@style/NavDrawerItem"
                     android:id="@+id/drawer_shows"
                     bgwfans:itemIcon="@drawable/ic_menu_show"
@@ -110,7 +110,7 @@
             <View
                     style="@style/NavigationDrawerDivider"/>
 
-            <com.david.bgwfans.viewcomponents.NavigationDrawerItem
+            <com.david.bgtfans.viewcomponents.NavigationDrawerItem
                     style="@style/NavDrawerItem"
                     android:id="@+id/drawer_eateries"
                     bgwfans:itemIcon="@drawable/ic_menu_food"
@@ -119,7 +119,7 @@
             <View
                     style="@style/NavigationDrawerDivider"/>
 
-            <com.david.bgwfans.viewcomponents.NavigationDrawerItem
+            <com.david.bgtfans.viewcomponents.NavigationDrawerItem
                     style="@style/NavDrawerItem"
                     android:id="@+id/drawer_map"
                     bgwfans:itemIcon="@drawable/ic_location_map"
@@ -128,7 +128,7 @@
             <View
                     style="@style/NavigationDrawerDivider"/>
 
-            <com.david.bgwfans.viewcomponents.NavigationDrawerItem
+            <com.david.bgtfans.viewcomponents.NavigationDrawerItem
                 style="@style/NavDrawerItem"
                 android:id="@+id/drawer_bgwthreed"
                 bgwfans:itemIcon="@drawable/ic_location_map"
@@ -238,7 +238,7 @@
             <View
                     style="@style/RedDivider"/>
 
-            <com.david.bgwfans.viewcomponents.NavigationDrawerItem
+            <com.david.bgtfans.viewcomponents.NavigationDrawerItem
                     style="@style/NavDrawerItem"
                     android:id="@+id/drawer_blog"
                     bgwfans:itemIcon="@drawable/ic_menu_blog"
@@ -247,7 +247,7 @@
             <View
                     style="@style/NavigationDrawerDivider"/>
 
-            <com.david.bgwfans.viewcomponents.NavigationDrawerItem
+            <com.david.bgtfans.viewcomponents.NavigationDrawerItem
                     style="@style/NavDrawerItem"
                     android:id="@+id/drawer_forums"
                     bgwfans:itemIcon="@drawable/ic_menu_forums"
@@ -256,7 +256,7 @@
             <View
                     style="@style/NavigationDrawerDivider"/>
 
-            <com.david.bgwfans.viewcomponents.NavigationDrawerItem
+            <com.david.bgtfans.viewcomponents.NavigationDrawerItem
                     style="@style/NavDrawerItem"
                     android:id="@+id/drawer_wiki"
                     bgwfans:itemIcon="@drawable/ic_menu_wiki"
@@ -282,7 +282,7 @@
             <View
                     style="@style/RedDivider"/>
 
-            <com.david.bgwfans.viewcomponents.NavigationDrawerItem
+            <com.david.bgtfans.viewcomponents.NavigationDrawerItem
                     style="@style/NavDrawerItem"
                     android:id="@+id/drawer_settings"
                     bgwfans:itemIcon="@drawable/ic_menu_settings"
@@ -291,7 +291,7 @@
             <View
                     style="@style/NavigationDrawerDivider"/>
 
-            <com.david.bgwfans.viewcomponents.NavigationDrawerItem
+            <com.david.bgtfans.viewcomponents.NavigationDrawerItem
                     style="@style/NavDrawerItem"
                     android:id="@+id/drawer_about"
                     bgwfans:itemIcon="@drawable/ic_menu_about"

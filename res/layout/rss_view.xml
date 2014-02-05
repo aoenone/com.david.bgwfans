@@ -19,7 +19,7 @@
         android:padding="16dp"
         android:scrollbarStyle="outsideOverlay" />
 
-    <com.david.bgwfans.utils.SmoothProgressBar.SmoothProgressBar
+    <com.david.bgtfans.utils.SmoothProgressBar.SmoothProgressBar
         android:id="@+id/empty_loader"
         android:layout_centerInParent="true"
         android:layout_width="fill_parent"
