@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.DialogFragment;
@@ -27,12 +28,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.Toast;
+
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.view.MenuItem;
 import com.crittercism.app.Crittercism;
 import com.david.bgwfans.fragments.About;
 import com.david.bgwfans.fragments.AttractionsView;
-import com.david.bgwfans.fragments.BGWFans;
+import com.david.bgwfans.fragments.BGWFansRSSFragment;
 import com.david.bgwfans.fragments.Eateries;
 import com.david.bgwfans.fragments.Forums;
 import com.david.bgwfans.fragments.InfoScreen;
@@ -43,29 +45,26 @@ import com.david.bgwfans.geofence.GeofenceRemover;
 import com.david.bgwfans.geofence.GeofenceRequester;
 import com.david.bgwfans.geofence.GeofenceStore;
 import com.david.bgwfans.geofence.GeofenceUtils;
-import com.david.bgwfans.geofence.ParkGeofence;
-import com.david.bgwfans.hos.HOS_Shows;
 import com.david.bgwfans.geofence.GeofenceUtils.REMOVE_TYPE;
 import com.david.bgwfans.geofence.GeofenceUtils.REQUEST_TYPE;
+import com.david.bgwfans.geofence.ParkGeofence;
+import com.david.bgwfans.hos.HOS_Shows;
+import com.david.bgwfans.utils.SystemBarTintManager;
 import com.david.bgwfans.viewcomponents.NavigationDrawerItem;
 import com.david.bgwfans.webviews.Wiki;
-import com.david.bgwfans.xmas.fragments.XmasAttractions;
-import com.david.bgwfans.xmas.fragments.XmasInfoFragment;
-import com.david.bgwfans.xmas.fragments.XmasMap;
-import com.david.bgwfans.xmas.fragments.XmasShows;
-import com.david.bgwfans.xmas.fragments.XmasSiteFragment;
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.location.Geofence;
-import roboguice.RoboGuice;
-import roboguice.inject.InjectView;
-import roboguice.inject.RoboInjector;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
+
+import roboguice.RoboGuice;
+import roboguice.inject.InjectView;
+import roboguice.inject.RoboInjector;
 
 
 /**
@@ -81,14 +80,14 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
     public static final int NAV_ID_EATERIES = R.id.drawer_eateries;
     public static final int NAV_ID_MAP = R.id.drawer_map;
 
-    //for HOS shit
-    public static final int NAV_HOS_INFO = R.id.drawer_hos_info;
-    public static final int NAV_HOS_HOUSES = R.id.drawer_hos_houses;
-    public static final int NAV_HOS_SHOWS = R.id.drawer_hos_shows;
-//    public static final int NAV_HOS_CULINARY = R.id.drawer_hos_food;
-//    public static final int NAV_HOS_EXP = R.id.drawer_hos_exp;
-    public static final int NAV_EVENT_SITE = R.id.drawer_event_site;
-    public static final int NAV_HOS_MAP = R.id.drawer_hos_map;
+//    //for HOS shit
+//    public static final int NAV_HOS_INFO = R.id.drawer_hos_info;
+//    public static final int NAV_HOS_HOUSES = R.id.drawer_hos_houses;
+//    public static final int NAV_HOS_SHOWS = R.id.drawer_hos_shows;
+////    public static final int NAV_HOS_CULINARY = R.id.drawer_hos_food;
+////    public static final int NAV_HOS_EXP = R.id.drawer_hos_exp;
+//    public static final int NAV_EVENT_SITE = R.id.drawer_event_site;
+//    public static final int NAV_HOS_MAP = R.id.drawer_hos_map;
 
     //for BGWFans shit
     public static final int NAV_ID_BLOG = R.id.drawer_blog;
@@ -98,6 +97,8 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
     //for extra app shit
     public static final int NAV_ID_SETTINGS = R.id.drawer_settings;
     public static final int NAV_ID_ABOUT = R.id.drawer_about;
+
+    public static final int NAV_ID_BGW = R.id.drawer_bgwthreed;
 
 
    @InjectView(R.id.drawer_root) DrawerLayout mDrawerLayout;
@@ -186,8 +187,20 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        Crittercism.initialize(getApplicationContext(), "522b49fe558d6a77d3000001");
-        setContentView(R.layout.app_main);
+        if(Build.VERSION.SDK_INT >= 19){
+            setTheme(R.style.TransBGW);
+            SystemBarTintManager systemBarTintManager = new SystemBarTintManager(NewMainActivity.this);
+            systemBarTintManager.setStatusBarTintEnabled(true);
+            systemBarTintManager.setStatusBarTintColor(getResources().getColor(R.color.bgwfans_actionbar));
+            SystemBarTintManager.SystemBarConfig config = systemBarTintManager.getConfig();
+            setContentView(R.layout.app_main);
+//            mContent.setPadding(0, config.getPixelInsetTop(true), 0, 0);
+        }else{
+            Crittercism.initialize(getApplicationContext(), "522b49fe558d6a77d3000001");
+            setContentView(R.layout.app_main);
+        }
+//        Crittercism.initialize(getApplicationContext(), "522b49fe558d6a77d3000001");
+//        setContentView(R.layout.app_main);
         mContext = this;
         mfragmentManager = getSupportFragmentManager();
         ActionBar actionBar = getSupportActionBar();
@@ -267,26 +280,26 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
             case NAV_ID_MAP:
                 fragment = injector.getInstance(ParkMap.class);
                 break;
-            case NAV_HOS_INFO:
-                fragment = injector.getInstance(XmasInfoFragment.class);
-                break;
-            case NAV_HOS_HOUSES:
-                fragment = injector.getInstance(XmasAttractions.class);
-                break;
-            case NAV_HOS_SHOWS:
-                fragment = injector.getInstance(XmasShows.class);
-                break;
-//            case NAV_HOS_CULINARY:
-//                fragment = injector.getInstance(XmasFood.class);
+//            case NAV_HOS_INFO:
+//                fragment = injector.getInstance(XmasInfoFragment.class);
 //                break;
-            case NAV_EVENT_SITE:
-                fragment = injector.getInstance(XmasSiteFragment.class);
-                break;
-            case NAV_HOS_MAP:
-                fragment = injector.getInstance(XmasMap.class);
-                break;
+//            case NAV_HOS_HOUSES:
+//                fragment = injector.getInstance(XmasAttractions.class);
+//                break;
+//            case NAV_HOS_SHOWS:
+//                fragment = injector.getInstance(XmasShows.class);
+//                break;
+////            case NAV_HOS_CULINARY:
+////                fragment = injector.getInstance(XmasFood.class);
+////                break;
+//            case NAV_EVENT_SITE:
+//                fragment = injector.getInstance(XmasSiteFragment.class);
+//                break;
+//            case NAV_HOS_MAP:
+//                fragment = injector.getInstance(XmasMap.class);
+//                break;
             case NAV_ID_BLOG:
-                fragment = injector.getInstance(BGWFans.class);
+                fragment = injector.getInstance(BGWFansRSSFragment.class);
                 break;
             case NAV_ID_FORUMS:
                 fragment = injector.getInstance(Forums.class);
@@ -299,6 +312,10 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
                 break;
             case NAV_ID_ABOUT:
                 fragment = injector.getInstance(About.class);
+                break;
+            case NAV_ID_BGW:
+                startActivity(new Intent(mContext, Bgw3dActivity.class));
+                fragment = injector.getInstance(ParkMap.class);
                 break;
             default:
                 return;
@@ -601,8 +618,7 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
             mGeofenceRequester.addGeofences(mCurrentGeofences);
         } catch (UnsupportedOperationException e) {
             // Notify user that previous request hasn't finished.
-            Toast.makeText(this, R.string.add_geofences_already_requested_error,
-                    Toast.LENGTH_LONG).show();
+
         }
     }
 
