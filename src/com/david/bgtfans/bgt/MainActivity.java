@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
@@ -32,7 +31,6 @@ import com.david.bgtfans.fragments.Forums;
 import com.david.bgtfans.fragments.ParkMap;
 import com.david.bgtfans.fragments.Settings;
 import com.david.bgtfans.fragments.UserNoLogin;
-import com.david.bgtfans.utils.SystemBarTintManager;
 import com.david.bgtfans.viewcomponents.NavigationDrawerItem;
 import com.david.bgtfans.webviews.Wiki;
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity;
@@ -94,20 +92,20 @@ public class MainActivity extends RoboSherlockFragmentActivity {
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        if(Build.VERSION.SDK_INT >= 19){
-            setTheme(R.style.TransBGW);
-            SystemBarTintManager systemBarTintManager = new SystemBarTintManager(MainActivity.this);
-            systemBarTintManager.setStatusBarTintEnabled(true);
-            systemBarTintManager.setStatusBarTintColor(getResources().getColor(R.color.bgwfans_actionbar));
-            SystemBarTintManager.SystemBarConfig config = systemBarTintManager.getConfig();
-            setContentView(R.layout.app_main);
-//            mContent.setPadding(0, config.getPixelInsetTop(true), 0, 0);
-        }else{
-            Crittercism.initialize(getApplicationContext(), "522b49fe558d6a77d3000001");
-            setContentView(R.layout.app_main);
-        }
-//        Crittercism.initialize(getApplicationContext(), "522b49fe558d6a77d3000001");
-//        setContentView(R.layout.app_main);
+//        if(Build.VERSION.SDK_INT >= 19){
+//            setTheme(R.style.TransBGW);
+//            SystemBarTintManager systemBarTintManager = new SystemBarTintManager(MainActivity.this);
+//            systemBarTintManager.setStatusBarTintEnabled(true);
+//            systemBarTintManager.setStatusBarTintColor(getResources().getColor(R.color.bgwfans_actionbar));
+//            SystemBarTintManager.SystemBarConfig config = systemBarTintManager.getConfig();
+//            setContentView(R.layout.app_main);
+////            mContent.setPadding(0, config.getPixelInsetTop(true), 0, 0);
+//        }else{
+//            Crittercism.initialize(getApplicationContext(), "522b49fe558d6a77d3000001");
+//            setContentView(R.layout.app_main);
+//        }
+        Crittercism.initialize(getApplicationContext(), "522b49fe558d6a77d3000001");
+        setContentView(R.layout.app_main);
         mContext = this;
         mfragmentManager = getSupportFragmentManager();
         ActionBar actionBar = getSupportActionBar();
@@ -118,7 +116,7 @@ public class MainActivity extends RoboSherlockFragmentActivity {
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_root);
         if(savedInstanceState == null){
-            setContentFragment(NAV_ID_INFO_SCREEN);
+            setContentFragment(NAV_ID_SHOWS);
         }
 
 //        userProfile.setOnClickListener(new View.OnClickListener() {

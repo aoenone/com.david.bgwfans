@@ -63,7 +63,7 @@
         </receiver>
 
         <activity
-                android:name="com.david.bgtfans.NewMainActivity"
+                android:name="com.david.bgtfans.bgt.MainActivity"
                 android:alwaysRetainTaskState="true"
                 android:uiOptions="splitActionBarWhenNarrow">
 
