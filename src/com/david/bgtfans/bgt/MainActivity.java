@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.app.Fragment;
@@ -23,6 +24,8 @@ import com.crittercism.app.Crittercism;
 import com.david.bgtfans.R;
 import com.david.bgtfans.bgt.fragments.AttractionsFragment;
 import com.david.bgtfans.bgt.fragments.BGTFansRssFragment;
+import com.david.bgtfans.bgt.fragments.BGTOBlog;
+import com.david.bgtfans.bgt.fragments.BGTOSite;
 import com.david.bgtfans.bgt.fragments.EateriesFragment;
 import com.david.bgtfans.bgt.fragments.HomeScreen;
 import com.david.bgtfans.bgt.fragments.ShowFragment;
@@ -31,6 +34,8 @@ import com.david.bgtfans.fragments.Forums;
 import com.david.bgtfans.fragments.ParkMap;
 import com.david.bgtfans.fragments.Settings;
 import com.david.bgtfans.fragments.UserNoLogin;
+import com.david.bgtfans.utils.FontTypefaceSpan;
+import com.david.bgtfans.utils.SystemBarTintManager;
 import com.david.bgtfans.viewcomponents.NavigationDrawerItem;
 import com.david.bgtfans.webviews.Wiki;
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity;
@@ -62,10 +67,14 @@ public class MainActivity extends RoboSherlockFragmentActivity {
 //    public static final int NAV_EVENT_SITE = R.id.drawer_event_site;
 //    public static final int NAV_HOS_MAP = R.id.drawer_hos_map;
 
-    //for BGWFans shit
+    //for BGWTans shit
     public static final int NAV_ID_BLOG = R.id.drawer_blog;
     public static final int NAV_ID_FORUMS = R.id.drawer_forums;
     public static final int NAV_ID_WIKI = R.id.drawer_wiki;
+
+    //for official things
+    public static final int NAV_ID_OBLOG = R.id.drawer_o_blog;
+    public static final int NAV_ID_OSITE = R.id.drawer_o_site;
 
     //for extra app shit
     public static final int NAV_ID_SETTINGS = R.id.drawer_settings;
@@ -87,36 +96,37 @@ public class MainActivity extends RoboSherlockFragmentActivity {
     NavigationDrawerItem currentNavigationDrawerItem;
     Context mContext;
     FragmentTransaction ft;
-
+    ActionBar actionBar;
 
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-//        if(Build.VERSION.SDK_INT >= 19){
-//            setTheme(R.style.TransBGW);
-//            SystemBarTintManager systemBarTintManager = new SystemBarTintManager(MainActivity.this);
-//            systemBarTintManager.setStatusBarTintEnabled(true);
-//            systemBarTintManager.setStatusBarTintColor(getResources().getColor(R.color.bgwfans_actionbar));
-//            SystemBarTintManager.SystemBarConfig config = systemBarTintManager.getConfig();
-//            setContentView(R.layout.app_main);
-////            mContent.setPadding(0, config.getPixelInsetTop(true), 0, 0);
-//        }else{
-//            Crittercism.initialize(getApplicationContext(), "522b49fe558d6a77d3000001");
-//            setContentView(R.layout.app_main);
-//        }
+        if(Build.VERSION.SDK_INT >= 19){
+            SystemBarTintManager systemBarTintManager = new SystemBarTintManager(MainActivity.this);
+            systemBarTintManager.setStatusBarTintEnabled(true);
+            systemBarTintManager.setStatusBarTintColor(getResources().getColor(R.color.ab_color));
+            SystemBarTintManager.SystemBarConfig config = systemBarTintManager.getConfig();
+//            mContent.setPadding(0, config.getPixelInsetTop(true), 0, 0);
+        }
+
         Crittercism.initialize(getApplicationContext(), "522b49fe558d6a77d3000001");
         setContentView(R.layout.app_main);
         mContext = this;
         mfragmentManager = getSupportFragmentManager();
-        ActionBar actionBar = getSupportActionBar();
+        actionBar = getSupportActionBar();
         actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setDisplayShowTitleEnabled(false);
+        actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setIcon(android.R.color.transparent);
+        actionBar.setLogo(android.R.color.transparent);
+        FontTypefaceSpan.setActionBarTitle(this, actionBar, "BGTFans");
+//        actionBar.setTitle("BGTFans");
+//        actionBar.setSubtitle("Home");
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_root);
         if(savedInstanceState == null){
             setContentFragment(NAV_ID_SHOWS);
+            FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Shows");
         }
 
 //        userProfile.setOnClickListener(new View.OnClickListener() {
@@ -170,19 +180,25 @@ public class MainActivity extends RoboSherlockFragmentActivity {
         switch (fragID){
             case NAV_ID_INFO_SCREEN:
                 fragment = injector.getInstance(HomeScreen.class);
+                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Home");
                 break;
             case NAV_ID_ATTRACTIONS:
                 fragment = injector.getInstance(AttractionsFragment.class);
+                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Attractions");
                 break;
             case NAV_ID_SHOWS:
                 fragment = injector.getInstance(ShowFragment.class);
+                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Shows");
                 break;
             case NAV_ID_EATERIES:
                 fragment = injector.getInstance(EateriesFragment.class);
+                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Eateries");
                 break;
             case NAV_ID_MAP:
                 fragment = injector.getInstance(com.david.bgtfans.bgt.fragments.ParkMap.class);
+                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Park Map");
                 break;
+            //used for special events as needed
 //            case NAV_HOS_INFO:
 //                fragment = injector.getInstance(XmasInfoFragment.class);
 //                break;
@@ -203,18 +219,32 @@ public class MainActivity extends RoboSherlockFragmentActivity {
 //                break;
             case NAV_ID_BLOG:
                 fragment = injector.getInstance(BGTFansRssFragment.class);
+                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "BGTFans News");
                 break;
             case NAV_ID_FORUMS:
                 fragment = injector.getInstance(Forums.class);
+                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Forums");
                 break;
             case NAV_ID_WIKI:
                 fragment = injector.getInstance(Wiki.class);
+                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Wiki");
+                break;
+            case NAV_ID_OBLOG:
+                fragment = injector.getInstance(BGTOBlog.class);
+                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "BGT Blog");
+                break;
+            case NAV_ID_OSITE:
+                fragment = injector.getInstance(BGTOSite.class);
+                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "BGT Site");
                 break;
             case NAV_ID_SETTINGS:
                 fragment = injector.getInstance(Settings.class);
+                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Settings");
                 break;
             case NAV_ID_ABOUT:
                 fragment = injector.getInstance(About.class);
+                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "About" +
+                        "");
                 break;
             case NAV_ID_BGW:
                 startActivity(new Intent(mContext, BGT3DActivity.class));

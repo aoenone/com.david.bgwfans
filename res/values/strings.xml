@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="action_bar_font" translateable="false">@string/default_font</string>
+    <string name="actionbar_sub_font" translateable="false">@string/subtitle_font</string>
+    <string name="default_font" translateable="false">DakotaRegular.ttf</string>
+    <string name="subtitle_font" translateable="false">Roboto-Thin.ttf</string>
     <string name="app_name">BGWFans Pro</string>
 
     <string name="annotation_clicked">Check the sidemenu for more information!</string>

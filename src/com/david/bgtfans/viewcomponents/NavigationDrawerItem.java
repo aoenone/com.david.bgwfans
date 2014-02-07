@@ -43,6 +43,7 @@ public class NavigationDrawerItem extends LinearLayout {
         int iconResId = attrs.getAttributeResourceValue(MainApp.XMLNS, "itemIcon", -1);
         if (iconResId != -1) {
             ((ImageView) findViewById(R.id.icon)).setImageDrawable(getResources().getDrawable(iconResId));
+            ((ImageView) findViewById(R.id.icon)).setColorFilter(getResources().getColor(R.color.text_color));
         }
 
 

@@ -16,9 +16,9 @@ import com.haarman.listviewanimations.swinginadapters.prepared.SwingBottomInAnim
 import java.util.ArrayList;
 
 /**
- * Created by david.hodge on 2/4/14.
+ * Created by david.hodge on 2/6/14.
  */
-public class ShowFragment extends SherlockFragment {
+public class WildlifeFragment extends SherlockFragment {
 
     View view;
     View footer;
@@ -31,12 +31,14 @@ public class ShowFragment extends SherlockFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         attractions = new ArrayList<Attractions>();
-        attractions.add(new Attractions("Motor City Groove", R.drawable.deadline));
-        attractions.add(new Attractions("Soundsational", R.drawable.demonstreet));
-        attractions.add(new Attractions("Iceploration", R.drawable.xmas_header));
-        attractions.add(new Attractions("Madagascar Live!", R.drawable.demonstreet));
-        attractions.add(new Attractions("A is for Africa", R.drawable.demonstreet));
-        attractions.add(new Attractions("Critter Castaways", R.drawable.demonstreet));
+        attractions.add(new Attractions("Flamingo Island", R.drawable.deadline));
+        attractions.add(new Attractions("Asian Elephants", R.drawable.demonstreet));
+        attractions.add(new Attractions("Air Grover", R.drawable.xmas_header));
+        attractions.add(new Attractions("SandSerpent", R.drawable.demonstreet));
+        attractions.add(new Attractions("Gwazi", R.drawable.demonstreet));
+        attractions.add(new Attractions("Kumba", R.drawable.demonstreet));
+        attractions.add(new Attractions("Montu", R.drawable.demonstreet));
+        attractions.add(new Attractions("Scorpion", R.drawable.demonstreet));
     }
 
     @Override

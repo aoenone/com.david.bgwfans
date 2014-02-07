@@ -27,7 +27,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:indeterminate="true"
-        app:spb_color="@color/bgwfans_red"
+        app:spb_color="@color/bgtfans_green"
         app:spb_interpolator="spb_interpolator_acceleratedecelerate"
         app:spb_speed="1.0"
         app:spb_stroke_width="4dp"

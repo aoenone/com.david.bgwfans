@@ -13,6 +13,7 @@
         android:textSize="18sp"
         android:layout_margin="10dp"
         android:text="Welcome to my blog!"
+        android:textColor="@color/text_color"
         android:id="@+id/rss_title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,6 +26,7 @@
         android:id="@+id/rss_pub_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
         oak:font="Roboto-Thin.ttf"/>
 
 </LinearLayout>

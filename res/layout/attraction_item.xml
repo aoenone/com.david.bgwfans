@@ -9,9 +9,10 @@
 
  <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="95dp"
-        android:paddingBottom="5dp"
-        android:layout_margin="5dp"  >
+        android:layout_height="98dp"
+     android:layout_marginLeft="5dp"
+     android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"  >
 
     <ImageView
             android:id="@+id/attraction_image"
@@ -21,17 +22,22 @@
             android:adjustViewBounds="true"
             android:layout_height="95dp" />
 
+     <View
+         android:background="@drawable/attraction_shape"
+         android:layout_alignParentBottom="true"
+         android:layout_width="match_parent"
+         android:layout_height="60dp" />
+
     <oak.widget.TextViewWithFont
             android:id="@+id/attraction_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:background="#8000"
             android:textColor="#fff"
             android:gravity="center|left"
             android:paddingTop="6dp"
             android:paddingLeft="6dp"
-            android:paddingBottom="6dp"
+            android:paddingBottom="3dp"
             android:textSize="22sp"
             android:text="Place holder"
             oak:font="Roboto-Thin.ttf"/>

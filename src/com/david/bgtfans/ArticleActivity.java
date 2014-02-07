@@ -2,6 +2,7 @@ package com.david.bgtfans;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.widget.TextView;
@@ -11,6 +12,7 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
+import com.david.bgtfans.utils.SystemBarTintManager;
 import com.david.bgtfans.webviews.HiddenWiki;
 
 /**
@@ -32,6 +34,12 @@ public class ArticleActivity extends SherlockFragmentActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if(Build.VERSION.SDK_INT >= 19){
+            SystemBarTintManager systemBarTintManager = new SystemBarTintManager(this);
+            systemBarTintManager.setStatusBarTintEnabled(true);
+            systemBarTintManager.setStatusBarTintColor(getResources().getColor(R.color.ab_color));
+            SystemBarTintManager.SystemBarConfig config = systemBarTintManager.getConfig();
+        }
         setContentView(R.layout.rss_article_view);
         mContext = this;
 

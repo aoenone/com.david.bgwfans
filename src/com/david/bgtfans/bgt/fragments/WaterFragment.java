@@ -16,9 +16,9 @@ import com.haarman.listviewanimations.swinginadapters.prepared.SwingBottomInAnim
 import java.util.ArrayList;
 
 /**
- * Created by david.hodge on 2/4/14.
+ * Created by david.hodge on 2/6/14.
  */
-public class ShowFragment extends SherlockFragment {
+public class WaterFragment extends SherlockFragment {
 
     View view;
     View footer;
@@ -31,12 +31,9 @@ public class ShowFragment extends SherlockFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         attractions = new ArrayList<Attractions>();
-        attractions.add(new Attractions("Motor City Groove", R.drawable.deadline));
-        attractions.add(new Attractions("Soundsational", R.drawable.demonstreet));
-        attractions.add(new Attractions("Iceploration", R.drawable.xmas_header));
-        attractions.add(new Attractions("Madagascar Live!", R.drawable.demonstreet));
-        attractions.add(new Attractions("A is for Africa", R.drawable.demonstreet));
-        attractions.add(new Attractions("Critter Castaways", R.drawable.demonstreet));
+        attractions.add(new Attractions("Stanley Falls", R.drawable.deadline));
+        attractions.add(new Attractions("Tanganyaika Tidal Wave", R.drawable.demonstreet));
+        attractions.add(new Attractions("Congo River Rapids", R.drawable.demonstreet));
     }
 
     @Override

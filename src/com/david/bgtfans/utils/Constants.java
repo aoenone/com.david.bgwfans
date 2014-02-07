@@ -8,4 +8,6 @@ public class Constants {
     public static final String BGTFANS_RSS = "http://bgtfans.com/feed/";
     public static final String BGWFANS_RSS = "http://bgwfans.com/feed/";
     public static final String BGW_RSS = " ";
+    public static final String BGT_RSS = "http://feeds.feedburner.com/BuschGardensTampaBlog";
+    public static final String BGT_SITE = "http://seaworldparks.com/en/buschgardens-tampa/";
 }

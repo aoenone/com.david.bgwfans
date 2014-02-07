@@ -22,9 +22,9 @@ import at.theengine.android.simple_rss2_android.SimpleRss2Parser;
 import at.theengine.android.simple_rss2_android.SimpleRss2ParserCallback;
 
 /**
- * Created by david.hodge on 2/4/14.
+ * Created by david.hodge on 2/6/14.
  */
-public class BGTFansRssFragment extends SherlockFragment {
+public class BGTOBlog extends SherlockFragment {
 
     View view;
     View footer;
@@ -59,7 +59,7 @@ public class BGTFansRssFragment extends SherlockFragment {
         listView.setEmptyView(emptyView);
         listView.addFooterView(footer);
         mContext = getSherlockActivity();
-        SimpleRss2Parser parser = new SimpleRss2Parser(Constants.BGTFANS_RSS,
+        SimpleRss2Parser parser = new SimpleRss2Parser(Constants.BGT_RSS,
                 new SimpleRss2ParserCallback() {
                     @Override
                     public void onFeedParsed(List<RSSItem> items) {

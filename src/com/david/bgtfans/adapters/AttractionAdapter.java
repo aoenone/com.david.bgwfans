@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.david.bgtfans.R;
 import com.david.bgtfans.models.Attractions;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -68,7 +69,11 @@ public class AttractionAdapter extends BaseAdapter {
 
         final Attractions mItem = rssItems.get(position);
         holder.mTitle.setText(mItem.getName());
-        holder.attractionImage.setImageResource(mItem.getImage());
+//        holder.attractionImage.setImageResource(mItem.getImage());
+
+        Picasso.with(context)
+                .load(mItem.getImage())
+                .into(holder.attractionImage);
 
         return view;
     }
