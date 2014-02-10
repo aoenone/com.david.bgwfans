@@ -27,7 +27,7 @@
     <permission
             android:name="com.david.bgtfans.MAPS_RECEIVE"
             android:protectionLevel="signature" />
-    <uses-permission android:name="com.david.bgwfans.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="com.david.bgtfans.permission.MAPS_RECEIVE"/>
 
     <uses-feature
             android:glEsVersion="0x00020000"
@@ -47,7 +47,7 @@
 
         <meta-data
                 android:name="com.google.android.maps.v2.API_KEY"
-                android:value="AIzaSyAz1TiujG7GbWK9TCcApqdhK-eTaa3g-Z4"/>
+                android:value="AIzaSyDBrknSkj1jt1dkNIy8n2crFk1uf3ZaCGc"/>
         <uses-library android:name="com.google.android.maps"/>
 
         <activity android:name="com.google.ads.AdActivity"
@@ -76,172 +76,7 @@
 
         <activity android:name=".Bgw3dActivity" />
         <activity android:name=".ArticleActivity" />
-        <!-- Yes this area is a mess. Will be cleaned up before too long -->
-        <activity android:name="com.david.bgtfans.Attractions"/>
-        <activity android:name=".hos.hosBitten" />
-        <activity android:name=".hos.hosThirteen" />
-        <activity android:name=".hos.hosCatacombs" />
-        <activity android:name=".hos.hosDeadLine" />
-        <activity android:name=".hos.hosRoot" />
-        <activity android:name=".hos.hosCove" />
-        <activity android:name=".hos.hosDig" />
-        <activity android:name=".hos.hosFiends" />
-        <activity android:name=".hos.hosNightBeats" />
-        <activity android:name=".hos.hosRipper" />
-        <activity android:name=".hos.hosVampire" />
-        <activity android:name=".hos.hosDemon" />
-        <activity android:name=".hos.hosPorts" />
-        <activity android:name=".hos.hosBlood" />
-        <activity android:name=".hos.hosGallery" />
-        <activity android:name=".hos.hosFright" />
-        <activity android:name=".hos.hosDemonDrinks" />
-        <activity android:name=".hos.hosPbar" />
-        <activity android:name=".hos.hosInoc" />
-        <activity android:name=".hos.hosCasket" />
-        <activity android:name=".hos.hosPlank" />
 
-        <activity android:name=".xmas.attractions.HolidayHills" />
-        <activity android:name=".xmas.attractions.MistletoeMarketplace" />
-        <activity android:name=".xmas.attractions.IcePalace" />
-        <activity android:name=".xmas.attractions.PolarPathway" />
-        <activity android:name=".xmas.attractions.SantaWorkshop" />
-        <activity android:name=".xmas.attractions.HighlandStables" />
-
-        <activity android:name=".xmas.shows.DeckTheHalls" />
-        <activity android:name=".xmas.shows.Gloria" />
-        <activity android:name=".xmas.shows.Miracles" />
-        <activity android:name=".xmas.shows.Otann" />
-
-        <!-- roller coasters -->
-        <activity android:name=".attractions.coasters.Verbolten"
-                  android:parentActivityName="com.david.bgtfans.Attractions"/>
-        <activity android:name=".attractions.coasters.VBolt"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.coasters.Griffon"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.coasters.Apollo"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.coasters.Alpen"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.coasters.LochNess"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.coasters.Grover"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-
-        <!-- flat rides -->
-        <activity android:name=".attractions.flats.DarKastle"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.EITA"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.Mach"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.AutoBahn"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.Cradle"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.FlyingMachine"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.Wirbelwind"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.TradeWind"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.Catapult"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.Delight"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.Ram"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-
-        <!-- water rides -->
-        <activity android:name=".attractions.flats.Rapids"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.water.Pompeii"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.water.Flume"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-
-        <!-- transportation attractions -->
-        <activity android:name=".attractions.additional.Train"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.additional.Skyride"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.additional.Cruise"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-
-        <!-- shows -->
-        <activity android:name=".shows.Barrel"
-                  android:parentActivityName="com.david.bgwfanspaid.HOS_Shows"/>
-        <activity android:name=".shows.Celtic"
-                  android:parentActivityName="com.david.bgwfanspaid.HOS_Shows"/>
-        <activity android:name=".shows.Mix"
-                  android:parentActivityName="com.david.bgwfanspaid.HOS_Shows"/>
-        <activity android:name=".shows.Pets"
-                  android:parentActivityName="com.david.bgwfanspaid.HOS_Shows"/>
-        <activity android:name=".shows.Entwined"
-                  android:parentActivityName="com.david.bgwfanspaid.HOS_Shows"/>
-
-        <!-- eateries -->
-        <activity android:name=".eateries.Festhaus"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
-        <activity android:name=".eateries.Smokehouse"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
-        <activity android:name=".eateries.Piazza"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
-        <activity android:name=".eateries.Grille"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
-        <activity android:name=".eateries.Cucina"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
-        <activity android:name=".eateries.Pub"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
-        <activity android:name=".eateries.Grill"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
-        <activity android:name=".eateries.Bier"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
-
-        <!-- special event (Food and Wine) -->
-        <activity android:name=".food_wine.EventInfo"/>
-        <activity android:name=".food_wine.EventAttractions"/>
-        <activity android:name=".food_wine.Austria"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.Canada"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.France"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.Germany"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.Greece"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.Italy"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.Scandinavia"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.Scotland"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.Spain"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.EventMap"/>
-
-
-
-
-        <activity android:name="com.david.bgtfans.Shows"/>
-        <activity android:name=".fragments.Eateries"/>
-        <activity android:name="com.david.bgtfans.Coasters"/>
-        <activity android:name="com.david.bgtfans.MapScreen"
-                  android:uiOptions="splitActionBarWhenNarrow"/>
-        <activity android:name=".fragments.ParkMap"
-                  android:uiOptions="splitActionBarWhenNarrow"/>
-        <activity android:name="com.david.bgtfans.HOS_Houses"/>
-        <activity android:name="com.david.bgtfans.HOS_Deadline"/>
-        <activity android:name=".hos.HOS_Shows"/>
-        <activity android:name="com.david.bgtfans.HOS_Features"/>
-        <activity android:name="com.david.bgtfans.HOS_Map"
-                  android:uiOptions="splitActionBarWhenNarrow"/>
-        <activity android:name=".fragments.BGWFans">
-        </activity>
-        <activity android:name=".webviews.ChatRoom"/>
-        <activity android:name=".fragments.Forums"/>
-        <activity android:name=".webviews.Wiki"/>
         <activity android:name=".webviews.HiddenWiki"
                   android:uiOptions="splitActionBarWhenNarrow">
             <intent-filter>
@@ -254,13 +89,6 @@
                 <data android:scheme="http" android:host="www.parkfans.net"/>
             </intent-filter>
         </activity>
-        <activity android:name=".fragments.Settings"/>
-        <activity android:name=".fragments.About"/>
-        <activity android:name="com.david.bgtfans.Mistletoe"/>
-        <activity android:name="com.david.bgtfans.Polar"/>
-        <activity android:name="com.david.bgtfans.Palace"/>
-        <activity android:name=".xmas.cards.XmasInfo"/>
-        <activity android:name=".BaseActivity"/>
         <service android:name=".geofence.ReceiveTransitionsIntentService" android:exported="false"></service>
     </application>
 </manifest>

@@ -31,14 +31,14 @@ public class CoastersFragment extends SherlockFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         attractions = new ArrayList<Attractions>();
-        attractions.add(new Attractions("Cheetah Hunt", R.drawable.deadline));
-        attractions.add(new Attractions("SheiKra", R.drawable.demonstreet));
-        attractions.add(new Attractions("Air Grover", R.drawable.xmas_header));
-        attractions.add(new Attractions("SandSerpent", R.drawable.demonstreet));
-        attractions.add(new Attractions("Gwazi", R.drawable.demonstreet));
-        attractions.add(new Attractions("Kumba", R.drawable.demonstreet));
-        attractions.add(new Attractions("Montu", R.drawable.demonstreet));
-        attractions.add(new Attractions("Scorpion", R.drawable.demonstreet));
+        attractions.add(new Attractions("Cheetah Hunt", R.drawable.hostest));
+        attractions.add(new Attractions("SheiKra", R.drawable.hostest));
+        attractions.add(new Attractions("Air Grover", R.drawable.hostest));
+        attractions.add(new Attractions("SandSerpent", R.drawable.hostest));
+        attractions.add(new Attractions("Gwazi", R.drawable.hostest));
+        attractions.add(new Attractions("Kumba", R.drawable.hostest));
+        attractions.add(new Attractions("Montu", R.drawable.hostest));
+        attractions.add(new Attractions("Scorpion", R.drawable.hostest));
     }
 
     @Override

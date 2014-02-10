@@ -3,6 +3,7 @@ package com.david.bgtfans.bgt;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -27,13 +28,10 @@ import com.david.bgtfans.bgt.fragments.BGTFansRssFragment;
 import com.david.bgtfans.bgt.fragments.BGTOBlog;
 import com.david.bgtfans.bgt.fragments.BGTOSite;
 import com.david.bgtfans.bgt.fragments.EateriesFragment;
+import com.david.bgtfans.bgt.fragments.ForumFragment;
 import com.david.bgtfans.bgt.fragments.HomeScreen;
+import com.david.bgtfans.bgt.fragments.ParkMap;
 import com.david.bgtfans.bgt.fragments.ShowFragment;
-import com.david.bgtfans.fragments.About;
-import com.david.bgtfans.fragments.Forums;
-import com.david.bgtfans.fragments.ParkMap;
-import com.david.bgtfans.fragments.Settings;
-import com.david.bgtfans.fragments.UserNoLogin;
 import com.david.bgtfans.utils.FontTypefaceSpan;
 import com.david.bgtfans.utils.SystemBarTintManager;
 import com.david.bgtfans.viewcomponents.NavigationDrawerItem;
@@ -97,12 +95,13 @@ public class MainActivity extends RoboSherlockFragmentActivity {
     Context mContext;
     FragmentTransaction ft;
     ActionBar actionBar;
+    SystemBarTintManager systemBarTintManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         if(Build.VERSION.SDK_INT >= 19){
-            SystemBarTintManager systemBarTintManager = new SystemBarTintManager(MainActivity.this);
+            systemBarTintManager = new SystemBarTintManager(MainActivity.this);
             systemBarTintManager.setStatusBarTintEnabled(true);
             systemBarTintManager.setStatusBarTintColor(getResources().getColor(R.color.ab_color));
             SystemBarTintManager.SystemBarConfig config = systemBarTintManager.getConfig();
@@ -125,7 +124,7 @@ public class MainActivity extends RoboSherlockFragmentActivity {
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_root);
         if(savedInstanceState == null){
-            setContentFragment(NAV_ID_SHOWS);
+            setContentFragment(NAV_ID_INFO_SCREEN);
             FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Shows");
         }
 
@@ -136,18 +135,18 @@ public class MainActivity extends RoboSherlockFragmentActivity {
         initDrawerLayout();
     }
 
-    public void userProfileClick(){
-        RoboInjector injector = RoboGuice.getInjector(MainActivity.this);
-        Fragment fragment;
-        fragment = injector.getInstance(UserNoLogin.class);
-
-        ft = mfragmentManager.beginTransaction();
-        ft.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
-        ft.replace(R.id.fragment_container, fragment).addToBackStack("tag");
-        ft.addToBackStack(null);
-        ft.commit();
-        mDrawerLayout.closeDrawers();
-    }
+//    public void userProfileClick(){
+//        RoboInjector injector = RoboGuice.getInjector(MainActivity.this);
+//        Fragment fragment;
+////        fragment = injector.getInstance(UserNoLogin.class);
+//
+//        ft = mfragmentManager.beginTransaction();
+//        ft.setCustomAnimations(R.anim.fade_in, R.anim.fade_out);
+//        ft.replace(R.id.fragment_container, fragment).addToBackStack("tag");
+//        ft.addToBackStack(null);
+//        ft.commit();
+//        mDrawerLayout.closeDrawers();
+//    }
 
     @Override
     public void onSaveInstanceState(Bundle outState) {
@@ -180,22 +179,37 @@ public class MainActivity extends RoboSherlockFragmentActivity {
         switch (fragID){
             case NAV_ID_INFO_SCREEN:
                 fragment = injector.getInstance(HomeScreen.class);
+                actionBar.setSplitBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.black_overlay)));
+                systemBarTintManager.setNavigationBarTintEnabled(true);
+                systemBarTintManager.setNavigationBarTintColor(getResources().getColor(R.color.md__transparent));
                 FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Home");
                 break;
             case NAV_ID_ATTRACTIONS:
                 fragment = injector.getInstance(AttractionsFragment.class);
+                actionBar.setSplitBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.black_overlay)));
+                systemBarTintManager.setNavigationBarTintEnabled(true);
+                systemBarTintManager.setNavigationBarTintColor(getResources().getColor(R.color.md__transparent));
                 FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Attractions");
                 break;
             case NAV_ID_SHOWS:
                 fragment = injector.getInstance(ShowFragment.class);
+                actionBar.setSplitBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.black_overlay)));
+                systemBarTintManager.setNavigationBarTintEnabled(true);
+                systemBarTintManager.setNavigationBarTintColor(getResources().getColor(R.color.md__transparent));
                 FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Shows");
                 break;
             case NAV_ID_EATERIES:
                 fragment = injector.getInstance(EateriesFragment.class);
+                actionBar.setSplitBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.black_overlay)));
+                systemBarTintManager.setNavigationBarTintEnabled(true);
+                systemBarTintManager.setNavigationBarTintColor(getResources().getColor(R.color.md__transparent));
                 FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Eateries");
                 break;
             case NAV_ID_MAP:
                 fragment = injector.getInstance(com.david.bgtfans.bgt.fragments.ParkMap.class);
+                actionBar.setSplitBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.black_overlay)));
+                systemBarTintManager.setNavigationBarTintEnabled(true);
+                systemBarTintManager.setNavigationBarTintColor(getResources().getColor(R.color.black_overlay));
                 FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Park Map");
                 break;
             //used for special events as needed
@@ -222,11 +236,17 @@ public class MainActivity extends RoboSherlockFragmentActivity {
                 FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "BGTFans News");
                 break;
             case NAV_ID_FORUMS:
-                fragment = injector.getInstance(Forums.class);
+                fragment = injector.getInstance(ForumFragment.class);
+                actionBar.setSplitBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.black_overlay)));
+                systemBarTintManager.setNavigationBarTintEnabled(true);
+                systemBarTintManager.setNavigationBarTintColor(getResources().getColor(R.color.black_overlay));
                 FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Forums");
                 break;
             case NAV_ID_WIKI:
                 fragment = injector.getInstance(Wiki.class);
+                actionBar.setSplitBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.black_overlay)));
+                systemBarTintManager.setNavigationBarTintEnabled(true);
+                systemBarTintManager.setNavigationBarTintColor(getResources().getColor(R.color.black_overlay));
                 FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Wiki");
                 break;
             case NAV_ID_OBLOG:
@@ -235,17 +255,20 @@ public class MainActivity extends RoboSherlockFragmentActivity {
                 break;
             case NAV_ID_OSITE:
                 fragment = injector.getInstance(BGTOSite.class);
+                actionBar.setSplitBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.black_overlay)));
+                systemBarTintManager.setNavigationBarTintEnabled(true);
+                systemBarTintManager.setNavigationBarTintColor(getResources().getColor(R.color.black_overlay));
                 FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "BGT Site");
                 break;
-            case NAV_ID_SETTINGS:
-                fragment = injector.getInstance(Settings.class);
-                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Settings");
-                break;
-            case NAV_ID_ABOUT:
-                fragment = injector.getInstance(About.class);
-                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "About" +
-                        "");
-                break;
+            //TODO ADD THIS BACK
+//            case NAV_ID_SETTINGS:
+//                fragment = injector.getInstance(Settings.class);
+//                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "Settings");
+//                break;
+//            case NAV_ID_ABOUT:
+//                fragment = injector.getInstance(About.class);
+//                FontTypefaceSpan.setActionBarSubTitle(this, actionBar, "About");
+//                break;
             case NAV_ID_BGW:
                 startActivity(new Intent(mContext, BGT3DActivity.class));
                 fragment = injector.getInstance(ParkMap.class);

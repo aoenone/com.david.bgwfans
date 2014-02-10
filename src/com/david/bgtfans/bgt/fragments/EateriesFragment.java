@@ -31,12 +31,12 @@ public class EateriesFragment extends SherlockFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         attractions = new ArrayList<Attractions>();
-        attractions.add(new Attractions("Motor City Groove", R.drawable.deadline));
-        attractions.add(new Attractions("Soundsational", R.drawable.demonstreet));
-        attractions.add(new Attractions("Iceploration", R.drawable.xmas_header));
-        attractions.add(new Attractions("Madagascar Live!", R.drawable.demonstreet));
-        attractions.add(new Attractions("A is for Africa", R.drawable.demonstreet));
-        attractions.add(new Attractions("Critter Castaways", R.drawable.demonstreet));
+        attractions.add(new Attractions("Motor City Groove", R.drawable.hostest));
+        attractions.add(new Attractions("Soundsational", R.drawable.hostest));
+        attractions.add(new Attractions("Iceploration", R.drawable.hostest));
+        attractions.add(new Attractions("Madagascar Live!", R.drawable.hostest));
+        attractions.add(new Attractions("A is for Africa", R.drawable.hostest));
+        attractions.add(new Attractions("Critter Castaways", R.drawable.hostest));
     }
 
     @Override

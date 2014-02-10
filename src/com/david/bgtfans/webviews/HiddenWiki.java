@@ -21,7 +21,7 @@ public class HiddenWiki extends RoboSherlockFragmentActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.wiki);
+        setContentView(R.layout.forums);
 
 //        ActionBar actionbar = getActionBar();
         actionbar = getSupportActionBar();
@@ -31,7 +31,7 @@ public class HiddenWiki extends RoboSherlockFragmentActivity {
         Bundle extras = getIntent().getExtras();
         String value = extras.getString("wikiLink");
 
-        webview3 = (WebView) findViewById(R.id.webView3);
+        webview3 = (WebView) findViewById(R.id.webView2);
         webview3.getSettings().setJavaScriptEnabled(true);
         webview3.loadUrl(value);
         webview3.setWebViewClient(new WebViewClient());

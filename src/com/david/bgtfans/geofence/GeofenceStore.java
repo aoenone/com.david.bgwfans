@@ -3,7 +3,8 @@ package com.david.bgtfans.geofence;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import com.david.bgtfans.NewMainActivity;
+
+import com.david.bgtfans.bgt.MainActivity;
 import com.google.android.gms.location.Geofence;
 
 /**
@@ -18,7 +19,7 @@ public class GeofenceStore {
 
     // The name of the resulting SharedPreferences
     private static final String SHARED_PREFERENCE_NAME =
-            NewMainActivity.class.getSimpleName();
+            MainActivity.class.getSimpleName();
 
     // Create the SharedPreferences storage with private access only
     public GeofenceStore(Context context) {

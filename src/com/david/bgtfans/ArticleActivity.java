@@ -59,7 +59,15 @@ public class ArticleActivity extends SherlockFragmentActivity {
 
         articleTitleView.setText(articleTitle);
         articleDateView.setText(removeLastChar(articleDate));
-        articleContentView.setText(stripHtml(articleContent));
+        try{
+            articleContentView.setText(stripHtml(articleContent));
+        }catch (NullPointerException e){
+            e.printStackTrace();
+            Intent aboutIntent = new Intent(ArticleActivity.this, HiddenWiki.class);
+            aboutIntent.putExtra("wikiLink", articleLink);
+            startActivity(aboutIntent);
+            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        }
 
     }
 

@@ -31,14 +31,14 @@ public class Wiki extends RoboSherlockFragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        view = inflater.inflate(R.layout.wiki, container, false);
+        view = inflater.inflate(R.layout.forums, container, false);
 
         maInstance = GoogleAnalytics.getInstance(getSherlockActivity());
         mGaTracker = maInstance.getTracker("UA-39204043-1");
 
         //getWindow().setFeatureInt( Window.FEATURE_PROGRESS, Window.PROGRESS_VISIBILITY_ON);
 
-        webview3 = (WebView) view.findViewById(R.id.webView3);
+        webview3 = (WebView) view.findViewById(R.id.webView2);
         webview3.getSettings().setJavaScriptEnabled(true);
         webview3.loadUrl("http://wiki.parkfans.net/index.php/Busch_Gardens_Williamsburg");
         webview3.setWebViewClient(new WebViewClient());

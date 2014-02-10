@@ -32,17 +32,17 @@ public class FlatsFragment extends SherlockFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         attractions = new ArrayList<Attractions>();
-        attractions.add(new Attractions("Falcon Fury", R.drawable.deadline));
-        attractions.add(new Attractions("Big Bird's ", R.drawable.demonstreet));
-        attractions.add(new Attractions("Rosita's D'jemble Fly-away", R.drawable.xmas_header));
-        attractions.add(new Attractions("Elmo's Safari Go-Round", R.drawable.demonstreet));
-        attractions.add(new Attractions("Snuffy's Elephant Romp", R.drawable.demonstreet));
-        attractions.add(new Attractions("Desert Runners", R.drawable.demonstreet));
-        attractions.add(new Attractions("Busch Flyers", R.drawable.demonstreet));
-        attractions.add(new Attractions("Ubanga-Banga Bumper Cars", R.drawable.demonstreet));
-        attractions.add(new Attractions("Phoenix", R.drawable.demonstreet));
-        attractions.add(new Attractions("Gwazi Gliders", R.drawable.demonstreet));
-        attractions.add(new Attractions("The Wild Surge", R.drawable.demonstreet));
+        attractions.add(new Attractions("Falcon Fury", R.drawable.hostest));
+        attractions.add(new Attractions("Big Bird's ", R.drawable.hostest));
+        attractions.add(new Attractions("Rosita's D'jemble Fly-away", R.drawable.hostest));
+        attractions.add(new Attractions("Elmo's Safari Go-Round", R.drawable.hostest));
+        attractions.add(new Attractions("Snuffy's Elephant Romp", R.drawable.hostest));
+        attractions.add(new Attractions("Desert Runners", R.drawable.hostest));
+        attractions.add(new Attractions("Busch Flyers", R.drawable.hostest));
+        attractions.add(new Attractions("Ubanga-Banga Bumper Cars", R.drawable.hostest));
+        attractions.add(new Attractions("Phoenix", R.drawable.hostest));
+        attractions.add(new Attractions("Gwazi Gliders", R.drawable.hostest));
+        attractions.add(new Attractions("The Wild Surge", R.drawable.hostest));
 
     }
 

@@ -1,27 +1,22 @@
 package com.david.bgtfans.geofence;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-
-import com.david.bgtfans.NewMainActivity;
-import com.david.bgtfans.hos.hosDemon;
-import com.david.bgtfans.hos.hosPorts;
-import com.david.bgtfans.hos.hosRipper;
-import com.david.bgtfans.hos.hosVampire;
-import com.google.android.gms.location.Geofence;
-import com.google.android.gms.location.LocationClient;
-
 import android.app.IntentService;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
 import android.support.v4.content.LocalBroadcastManager;
 import android.text.TextUtils;
 import android.util.Log;
+
 import com.david.bgtfans.R;
+import com.david.bgtfans.bgt.MainActivity;
+import com.google.android.gms.location.Geofence;
+import com.google.android.gms.location.LocationClient;
 
 import java.util.List;
 
@@ -125,10 +120,10 @@ public class ReceiveTransitionsIntentService extends IntentService {
     private void sendNotification(String transitionType, String ids) {
 
         //Demon Street stuff
-        Intent demonIntent = new Intent(getBaseContext(), hosDemon.class);
+        Intent demonIntent = new Intent(getBaseContext(), MainActivity.class);
         PendingIntent pendingDemonIntent =
                 PendingIntent.getActivity(this, 0, demonIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        Bitmap demonPic = BitmapFactory.decodeResource(getResources(), R.drawable.demonstreet);
+        Bitmap demonPic = BitmapFactory.decodeResource(getResources(), R.drawable.hostest);
         Intent sendDemonIntent = new Intent();
         sendDemonIntent.setAction(Intent.ACTION_SEND);
         sendDemonIntent.putExtra(Intent.EXTRA_TEXT, "I'm at Demon Street, via the BGWFans for Android app! " + "https://play.google.com/store/apps/details?id=com.david.bgwfans");
@@ -138,10 +133,10 @@ public class ReceiveTransitionsIntentService extends IntentService {
 
 
         //Ripper Row stuff
-        Intent ripperIntent = new Intent(getBaseContext(), hosRipper.class);
+        Intent ripperIntent = new Intent(getBaseContext(), MainActivity.class);
         PendingIntent pendingRipperIntent =
                 PendingIntent.getActivity(this, 0, ripperIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        Bitmap ripperPic = BitmapFactory.decodeResource(getResources(), R.drawable.ripper);
+        Bitmap ripperPic = BitmapFactory.decodeResource(getResources(), R.drawable.hostest);
         Intent sendRipperIntent = new Intent();
         sendRipperIntent.setAction(Intent.ACTION_SEND);
         sendRipperIntent.putExtra(Intent.EXTRA_TEXT, "I'm at Ripper Row, via the BGWFans for Android app! " + "https://play.google.com/store/apps/details?id=com.david.bgwfans");
@@ -151,10 +146,10 @@ public class ReceiveTransitionsIntentService extends IntentService {
 
 
         //Vampire Point stuff
-        Intent vampireIntent = new Intent(getBaseContext(), hosVampire.class);
+        Intent vampireIntent = new Intent(getBaseContext(), MainActivity.class);
         PendingIntent pendingVampireIntent =
                 PendingIntent.getActivity(this, 0, vampireIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        Bitmap vampirePic = BitmapFactory.decodeResource(getResources(), R.drawable.vampirepoint);
+        Bitmap vampirePic = BitmapFactory.decodeResource(getResources(), R.drawable.hostest);
         Intent sendVampireIntent = new Intent();
         sendVampireIntent.setAction(Intent.ACTION_SEND);
         sendVampireIntent.putExtra(Intent.EXTRA_TEXT, "I'm at Demon Street, via the BGWFans for Android app! " + "https://play.google.com/store/apps/details?id=com.david.bgwfans");
@@ -164,10 +159,10 @@ public class ReceiveTransitionsIntentService extends IntentService {
 
 
         //Ports of Skull stuff
-        Intent portsIntent = new Intent(getBaseContext(), hosPorts.class);
+        Intent portsIntent = new Intent(getBaseContext(), MainActivity.class);
         PendingIntent pendingPortsIntent =
                 PendingIntent.getActivity(this, 0, portsIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        Bitmap portsPic = BitmapFactory.decodeResource(getResources(), R.drawable.cove);
+        Bitmap portsPic = BitmapFactory.decodeResource(getResources(), R.drawable.hostest);
         Intent sendPortIntent = new Intent();
         sendPortIntent.setAction(Intent.ACTION_SEND);
         sendPortIntent.putExtra(Intent.EXTRA_TEXT, "I'm at Demon Street, via the BGWFans for Android app! " + "https://play.google.com/store/apps/details?id=com.david.bgwfans");
@@ -177,17 +172,17 @@ public class ReceiveTransitionsIntentService extends IntentService {
 
 
         // Create an explicit content Intent that starts the main Activity
-        Intent notificationIntent =
-                new Intent(getApplicationContext(),NewMainActivity.class);
+//        Intent notificationIntent =
+//                new Intent(getApplicationContext(),NewMainActivity.class);
 
         // Construct a task stack
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
 
         // Adds the main Activity to the task stack as the parent
-        stackBuilder.addParentStack(NewMainActivity.class);
+//        stackBuilder.addParentStack(NewMainActivity.class);
 
         // Push the content Intent onto the stack
-        stackBuilder.addNextIntent(notificationIntent);
+//        stackBuilder.addNextIntent(notificationIntent);
 
         // Get a PendingIntent containing the entire back stack
         PendingIntent notificationPendingIntent =
