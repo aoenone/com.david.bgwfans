@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:oak="http://oak/oak/schema"
-        android:background="@drawable/selectable_background_bgwfans2"
-        android:duplicateParentState="true"
-        android:layout_width="fill_parent"
-        android:layout_height="100dp" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oak="http://oak/oak/schema"
+    android:background="@drawable/selectable_background_bgwfans2"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp">
 
- <RelativeLayout
+    <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="98dp"
-     android:layout_marginLeft="5dp"
-     android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"  >
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp">
 
-    <ImageView
+        <ImageView
             android:id="@+id/attraction_image"
             android:src="@drawable/parkfans"
             android:scaleType="centerCrop"
@@ -22,13 +20,13 @@
             android:adjustViewBounds="true"
             android:layout_height="95dp" />
 
-     <View
-         android:background="@drawable/attraction_shape"
-         android:layout_alignParentBottom="true"
-         android:layout_width="match_parent"
-         android:layout_height="60dp" />
+        <View
+            android:background="@drawable/attraction_shape"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
 
-    <oak.widget.TextViewWithFont
+        <oak.widget.TextViewWithFont
             android:id="@+id/attraction_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,6 +38,6 @@
             android:paddingBottom="3dp"
             android:textSize="22sp"
             android:text="Place holder"
-            oak:font="Roboto-Thin.ttf"/>
- </RelativeLayout>
+            oak:font="Roboto-Thin.ttf" />
+    </RelativeLayout>
 </LinearLayout>

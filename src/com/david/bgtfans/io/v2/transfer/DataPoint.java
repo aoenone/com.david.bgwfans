@@ -49,6 +49,8 @@ public class DataPoint implements Parcelable {
 
 	private double mPressureError;
 
+    private String mDescription;
+
 	public DataPoint(Builder builder) {
 		super();
 

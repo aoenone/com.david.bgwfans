@@ -1,6 +1,7 @@
 package com.david.bgtfans.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.david.bgtfans.R;
+import com.david.bgtfans.bgt.AttractionActivity;
 import com.david.bgtfans.models.Attractions;
 import com.squareup.picasso.Picasso;
 
@@ -69,11 +71,17 @@ public class AttractionAdapter extends BaseAdapter {
 
         final Attractions mItem = rssItems.get(position);
         holder.mTitle.setText(mItem.getName());
-//        holder.attractionImage.setImageResource(mItem.getImage());
 
         Picasso.with(context)
                 .load(mItem.getImage())
                 .into(holder.attractionImage);
+
+        holder.attractionImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(context, AttractionActivity.class));
+            }
+        });
 
         return view;
     }

@@ -1,4 +1,4 @@
-package com.david.bgtfans.bgt.cards;
+package com.david.bgtfans.bgt.cards.attraction;
 
 import android.content.Context;
 import android.view.View;
@@ -6,34 +6,30 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.david.bgtfans.R;
-import com.david.bgtfans.io.v2.network.services.ForecastService;
 
 import it.gmariotti.cardslib.library.internal.Card;
 
 /**
- * Created by david.hodge on 2/9/14.
+ * Created by david.hodge on 2/10/14.
  */
-public class TomorrowWeatherCard extends Card {
+public class AttractionForumCard extends Card {
 
-    TextView currentTemp;
-    TextView currentConditions;
-    ForecastService.Response response;
+    TextView hours;
 
     /**
      * Constructor with a custom inner layout
      *
      * @param context
      */
-    public TomorrowWeatherCard(Context context, ForecastService.Response response) {
-        this(context, R.layout.tomorrow_weather_card);
-        this.response = response;
+    public AttractionForumCard(Context context) {
+        this(context, R.layout.today_hours_card);
     }
 
     /**
      * @param context
      * @param innerLayout
      */
-    public TomorrowWeatherCard(Context context, int innerLayout) {
+    public AttractionForumCard(Context context, int innerLayout) {
         super(context, innerLayout);
         init();
     }
@@ -59,8 +55,8 @@ public class TomorrowWeatherCard extends Card {
     public void setupInnerViewElements(ViewGroup parent, View view) {
 
         //Retrieve elements
-        currentConditions = (TextView) parent.findViewById(R.id.weather);
-        currentConditions.setText(response.getForecast().getDaily().getSummary());
+        hours = (TextView) parent.findViewById(R.id.hours);
+        hours.setText("10am - 9pm");
 
     }
 }

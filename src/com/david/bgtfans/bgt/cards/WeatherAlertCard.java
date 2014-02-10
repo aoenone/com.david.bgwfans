@@ -6,34 +6,32 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.david.bgtfans.R;
-import com.david.bgtfans.io.v2.network.services.ForecastService;
 
 import it.gmariotti.cardslib.library.internal.Card;
 
 /**
  * Created by david.hodge on 2/9/14.
  */
-public class TomorrowWeatherCard extends Card {
+public class WeatherAlertCard extends Card {
 
-    TextView currentTemp;
-    TextView currentConditions;
-    ForecastService.Response response;
+    TextView hours;
+    String alert;
 
     /**
      * Constructor with a custom inner layout
      *
      * @param context
      */
-    public TomorrowWeatherCard(Context context, ForecastService.Response response) {
-        this(context, R.layout.tomorrow_weather_card);
-        this.response = response;
+    public WeatherAlertCard(Context context, String alertText) {
+        this(context, R.layout.weather_alert_card);
+        this.alert = alertText;
     }
 
     /**
      * @param context
      * @param innerLayout
      */
-    public TomorrowWeatherCard(Context context, int innerLayout) {
+    public WeatherAlertCard(Context context, int innerLayout) {
         super(context, innerLayout);
         init();
     }
@@ -59,8 +57,8 @@ public class TomorrowWeatherCard extends Card {
     public void setupInnerViewElements(ViewGroup parent, View view) {
 
         //Retrieve elements
-        currentConditions = (TextView) parent.findViewById(R.id.weather);
-        currentConditions.setText(response.getForecast().getDaily().getSummary());
+        hours = (TextView) parent.findViewById(R.id.alert);
+        hours.setText(alert);
 
     }
 }

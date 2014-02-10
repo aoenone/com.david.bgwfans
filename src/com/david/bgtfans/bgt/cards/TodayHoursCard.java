@@ -15,7 +15,6 @@ import it.gmariotti.cardslib.library.internal.Card;
 public class TodayHoursCard extends Card {
 
     TextView hours;
-    String city = "Williamsburg,VA&units=imperial";
 
     /**
      * Constructor with a custom inner layout

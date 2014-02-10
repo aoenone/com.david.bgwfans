@@ -3,7 +3,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    android:layout_marginTop="76dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -18,7 +18,7 @@
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:gravity="center"
-        android:id="@+id/card_grid_base"/>
+        android:id="@+id/card_list_base"/>
 
     <com.david.bgtfans.utils.SmoothProgressBar.SmoothProgressBar
         android:id="@+id/empty_loader"
@@ -35,7 +35,6 @@
         app:spb_stroke_separator_length="4dp"
         app:spb_reversed="true"
         app:spb_mirror_mode="true"
-        android:visibility="gone"
-        />
+        android:visibility="gone" />
 
 </RelativeLayout>

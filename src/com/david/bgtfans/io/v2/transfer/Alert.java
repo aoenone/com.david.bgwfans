@@ -5,25 +5,65 @@ import android.os.Parcelable;
 
 public class Alert implements Parcelable {
 
-	public Alert() {
-		// TODO Auto-generated constructor stub
+    String mTitle;
+    Long time;
+    Long expires;
+    String description;
+
+	public Alert(Builder builder) {
+        super();
+        mTitle = builder.title;
+        time = builder.time;
+        expires = builder.expires;
+        description = builder.description;
 	}
 
 	public Alert(Parcel in) {
-		// TODO Auto-generated constructor stub
+        super();
+       mTitle = in.readString();
+        time = in.readLong();
+        expires = in.readLong();
+        description = in.readString();
+
 	}
 
 	@Override
 	public int describeContents() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 
 	@Override
 	public void writeToParcel(Parcel dest, int flags) {
-		// TODO Auto-generated method stub
-
+        dest.writeString(mTitle);
+        dest.writeLong(time);
+        dest.writeLong(expires);
+        dest.writeString(description);
 	}
+
+    public String getTitle(){
+        return mTitle;
+    }
+
+    public Long getTime(){
+        return time;
+    }
+
+    public Long getExpires(){
+        return expires;
+    }
+
+    public String getDescription(){
+        return description;
+    }
+
+    public static final class Builder {
+        private String title;
+        private Long time;
+        private Long expires;
+        private String description;
+
+    }
+
 
 	public static final Creator<Alert> CREATOR = new Creator<Alert>() {
 

@@ -76,6 +76,7 @@
 
         <activity android:name=".Bgw3dActivity" />
         <activity android:name=".ArticleActivity" />
+        <activity android:name=".bgt.AttractionActivity" />
 
         <activity android:name=".webviews.HiddenWiki"
                   android:uiOptions="splitActionBarWhenNarrow">
