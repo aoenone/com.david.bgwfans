@@ -32,17 +32,17 @@ public class FlatsFragment extends SherlockFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         attractions = new ArrayList<Attractions>();
-        attractions.add(new Attractions("Falcon Fury", R.drawable.hostest));
-        attractions.add(new Attractions("Big Bird's ", R.drawable.hostest));
-        attractions.add(new Attractions("Rosita's D'jemble Fly-away", R.drawable.hostest));
-        attractions.add(new Attractions("Elmo's Safari Go-Round", R.drawable.hostest));
-        attractions.add(new Attractions("Snuffy's Elephant Romp", R.drawable.hostest));
-        attractions.add(new Attractions("Desert Runners", R.drawable.hostest));
-        attractions.add(new Attractions("Busch Flyers", R.drawable.hostest));
-        attractions.add(new Attractions("Ubanga-Banga Bumper Cars", R.drawable.hostest));
-        attractions.add(new Attractions("Phoenix", R.drawable.hostest));
-        attractions.add(new Attractions("Gwazi Gliders", R.drawable.hostest));
-        attractions.add(new Attractions("The Wild Surge", R.drawable.hostest));
+        attractions.add(new Attractions("Falcon Fury", R.drawable.bgt_test));
+        attractions.add(new Attractions("Big Bird's ", R.drawable.bgt_test));
+        attractions.add(new Attractions("Rosita's D'jemble Fly-away", R.drawable.bgt_test));
+        attractions.add(new Attractions("Elmo's Safari Go-Round", R.drawable.bgt_test));
+        attractions.add(new Attractions("Snuffy's Elephant Romp", R.drawable.bgt_test));
+        attractions.add(new Attractions("Desert Runners", R.drawable.bgt_test));
+        attractions.add(new Attractions("Busch Flyers", R.drawable.bgt_test));
+        attractions.add(new Attractions("Ubanga-Banga Bumper Cars", R.drawable.bgt_test));
+        attractions.add(new Attractions("Phoenix", R.drawable.bgt_test));
+        attractions.add(new Attractions("Gwazi Gliders", R.drawable.bgt_test));
+        attractions.add(new Attractions("The Wild Surge", R.drawable.bgt_test));
 
     }
 

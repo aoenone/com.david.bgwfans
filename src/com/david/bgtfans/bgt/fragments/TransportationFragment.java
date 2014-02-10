@@ -31,8 +31,8 @@ public class TransportationFragment extends SherlockFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         attractions = new ArrayList<Attractions>();
-        attractions.add(new Attractions("Serengeti Railway", R.drawable.hostest));
-        attractions.add(new Attractions("Skyride", R.drawable.hostest));
+        attractions.add(new Attractions("Serengeti Railway", R.drawable.bgt_test));
+        attractions.add(new Attractions("Skyride", R.drawable.bgt_test));
     }
 
     @Override

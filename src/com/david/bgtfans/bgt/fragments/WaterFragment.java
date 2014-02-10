@@ -31,9 +31,9 @@ public class WaterFragment extends SherlockFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         attractions = new ArrayList<Attractions>();
-        attractions.add(new Attractions("Stanley Falls", R.drawable.hostest));
-        attractions.add(new Attractions("Tanganyaika Tidal Wave", R.drawable.hostest));
-        attractions.add(new Attractions("Congo River Rapids", R.drawable.hostest));
+        attractions.add(new Attractions("Stanley Falls", R.drawable.bgt_test));
+        attractions.add(new Attractions("Tanganyaika Tidal Wave", R.drawable.bgt_test));
+        attractions.add(new Attractions("Congo River Rapids", R.drawable.bgt_test));
     }
 
     @Override

@@ -31,14 +31,14 @@ public class KidsidFragment extends SherlockFragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         attractions = new ArrayList<Attractions>();
-        attractions.add(new Attractions("Cheetah Hunt", R.drawable.hostest));
-        attractions.add(new Attractions("SheiKra", R.drawable.hostest));
-        attractions.add(new Attractions("Air Grover", R.drawable.hostest));
-        attractions.add(new Attractions("MSandSerpent", R.drawable.hostest));
-        attractions.add(new Attractions("Gwazi", R.drawable.hostest));
-        attractions.add(new Attractions("Kumba", R.drawable.hostest));
-        attractions.add(new Attractions("Montu", R.drawable.hostest));
-        attractions.add(new Attractions("Scorpion", R.drawable.hostest));
+        attractions.add(new Attractions("Cheetah Hunt", R.drawable.bgt_test));
+        attractions.add(new Attractions("SheiKra", R.drawable.bgt_test));
+        attractions.add(new Attractions("Air Grover", R.drawable.bgt_test));
+        attractions.add(new Attractions("MSandSerpent", R.drawable.bgt_test));
+        attractions.add(new Attractions("Gwazi", R.drawable.bgt_test));
+        attractions.add(new Attractions("Kumba", R.drawable.bgt_test));
+        attractions.add(new Attractions("Montu", R.drawable.bgt_test));
+        attractions.add(new Attractions("Scorpion", R.drawable.bgt_test));
     }
 
     @Override

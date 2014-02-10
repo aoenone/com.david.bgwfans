@@ -123,7 +123,7 @@ public class ReceiveTransitionsIntentService extends IntentService {
         Intent demonIntent = new Intent(getBaseContext(), MainActivity.class);
         PendingIntent pendingDemonIntent =
                 PendingIntent.getActivity(this, 0, demonIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        Bitmap demonPic = BitmapFactory.decodeResource(getResources(), R.drawable.hostest);
+        Bitmap demonPic = BitmapFactory.decodeResource(getResources(), R.drawable.bgt_test);
         Intent sendDemonIntent = new Intent();
         sendDemonIntent.setAction(Intent.ACTION_SEND);
         sendDemonIntent.putExtra(Intent.EXTRA_TEXT, "I'm at Demon Street, via the BGWFans for Android app! " + "https://play.google.com/store/apps/details?id=com.david.bgwfans");
@@ -136,7 +136,7 @@ public class ReceiveTransitionsIntentService extends IntentService {
         Intent ripperIntent = new Intent(getBaseContext(), MainActivity.class);
         PendingIntent pendingRipperIntent =
                 PendingIntent.getActivity(this, 0, ripperIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        Bitmap ripperPic = BitmapFactory.decodeResource(getResources(), R.drawable.hostest);
+        Bitmap ripperPic = BitmapFactory.decodeResource(getResources(), R.drawable.bgt_test);
         Intent sendRipperIntent = new Intent();
         sendRipperIntent.setAction(Intent.ACTION_SEND);
         sendRipperIntent.putExtra(Intent.EXTRA_TEXT, "I'm at Ripper Row, via the BGWFans for Android app! " + "https://play.google.com/store/apps/details?id=com.david.bgwfans");
@@ -149,7 +149,7 @@ public class ReceiveTransitionsIntentService extends IntentService {
         Intent vampireIntent = new Intent(getBaseContext(), MainActivity.class);
         PendingIntent pendingVampireIntent =
                 PendingIntent.getActivity(this, 0, vampireIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        Bitmap vampirePic = BitmapFactory.decodeResource(getResources(), R.drawable.hostest);
+        Bitmap vampirePic = BitmapFactory.decodeResource(getResources(), R.drawable.bgt_test);
         Intent sendVampireIntent = new Intent();
         sendVampireIntent.setAction(Intent.ACTION_SEND);
         sendVampireIntent.putExtra(Intent.EXTRA_TEXT, "I'm at Demon Street, via the BGWFans for Android app! " + "https://play.google.com/store/apps/details?id=com.david.bgwfans");
@@ -162,7 +162,7 @@ public class ReceiveTransitionsIntentService extends IntentService {
         Intent portsIntent = new Intent(getBaseContext(), MainActivity.class);
         PendingIntent pendingPortsIntent =
                 PendingIntent.getActivity(this, 0, portsIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        Bitmap portsPic = BitmapFactory.decodeResource(getResources(), R.drawable.hostest);
+        Bitmap portsPic = BitmapFactory.decodeResource(getResources(), R.drawable.bgt_test);
         Intent sendPortIntent = new Intent();
         sendPortIntent.setAction(Intent.ACTION_SEND);
         sendPortIntent.putExtra(Intent.EXTRA_TEXT, "I'm at Demon Street, via the BGWFans for Android app! " + "https://play.google.com/store/apps/details?id=com.david.bgwfans");

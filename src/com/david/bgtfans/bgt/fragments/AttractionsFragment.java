@@ -63,6 +63,7 @@ public class AttractionsFragment extends SherlockFragment {
         attractionsAdapter = new AttractionsAdapter(getActivity(), mtitles, mFragments);
 
         attractionsPager.setAdapter(attractionsAdapter);
+        attractionsPager.setOffscreenPageLimit(4);
 //        attractionsPager.setPageTransformer(true, new ZoomOutPageTransformer());
         attractionsTPI.setViewPager(attractionsPager);
         attractionsTPI.setOnPageChangeListener(attractionsOPCL);
