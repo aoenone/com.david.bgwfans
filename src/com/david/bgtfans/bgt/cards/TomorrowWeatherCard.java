@@ -61,6 +61,5 @@ public class TomorrowWeatherCard extends Card {
         //Retrieve elements
         currentConditions = (TextView) parent.findViewById(R.id.weather);
         currentConditions.setText(response.getForecast().getDaily().getSummary());
-
     }
 }
