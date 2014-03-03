@@ -14,16 +14,16 @@ import it.gmariotti.cardslib.library.internal.Card;
  */
 public class AttractionInfoCard extends Card {
 
-
-    TextView hours;
-
+    String info;
+    TextView infoText;
     /**
      * Constructor with a custom inner layout
      *
      * @param context
      */
-    public AttractionInfoCard(Context context) {
-        this(context, R.layout.today_hours_card);
+    public AttractionInfoCard(Context context, String info) {
+        this(context, R.layout.attraction_info_card);
+        this.info = info;
     }
 
     /**
@@ -54,10 +54,8 @@ public class AttractionInfoCard extends Card {
 
     @Override
     public void setupInnerViewElements(ViewGroup parent, View view) {
-
-        //Retrieve elements
-        hours = (TextView) parent.findViewById(R.id.hours);
-        hours.setText("10am - 9pm");
+        infoText = (TextView) parent.findViewById(R.id.info_text);
+        infoText.setText(info);
 
     }
 }

@@ -74,7 +74,7 @@
 
         </activity>
 
-        <activity android:name=".Bgw3dActivity" />
+        <activity android:name=".bgt.BGT3DActivity" />
         <activity android:name=".ArticleActivity" />
         <activity android:name=".bgt.AttractionActivity" />
 

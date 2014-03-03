@@ -2,6 +2,7 @@ package com.david.bgtfans.adapters;
 
 import android.content.Context;
 import android.content.Intent;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,7 +25,7 @@ public class AttractionAdapter extends BaseAdapter {
     private ArrayList<Attractions> rssItems;
     private ViewHolder holder;
     private LayoutInflater mInflater;
-    private Context context;
+    Context context;
 
     public AttractionAdapter(Context c, ArrayList<Attractions> attractions) {
         context = c;
@@ -79,7 +80,30 @@ public class AttractionAdapter extends BaseAdapter {
         holder.attractionImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                context.startActivity(new Intent(context, AttractionActivity.class));
+                String attraction = mItem.getName();
+                if (TextUtils.equals(attraction, "A is for Africa")) {
+                    Intent intent = new Intent(context, AttractionActivity.class);
+                    intent.putExtra("name", attraction);
+                    intent.putExtra("image", R.drawable.bgt_test);
+                    intent.putExtra("info", context.getString(R.string.testing_info));
+                    intent.putExtra("lat", "37.231774");
+                    intent.putExtra("lon", "-76.646398");
+                    intent.putExtra("forum", "http://www.bgtfans.com");
+                    context.startActivity(intent);
+                }else if (TextUtils.equals(attraction, "Iceploration")) {
+                    Intent intent = new Intent(context, AttractionActivity.class);
+                    intent.putExtra("name", attraction);
+                    intent.putExtra("image", R.drawable.bgt_test);
+                    intent.putExtra("info", context.getString(R.string.testing_info));
+                    intent.putExtra("lat", "37.231774");
+                    intent.putExtra("lon", "-76.646398");
+                    intent.putExtra("forum", "http://www.bgtfans.com");
+                    context.startActivity(intent);
+                }
+
+                else {
+
+                }
             }
         });
 
@@ -87,6 +111,6 @@ public class AttractionAdapter extends BaseAdapter {
     }
 
     private static String removeLastChar(String str) {
-        return str.substring(0,str.length()-15);
+        return str.substring(0, str.length() - 15);
     }
 }

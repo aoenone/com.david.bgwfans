@@ -2,12 +2,15 @@
 
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:oak="http://oak/oak/schema"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="150dp">
 
     <ImageView
         android:id="@+id/attraction_header_image"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
         android:layout_width="match_parent"
         android:layout_height="150dp" />
 
@@ -18,10 +21,13 @@
         android:layout_height="70dp" />
 
     <oak.widget.TextViewWithFont
+        oak:font="Roboto-Thin.ttf"
         android:id="@+id/attraction_header_text"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="8dp"
+        android:maxLines="1"
+        android:ellipsize="end"
         android:textColor="@color/text_color"
         android:text="TESTING"
         android:textSize="50sp"

@@ -134,4 +134,6 @@
         <item quantity="other">%d items selected</item>
     </plurals>
 
+    <string name="testing_info">Test test test blah blah blah blah \n height restriction: 54in</string>
+
 </resources>

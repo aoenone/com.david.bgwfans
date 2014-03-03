@@ -1,8 +1,10 @@
 package com.david.bgtfans.bgt;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -44,6 +46,13 @@ public class AttractionActivity extends SherlockActivity {
     ImageView headerImage;
     TextView headerText;
 
+    String name;
+    String forum;
+    String info;
+    int image;
+    String lat;
+    String lon;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +65,17 @@ public class AttractionActivity extends SherlockActivity {
         setContentView(R.layout.attraction_activity);
         mContext = this;
 
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        if(bundle != null){
+            name = bundle.getString("name");
+            forum = bundle.getString("forum");
+            image = bundle.getInt("image");
+            info = bundle.getString("info");
+            lat = bundle.getString("lat");
+            lon = bundle.getString("lon");
+        }
+
         cardListView = (CardListView) findViewById(R.id.card_list_base);
         empty = (SmoothProgressBar) findViewById(R.id.empty_loader);
         footer = (View) getLayoutInflater().inflate(R.layout.listview_footer, null);
@@ -64,15 +84,22 @@ public class AttractionActivity extends SherlockActivity {
         headerImage = (ImageView) header.findViewById(R.id.attraction_header_image);
         headerText = (TextView) header.findViewById(R.id.attraction_header_text);
 
-        headerText.setText("New Test");
-        headerImage.setBackground(getResources().getDrawable(R.drawable.hos_test));
+        headerText.setText(name);
+        headerImage.setBackground(getResources().getDrawable(image));
         cardListView.setEmptyView(empty);
         cardListView.addFooterView(footer);
         cardListView.addHeaderView(header);
 
-        attractionInfoCard = new AttractionInfoCard(this);
-        attractionMapCard = new AttractionMapCard(this);
-        attractionForumCard = new AttractionForumCard(this);
+        Log.d("map", "lat lon" + lat + "  " + lon);
+        attractionInfoCard = new AttractionInfoCard(this, info);
+        attractionMapCard = new AttractionMapCard(this, lat, lon);
+        attractionForumCard = new AttractionForumCard(this, forum);
+        attractionForumCard.setOnClickListener(new Card.OnCardClickListener() {
+            @Override
+            public void onClick(Card card, View view) {
+
+            }
+        });
 
         cards = new ArrayList<Card>();
         cards.add(attractionInfoCard);

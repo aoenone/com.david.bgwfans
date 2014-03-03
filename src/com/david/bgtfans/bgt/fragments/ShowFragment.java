@@ -59,5 +59,6 @@ public class ShowFragment extends SherlockFragment {
         listView.setAdapter(swingBottomInAnimationAdapter);
         attractionAdapter.setData(attractions);
         attractionAdapter.notifyDataSetChanged();
+
     }
 }

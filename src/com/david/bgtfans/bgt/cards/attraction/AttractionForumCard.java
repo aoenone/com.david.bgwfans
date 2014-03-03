@@ -3,7 +3,6 @@ package com.david.bgtfans.bgt.cards.attraction;
 import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.david.bgtfans.R;
 
@@ -14,15 +13,16 @@ import it.gmariotti.cardslib.library.internal.Card;
  */
 public class AttractionForumCard extends Card {
 
-    TextView hours;
+    String forumLink;
 
     /**
      * Constructor with a custom inner layout
      *
      * @param context
      */
-    public AttractionForumCard(Context context) {
-        this(context, R.layout.today_hours_card);
+    public AttractionForumCard(Context context, String forumLink) {
+        this(context, R.layout.attraction_forum_card);
+        this.forumLink = forumLink;
     }
 
     /**
@@ -31,32 +31,12 @@ public class AttractionForumCard extends Card {
      */
     public AttractionForumCard(Context context, int innerLayout) {
         super(context, innerLayout);
-        init();
     }
 
-    /**
-     * Init
-     */
-    private void init() {
-
-        //No Header
-
-        /*
-        //Set a OnClickListener listener
-        setOnClickListener(new OnCardClickListener() {
-            @Override
-            public void onClick(Card card, View view) {
-                Toast.makeText(getContext(), "Click Listener card=", Toast.LENGTH_LONG).show();
-            }
-        });*/
-    }
 
     @Override
     public void setupInnerViewElements(ViewGroup parent, View view) {
 
-        //Retrieve elements
-        hours = (TextView) parent.findViewById(R.id.hours);
-        hours.setText("10am - 9pm");
 
     }
 }
