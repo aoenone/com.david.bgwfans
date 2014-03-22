@@ -1,6 +1,7 @@
 package com.david.bgwfans;
 
 import android.content.Context;
+import android.content.Intent;
 import android.location.Criteria;
 import android.location.LocationManager;
 import android.os.Bundle;
@@ -13,6 +14,12 @@ import com.beyondar.android.view.OnClickBeyondarObjectListener;
 import com.beyondar.android.world.BeyondarObject;
 import com.beyondar.android.world.GeoObject;
 import com.beyondar.android.world.World;
+import com.david.bgwfans.attractions.coasters.Alpen;
+import com.david.bgwfans.attractions.coasters.Apollo;
+import com.david.bgwfans.attractions.coasters.Griffon;
+import com.david.bgwfans.attractions.coasters.Grover;
+import com.david.bgwfans.attractions.coasters.LochNess;
+import com.david.bgwfans.attractions.coasters.Verbolten;
 import com.google.analytics.tracking.android.EasyTracker;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesClient;
@@ -101,40 +108,40 @@ public class Bgw3dActivity extends SherlockFragmentActivity {
     private void setUpView(android.location.Location location) {
         Toast.makeText(Bgw3dActivity.this, Double.toString(location.getLatitude()) + " , " + Double.toString(location.getLongitude()), Toast.LENGTH_LONG).show();
         world = new World(mContext);
-        world.setDefaultBitmap(R.drawable.iconv2);
-        world.setGeoPosition(38.2127, -78.26768);
+//        world.setDefaultBitmap(R.drawable.iconv2);
+        world.setGeoPosition(location.getLatitude(), location.getLongitude());
 //        world.setLocation(location);
-        world.setArViewDistance(50000000);
+//        world.setArViewDistance(50000000);
 
         //TODO add coasters and shit
         GeoObject go1 = new GeoObject(1l);
-        go1.setGeoPosition(38.2125, -78.26753);
-        go1.setImageResource(R.drawable.iconv2);
+        go1.setGeoPosition(37.232449, -76.645534);
+        go1.setImageResource(R.drawable.map_pin_holed_blue_normal);
         go1.setName("Verbolten");
 
         GeoObject go2 = new GeoObject(2l);
-        go2.setGeoPosition(38.2117, -78.26789);
-        go2.setImageResource(R.drawable.iconv2);
+        go2.setGeoPosition(37.232821, -76.647430);
+        go2.setImageResource(R.drawable.map_pin_holed_blue_normal);
         go2.setName("Alpengeist");
 
         GeoObject go3 = new GeoObject(3l);
-        go3.setGeoPosition(38.2117, -78.26789);
-        go3.setImageResource(R.drawable.iconv2);
+        go3.setGeoPosition(37.234992, -76.642588);
+        go3.setImageResource(R.drawable.map_pin_holed_blue_normal);
         go3.setName("Apollo's Chariot");
 
         GeoObject go4 = new GeoObject(4l);
         go4.setGeoPosition(37.234728, -76.646113);
-        go4.setImageResource(R.drawable.iconv2);
+        go4.setImageResource(R.drawable.map_pin_holed_blue_normal);
         go4.setName("Loch Ness Monster");
 
         GeoObject go5 = new GeoObject(5l);
         go5.setGeoPosition(37.234516, -76.648023);
-        go5.setImageResource(R.drawable.iconv2);
+        go5.setImageResource(R.drawable.map_pin_holed_blue_normal);
         go5.setName("Griffon");
 
         GeoObject go6 = new GeoObject(6l);
         go6.setGeoPosition(37.236186, -76.644455);
-        go6.setImageResource(R.drawable.iconv2);
+        go6.setImageResource(R.drawable.map_pin_holed_blue_normal);
         go6.setName("Grover");
 
         world.addBeyondarObject(go1);
@@ -149,7 +156,22 @@ public class Bgw3dActivity extends SherlockFragmentActivity {
             @Override
             public void onClickBeyondarObject(ArrayList<BeyondarObject> beyondarObjects) {
                 try {
-                    Toast.makeText(Bgw3dActivity.this, "Clicked on: " + beyondarObjects.get(0).getName(), Toast.LENGTH_LONG).show();
+                    if(beyondarObjects.get(0).getName().contentEquals("Verbolten")){
+                            startActivity(new Intent(Bgw3dActivity.this, Verbolten.class));
+                    }else if(beyondarObjects.get(0).getName().contentEquals("Alpengeist")){
+                        startActivity(new Intent(Bgw3dActivity.this, Alpen.class));
+                    }else if(beyondarObjects.get(0).getName().contentEquals("Apollo's Chariot")){
+                        startActivity(new Intent(Bgw3dActivity.this, Apollo.class));
+                    }else if(beyondarObjects.get(0).getName().contentEquals("Loch Ness Monster")){
+                        startActivity(new Intent(Bgw3dActivity.this, LochNess.class));
+                    }else if(beyondarObjects.get(0).getName().contentEquals("Griffon")){
+                        startActivity(new Intent(Bgw3dActivity.this, Griffon.class));
+                    }else if(beyondarObjects.get(0).getName().contentEquals("Grover")){
+                        startActivity(new Intent(Bgw3dActivity.this, Grover.class));
+                    }else{
+                        Toast.makeText(Bgw3dActivity.this, "Clicked on: " + beyondarObjects.get(0).getName(), Toast.LENGTH_LONG).show();
+                    }
+
                 } catch (IndexOutOfBoundsException e) {
                     e.printStackTrace();
                 }

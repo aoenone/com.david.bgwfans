@@ -19,15 +19,13 @@ import com.amazon.device.ads.AdProperties;
 import com.amazon.device.ads.AdRegistration;
 import com.amazon.device.ads.AdTargetingOptions;
 import com.crittercism.app.Crittercism;
-import com.david.bgwfans.webviews.HiddenWiki;
-import com.david.bgwfans.cards.OtherApps;
 import com.david.bgwfans.R;
-import com.david.bgwfans.cards.WcCard;
-import com.david.bgwfans.cards.XmasCard;
 import com.david.bgwfans.cards.BGTFansCard;
 import com.david.bgwfans.cards.InfoCard;
 import com.david.bgwfans.cards.KDFansCard;
-import com.david.bgwfans.hos.HosCard;
+import com.david.bgwfans.cards.OtherApps;
+import com.david.bgwfans.cards.WcCard;
+import com.david.bgwfans.webviews.HiddenWiki;
 import com.fima.cardsui.objects.CardStack;
 import com.fima.cardsui.views.CardUI;
 import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockFragment;
@@ -81,30 +79,30 @@ public class InfoScreen extends RoboSherlockFragment {
 
         //event card stack
         CardStack eventstack = new CardStack();
-        XmasCard xmas = new XmasCard("Christmas Town");
-        HosCard hos = new HosCard("Howl-O-Scream");
-        eventstack.add(xmas);
-        eventstack.add(hos);
-        mCardView.addStack(eventstack);
-        xmas.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent i = new Intent(getActivity(), HiddenWiki.class);
-                i.putExtra("wikiLink", "http://www.christmastown.com/mobi/#home");
-                startActivity(i);
-            }
-        });
-
-        hos.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent i = new Intent(getActivity(), HiddenWiki.class);
-                i.putExtra("wikiLink", "http://www.howloscream.com/williamsburg/mobi/#home");
-                startActivity(i);
-            }
-        });
+//        XmasCard xmas = new XmasCard("Christmas Town");
+//        HosCard hos = new HosCard("Howl-O-Scream");
+//        eventstack.add(xmas);
+//        eventstack.add(hos);
+//        mCardView.addStack(eventstack);
+//        xmas.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Intent i = new Intent(getActivity(), HiddenWiki.class);
+//                i.putExtra("wikiLink", "http://www.christmastown.com/mobi/#home");
+//                startActivity(i);
+//            }
+//        });
+//
+//        hos.setOnClickListener(new OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                Intent i = new Intent(getActivity(), HiddenWiki.class);
+//                i.putExtra("wikiLink", "http://www.howloscream.com/williamsburg/mobi/#home");
+//                startActivity(i);
+//            }
+//        });
 
 
         CardStack appsStack = new CardStack();
@@ -229,4 +227,5 @@ public class InfoScreen extends RoboSherlockFragment {
         super.onStop();
         EasyTracker.getInstance().activityStop(getActivity()); // Add this method.
     }
+
 }

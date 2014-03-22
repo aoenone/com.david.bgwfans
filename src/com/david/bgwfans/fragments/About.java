@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
 import com.david.bgwfans.R;
 import com.github.rtyley.android.sherlock.roboguice.fragment.RoboSherlockFragment;
 import com.google.analytics.tracking.android.EasyTracker;
@@ -16,6 +18,7 @@ public class About extends RoboSherlockFragment {
 
     private Tracker mGaTracker;
     private GoogleAnalytics mGaInstance;
+    ImageView backgroundImg;
 
     View view;
     @Override
@@ -23,9 +26,12 @@ public class About extends RoboSherlockFragment {
                              Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         view = inflater.inflate(R.layout.about_screen, container, false);
+        backgroundImg = (ImageView) view.findViewById(R.id.about_image);
 
         mGaInstance = GoogleAnalytics.getInstance(getSherlockActivity());
         mGaTracker = mGaInstance.getTracker("UA-39204043-1");
+
+        backgroundImg.setBackgroundResource(R.drawable.bgwfans_blur_grif);
         return view;
     }
 

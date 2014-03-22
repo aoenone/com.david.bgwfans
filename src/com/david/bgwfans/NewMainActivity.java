@@ -1,9 +1,11 @@
 package com.david.bgwfans;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.res.Configuration;
@@ -15,7 +17,6 @@ import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.content.LocalBroadcastManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.text.TextUtils;
@@ -184,10 +185,13 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
     // Store the list of geofences to remove
     private List<String> mGeofenceIdsToRemove;
 
+    Fragment fragment;
+
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         if(Build.VERSION.SDK_INT >= 19){
+            Crittercism.initialize(getApplicationContext(), "522b49fe558d6a77d3000001");
             setTheme(R.style.TransBGW);
             SystemBarTintManager systemBarTintManager = new SystemBarTintManager(NewMainActivity.this);
             systemBarTintManager.setStatusBarTintEnabled(true);
@@ -217,8 +221,8 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
 //                userProfileClick();
 //        });
 
-        setUpGeofenceBuilders();
-        onRegisterClicked();
+//        setUpGeofenceBuilders();
+//        onRegisterClicked();
 
         initDrawerLayout();
     }
@@ -261,8 +265,8 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
     }
 
     private void setContentFragment(int fragID){
-        RoboInjector injector = RoboGuice.getInjector(this);
-        Fragment fragment;
+        final RoboInjector injector = RoboGuice.getInjector(this);
+//        Fragment fragment;
         Bundle args = new Bundle();
         switch (fragID){
             case NAV_ID_INFO_SCREEN:
@@ -314,7 +318,27 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
                 fragment = injector.getInstance(About.class);
                 break;
             case NAV_ID_BGW:
-                startActivity(new Intent(mContext, Bgw3dActivity.class));
+               AlertDialog builder = new AlertDialog.Builder(this)
+                        .setTitle("BETA Feature")
+                        .setMessage("This feature is still in BETA, as I have been unable to go to the park and test. Please send me an email if you run into any issues!")
+                        .setPositiveButton("Go!", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                startActivity(new Intent(mContext, Bgw3dActivity.class));
+//                                fragment = injector.getInstance(ParkMap.class);
+                                dialog.dismiss();
+                            }
+                        })
+                        .setNegativeButton("No Thanks", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        })
+                        .setCancelable(false)
+                        .create();
+
+                builder.show();
+
+//                startActivity(new Intent(mContext, Bgw3dActivity.class));
                 fragment = injector.getInstance(ParkMap.class);
                 break;
             default:
@@ -333,6 +357,7 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
         ft.addToBackStack(null);
         ft.commit();
     }
+
 
     @Override
     public void onBackPressed() {
@@ -419,7 +444,7 @@ public class NewMainActivity extends RoboSherlockFragmentActivity {
     protected void onResume() {
         super.onResume();
         // Register the broadcast receiver to receive status updates
-        LocalBroadcastManager.getInstance(this).registerReceiver(mBroadcastReceiver, mIntentFilter);
+//        LocalBroadcastManager.getInstance(this).registerReceiver(mBroadcastReceiver, mIntentFilter);
         /*
          * Get existing geofences from the latitude, longitude, and
          * radius values stored in SharedPreferences. If no values

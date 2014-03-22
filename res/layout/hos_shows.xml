@@ -47,7 +47,7 @@
 
             <ImageView
                     android:id="@+id/apolloimg"
-                    android:src="@drawable/parkfans"
+                    android:src="@drawable/mixitup"
                     android:scaleType="center"
                     android:layout_width="fill_parent"
                     android:layout_height="95dp"/>
@@ -120,6 +120,60 @@
                     android:textSize="22sp"
                     android:text="Entwined"
                     android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="95dp"
+            android:id="@+id/okt_button"
+            android:layout_margin="5dp" >
+
+            <ImageView
+                android:src="@drawable/parkfans"
+                android:scaleType="center"
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"/>
+            <TextView
+                android:id="@+id/locht"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#8000"
+                android:textColor="#fff"
+                android:gravity="center|left"
+                android:paddingTop="2dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="2dp"
+                android:textSize="22sp"
+                android:text="This is Okotberfest!"
+                android:fontFamily="sans-serif-light"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="95dp"
+            android:id="@+id/london_button"
+            android:layout_margin="5dp" >
+
+            <ImageView
+                android:src="@drawable/londonrocks"
+                android:scaleType="center"
+                android:layout_width="fill_parent"
+                android:layout_height="95dp"/>
+            <TextView
+                android:id="@+id/locht"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#8000"
+                android:textColor="#fff"
+                android:gravity="center|left"
+                android:paddingTop="2dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="2dp"
+                android:textSize="22sp"
+                android:text="London Rocks!"
+                android:fontFamily="sans-serif-light"/>
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>

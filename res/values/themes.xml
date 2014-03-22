@@ -35,7 +35,7 @@
     <style name="TransBGW" parent="Theme.Bgwfans2">
         <item name="android:windowBackground">@color/bgwfans_actionbar</item>
         <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:fitsSystemWindows">false</item>
     </style>
 
 </resources>

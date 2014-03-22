@@ -137,6 +137,8 @@ public class ParkMap extends RoboSherlockFragment {
     private Marker petshow;
     private static final LatLng IRELANDSHOW = new LatLng(37.236089, -76.647955);
     private Marker irelandshow;
+    private static final LatLng TIOSHOW = new LatLng(37.2314, -76.646201);
+    private Marker tioshow;
 
     //geo points for all bathrooms in the park
     private Marker b1;
@@ -318,8 +320,7 @@ public class ParkMap extends RoboSherlockFragment {
 
         englandshow = mMap.addMarker(new MarkerOptions()
                 .position(ENGLANDSHOW)
-                .title("Pirates 4D")
-                .snippet("A 4d Pirate Adventure"));
+                .title("London Rocks!"));
 
         grille = mMap.addMarker(new MarkerOptions()
                 .position(GRILLE)
@@ -650,8 +651,7 @@ public class ParkMap extends RoboSherlockFragment {
 
         festshow = mMap.addMarker(new MarkerOptions()
                 .position(FESTSHOW)
-                .title("Entwined(AM)/This is Oktoberfest(PM)")
-                .snippet("Entwined runs during the day, Oktoberfest runs at night"));
+                .title("Entwined/This is Oktoberfest"));
 
         wind = mMap.addMarker(new MarkerOptions()
                 .position(WIND)
@@ -741,8 +741,8 @@ public class ParkMap extends RoboSherlockFragment {
     public void addShowsToMap() {
         englandshow = mMap.addMarker(new MarkerOptions()
                 .position(ENGLANDSHOW)
-                .title("Pirates 4D")
-                .snippet("A 4d Pirate Adventure"));
+                .title("London Rocks!")
+                .snippet("Rockin'est year ever!"));
 
         italyshow = mMap.addMarker(new MarkerOptions()
                 .position(ITALYSHOW)
@@ -751,8 +751,7 @@ public class ParkMap extends RoboSherlockFragment {
 
         festshow = mMap.addMarker(new MarkerOptions()
                 .position(FESTSHOW)
-                .title("Entwined(AM)/Roll out the Barrel(PM)")
-                .snippet("Entwined runs during the day, RotB runs at night"));
+                .title("Entwined/This is Oktoberfest"));
 
         frenchshow = mMap.addMarker(new MarkerOptions()
                 .position(FRENCHSHOW)

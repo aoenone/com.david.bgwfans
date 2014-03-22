@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.david.bgwfans"
-          android:versionCode="17"
-          android:versionName="2.3.1">
+          android:versionCode="18"
+          android:versionName="2.4.0">
 
     <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -18,11 +18,11 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!--  BeyondAR needs the following features-->
-    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
-    <uses-feature android:name="android.hardware.sensor.accelerometer" />
-    <uses-feature android:name="android.hardware.sensor.compass" />
+    <uses-feature android:glEsVersion="0x00020000" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.compass" android:required="false"/>
 
     <permission
             android:name="com.david.bgwfans.MAPS_RECEIVE"
@@ -113,112 +113,67 @@
         <activity android:name=".xmas.shows.Otann" />
 
         <!-- roller coasters -->
-        <activity android:name=".attractions.coasters.Verbolten"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.coasters.VBolt"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.coasters.Griffon"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.coasters.Apollo"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.coasters.Alpen"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.coasters.LochNess"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.coasters.Grover"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
+        <activity android:name=".attractions.coasters.Verbolten" />
+        <activity android:name=".attractions.coasters.VBolt" />
+        <activity android:name=".attractions.coasters.Griffon" />
+        <activity android:name=".attractions.coasters.Apollo" />
+        <activity android:name=".attractions.coasters.Alpen" />
+        <activity android:name=".attractions.coasters.LochNess" />
+        <activity android:name=".attractions.coasters.Grover" />
 
         <!-- flat rides -->
-        <activity android:name=".attractions.flats.DarKastle"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.EITA"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.Mach"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.AutoBahn"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.Cradle"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.FlyingMachine"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.Wirbelwind"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.TradeWind"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.Catapult"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.Delight"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.flats.Ram"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
+        <activity android:name=".attractions.flats.DarKastle"/>
+        <activity android:name=".attractions.flats.EITA"/>
+        <activity android:name=".attractions.flats.Mach"/>
+        <activity android:name=".attractions.flats.AutoBahn"/>
+        <activity android:name=".attractions.flats.Cradle"/>
+        <activity android:name=".attractions.flats.FlyingMachine"/>
+        <activity android:name=".attractions.flats.Wirbelwind"/>
+        <activity android:name=".attractions.flats.TradeWind"/>
+        <activity android:name=".attractions.flats.Catapult"/>
+        <activity android:name=".attractions.flats.Delight"/>
+        <activity android:name=".attractions.flats.Ram"/>
 
         <!-- water rides -->
-        <activity android:name=".attractions.flats.Rapids"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.water.Pompeii"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.water.Flume"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
+        <activity android:name=".attractions.flats.Rapids"/>
+        <activity android:name=".attractions.water.Pompeii"/>
+        <activity android:name=".attractions.water.Flume"/>
 
         <!-- transportation attractions -->
-        <activity android:name=".attractions.additional.Train"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.additional.Skyride"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
-        <activity android:name=".attractions.additional.Cruise"
-                  android:parentActivityName="com.david.bgwfanspaid.Attractions"/>
+        <activity android:name=".attractions.additional.Train"/>
+        <activity android:name=".attractions.additional.Skyride"/>
+        <activity android:name=".attractions.additional.Cruise"/>
 
         <!-- shows -->
-        <activity android:name=".shows.Barrel"
-                  android:parentActivityName="com.david.bgwfanspaid.HOS_Shows"/>
-        <activity android:name=".shows.Celtic"
-                  android:parentActivityName="com.david.bgwfanspaid.HOS_Shows"/>
-        <activity android:name=".shows.Mix"
-                  android:parentActivityName="com.david.bgwfanspaid.HOS_Shows"/>
-        <activity android:name=".shows.Pets"
-                  android:parentActivityName="com.david.bgwfanspaid.HOS_Shows"/>
-        <activity android:name=".shows.Entwined"
-                  android:parentActivityName="com.david.bgwfanspaid.HOS_Shows"/>
+        <activity android:name=".shows.Barrel"/>
+        <activity android:name=".shows.Celtic"/>
+        <activity android:name=".shows.Mix"/>
+        <activity android:name=".shows.Pets"/>
+        <activity android:name=".shows.Entwined"/>
+        <activity android:name=".shows.TIO"/>
 
         <!-- eateries -->
-        <activity android:name=".eateries.Festhaus"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
-        <activity android:name=".eateries.Smokehouse"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
-        <activity android:name=".eateries.Piazza"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
-        <activity android:name=".eateries.Grille"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
-        <activity android:name=".eateries.Cucina"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
-        <activity android:name=".eateries.Pub"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
-        <activity android:name=".eateries.Grill"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
-        <activity android:name=".eateries.Bier"
-                  android:parentActivityName="com.david.bgwfanspaid.Eateries"/>
+        <activity android:name=".eateries.Festhaus"/>
+        <activity android:name=".eateries.Smokehouse"/>
+        <activity android:name=".eateries.Piazza"/>
+        <activity android:name=".eateries.Grille"/>
+        <activity android:name=".eateries.Cucina"/>
+        <activity android:name=".eateries.Pub"/>
+        <activity android:name=".eateries.Grill"/>
+        <activity android:name=".eateries.Bier"/>
 
         <!-- special event (Food and Wine) -->
         <activity android:name=".food_wine.EventInfo"/>
         <activity android:name=".food_wine.EventAttractions"/>
-        <activity android:name=".food_wine.Austria"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.Canada"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.France"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.Germany"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.Greece"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.Italy"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.Scandinavia"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.Scotland"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
-        <activity android:name=".food_wine.Spain"
-            	  android:parentActivityName="com.david.bgwfanspaid.EventAttractions"/>
+        <activity android:name=".food_wine.Austria"/>
+        <activity android:name=".food_wine.Canada"/>
+        <activity android:name=".food_wine.France"/>
+        <activity android:name=".food_wine.Germany"/>
+        <activity android:name=".food_wine.Greece"/>
+        <activity android:name=".food_wine.Italy"/>
+        <activity android:name=".food_wine.Scandinavia"/>
+        <activity android:name=".food_wine.Scotland"/>
+        <activity android:name=".food_wine.Spain"/>
         <activity android:name=".food_wine.EventMap"/>
 
 
